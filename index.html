@@ -37,6 +37,12 @@
       color: #ffffff;
       outline: none;
     }
+    .detail-website-link {
+      width: 32px;
+      height: 32px;
+      flex-basis: 32px;
+      font-size: 19px;
+    }
     @media (max-width: 720px) {
       .site-header { padding: 14px 18px !important; gap: 12px !important; }
       .site-brand { min-width: 0; gap: 10px !important; }
@@ -56,6 +62,8 @@
       .location-grid, .detail-main-grid { grid-template-columns: minmax(0, 1fr) !important; }
       .site-row { grid-template-columns: minmax(0, 1fr) !important; }
       .site-map { height: 340px !important; }
+      .detail-company-name { align-items: flex-start !important; }
+      .detail-website-link { width: 29px; height: 29px; flex-basis: 29px; font-size: 17px; }
     }
     @media (max-width: 420px) {
       .overview-stats, .detail-stats { gap: 6px !important; }
@@ -154,10 +162,7 @@
           <article style="display:flex;flex-direction:column;gap:10px;padding:16px;border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;cursor:pointer;" onClick="{{ c.onOpen }}">
             <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;">
               <div style="min-width:0;">
-                <div style="display:flex;align-items:center;gap:7px;margin-bottom:3px;">
-                  <h3 style="margin:0;font-size:16px;color:#1c3f45;line-height:1.3;">{{ c.shortName }}</h3>
-                  <a class="company-website-link" href="{{ c.website }}" target="_blank" rel="noopener noreferrer" aria-label="開啟 {{ c.shortName }} 官方網站" title="開啟官方網站" onClick="{{ c.onWebsiteClick }}"><span aria-hidden="true">↗</span></a>
-                </div>
+                <h3 style="margin:0 0 3px;font-size:16px;color:#1c3f45;line-height:1.3;">{{ c.shortName }}</h3>
                 <p style="margin:0;font-size:11px;color:#6f6a5e;">{{ c.english }}</p>
               </div>
               <span style="flex:0 0 auto;padding:3px 8px;border-radius:6px;font-size:11px;font-weight:800;{{ c.statusStyle }}">{{ c.statusLabel }}</span>
@@ -185,7 +190,10 @@
       <section class="detail-hero" style="display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start;justify-content:space-between;padding-bottom:18px;border-bottom:1px solid rgba(28,53,58,0.14);margin-bottom:20px;">
         <div style="max-width:640px;">
           <p style="margin:0 0 6px;font-size:12px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">{{ company.english }}</p>
-          <h1 style="margin:0 0 8px;font-size:30px;color:#1c3f45;line-height:1.25;">{{ company.name }}</h1>
+          <div class="detail-company-name" style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+            <h1 style="margin:0;font-size:30px;color:#1c3f45;line-height:1.25;">{{ company.name }}</h1>
+            <a class="company-website-link detail-website-link" href="{{ company.website }}" target="_blank" rel="noopener noreferrer" aria-label="開啟 {{ company.shortName }} 官方網站" title="開啟官方網站"><span aria-hidden="true">↗</span></a>
+          </div>
           <p style="margin:0;font-size:13.5px;color:#6f6a5e;line-height:1.6;">{{ company.role }}</p>
         </div>
         <div class="detail-stats" style="display:flex;gap:10px;">
@@ -647,8 +655,6 @@ class Component extends DCLogic {
       overseasCount: c.timeline.filter((t) => t.overseas).length,
       statusLabel: c.built ? "已建檔" : "建置中",
       statusStyle: c.built ? "background:rgba(31,111,92,0.12);color:#1f6f5c;" : "background:#efeadf;color:#6f6a5e;",
-      website: COMPANY_WEBSITES[c.id],
-      onWebsiteClick: (event) => event.stopPropagation(),
       onOpen: () => this.goDetail(c.id)
     }));
 
@@ -704,6 +710,7 @@ class Component extends DCLogic {
 
     const company = {
       ...raw,
+      website: COMPANY_WEBSITES[raw.id],
       mapUrl: this.buildMapUrl(raw.sites.items, raw.newSites.items),
       newsCount: raw.timeline.length,
       overseasCount: raw.timeline.filter((t) => t.overseas).length,
