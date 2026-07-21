@@ -1,5 +1,3 @@
-/Users/chou751029/.zprofile:7: no such file or directory: /usr/local/bin/brew
-/Users/chou751029/.zprofile:9: no such file or directory: /usr/local/bin/brew
 const OVERSEAS_COLOR = "#b2591f";
 const NEWS_COLOR = "#1f6f5c";
 
