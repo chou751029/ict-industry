@@ -12,6 +12,90 @@ const MARKET_LABELS = {
   foreign: "國外"
 };
 
+const INDUSTRY_NEWS_SHEET_URL =
+  "https://docs.google.com/spreadsheets/d/1TQk-ukytA0HGrhG95xY3xVPKu16404pSeO78cf1e5vg/edit#gid=411582934";
+
+const industryNews = [
+  {
+    collected: "2026-07-21",
+    date: "2026-07-16",
+    region: "美國／台灣",
+    market: "foreign",
+    category: "半導體／海外投資",
+    title: "TSMC pledges another US$100 billion to expand U.S. chipmaking capacity",
+    source: "Associated Press",
+    link: "https://apnews.com/article/ba05b1b952257d371acb9d070e7914ff",
+    summary: "台積電擴大美國晶片製造承諾，反映 AI 與資料中心需求推動先進製程產能全球化；後續需追蹤廠址、建廠時程與供應商在地化。",
+    signal: "明確設廠訊號",
+    language: "英文"
+  },
+  {
+    collected: "2026-07-21",
+    date: "2026-07-14",
+    region: "日本",
+    market: "foreign",
+    category: "矽光子／先進封裝",
+    title: "Tower Semiconductor with METI Support Announces Strategic Capacity Expansion in Japan",
+    source: "Tower Semiconductor",
+    link: "https://towersemi.com/2026/07/14/07142026/",
+    summary: "Tower 在日本擴充 300mm 矽光子、SiGe 與先進封裝研發製造能力，並規劃魚津相鄰新廠，直接連動 AI 資料中心光互連供應鏈。",
+    signal: "明確設廠訊號",
+    language: "英文"
+  },
+  {
+    collected: "2026-07-21",
+    date: "2026-07-14",
+    region: "德國／歐盟",
+    market: "foreign",
+    category: "政策補助／半導體設廠",
+    title: "Vier neue Halbleiteranlagen: Kommission genehmigt Beihilfe Deutschlands in Höhe von 659 Millionen Euro",
+    source: "European Commission",
+    link: "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/vier-neue-halbleiteranlagen-kommission-genehmigt-beihilfe-deutschlands-hohe-von-659-millionen-euro-2026-07-14_de",
+    summary: "歐盟核准德國 6.59 億歐元補助四項半導體設施，涵蓋 SiC 磊晶、功率 MOSFET、量測設備及專用偵測晶片。",
+    signal: "明確設廠訊號",
+    language: "德文"
+  },
+  {
+    collected: "2026-07-21",
+    date: "2026-07-13",
+    region: "愛爾蘭",
+    market: "foreign",
+    category: "半導體／海外投資",
+    title: "Intel Invests €5 Billion to Expand Manufacturing in Europe",
+    source: "Intel Newsroom",
+    link: "https://newsroom.intel.com/intel-foundry/intel-invests-5-billion-euro-to-expand-manufacturing-in-europe",
+    summary: "Intel 在愛爾蘭 Leixlip 投資 50 億歐元升級晶圓廠與設備，擴大 Intel 3、Xeon 6 與次世代 Xeon 產能。",
+    signal: "明確設廠訊號",
+    language: "英文"
+  },
+  {
+    collected: "2026-07-21",
+    date: "2026-07-02",
+    region: "德國",
+    market: "foreign",
+    category: "功率半導體／新廠啟用",
+    title: "Infineon eröffnet in Dresden die weltweit größte Fabrik für Leistungshalbleiter",
+    source: "Infineon Technologies",
+    link: "https://www.infineon.com/de/press-release/2026/ifxpr202607-117",
+    summary: "Infineon 德勒斯登 Smart Power Fab 提前啟用，投資 50 億歐元，產品支援 AI 資料中心電源、電網、車用與再生能源。",
+    signal: "明確設廠訊號",
+    language: "德文"
+  },
+  {
+    collected: "2026-07-21",
+    date: "2026-06-24",
+    region: "全球",
+    market: "foreign",
+    category: "市場報告／半導體",
+    title: "Global Semiconductor Market Surges Beyond $1.5T 2026",
+    source: "World Semiconductor Trade Statistics",
+    link: "https://www.wsts.org/76/Recent-News-Release",
+    summary: "WSTS 上修 2026 年全球半導體市場預測至 1.51 兆美元，主因 AI 基礎設施、HBM 與加速運算平台需求。",
+    signal: "產能需求訊號",
+    language: "英文"
+  }
+];
+
 function buildTrackedCompany(config) {
   return {
     id: config.id,
@@ -451,10 +535,69 @@ function renderOverview() {
           ${metricCard(totalOverseas, "海外設廠訊號", "orange")}
         </div>
       </div>
+      ${renderIndustryNewsSection()}
+      <div class="company-section-head">
+        <div>
+          <p class="eyebrow">Company Watchlist</p>
+          <h2>17 家企業追蹤</h2>
+        </div>
+        <p>點選企業查看公司簡介、產品技術、合作業者、全球據點與新據點評估。</p>
+      </div>
       <div class="company-cards">
         ${companies.map(renderCompanyCard).join("")}
       </div>
     </section>
+  `;
+}
+
+function renderIndustryNewsSection() {
+  const latestCollected = industryNews.reduce(
+    (latest, item) => (item.collected > latest ? item.collected : latest),
+    ""
+  );
+
+  return `
+    <section class="industry-news-panel" aria-labelledby="industry-news-title">
+      <div class="industry-news-head">
+        <div>
+          <p class="eyebrow">Daily ICT Intelligence</p>
+          <h2 id="industry-news-title">每日 ICT 產業新聞</h2>
+          <p>跨企業追蹤半導體、AI 伺服器、資料中心、電子製造與各國設廠政策。</p>
+        </div>
+        <div class="industry-news-actions">
+          <span>最後蒐集 ${escapeHtml(latestCollected)}</span>
+          <a href="${INDUSTRY_NEWS_SHEET_URL}" target="_blank" rel="noopener noreferrer">開啟 ICT 產業新聞工作表</a>
+        </div>
+      </div>
+      <div class="industry-news-list">
+        ${industryNews.map(renderIndustryNewsItem).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderIndustryNewsItem(item) {
+  return `
+    <article class="industry-news-item">
+      <div class="industry-news-date">
+        <time datetime="${escapeHtml(item.date)}">${escapeHtml(item.date)}</time>
+        <span>${escapeHtml(item.region)}</span>
+      </div>
+      <div class="industry-news-copy">
+        <div class="industry-news-meta">
+          <span class="market ${item.market}">${item.market === "domestic" ? "國內" : "國外"}</span>
+          <span>${escapeHtml(item.category)}</span>
+          <span>${escapeHtml(item.language)}</span>
+          <b>${escapeHtml(item.signal)}</b>
+        </div>
+        <h3><a href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(item.title)}</a></h3>
+        <p>${escapeHtml(item.summary)}</p>
+      </div>
+      <a class="industry-source" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
+        <span>資料來源</span>
+        <strong>${escapeHtml(item.source)}</strong>
+      </a>
+    </article>
   `;
 }
 
