@@ -220,12 +220,18 @@
       <section style="margin-bottom:20px;">
         <div class="location-grid" style="display:grid;grid-template-columns:minmax(280px,1fr) minmax(280px,1fr);gap:14px;margin-bottom:14px;align-items:start;">
           <article style="border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;padding:16px;">
-            <p style="margin:0 0 8px;font-size:11px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">既有據點</p>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;">
+              <p style="margin:0;font-size:11px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">官方確認既有據點</p>
+              <span style="font-size:10.5px;font-weight:700;color:#1f6f5c;">核對 {{ company.sitesVerified }}</span>
+            </div>
             <div style="display:grid;gap:6px;">
               <sc-for list="{{ company.sites.items }}" as="s" hint-placeholder-count="4">
-                <div class="site-row" style="display:grid;grid-template-columns:1fr auto;gap:6px;padding:7px 9px;border-radius:6px;background:#f6f4ee;font-size:12.5px;">
-                  <span style="color:#1c3f45;font-weight:700;">{{ s.location }}</span>
-                  <span style="color:#6f6a5e;">{{ s.role }}</span>
+                <div class="site-row" style="display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px;padding:8px 9px;border-radius:6px;background:#f6f4ee;font-size:12.5px;">
+                  <div style="min-width:0;">
+                    <p style="margin:0;color:#1c3f45;font-weight:800;line-height:1.35;">{{ s.location }}</p>
+                    <p style="margin:2px 0 0;color:#6f6a5e;font-size:11.5px;line-height:1.35;">{{ s.role }}</p>
+                  </div>
+                  <a href="{{ s.source }}" target="_blank" rel="noopener noreferrer" style="white-space:nowrap;color:#1f6f5c;font-size:11px;font-weight:800;text-decoration:none;">官方來源 ↗</a>
                 </div>
               </sc-for>
             </div>
@@ -248,7 +254,8 @@
         </div>
 
         <article style="border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;padding:14px;">
-          <p style="margin:0 0 10px;font-size:11px;font-weight:800;color:#1c3f45;text-transform:uppercase;letter-spacing:0.04em;">全球據點地圖</p>
+          <p style="margin:0 0 4px;font-size:11px;font-weight:800;color:#1c3f45;text-transform:uppercase;letter-spacing:0.04em;">官方確認既有據點地圖</p>
+          <p style="margin:0 0 10px;font-size:11px;color:#6f6a5e;">地圖僅呈現上方已由企業官網、年報或官方報告確認的據點；評估地點不列入。</p>
           <iframe class="site-map" src="{{ company.mapUrl }}" title="全球據點地圖" style="width:100%;height:420px;border:0;border-radius:8px;"></iframe>
         </article>
       </section>
@@ -394,6 +401,7 @@ function buildTrackedCompany(config) {
     technology: config.technology,
     partners: config.partners,
     sites: { items: config.sites },
+    sitesVerified: config.sitesVerified || "2026-07-21",
     newSites: { items: config.newSites }
   };
 }
@@ -404,14 +412,26 @@ const COMPANY_BACKLOG = [
     profile: { title: "電源與智慧能源供應商", body: "康舒以電源供應器、電源轉換與智慧能源應用為核心，適合作為資料中心、通訊電源、工業電源與新能源基礎設施需求的觀察標的。", tags: ["電源供應器", "智慧能源", "通訊電源"] },
     technology: { title: "高階電源與能源轉換", body: "重點技術節點包含電源轉換、通訊電源、伺服器/資料中心電源、能源管理與相關智慧財產權布局。", tags: ["電源轉換", "資料中心電源", "能源管理"] },
     partners: { title: "OmniOn Power 與歐洲營運節點", body: "需追蹤 OmniOn Power Technology GmbH、歐洲子公司與地方招商/能源基礎設施合作關係。", tags: ["OmniOn Power", "歐洲控股", "IP 授權"] },
-    sites: [{ location: "台灣", role: "總部 / 研發與管理" }, { location: "德國", role: "歐洲控股與電源業務節點" }],
+    sites: [
+      { location: "台灣淡水", role: "企業營運、研發與製造據點", source: "https://www.compal.com/mediafiles/sh-meeting/annual-report/1150508_Compal_2025_Annual_Report_EN.pdf" },
+      { location: "菲律賓", role: "AcBel Polytech Philippines 製造據點", source: "https://www.compal.com/mediafiles/sh-meeting/annual-report/1150508_Compal_2025_Annual_Report_EN.pdf" },
+      { location: "中國東莞／武漢", role: "AcBel 電源產品製造據點", source: "https://www.compal.com/mediafiles/sh-meeting/annual-report/1150508_Compal_2025_Annual_Report_EN.pdf" },
+      { location: "中國江蘇吳江", role: "滬華電子製造據點", source: "https://www.compal.com/mediafiles/sh-meeting/annual-report/1150508_Compal_2025_Annual_Report_EN.pdf" }
+    ],
     newSites: [{ location: "德國 / 歐洲", rationale: "高階電源與智慧財產權營運可能帶動在地服務、測試或組裝需求。", status: "觀察中" }] },
   { id: "inventec", name: "英業達股份有限公司", english: "Inventec", role: "伺服器、雲端設備、電子代工；捷克 Brno 新廠",
     monthlyAnalysis: "第一版聚焦捷克 Brno 伺服器與雲端設備在地化。後續每日新聞需抓取 AI 伺服器、資料中心客戶、歐洲供應鏈韌性與捷克廠擴產訊號。",
     profile: { title: "雲端與伺服器代工重點業者", body: "英業達是伺服器、雲端設備與電子代工供應鏈重要廠商，歐洲布局與資料中心需求密切相關。", tags: ["伺服器", "雲端設備", "ODM"] },
     technology: { title: "伺服器與雲端設備製造", body: "重點觀察 AI 伺服器、一般伺服器、雲端設備、系統組裝與歐洲在地供應鏈配置。", tags: ["AI Server", "Cloud", "系統組裝"] },
     partners: { title: "雲端與資料中心客戶", body: "合作節點以歐美雲端、伺服器與資料中心客戶為主，需由新聞與法說會逐步拆解。", tags: ["資料中心", "雲端客戶", "捷克供應鏈"] },
-    sites: [{ location: "台灣", role: "總部 / 研發管理" }, { location: "捷克 Brno", role: "歐洲伺服器與電子代工製造" }],
+    sites: [
+      { location: "台灣台北／桃園", role: "總部、研發與科技中心", source: "https://www.inventec.com/en/" },
+      { location: "捷克 Brno", role: "歐洲生產據點", source: "https://www.inventec.com/en/" },
+      { location: "墨西哥 Ciudad Juárez", role: "北美生產據點", source: "https://www.inventec.com/en/" },
+      { location: "馬來西亞 Penang", role: "亞洲生產據點", source: "https://www.inventec.com/en/" },
+      { location: "越南 Hanoi", role: "亞洲生產據點", source: "https://www.inventec.com/en/" },
+      { location: "美國 Silicon Valley／Austin／Houston", role: "區域辦公據點", source: "https://www.inventec.com/en/" }
+    ],
     newSites: [{ location: "捷克 Brno（延伸）", rationale: "伺服器與雲端客戶在地化需求提升，需追蹤新廠投產後產能利用與擴產。", status: "觀察中" }] },
   { id: "liteon", name: "光寶科技股份有限公司", english: "Lite-On Technology", role: "電源、車用充電、雲端電源、醫療器材；歐洲分公司與銷售網絡",
     monthlyAnalysis: "第一版以歐洲電源、EV 充電、雲端電源與醫療器材產品認證為重點。後續需追蹤歐盟 CE 認證、通路服務、車用充電與資料中心電源訂單。",
@@ -422,9 +442,17 @@ const COMPANY_BACKLOG = [
     profile: { title: "電源與光電電子解決方案業者", body: "光寶產品涵蓋電源、雲端運算電源、車用充電與醫療器材，歐洲市場具產品認證與服務網絡需求。", tags: ["電源", "EV 充電", "醫療器材"] },
     technology: { title: "雲端電源與車用充電", body: "重點技術包含雲端電源、EV 充電樁、醫療器材電源、工業用電源與能源效率設計。", tags: ["Cloud Power", "EV Charger", "CE 認證"] },
     partners: { title: "歐洲客戶與通路服務網絡", body: "需追蹤歐洲客戶、車用充電營運商、醫療設備客戶與當地服務夥伴。", tags: ["歐洲通路", "車用充電", "醫療設備"] },
-    sites: [{ location: "台灣", role: "總部 / 研發管理" }, { location: "歐洲", role: "分公司與銷售服務網絡" }],
+    sites: [
+      { location: "台灣台北", role: "全球總部", source: "https://www.liteon.com/en/staticpage/global-operations" },
+      { location: "美國 California／Texas／Utah", role: "銷售及子公司據點", source: "https://www.liteon.com/en/staticpage/global-operations" },
+      { location: "荷蘭 Hoofddorp", role: "歐洲銷售中心", source: "https://www.liteon.com/en/staticpage/global-operations" },
+      { location: "德國 Wetzlar", role: "歐洲銷售中心", source: "https://www.liteon.com/en/staticpage/global-operations" },
+      { location: "英國 Northumberland", role: "歐洲銷售中心", source: "https://www.liteon.com/en/staticpage/global-operations" },
+      { location: "日本東京", role: "亞洲銷售中心", source: "https://www.liteon.com/en/staticpage/global-operations" },
+      { location: "新加坡", role: "亞洲銷售中心", source: "https://www.liteon.com/en/staticpage/global-operations" }
+    ],
     newSites: [{ location: "歐洲主要市場", rationale: "EV 充電與雲端電源需求可能推動在地測試、維修、倉儲與服務據點。", status: "評估中" }] },
-  { id: "teco", name: "東元電機股份有限公司", english: "TECO Electric & Machinery", role: "馬達、電力設備、智慧電網、綠能設備；德國、義大利、烏克蘭布局",
+  { id: "teco", name: "東元電機股份有限公司", english: "TECO Electric & Machinery", role: "馬達、電力設備、智慧電網、綠能設備；台灣、中國、印度、新加坡與美國等全球布局",
     monthlyAnalysis: "第一版聚焦歐洲電網升級、烏克蘭戰後重建與高效能能源設備。後續新聞需標註是否涉及政府工程、電力基建、綠能與智慧電網。",
     timeline: [
       { date: "2026-07-15", tag: "日本布局", overseas: true, source: "official", sourceCategory: "official", market: "foreign", title: "東元攜智慧動力解決方案前進日本，TJM Series 機器人關節模組亮相", link: "https://www.teco.com.tw/zh-tw/press/news/dong-yuan-xie-zhi-hui-dong-li-jie-jue-fang-an-qian-jin-ri-ben-TJM-Series-quan-ji-lie-ji-qi-ren-guan-jie-mo-zu-shou-du-wan-zheng-liang-xiang", linkLabel: "TECO 官方新聞" },
@@ -433,91 +461,180 @@ const COMPANY_BACKLOG = [
     profile: { title: "電機、馬達與電力工程業者", body: "東元以馬達、電力設備、智慧電網與綠能相關解決方案為核心，適合追蹤歐洲基礎建設與能源轉型商機。", tags: ["馬達", "電力設備", "智慧電網"] },
     technology: { title: "高效能馬達與電網設備", body: "重點技術包括高效馬達、電力設備、智慧電網、能源管理與綠能設備。", tags: ["高效馬達", "電網", "綠能"] },
     partners: { title: "歐洲能源與基建合作節點", body: "需追蹤德國、義大利、烏克蘭當地電力工程、能源公司、政府採購與園區基建夥伴。", tags: ["德國", "義大利", "烏克蘭"] },
-    sites: [{ location: "台灣", role: "總部 / 電機製造" }, { location: "德國", role: "歐洲業務與技術據點" }, { location: "義大利", role: "歐洲業務節點" }, { location: "烏克蘭", role: "重建與電力基建觀察市場" }],
+    sites: [
+      { location: "台灣台北", role: "全球營運總部", source: "https://www.teco.com.tw/zh-tw/locations/" },
+      { location: "台灣中壢／觀音／湖口", role: "馬達、空調及電力設備生產與研發", source: "https://www.teco.com.tw/zh-tw/locations/" },
+      { location: "中國江蘇無錫", role: "馬達及精密機械生產據點", source: "https://www.teco.com.tw/zh-tw/locations/" },
+      { location: "印度 Bengaluru", role: "TEMICO 馬達生產據點", source: "https://www.teco.com.tw/zh-tw/locations/" },
+      { location: "美國 Texas／Round Rock", role: "TECO-Westinghouse 生產據點", source: "https://www.teco.com.tw/zh-tw/locations/" },
+      { location: "新加坡", role: "行銷、服務與在地製造支援", source: "https://www.teco.com.tw/zh-tw/locations/" }
+    ],
     newSites: [{ location: "烏克蘭 / 中東歐", rationale: "戰後重建、電網升級與能源設備需求可能形成在地合作或服務據點。", status: "觀察中" }] },
   { id: "merry", name: "美律實業股份有限公司", english: "Merry Electronics", role: "聲學元件、揚聲器、耳機、音訊產品；挪威 SEAS 相關布局",
     monthlyAnalysis: "第一版聚焦挪威 SEAS 聲學技術與歐洲高階揚聲器市場。後續應追蹤研發人才、品牌/技術整合與歐洲製造或服務是否擴張。",
     profile: { title: "聲學元件與音訊產品供應商", body: "美律以聲學元件、耳機、揚聲器與音訊模組為核心，歐洲布局偏向高階聲學技術與品牌製造能力。", tags: ["聲學", "揚聲器", "耳機"] },
     technology: { title: "聲學設計與揚聲器製造", body: "重點包含高階揚聲器、耳機模組、聲學設計、材料與音訊產品量產能力。", tags: ["Acoustics", "Speaker", "Audio"] },
     partners: { title: "SEAS Fabrikker 與歐洲聲學節點", body: "需追蹤 SEAS 相關技術、品牌、研發與挪威在地團隊延伸合作。", tags: ["SEAS", "挪威", "高階聲學"] },
-    sites: [{ location: "台灣", role: "總部 / 管理與研發" }, { location: "挪威", role: "聲學技術與製造節點" }],
+    sites: [
+      { location: "台灣台中", role: "全球總部", source: "https://www.merry.com.tw/page/about/index.aspx?kind=32" },
+      { location: "中國深圳／蘇州／惠州", role: "聲學產品研發與製造據點", source: "https://www.merry.com.tw/page/about/index.aspx?kind=32" },
+      { location: "越南 Nghệ An", role: "製造據點", source: "https://www.merry.com.tw/page/about/index.aspx?kind=32" },
+      { location: "泰國 Rayong", role: "製造據點", source: "https://www.merry.com.tw/page/about/index.aspx?kind=32" },
+      { location: "美國 California／Milpitas", role: "北美營運據點", source: "https://www.merry.com.tw/page/about/index.aspx?kind=32" },
+      { location: "挪威 Moss", role: "SEAS 高階揚聲器據點", source: "https://www.merry.com.tw/page/about/index.aspx?kind=32" }
+    ],
     newSites: [{ location: "挪威 / 歐洲", rationale: "高階聲學技術可作為歐洲研發與客戶服務節點。", status: "觀察中" }] },
   { id: "usi", name: "環鴻科技股份有限公司", english: "Universal Scientific Industrial / USI", role: "EMS、電子製造服務、車用與工業電子；法國、波蘭、德國、英國據點",
     monthlyAnalysis: "第一版以 Asteelflash 收購後歐洲 EMS 製造服務網絡為主。需每日追蹤法國、波蘭、德國、英國等地的在地製造、車用電子與工業電子訂單。",
     profile: { title: "全球 EMS 與 SiP 製造服務業者", body: "環鴻科技具電子製造服務能力，歐洲據點可支援車用、工業、通訊與消費電子客戶在地化。", tags: ["EMS", "車用電子", "工業電子"] },
     technology: { title: "電子製造服務與系統模組", body: "重點技術包含 EMS、SiP/模組製造、車用電子、工業電子與區域製造服務。", tags: ["EMS", "SiP", "模組製造"] },
     partners: { title: "Asteelflash 與歐洲客戶群", body: "Asteelflash 為歐洲在地製造與客戶服務的重要節點，需追蹤整合後客戶與產能配置。", tags: ["Asteelflash", "法國", "波蘭"] },
-    sites: [{ location: "台灣", role: "管理與製造節點" }, { location: "法國", role: "歐洲 EMS 核心市場" }, { location: "波蘭", role: "歐洲製造據點" }, { location: "德國", role: "歐洲客戶服務" }, { location: "英國", role: "歐洲客戶服務" }],
+    sites: [
+      { location: "台灣南港／草屯", role: "USI 製造據點", source: "https://www.usiglobal.com/public/en/global-locations?page=1" },
+      { location: "中國上海／昆山／蘇州／惠州／成都", role: "亞洲製造據點", source: "https://www.usiglobal.com/public/en/global-locations?page=1" },
+      { location: "墨西哥 Tonalá／Guadalajara／Tijuana", role: "美洲製造據點", source: "https://www.usiglobal.com/public/en/global-locations?page=2" },
+      { location: "波蘭 Wrocław", role: "歐洲製造據點", source: "https://www.usiglobal.com/public/en/global-locations?page=2" },
+      { location: "法國多地", role: "Asteelflash 歐洲製造網絡", source: "https://www.usiglobal.com/public/en/global-locations?page=2" },
+      { location: "德國", role: "Asteelflash 製造與設計據點", source: "https://www.usiglobal.com/public/en/global-locations?page=3" },
+      { location: "捷克 Plzeň", role: "Asteelflash 製造據點", source: "https://www.usiglobal.com/public/en/global-locations?page=3" },
+      { location: "英國 Bedford", role: "Asteelflash 製造據點", source: "https://www.usiglobal.com/public/en/global-locations?page=3" },
+      { location: "突尼西亞 La Soukra", role: "Asteelflash 製造據點", source: "https://www.usiglobal.com/public/en/global-locations?page=3" }
+    ],
     newSites: [{ location: "波蘭 / 法國", rationale: "歐洲車用與工業電子在地製造需求提升，適合追蹤擴產與客戶轉單。", status: "觀察中" }] },
   { id: "delta", name: "台達電子工業股份有限公司", english: "Delta Electronics", role: "電源、電力電子、通訊電源、EV 充電、工業自動化；荷蘭、斯洛伐克、德國布局",
     monthlyAnalysis: "第一版聚焦歐洲電力/通訊電源、EV 充電與工業自動化。後續需追蹤 Eltek 等電源品牌整合、資料中心電源與電動車充電基建。",
     profile: { title: "電源與工業自動化全球供應商", body: "台達在電源、電力電子、EV 充電與工業自動化領域具全球布局，歐洲為能源轉型與製造自動化重點市場。", tags: ["電源", "EV 充電", "工業自動化"] },
     technology: { title: "電力電子與自動化解決方案", body: "重點包含電源轉換、通訊電源、EV 充電、資料中心電源、工業自動化與能源管理。", tags: ["Power Electronics", "EVSE", "Automation"] },
     partners: { title: "Eltek 與歐洲能源客戶", body: "需追蹤 Eltek、歐洲電力/通訊電源客戶、車用充電營運商與自動化系統夥伴。", tags: ["Eltek", "荷蘭", "斯洛伐克"] },
-    sites: [{ location: "台灣", role: "總部 / 研發與製造" }, { location: "荷蘭", role: "歐洲總部" }, { location: "斯洛伐克", role: "大型生產基地" }, { location: "德國", role: "自動化與研發節點" }],
+    sites: [
+      { location: "台灣台北／桃園／中壢／台南", role: "總部、研發與製造據點", source: "https://www.deltaww.com/en-US/company/global-operations" },
+      { location: "中國上海／東莞／吳江／郴州", role: "營運與製造據點", source: "https://www.deltaww.com/en-US/company/global-operations" },
+      { location: "泰國 Bangpoo／Wellgrow", role: "車用與電源產品製造據點", source: "https://www.deltaww.com/en-US/company/global-operations" },
+      { location: "印度 Gurgaon／Bangalore／Krishnagiri", role: "研發、辦公與製造據點", source: "https://www.deltaww.com/en-US/company/global-operations" },
+      { location: "日本東京／大阪／名古屋／熊本", role: "區域營運與技術服務據點", source: "https://www.deltaww.com/en-US/company/global-operations" },
+      { location: "越南 Hanoi", role: "東南亞營運據點", source: "https://www.deltaww.com/en-US/company/global-operations" },
+      { location: "新加坡", role: "東南亞營運據點", source: "https://www.deltaww.com/en-US/company/global-operations" }
+    ],
     newSites: [{ location: "斯洛伐克 / 德國", rationale: "EV 充電、資料中心電源與工業自動化需求可能帶動產線擴充。", status: "觀察中" }] },
   { id: "compal", name: "仁寶電腦工業股份有限公司", english: "Compal Electronics", role: "電腦代工、車用電子、電子控制單元；波蘭車用電子廠",
     monthlyAnalysis: "第一版聚焦波蘭車用電子廠與 ECU、ADAS/ADS 感測器產線。每日新聞需追蹤波蘭增資、車用電子客戶、歐洲車廠在地化與自動化組裝線。",
     profile: { title: "電腦代工與車用電子供應商", body: "仁寶除 PC/NB 代工外，近年車用電子布局是海外設廠觀察重點，波蘭可作為歐洲車廠與供應鏈入口。", tags: ["ODM", "車用電子", "波蘭"] },
     technology: { title: "ECU、ADAS/ADS 與電子控制模組", body: "重點技術包括電子控制單元、車用電子模組、自動化組裝測試、ADAS/ADS 感測器相關產品。", tags: ["ECU", "ADAS", "ADS"] },
     partners: { title: "歐洲車用電子客戶與 CGS Technology Poland", body: "需追蹤 CGS Technology Poland、歐洲車廠與 Tier 1 客戶合作。", tags: ["CGS Technology Poland", "車廠", "Tier 1"] },
-    sites: [{ location: "台灣", role: "總部 / 研發管理" }, { location: "波蘭", role: "車用電子製造與測試" }],
+    sites: [
+      { location: "台灣台北／桃園", role: "總部、研發與製造據點", source: "https://www.compal.com/en-us/contact-us/" },
+      { location: "越南 Vĩnh Phúc", role: "生產據點", source: "https://www.compal.com/en-us/contact-us/" },
+      { location: "波蘭 Łódź", role: "歐洲營運與服務據點", source: "https://www.compal.com/en-us/contact-us/" },
+      { location: "美國 Houston／Austin", role: "北美營運據點", source: "https://www.compal.com/en-us/contact-us/" },
+      { location: "巴西 Jundiaí", role: "製造與營運據點", source: "https://www.compal.com/en-us/contact-us/" },
+      { location: "中國昆山／南京／成都／重慶", role: "主要製造據點", source: "https://www.compal.com/static/file/CompalIntro_2025_EN.pdf" }
+    ],
     newSites: [{ location: "波蘭", rationale: "車用電子產能與 ADAS/ADS 感測器需求，需追蹤增資與產線擴充。", status: "進行中" }] },
   { id: "advantech", name: "研華股份有限公司", english: "Advantech", role: "工業電腦、Edge AI、智慧製造、IoT；荷蘭、德國歐洲據點",
     monthlyAnalysis: "第一版聚焦歐洲 Edge AI 與智慧製造落地。荷蘭 Eindhoven 服務中心與德國 Munich 創新中心可作為產業應用、客戶 PoC 與在地部署觀察點。",
     profile: { title: "工業電腦與邊緣智慧平台業者", body: "研華聚焦工業電腦、IoT、Edge AI 與智慧製造，歐洲市場重視在地方案驗證與垂直應用部署。", tags: ["IPC", "Edge AI", "IoT"] },
     technology: { title: "Edge AI 與智慧製造平台", body: "重點技術包含工業電腦、邊緣運算、智慧製造、IoT 平台與垂直領域應用。", tags: ["Edge AI", "智慧製造", "Sector-Lead"] },
     partners: { title: "歐洲系統整合商與在地企業", body: "需追蹤德國、荷蘭與歐洲 10 國辦公據點的系統整合商、製造業客戶與應用夥伴。", tags: ["Eindhoven", "Munich", "系統整合"] },
-    sites: [{ location: "台灣", role: "總部 / 研發管理" }, { location: "荷蘭 Eindhoven", role: "歐洲總部與服務中心" }, { location: "德國 Munich", role: "創新研發中心" }, { location: "歐洲多國", role: "辦公與銷售服務據點" }],
+    sites: [
+      { location: "台灣台北", role: "全球總部", source: "https://www.advantech.com/en/contact" },
+      { location: "荷蘭 Eindhoven", role: "歐洲總部、服務與物流中心", source: "https://page.advantech.com/europe-siot" },
+      { location: "德國 Munich／Germering", role: "歐洲創新中心", source: "https://siot.page.advantech.com/innovation-hub" },
+      { location: "波蘭 Warsaw", role: "歐洲維修服務據點", source: "https://page.advantech.com/europe-siot" },
+      { location: "美國", role: "美洲區域服務網絡", source: "https://www.advantech.com/en/contact" },
+      { location: "新加坡", role: "亞太區域服務網絡", source: "https://www.advantech.com/en/contact" }
+    ],
     newSites: [{ location: "德國 / 荷蘭", rationale: "Edge AI 與智慧製造方案需靠近製造客戶與系統整合商。", status: "觀察中" }] },
   { id: "kenmec", name: "廣運機械工程股份有限公司", english: "Kenmec Group", role: "智慧物流、自動倉儲、工業自動化、機器人整合",
     monthlyAnalysis: "第一版聚焦智慧物流、自動倉儲與歐洲自動化廠商合作。後續需追蹤 NEURA Robotics 等合作，以及方案是否輸出至歐洲製造、電商與航空業客戶。",
     profile: { title: "智慧物流與自動化系統整合業者", body: "廣運集團具智慧物流、自動倉儲與自動化生產設備能力，可支援製造業、電商與航空業自動化需求。", tags: ["智慧物流", "自動倉儲", "系統整合"] },
     technology: { title: "自動倉儲與機器人整合", body: "重點包含智慧物流系統、自動化倉儲、輸送設備、機器人與智慧工廠解決方案。", tags: ["AMR/AGV", "倉儲自動化", "機器人"] },
     partners: { title: "歐洲自動化與機器人廠商", body: "需追蹤與德國 NEURA Robotics 等自動化與機器人業者的技術合作。", tags: ["NEURA Robotics", "德國", "技術結盟"] },
-    sites: [{ location: "台灣", role: "總部 / 系統整合與製造" }, { location: "歐洲", role: "方案輸出與合作市場" }],
+    sites: [
+      { location: "台灣台北南港", role: "營運總部", source: "https://www.kenmec.com/tw/about.aspx" },
+      { location: "台灣瑞芳／平鎮／高雄", role: "自動化設備與系統製造據點", source: "https://www.kenmec.com/tw/about.aspx" },
+      { location: "中國蘇州／昆山", role: "自動化設備生產與服務據點", source: "https://www.kenmec.com/tw/about.aspx" },
+      { location: "越南 Hanoi", role: "生產據點", source: "https://www.kenmec.com/tw/about.aspx" }
+    ],
     newSites: [{ location: "德國 / 歐洲", rationale: "歐洲自動化與機器人合作可帶動展示、售服或整合據點需求。", status: "評估中" }] },
   { id: "shayang", name: "祥儀企業股份有限公司", english: "Shayang Ye Industrial", role: "微型齒輪箱、馬達、傳動模組、AGV/服務型機器人",
     monthlyAnalysis: "第一版聚焦高階微小型齒輪箱、電動工具、汽車零組件與自動化設備客戶。歐洲推廣重點可落在傳動模組、AGV 與服務型機器人。",
     profile: { title: "精密傳動與微型齒輪箱業者", body: "祥儀具微型馬達、齒輪箱與傳動模組能力，產品可支援電動工具、車用零件、自動化設備與機器人。", tags: ["微型齒輪箱", "馬達", "傳動模組"] },
     technology: { title: "微型傳動與機器人應用", body: "重點包含微型馬達、減速齒輪箱、AGV、服務型機器人與傳動模組客製化。", tags: ["Gearbox", "AGV", "服務型機器人"] },
     partners: { title: "歐洲設備與車用零組件客戶", body: "需追蹤歐洲電動工具、汽車零組件、自動化設備廠與機器人客戶。", tags: ["電動工具", "汽車零組件", "自動化設備"] },
-    sites: [{ location: "台灣", role: "總部 / 研發製造" }, { location: "歐洲", role: "外銷與推廣市場" }],
+    sites: [
+      { location: "台灣桃園", role: "企業總部與製造據點", source: "https://www.shayangye.com/zh-tw/company-profile" },
+      { location: "中國昆山", role: "製造據點", source: "https://www.shayangye.com/zh-tw/company-profile" },
+      { location: "中國深圳／上海", role: "海外辦事據點", source: "https://www.shayangye.com/zh-tw/company-profile" }
+    ],
     newSites: [{ location: "歐洲主要工業國", rationale: "高階傳動模組若進入車用與機器人供應鏈，需觀察代理、倉儲與售服節點。", status: "評估中" }] },
   { id: "aurotek", name: "和椿科技股份有限公司", english: "Aurotek Corporation", role: "工業自動化、機器人、控制元件代理、CNC/MES 整合",
     monthlyAnalysis: "第一版聚焦德國等歐洲自動化品牌代理、CNC 與 MES 解決方案輸出。後續新聞需追蹤代理權、系統整合案與智慧工廠專案。",
     profile: { title: "工業自動化與智慧工廠整合業者", body: "和椿以工業自動化元件代理、機器人應用、CNC 與 MES 整合為核心，具製造業數位轉型服務能力。", tags: ["工業自動化", "CNC", "MES"] },
     technology: { title: "CNC、MES 與自動化控制", body: "重點技術包含自動控制元件、工業機器人、CNC 數控系統、MES 與無人工廠整合方案。", tags: ["CNC", "MES", "無人工廠"] },
     partners: { title: "歐洲工業機器人與控制品牌", body: "需追蹤德國等歐洲品牌代理、技術合作與智慧工廠專案夥伴。", tags: ["德國品牌", "機器人", "代理整合"] },
-    sites: [{ location: "台灣", role: "總部 / 系統整合" }, { location: "歐洲", role: "技術代理與方案輸出市場" }],
+    sites: [
+      { location: "台灣台北", role: "營運總部", source: "https://jp.aurotek.com/about/locations/" },
+      { location: "台灣桃園／龜山／蘆竹", role: "製造與服務據點", source: "https://jp.aurotek.com/about/locations/" },
+      { location: "中國上海", role: "中國營運據點", source: "https://jp.aurotek.com/about/locations/" },
+      { location: "中國深圳", role: "中國服務據點", source: "https://jp.aurotek.com/about/locations/" }
+    ],
     newSites: [{ location: "德國 / 歐洲", rationale: "歐洲自動化品牌合作與智慧工廠專案可能帶動服務據點。", status: "觀察中" }] },
   { id: "ffg", name: "友嘉集團", english: "Fair Friend Group / FFG", role: "工具機、航太加工、汽車加工設備；義大利、德國、瑞士、法國布局",
     monthlyAnalysis: "第一版聚焦歐洲工具機併購整合與汽車/航太高階加工產線。友嘉在德國、義大利、瑞士與法國的實體產能，是園區與供應鏈韌性分析的重要案例。",
     profile: { title: "全球工具機與自動化加工設備集團", body: "友嘉集團透過歐洲品牌與工廠布局，服務汽車、航太、模具與精密加工市場。", tags: ["工具機", "航太加工", "汽車產線"] },
     technology: { title: "工具機、加工中心與 Turnkey Solutions", body: "重點包含立式/臥式加工中心、滾齒機、大型車床、旋轉式傳遞工具機與整廠自動化輸送工程。", tags: ["MAG", "Pfiffner", "Turnkey"] },
     partners: { title: "MAG、Pfiffner 與歐洲工具機品牌", body: "需追蹤 MAG、Pfiffner、Jobs、Sigma、Sachman、Rambaudi 等歐洲品牌與工廠整合。", tags: ["MAG", "Pfiffner", "德國"] },
-    sites: [{ location: "台灣", role: "集團管理" }, { location: "德國", role: "歐洲營運總部與工具機產能" }, { location: "義大利", role: "航太與大型模具加工設備" }, { location: "瑞士", role: "精密旋轉式傳遞工具機" }, { location: "法國 / 匈牙利", role: "歐洲生產基地" }],
+    sites: [
+      { location: "台灣", role: "集團管理與工具機生產基地", source: "https://www.ffg-tw.com/en/about/" },
+      { location: "德國", role: "工具機品牌與生產基地", source: "https://www.ffg-tw.com/en/about/" },
+      { location: "義大利", role: "工具機品牌與生產基地", source: "https://www.ffg-tw.com/en/about/" },
+      { location: "瑞士", role: "精密工具機生產基地", source: "https://www.ffg-tw.com/en/about/" },
+      { location: "美國", role: "工具機生產與行銷版圖", source: "https://www.ffg-tw.com/en/about/" },
+      { location: "日本", role: "工具機生產與行銷版圖", source: "https://www.ffg-tw.com/en/about/" },
+      { location: "韓國", role: "工具機生產與行銷版圖", source: "https://www.ffg-tw.com/en/about/" },
+      { location: "印度", role: "工具機生產與行銷版圖", source: "https://www.ffg-tw.com/en/about/" },
+      { location: "中國", role: "工具機生產與行銷版圖", source: "https://www.ffg-tw.com/en/about/" }
+    ],
     newSites: [{ location: "德國 / 義大利 / 瑞士", rationale: "歐洲實體產能與汽車、航太供應鏈在地化，需追蹤投資與產線更新。", status: "進行中" }] },
   { id: "bizlink", name: "貿聯控股", english: "BizLink Holding", role: "線束、連接線、工業應用、醫療與車用線束；塞爾維亞、斯洛伐克據點",
     monthlyAnalysis: "第一版聚焦 LEONI 相關事業收購整合、塞爾維亞與斯洛伐克歐洲製造基地。後續需追蹤 SMT、PVC 產線、工業自動化、醫療與車用線束訂單。",
     profile: { title: "連接線與線束解決方案供應商", body: "貿聯產品涵蓋連接線、線束、工業應用、醫療、機器人與車用線束，是歐洲製造在地化與高端客戶供應鏈觀察標的。", tags: ["線束", "連接線", "車用"] },
     technology: { title: "SMT、PVC 產線與高端線束", body: "重點包含表面黏著技術、PVC 膠料產線、工業應用線束、醫療與機器人連接解決方案。", tags: ["SMT", "PVC", "Industrial Cable"] },
     partners: { title: "LEONI 事業整合與歐洲客戶", body: "需追蹤 LEONI 電器線束與工業應用事業整合，以及 Bosch、Dyson 等高端客戶供應鏈。", tags: ["LEONI", "Bosch", "Dyson"] },
-    sites: [{ location: "台灣", role: "管理與研發" }, { location: "塞爾維亞", role: "歐洲製造基地" }, { location: "斯洛伐克", role: "歐洲製造基地" }],
+    sites: [
+      { location: "台灣新北／台南", role: "集團總部、研發與製造據點", source: "https://www.bizlinktech.com/our-locations" },
+      { location: "美國 Texas／California／Michigan", role: "北美製造、研發與服務據點", source: "https://www.bizlinktech.com/our-locations" },
+      { location: "墨西哥 Ciudad Juárez", role: "線束與連接產品製造據點", source: "https://www.bizlinktech.com/our-locations" },
+      { location: "斯洛伐克 Trenčín／Beckov／Stará Turá", role: "歐洲製造與系統整合據點", source: "https://www.bizlinktech.com/our-locations" },
+      { location: "塞爾維亞 Prokuplje", role: "歐洲製造據點", source: "https://www.bizlinktech.com/our-locations" },
+      { location: "德國 Neuburg an der Donau", role: "線束組裝與服務據點", source: "https://www.bizlinktech.com/our-locations" }
+    ],
     newSites: [{ location: "塞爾維亞 / 斯洛伐克", rationale: "LEONI 整合後歐洲產線延伸至半導體設備、工業自動化、醫療與車用線束。", status: "進行中" }] },
   { id: "chicony", name: "群光電子股份有限公司", english: "Chicony Electronics", role: "PC 周邊、鍵盤、電源、鏡頭模組；捷克廠",
     monthlyAnalysis: "第一版聚焦捷克廠服務歐洲一線 PC 品牌客戶。後續需追蹤東歐組裝、出貨、物流與關稅成本，以及 HP、Dell、Lenovo 等客戶在地供應鏈需求。",
     profile: { title: "PC 周邊與電子組裝供應商", body: "群光以鍵盤、電源、鏡頭模組與 PC 周邊為核心，捷克廠可支援歐洲品牌客戶短鏈供應。", tags: ["PC 周邊", "鍵盤", "鏡頭模組"] },
     technology: { title: "PC 零組件與消費電子組裝", body: "重點包含鍵盤、電源、鏡頭模組、消費性電子組裝與歐洲短鏈供應能力。", tags: ["Keyboard", "Power", "Camera Module"] },
     partners: { title: "歐洲 PC 品牌與消費電子客戶", body: "需追蹤 HP、Dell、Lenovo 等品牌客戶，以及捷克在地製造對交期與關稅的影響。", tags: ["HP", "Dell", "Lenovo"] },
-    sites: [{ location: "台灣", role: "總部 / 研發管理" }, { location: "捷克", role: "歐洲 PC 周邊與消費電子組裝" }],
+    sites: [
+      { location: "台灣新北", role: "集團總部", source: "https://www.chicony.com/chicony/jp/about/locations" },
+      { location: "捷克 Pardubice", role: "歐洲營運據點", source: "https://www.chicony.com/chicony/jp/about/locations" },
+      { location: "中國東莞／蘇州／重慶", role: "主要製造據點", source: "https://www.chicony.com/chicony/jp/about/locations" },
+      { location: "美國 Irvine／San Jose", role: "北美辦公據點", source: "https://www.chicony.com/chicony/jp/about/locations" },
+      { location: "日本東京", role: "日本營運據點", source: "https://www.chicony.com/chicony/jp/about/locations" }
+    ],
     newSites: [{ location: "捷克", rationale: "縮短歐洲交期、降低物流與關稅成本，滿足歐洲在地製造與風險分散需求。", status: "觀察中" }] },
   { id: "fortune", name: "華城電機股份有限公司", english: "Fortune Electric", role: "變壓器、電力設備、電網工程；北美 AI 資料中心商機",
     monthlyAnalysis: "第一版聚焦北美 AI 資料中心、電網更新與大型變壓器訂單。後續需特別標記 AIDC、電網韌性、變壓器交期、北美與歐洲市場投資拓展。",
     profile: { title: "變壓器與電力設備供應商", body: "華城以變壓器、開關設備與電力工程為核心，受惠資料中心、電網更新與能源基礎設施投資。", tags: ["變壓器", "電網", "AIDC"] },
     technology: { title: "大型變壓器與電力系統", body: "重點包含大型變壓器、配電設備、電網工程、資料中心電力設備與高可靠度供電系統。", tags: ["Transformer", "Grid", "Data Center Power"] },
     partners: { title: "北美資料中心與電網客戶", body: "需追蹤北美 AI 資料中心、電力公司、EPC 工程團隊與大型變壓器需求。", tags: ["北美", "AI 資料中心", "EPC"] },
-    sites: [{ location: "台灣", role: "總部 / 製造與工程" }, { location: "北美", role: "資料中心與電網需求市場" }, { location: "歐洲", role: "投資與拓展觀察市場" }],
+    sites: [
+      { location: "台灣桃園中壢", role: "總公司及中壢廠", source: "https://www.fortune.com.tw/tw/contact_map.aspx" },
+      { location: "台灣桃園觀音", role: "觀音二廠及觀音三廠", source: "https://www.fortune.com.tw/tw/contact_map.aspx" },
+      { location: "台灣台中梧棲", role: "華城重電據點", source: "https://www.fortune.com.tw/tw/contact_map.aspx" },
+      { location: "美國 Pennsylvania／Hermitage", role: "北美辦事處", source: "https://www.fortune.com.tw/tw/contact_map.aspx" },
+      { location: "美國 California／Torrance", role: "Fortune Electric America 辦事處", source: "https://www.fortune.com.tw/tw/contact_map.aspx" }
+    ],
     newSites: [{ location: "北美", rationale: "AI 資料中心與電網更新需求推升大型變壓器訂單，需追蹤在地服務或產能布局。", status: "評估中" }, { location: "歐洲", rationale: "能源轉型與電網升級可能形成市場拓展機會。", status: "觀察中" }] }
 ];
 
@@ -556,14 +673,24 @@ const FOXCONN = {
   },
   sites: {
     items: [
-      { location: "台灣（總部）", role: "總部 / 核心製造" },
-      { location: "美國", role: "美洲入口 / AI 伺服器客戶服務" },
-      { location: "墨西哥", role: "美洲入口 / 組裝製造" },
-      { location: "越南", role: "亞洲入口 / 分散產能" },
-      { location: "捷克", role: "歐洲入口 / AI・機器人展示" },
-      { location: "斯洛伐克", role: "歐洲入口 / 製造據點" }
+      { location: "台灣", role: "全球總部、研發與製造據點", source: "https://www.honhai.com/en-us/about/worldwide?anchor=enterprises" },
+      { location: "中國", role: "主要研發、設計與製造基地", source: "https://www.honhai.com/en-us/about/worldwide?anchor=enterprises" },
+      { location: "越南", role: "亞洲製造與交付據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "印度", role: "亞洲製造與交付據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "馬來西亞", role: "亞洲製造與交付據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "泰國", role: "亞洲製造與交付據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "美國", role: "美洲研發、製造與交付據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "墨西哥", role: "美洲研發、製造與交付據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "巴西", role: "美洲研發、製造與交付據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "捷克", role: "歐洲製造與交付據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "匈牙利", role: "歐洲製造與交付據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "斯洛伐克", role: "歐洲製造與交付據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "新加坡", role: "亞太營運據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "日本", role: "亞太營運據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" },
+      { location: "澳洲", role: "亞太營運據點", source: "https://image.honhai.com/upload/202509/global/HH_SR_2024_Full_Version_-Eng_v3_20250930_4152.pdf" }
     ]
   },
+  sitesVerified: "2026-07-21",
   newSites: {
     items: [
       { location: "法國（Tessalia）", rationale: "先進封裝合資，與 Thales、Radiall 共同投資", status: "進行中" },
@@ -617,10 +744,24 @@ class Component extends DCLogic {
 
   geocode(location) {
     const table = [
+      ["Brno", [16.61, 49.2]], ["Ciudad Juárez", [-106.49, 31.69]], ["Penang", [100.33, 5.41]],
+      ["Hanoi", [105.85, 21.03]], ["Round Rock", [-97.68, 30.51]], ["Wrocław", [17.04, 51.11]],
+      ["Plzeň", [13.38, 49.75]], ["Bedford", [-0.47, 52.14]], ["La Soukra", [10.25, 36.88]],
+      ["Rayong", [101.28, 12.68]], ["Nghệ An", [104.92, 19.23]], ["Milpitas", [-121.9, 37.43]],
+      ["Moss", [10.66, 59.43]], ["Łódź", [19.46, 51.76]], ["Jundiaí", [-46.88, -23.19]],
+      ["Eindhoven", [5.47, 51.44]], ["Munich", [11.58, 48.14]], ["Warsaw", [21.01, 52.23]],
+      ["Pardubice", [15.78, 50.03]], ["Hermitage", [-80.45, 41.23]], ["Torrance", [-118.34, 33.84]],
+      ["Prokuplje", [21.59, 43.23]], ["Trenčín", [18.04, 48.89]],
       ["台灣", [121.0, 23.7]], ["美國", [-98.5, 39.8]], ["墨西哥", [-102.5, 23.6]], ["越南", [105.8, 21.0]],
       ["捷克", [15.5, 49.8]], ["斯洛伐克", [19.7, 48.7]], ["法國", [2.2, 46.6]], ["波蘭", [19.1, 52.0]],
       ["德國", [10.5, 51.2]], ["義大利", [12.6, 42.8]], ["荷蘭", [5.3, 52.1]], ["挪威", [8.5, 60.5]],
-      ["塞爾維亞", [20.9, 44.0]], ["烏克蘭", [31.2, 48.4]], ["瑞士", [8.2, 46.8]], ["北美", [-97.0, 38.0]],
+      ["塞爾維亞", [20.9, 44.0]], ["烏克蘭", [31.2, 48.4]], ["瑞士", [8.2, 46.8]],
+      ["中國", [104.2, 35.9]], ["印度", [78.96, 20.59]], ["新加坡", [103.82, 1.35]],
+      ["日本", [138.25, 36.2]], ["澳洲", [133.78, -25.27]], ["馬來西亞", [101.98, 4.21]],
+      ["泰國", [100.99, 15.87]], ["匈牙利", [19.5, 47.16]], ["巴西", [-51.93, -14.24]],
+      ["英國", [-3.44, 55.38]], ["突尼西亞", [9.54, 33.89]], ["韓國", [127.77, 35.91]],
+      ["菲律賓", [121.77, 12.88]], ["印尼", [113.92, -0.79]], ["加拿大", [-106.35, 56.13]],
+      ["愛爾蘭", [-8.24, 53.41]], ["比利時", [4.47, 50.5]], ["北美", [-97.0, 38.0]],
       ["歐洲", [10.5, 50.0]]
     ];
     for (const [key, coord] of table) {
@@ -720,7 +861,7 @@ const uniqueIndustryNews = INDUSTRY_NEWS
     const company = {
       ...raw,
       website: COMPANY_WEBSITES[raw.id],
-      mapUrl: this.buildMapUrl(raw.sites.items, raw.newSites.items),
+      mapUrl: this.buildMapUrl(raw.sites.items, []),
       newsCount: raw.timeline.length,
       overseasCount: raw.timeline.filter((t) => t.overseas).length,
       techTagCount: raw.technology.tags.length,
