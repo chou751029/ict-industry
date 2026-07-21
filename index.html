@@ -111,8 +111,8 @@
       <section style="margin-bottom:26px;overflow:hidden;border:1px solid rgba(28,53,58,0.2);border-radius:10px;background:#ffffff;">
         <div class="industry-header" style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;padding:18px 20px;border-bottom:1px solid rgba(28,53,58,0.14);background:#f4eee2;">
           <div>
-            <p style="margin:0 0 6px;font-size:11px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">Daily ICT Intelligence</p>
-            <h2 style="margin:0 0 4px;font-size:20px;color:#1c3f45;">每日 ICT 產業新聞</h2>
+            <p style="margin:0 0 6px;font-size:11px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">Recent ICT Intelligence</p>
+            <h2 style="margin:0 0 4px;font-size:20px;color:#1c3f45;">近期 ICT 產業新聞</h2>
             <p style="margin:0;font-size:13px;color:#6f6a5e;">跨企業追蹤半導體、AI 伺服器、資料中心、電子製造與各國設廠政策。</p>
           </div>
           <div class="industry-meta" style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
@@ -368,6 +368,12 @@ const COMPANY_WEBSITES = {
 };
 
 const INDUSTRY_NEWS = [
+  { collected: "2026-07-21", date: "2026-07-20", region: "美國／南卡羅來納州", market: "foreign", category: "AI 資料中心／能源政策", title: "NNSA Selects Amentum for AI Data Center and Energy Project at Savannah River Site", source: "U.S. Department of Energy / NNSA", link: "https://www.energy.gov/nnsa/articles/nnsa-selects-amentum-ai-data-center-and-energy-project-savannah-river-site", summary: "美國能源部 NNSA 選定 Amentum 進入分階段租賃協商，規劃在 Savannah River Site 建置 1GW AI 資料中心，搭配約 2GW 現地發電；目前仍須完成租約協商、許可與安全審查。", signal: "明確選址訊號", language: "英文" },
+  { collected: "2026-07-21", date: "2026-07-20", region: "美國", market: "foreign", category: "光纖連接／供應鏈擴產", title: "Molex Announces Long-Term Supply Agreement with Prysmian to Accelerate Support for Data Center Growth and AI-Driven Demand", source: "Molex", link: "https://www.molex.com/en-us/news/molex-announces-long-term-supply-agreement-with-prysmian-to-accelerate-support-for-data-center-growth-and-ai-driven-demand", summary: "Molex 與 Prysmian 簽署最長 10 年光纖供應協議，將擴大美國光纖與光纜生產、使 Prysmian 美國光纖產能倍增，支援 AI 資料中心高速連接需求與供應鏈韌性。", signal: "明確擴產訊號", language: "英文" },
+  { collected: "2026-07-21", date: "2026-07-20", region: "美國／德國", market: "foreign", category: "半導體設計／企業併購", title: "Siemens to acquire Precision Innovations to expand AI-powered system-on-a-chip design exploration and optimization", source: "Siemens Industry Software / PR Newswire", link: "https://www.prnewswire.com/news-releases/siemens-to-acquire-precision-innovations-to-expand-ai-powered-system-on-a-chip-design-exploration-and-optimization-302829701.html", summary: "Siemens 將收購 EDA 軟體公司 Precision Innovations，補強以 AI 進行 SoC 早期架構探索與功耗、效能、面積最佳化的能力；交易預計於 2026 年第三季完成。", signal: "技術整合訊號", language: "英文" },
+  { collected: "2026-07-21", date: "2026-07-20", region: "比利時／全球", market: "foreign", category: "矽光子／異質整合", title: "IEEE Study Highlights How Micro-Transfer Printing Can Lead to Advanced Silicon Photonics", source: "IEEE Photonics Society / PR Newswire", link: "https://www.prnewswire.com/news-releases/ieee-study-highlights-how-micro-transfer-printing-can-lead-to-advanced-silicon-photonics-302828743.html", summary: "IEEE Photonics Society 彙整微轉印於矽光子異質整合的最新進展，並指出相關試驗線正朝大量製造驗證推進；此技術可支援 AI 基礎設施所需的高頻寬光互連。", signal: "關鍵技術訊號", language: "英文" },
+  { collected: "2026-07-21", date: "2026-07-15", region: "印度", market: "foreign", category: "政策補助／半導體製造", title: "Cabinet approves Semicon 2.0 - Government delivers on its commitment for a long-term policy support to Semiconductors in India", source: "India Press Information Bureau", link: "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2284796&lang=1&reg=48", summary: "印度內閣核准總額 1.275 兆盧比的 Semicon 2.0，涵蓋晶片設計、設備材料、更多晶圓廠與先進 ATMP／OSAT；政策明確以吸引國際業者赴印度設廠及強化供應鏈韌性為目標。", signal: "重大政策訊號", language: "英文" },
+  { collected: "2026-07-21", date: "2026-07-09", region: "美國／紐約州", market: "foreign", category: "記憶體／晶圓廠建設", title: "Micron Accelerates U.S. Investments, Pours First Concrete at New York Fab", source: "Micron Technology", link: "https://investors.micron.com/news-releases/news-release-details/micron-accelerates-us-investments-pours-first-concrete-new-york", summary: "Micron 將 2035 年前美國投資規模提高至逾 2,500 億美元，紐約州 Clay 廠提前完成首次灌漿並轉入垂直建設，長期目標是在美國生產約 40% 的 DRAM。", signal: "明確建廠訊號", language: "英文" },
   { collected: "2026-07-21", date: "2026-07-16", region: "美國／台灣", market: "foreign", category: "半導體／海外投資", title: "TSMC pledges another US$100 billion to expand U.S. chipmaking capacity", source: "Associated Press", link: "https://apnews.com/article/ba05b1b952257d371acb9d070e7914ff", summary: "台積電擴大美國晶片製造承諾，反映 AI 與資料中心需求推動先進製程產能全球化；後續需追蹤廠址、建廠時程與供應商在地化。", signal: "明確設廠訊號", language: "英文" },
   { collected: "2026-07-21", date: "2026-07-14", region: "日本", market: "foreign", category: "矽光子／先進封裝", title: "Tower Semiconductor with METI Support Announces Strategic Capacity Expansion in Japan", source: "Tower Semiconductor", link: "https://towersemi.com/2026/07/14/07142026/", summary: "Tower 在日本擴充 300mm 矽光子、SiGe 與先進封裝研發製造能力，並規劃魚津相鄰新廠，直接連動 AI 資料中心光互連供應鏈。", signal: "明確設廠訊號", language: "英文" },
   { collected: "2026-07-21", date: "2026-07-14", region: "德國／歐盟", market: "foreign", category: "政策補助／半導體設廠", title: "Vier neue Halbleiteranlagen: Kommission genehmigt Beihilfe Deutschlands in Höhe von 659 Millionen Euro", source: "European Commission", link: "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/vier-neue-halbleiteranlagen-kommission-genehmigt-beihilfe-deutschlands-hohe-von-659-millionen-euro-2026-07-14_de", summary: "歐盟核准德國 6.59 億歐元補助四項半導體設施，涵蓋 SiC 磊晶、功率 MOSFET、量測設備及專用偵測晶片。", signal: "明確設廠訊號", language: "德文" },
@@ -662,8 +668,11 @@ class Component extends DCLogic {
     const totalNews = COMPANIES.reduce((sum, c) => sum + c.timeline.length, 0);
     const totalOverseas = COMPANIES.reduce((sum, c) => sum + countOverseas(c), 0);
 
-    const latestCollected = INDUSTRY_NEWS.reduce((latest, n) => (n.collected > latest ? n.collected : latest), "");
-    const industryNewsItems = INDUSTRY_NEWS.map((n) => ({
+const uniqueIndustryNews = INDUSTRY_NEWS
+  .filter((news, index, items) => items.findIndex((item) => item.link === news.link) === index)
+  .sort((a, b) => b.date.localeCompare(a.date));
+    const latestCollected = uniqueIndustryNews.reduce((latest, n) => (n.collected > latest ? n.collected : latest), "");
+    const industryNewsItems = uniqueIndustryNews.map((n) => ({
       ...n,
       marketLabel: n.market === "domestic" ? "國內" : "國外",
       marketStyle: n.market === "domestic" ? "background:rgba(31,111,92,0.12);color:#1f6f5c;" : "background:rgba(178,89,31,0.12);color:#b2591f;"
