@@ -1,36 +1,694 @@
-<!doctype html>
-<html lang="zh-Hant">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ICT 企業跨國設廠追蹤平台</title>
-    <meta
-      name="description"
-      content="TEEMA ICT 企業新聞、既有據點、新據點評估與跨國設廠訊號追蹤平台"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <button class="brand" type="button" data-action="overview" aria-label="回到企業總覽">
-        <span class="brand-mark">IC</span>
-        <span>
-          <span class="brand-kicker">TEEMA ICT Watch</span>
-          <span class="brand-title">ICT 企業跨國設廠追蹤平台</span>
-        </span>
-      </button>
-      <a
-        class="sheet-link"
-        href="https://docs.google.com/spreadsheets/d/1TQk-ukytA0HGrhG95xY3xVPKu16404pSeO78cf1e5vg/edit"
-        target="_blank"
-        rel="noreferrer"
-      >
-        追蹤資料 Google 試算表
-      </a>
-    </header>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    body { margin: 0; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif; }
+    a { color: #1f6f5c; }
+    a:hover { color: #16493d; }
+    * { box-sizing: border-box; }
+    @media (max-width: 720px) {
+      .site-header { padding: 14px 18px !important; gap: 12px !important; }
+      .site-brand { min-width: 0; gap: 10px !important; }
+      .site-brand-title { font-size: 14px !important; line-height: 1.35; }
+      .sheet-link { flex: 0 0 138px; height: auto !important; min-height: 38px; padding: 7px 10px !important; justify-content: center; text-align: center; line-height: 1.35; }
+      .overview-intro, .detail-hero, .company-section-heading { display: block !important; }
+      .overview-stats, .detail-stats { width: 100%; margin-top: 16px; display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .overview-stats > div, .detail-stats > div { min-width: 0 !important; padding: 10px 6px !important; }
+      .industry-header { align-items: flex-start !important; padding: 16px !important; }
+      .industry-meta { align-items: flex-start !important; }
+      .industry-news-row { grid-template-columns: minmax(0, 1fr) !important; gap: 10px !important; padding: 15px 16px !important; }
+      .industry-news-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+      .industry-news-meta span { margin-top: 0 !important; }
+      .industry-news-source { padding: 10px 0 0 !important; border-left: 0 !important; border-top: 1px solid rgba(28,53,58,0.14); }
+      .company-section-heading { margin-bottom: 16px !important; }
+      .company-section-heading > p { margin-top: 8px !important; text-align: left !important; }
+      .location-grid, .detail-main-grid { grid-template-columns: minmax(0, 1fr) !important; }
+      .site-row { grid-template-columns: minmax(0, 1fr) !important; }
+      .site-map { height: 340px !important; }
+    }
+    @media (max-width: 420px) {
+      .overview-stats, .detail-stats { gap: 6px !important; }
+      .overview-stats > div, .detail-stats > div { padding-inline: 4px !important; }
+    }
+  </style>
+</helmet>
+<div style="min-height:100vh;background:#f6f4ee;color:#1e2a2e;">
 
-    <main id="app"></main>
+  <header class="site-header" style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px clamp(18px,4vw,48px);border-bottom:1px solid rgba(28,53,58,0.14);background:#fbf9f3;">
+    <div class="site-brand" style="display:flex;align-items:center;gap:14px;cursor:pointer;" onClick="{{ goOverview }}">
+      <div style="width:34px;height:34px;border-radius:6px;background:#1c3f45;display:flex;align-items:center;justify-content:center;color:#f6f4ee;font-weight:800;font-size:13px;">IC</div>
+      <div>
+        <p style="margin:0;font-size:11px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:#1f6f5c;">TEEMA ICT Watch</p>
+        <p class="site-brand-title" style="margin:0;font-size:16px;font-weight:800;color:#1c3f45;">ICT 企業跨國設廠追蹤平台</p>
+      </div>
+    </div>
+    <a class="sheet-link" style="display:inline-flex;align-items:center;height:38px;padding:0 14px;border-radius:7px;background:#1c3f45;color:#fbf9f3;font-size:13px;font-weight:700;text-decoration:none;" href="https://docs.google.com/spreadsheets/d/1TQk-ukytA0HGrhG95xY3xVPKu16404pSeO78cf1e5vg/edit" target="_blank" rel="noreferrer">企業名單 Google 試算表 ↗</a>
+  </header>
 
-    <script src="./app.js"></script>
-  </body>
+  <sc-if value="{{ isOverview }}" hint-placeholder-val="{{ true }}">
+    <main style="max-width:1280px;margin:0 auto;padding:28px clamp(18px,4vw,48px) 60px;">
+
+      <section class="overview-intro" style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;justify-content:space-between;margin-bottom:22px;">
+        <div>
+          <h1 style="margin:0 0 6px;font-size:28px;color:#1c3f45;">17 家企業總覽儀表板</h1>
+          <p style="margin:0;color:#6f6a5e;font-size:14px;max-width:640px;line-height:1.6;">每日彙整企業新聞、既有據點與新據點評估動態，優先掌握海外設廠相關訊號。</p>
+        </div>
+        <div class="overview-stats" style="display:flex;gap:10px;">
+          <div style="min-width:110px;padding:10px 14px;border:1px solid rgba(28,53,58,0.14);border-radius:8px;background:#ffffff;text-align:center;">
+            <p style="margin:0;font-size:20px;font-weight:800;color:#1c3f45;">{{ totalCompanies }}</p>
+            <p style="margin:2px 0 0;font-size:11px;color:#6f6a5e;">追蹤企業</p>
+          </div>
+          <div style="min-width:110px;padding:10px 14px;border:1px solid rgba(28,53,58,0.14);border-radius:8px;background:#ffffff;text-align:center;">
+            <p style="margin:0;font-size:20px;font-weight:800;color:#1f6f5c;">{{ totalNews }}</p>
+            <p style="margin:2px 0 0;font-size:11px;color:#6f6a5e;">已建檔新聞則數</p>
+          </div>
+          <div style="min-width:110px;padding:10px 14px;border:1px solid rgba(28,53,58,0.14);border-radius:8px;background:#ffffff;text-align:center;">
+            <p style="margin:0;font-size:20px;font-weight:800;color:#b2591f;">{{ totalOverseas }}</p>
+            <p style="margin:2px 0 0;font-size:11px;color:#6f6a5e;">海外設廠訊號</p>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin-bottom:26px;overflow:hidden;border:1px solid rgba(28,53,58,0.2);border-radius:10px;background:#ffffff;">
+        <div class="industry-header" style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;padding:18px 20px;border-bottom:1px solid rgba(28,53,58,0.14);background:#f4eee2;">
+          <div>
+            <p style="margin:0 0 6px;font-size:11px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">Daily ICT Intelligence</p>
+            <h2 style="margin:0 0 4px;font-size:20px;color:#1c3f45;">每日 ICT 產業新聞</h2>
+            <p style="margin:0;font-size:13px;color:#6f6a5e;">跨企業追蹤半導體、AI 伺服器、資料中心、電子製造與各國設廠政策。</p>
+          </div>
+          <div class="industry-meta" style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
+            <span style="font-size:11px;color:#6f6a5e;font-weight:700;">最後蒐集 {{ latestCollected }}</span>
+            <a href="{{ industryNewsSheetUrl }}" target="_blank" rel="noreferrer" style="font-size:13px;font-weight:800;">開啟 ICT 產業新聞工作表 ↗</a>
+          </div>
+        </div>
+        <div style="display:grid;">
+          <sc-for list="{{ industryNewsVisible }}" as="n" hint-placeholder-count="6">
+            <article class="industry-news-row" style="display:grid;grid-template-columns:110px minmax(0,1fr) 160px;gap:18px;align-items:start;padding:16px 20px;border-top:1px solid rgba(28,53,58,0.1);">
+              <div class="industry-news-meta">
+                <time style="display:block;color:#1c3f45;font-weight:800;font-size:13px;">{{ n.date }}</time>
+                <span style="display:block;margin-top:5px;color:#6f6a5e;font-size:12px;">{{ n.region }}</span>
+              </div>
+              <div>
+                <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;">
+                  <span style="padding:3px 7px;border-radius:4px;font-size:11px;font-weight:800;{{ n.marketStyle }}">{{ n.marketLabel }}</span>
+                  <span style="padding:3px 7px;border-radius:4px;background:#efeadf;color:#6f6a5e;font-size:11px;font-weight:700;">{{ n.category }}</span>
+                  <span style="padding:3px 7px;border-radius:4px;background:#efeadf;color:#6f6a5e;font-size:11px;font-weight:700;">{{ n.language }}</span>
+                  <span style="padding:3px 7px;border-radius:4px;background:rgba(178,89,31,0.12);color:#b2591f;font-size:11px;font-weight:800;">{{ n.signal }}</span>
+                </div>
+                <h3 style="margin:0 0 6px;font-size:15px;color:#1c3f45;font-weight:800;line-height:1.45;"><a href="{{ n.link }}" target="_blank" rel="noreferrer" style="text-decoration:none;">{{ n.title }}</a></h3>
+                <p style="margin:0;font-size:13px;color:#6f6a5e;line-height:1.6;">{{ n.summary }}</p>
+              </div>
+              <a class="industry-news-source" href="{{ n.link }}" target="_blank" rel="noreferrer" style="display:block;padding-left:14px;border-left:2px solid rgba(28,53,58,0.2);text-decoration:none;">
+                <span style="display:block;margin-bottom:4px;font-size:11px;color:#6f6a5e;font-weight:700;">資料來源</span>
+                <strong style="display:block;font-size:12.5px;color:#1f6f5c;line-height:1.4;overflow-wrap:anywhere;">{{ n.source }}</strong>
+              </a>
+            </article>
+          </sc-for>
+        </div>
+        <sc-if value="{{ hasMoreIndustryNews }}" hint-placeholder-val="{{ false }}">
+          <button type="button" style="display:block;margin:16px auto 18px;padding:8px 16px;border:1px solid rgba(28,53,58,0.2);border-radius:7px;background:#ffffff;color:#1f6f5c;font-size:13px;font-weight:800;cursor:pointer;" onClick="{{ showMoreIndustryNews }}">看更多新聞</button>
+        </sc-if>
+      </section>
+
+      <div class="company-section-heading" style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:14px;">
+        <div>
+          <p style="margin:0 0 4px;font-size:11px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">Company Watchlist</p>
+          <h2 style="margin:0;font-size:20px;color:#1c3f45;">17 家企業追蹤</h2>
+        </div>
+        <p style="margin:0;max-width:420px;text-align:right;font-size:13px;color:#6f6a5e;line-height:1.6;">點選企業查看公司簡介、產品技術、合作業者、全球據點與新據點評估。</p>
+      </div>
+
+      <section style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;">
+        <sc-for list="{{ overviewCompanies }}" as="c" hint-placeholder-count="17">
+          <article style="display:flex;flex-direction:column;gap:10px;padding:16px;border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;cursor:pointer;" onClick="{{ c.onOpen }}">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;">
+              <div>
+                <h3 style="margin:0 0 3px;font-size:16px;color:#1c3f45;line-height:1.3;">{{ c.shortName }}</h3>
+                <p style="margin:0;font-size:11px;color:#6f6a5e;">{{ c.english }}</p>
+              </div>
+              <span style="flex:0 0 auto;padding:3px 8px;border-radius:6px;font-size:11px;font-weight:800;{{ c.statusStyle }}">{{ c.statusLabel }}</span>
+            </div>
+            <p style="margin:0;font-size:12.5px;color:#6f6a5e;line-height:1.55;min-height:36px;">{{ c.role }}</p>
+            <div style="display:flex;gap:8px;padding-top:8px;border-top:1px solid rgba(28,53,58,0.1);font-size:12px;color:#6f6a5e;">
+              <span style="white-space:nowrap;flex-shrink:0;">📰 {{ c.newsCount }} 則新聞</span>
+              <span style="white-space:nowrap;flex-shrink:0;color:#b2591f;font-weight:700;">🏗 {{ c.overseasCount }} 海外設廠</span>
+            </div>
+          </article>
+        </sc-for>
+      </section>
+    </main>
+  </sc-if>
+
+  <sc-if value="{{ isDetail }}" hint-placeholder-val="{{ false }}">
+    <main style="max-width:1280px;margin:0 auto;padding:24px clamp(18px,4vw,48px) 60px;">
+
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;font-size:13px;color:#6f6a5e;">
+        <span style="cursor:pointer;color:#1f6f5c;font-weight:700;" onClick="{{ goOverview }}">企業總覽</span>
+        <span>›</span>
+        <span style="color:#1c3f45;font-weight:700;">{{ company.shortName }}</span>
+      </div>
+
+      <section class="detail-hero" style="display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start;justify-content:space-between;padding-bottom:18px;border-bottom:1px solid rgba(28,53,58,0.14);margin-bottom:20px;">
+        <div style="max-width:640px;">
+          <p style="margin:0 0 6px;font-size:12px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">{{ company.english }}</p>
+          <h1 style="margin:0 0 8px;font-size:30px;color:#1c3f45;line-height:1.25;">{{ company.name }}</h1>
+          <p style="margin:0;font-size:13.5px;color:#6f6a5e;line-height:1.6;">{{ company.role }}</p>
+        </div>
+        <div class="detail-stats" style="display:flex;gap:10px;">
+          <div style="min-width:96px;padding:10px 12px;border:1px solid rgba(28,53,58,0.14);border-radius:8px;background:#ffffff;text-align:center;">
+            <p style="margin:0;font-size:18px;font-weight:800;color:#1c3f45;">{{ company.newsCount }}</p>
+            <p style="margin:2px 0 0;font-size:11px;color:#6f6a5e;">新聞則數</p>
+          </div>
+          <div style="min-width:96px;padding:10px 12px;border:1px solid rgba(28,53,58,0.14);border-radius:8px;background:#ffffff;text-align:center;">
+            <p style="margin:0;font-size:18px;font-weight:800;color:#b2591f;">{{ company.overseasCount }}</p>
+            <p style="margin:2px 0 0;font-size:11px;color:#6f6a5e;">海外設廠訊號</p>
+          </div>
+          <div style="min-width:96px;padding:10px 12px;border:1px solid rgba(28,53,58,0.14);border-radius:8px;background:#ffffff;text-align:center;">
+            <p style="margin:0;font-size:12px;font-weight:700;color:#6f6a5e;">更新</p>
+            <p style="margin:2px 0 0;font-size:13px;font-weight:800;color:#1c3f45;">{{ company.updated }}</p>
+          </div>
+        </div>
+      </section>
+
+      <section style="padding:20px 22px;margin-bottom:26px;border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#fffdf8;">
+        <p style="margin:0 0 10px;font-size:12px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">近一個月動態分析</p>
+        <p style="margin:0;font-size:14.5px;color:#1c3f45;line-height:1.85;">{{ company.monthlyAnalysis }}</p>
+      </section>
+
+      <section style="margin-bottom:20px;">
+        <div class="location-grid" style="display:grid;grid-template-columns:minmax(280px,1fr) minmax(280px,1fr);gap:14px;margin-bottom:14px;align-items:start;">
+          <article style="border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;padding:16px;">
+            <p style="margin:0 0 8px;font-size:11px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">既有據點</p>
+            <div style="display:grid;gap:6px;">
+              <sc-for list="{{ company.sites.items }}" as="s" hint-placeholder-count="4">
+                <div class="site-row" style="display:grid;grid-template-columns:1fr auto;gap:6px;padding:7px 9px;border-radius:6px;background:#f6f4ee;font-size:12.5px;">
+                  <span style="color:#1c3f45;font-weight:700;">{{ s.location }}</span>
+                  <span style="color:#6f6a5e;">{{ s.role }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </article>
+
+          <article style="border:1.5px solid #b2591f;border-radius:10px;background:rgba(178,89,31,0.05);padding:16px;">
+            <p style="margin:0 0 8px;font-size:11px;font-weight:800;color:#b2591f;text-transform:uppercase;letter-spacing:0.04em;">新據點評估地點</p>
+            <div style="display:grid;gap:8px;">
+              <sc-for list="{{ company.newSites.items }}" as="n" hint-placeholder-count="3">
+                <div style="padding:9px 10px;border-radius:6px;background:#ffffff;border:1px solid rgba(178,89,31,0.25);">
+                  <div style="display:flex;align-items:center;justify-content:space-between;gap:6px;margin-bottom:3px;">
+                    <span style="font-size:13px;font-weight:800;color:#1c3f45;">{{ n.location }}</span>
+                    <span style="font-size:11px;font-weight:800;color:#b2591f;">{{ n.status }}</span>
+                  </div>
+                  <p style="margin:0;font-size:12px;color:#6f6a5e;line-height:1.55;">{{ n.rationale }}</p>
+                </div>
+              </sc-for>
+            </div>
+          </article>
+        </div>
+
+        <article style="border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;padding:14px;">
+          <p style="margin:0 0 10px;font-size:11px;font-weight:800;color:#1c3f45;text-transform:uppercase;letter-spacing:0.04em;">全球據點地圖</p>
+          <iframe class="site-map" src="{{ company.mapUrl }}" title="全球據點地圖" style="width:100%;height:420px;border:0;border-radius:8px;"></iframe>
+        </article>
+      </section>
+
+      <section class="detail-main-grid" style="display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,0.9fr);gap:20px;align-items:start;">
+
+        <article style="border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;padding:18px;">
+          <div style="margin-bottom:14px;">
+            <h2 style="margin:0 0 10px;font-size:17px;color:#1c3f45;">企業新聞時間軸</h2>
+            <p style="margin:0 0 6px;font-size:11px;color:#6f6a5e;">時間區間</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+              <sc-for list="{{ timeRangeOptions }}" as="opt" hint-placeholder-count="4">
+                <button type="button" style="border:1px solid;border-radius:7px;padding:5px 10px;font-size:12px;font-weight:700;cursor:pointer;{{ opt.style }}" onClick="{{ opt.onClick }}">{{ opt.label }}</button>
+              </sc-for>
+            </div>
+          </div>
+
+          <sc-if value="{{ company.hasTimeline }}" hint-placeholder-val="{{ true }}">
+            <div style="display:grid;gap:12px;">
+              <sc-for list="{{ timelineFiltered }}" as="t" hint-placeholder-count="4">
+                <div style="position:relative;padding:12px 14px 12px 16px;border:1px solid rgba(28,53,58,0.12);border-left:3px solid {{ t.borderColor }};border-radius:8px;background:#fdfcf8;">
+                  <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:5px;">
+                    <span style="font-size:11px;font-weight:800;color:#6f6a5e;">{{ t.date }}</span>
+                    <span style="padding:2px 7px;border-radius:5px;background:#efeadf;color:#6f6a5e;font-size:11px;font-weight:700;">{{ t.tag }}</span>
+                    <span style="padding:2px 7px;border-radius:5px;background:rgba(31,111,92,0.12);color:#1f6f5c;font-size:11px;font-weight:800;">{{ t.sourceLabel }}</span>
+                    <span style="padding:2px 7px;border-radius:5px;{{ t.marketStyle }}font-size:11px;font-weight:800;">{{ t.marketLabel }}</span>
+                    <sc-if value="{{ t.overseas }}" hint-placeholder-val="{{ false }}">
+                      <span style="padding:2px 7px;border-radius:5px;background:rgba(178,89,31,0.12);color:#b2591f;font-size:11px;font-weight:800;">🏗 海外設廠</span>
+                    </sc-if>
+                  </div>
+                  <p style="margin:0 0 6px;font-size:14px;color:#1c3f45;font-weight:700;line-height:1.45;">{{ t.title }}</p>
+                  <a href="{{ t.link }}" target="_blank" rel="noreferrer" style="font-size:12px;font-weight:700;text-decoration:none;">{{ t.linkLabel }} ↗</a>
+                </div>
+              </sc-for>
+            </div>
+            <sc-if value="{{ hasMoreNews }}" hint-placeholder-val="{{ false }}">
+              <button type="button" style="display:block;margin:14px auto 0;padding:8px 16px;border:1px solid rgba(28,53,58,0.2);border-radius:7px;background:#ffffff;color:#1f6f5c;font-size:13px;font-weight:800;cursor:pointer;" onClick="{{ showMoreNews }}">看更多新聞</button>
+            </sc-if>
+          </sc-if>
+          <sc-if value="{{ company.hasNoTimeline }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:28px 16px;text-align:center;border:1px dashed rgba(28,53,58,0.22);border-radius:8px;color:#6f6a5e;font-size:13px;line-height:1.7;">
+              尚未建檔每日新聞。此企業將於後續納入每日蒐集流程，<br/>可先參考
+              <a href="https://docs.google.com/spreadsheets/d/1TQk-ukytA0HGrhG95xY3xVPKu16404pSeO78cf1e5vg/edit" target="_blank" rel="noreferrer">Google 試算表</a> 名單。
+            </div>
+          </sc-if>
+        </article>
+
+        <div style="display:grid;gap:14px;">
+          <article style="border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;padding:16px;">
+            <p style="margin:0 0 6px;font-size:11px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">企業簡介</p>
+            <h3 style="margin:0 0 8px;font-size:15px;color:#1c3f45;line-height:1.4;">{{ company.profile.title }}</h3>
+            <p style="margin:0 0 10px;font-size:13px;color:#6f6a5e;line-height:1.65;">{{ company.profile.body }}</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+              <sc-for list="{{ company.profile.tags }}" as="tag" hint-placeholder-count="4">
+                <span style="padding:3px 8px;border-radius:6px;background:#efeadf;color:#6f6a5e;font-size:11px;font-weight:700;">{{ tag }}</span>
+              </sc-for>
+            </div>
+          </article>
+
+          <article style="border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;padding:16px;">
+            <p style="margin:0 0 6px;font-size:11px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">既有產品與技術</p>
+            <h3 style="margin:0 0 8px;font-size:15px;color:#1c3f45;line-height:1.4;">{{ company.technology.title }}</h3>
+            <p style="margin:0 0 10px;font-size:13px;color:#6f6a5e;line-height:1.65;">{{ company.technology.body }}</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+              <sc-for list="{{ company.technology.tags }}" as="tag" hint-placeholder-count="4">
+                <span style="padding:3px 8px;border-radius:6px;background:#efeadf;color:#6f6a5e;font-size:11px;font-weight:700;">{{ tag }}</span>
+              </sc-for>
+            </div>
+          </article>
+
+          <article style="border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;padding:16px;">
+            <p style="margin:0 0 6px;font-size:11px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">近期合作業者</p>
+            <h3 style="margin:0 0 8px;font-size:15px;color:#1c3f45;line-height:1.4;">{{ company.partners.title }}</h3>
+            <p style="margin:0 0 10px;font-size:13px;color:#6f6a5e;line-height:1.65;">{{ company.partners.body }}</p>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+              <sc-for list="{{ company.partners.tags }}" as="tag" hint-placeholder-count="4">
+                <span style="padding:3px 8px;border-radius:6px;background:#efeadf;color:#6f6a5e;font-size:11px;font-weight:700;">{{ tag }}</span>
+              </sc-for>
+            </div>
+          </article>
+
+        </div>
+
+      </section>
+
+    </main>
+  </sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showPlaceholderCompanies&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;}, &quot;sortOverviewBy&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;default&quot;: &quot;default&quot;, &quot;options&quot;: [&quot;default&quot;, &quot;newsCount&quot;], &quot;tsType&quot;: &quot;string&quot;}, &quot;defaultNewsFilter&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;default&quot;: &quot;all&quot;, &quot;options&quot;: [&quot;all&quot;, &quot;overseas&quot;], &quot;tsType&quot;: &quot;string&quot;}}">
+const OVERSEAS_COLOR = "#b2591f";
+const NEWS_COLOR = "#1f6f5c";
+
+const SOURCE_LABELS = { official: "企業官網", industry: "產業新聞", report: "報告法令" };
+const MARKET_LABELS = { domestic: "國內", foreign: "國外" };
+const INDUSTRY_NEWS_SHEET_URL = "https://docs.google.com/spreadsheets/d/1TQk-ukytA0HGrhG95xY3xVPKu16404pSeO78cf1e5vg/edit?gid=608588917#gid=608588917";
+
+const INDUSTRY_NEWS = [
+  { collected: "2026-07-21", date: "2026-07-16", region: "美國／台灣", market: "foreign", category: "半導體／海外投資", title: "TSMC pledges another US$100 billion to expand U.S. chipmaking capacity", source: "Associated Press", link: "https://apnews.com/article/ba05b1b952257d371acb9d070e7914ff", summary: "台積電擴大美國晶片製造承諾，反映 AI 與資料中心需求推動先進製程產能全球化；後續需追蹤廠址、建廠時程與供應商在地化。", signal: "明確設廠訊號", language: "英文" },
+  { collected: "2026-07-21", date: "2026-07-14", region: "日本", market: "foreign", category: "矽光子／先進封裝", title: "Tower Semiconductor with METI Support Announces Strategic Capacity Expansion in Japan", source: "Tower Semiconductor", link: "https://towersemi.com/2026/07/14/07142026/", summary: "Tower 在日本擴充 300mm 矽光子、SiGe 與先進封裝研發製造能力，並規劃魚津相鄰新廠，直接連動 AI 資料中心光互連供應鏈。", signal: "明確設廠訊號", language: "英文" },
+  { collected: "2026-07-21", date: "2026-07-14", region: "德國／歐盟", market: "foreign", category: "政策補助／半導體設廠", title: "Vier neue Halbleiteranlagen: Kommission genehmigt Beihilfe Deutschlands in Höhe von 659 Millionen Euro", source: "European Commission", link: "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/vier-neue-halbleiteranlagen-kommission-genehmigt-beihilfe-deutschlands-hohe-von-659-millionen-euro-2026-07-14_de", summary: "歐盟核准德國 6.59 億歐元補助四項半導體設施，涵蓋 SiC 磊晶、功率 MOSFET、量測設備及專用偵測晶片。", signal: "明確設廠訊號", language: "德文" },
+  { collected: "2026-07-21", date: "2026-07-13", region: "愛爾蘭", market: "foreign", category: "半導體／海外投資", title: "Intel Invests €5 Billion to Expand Manufacturing in Europe", source: "Intel Newsroom", link: "https://newsroom.intel.com/intel-foundry/intel-invests-5-billion-euro-to-expand-manufacturing-in-europe", summary: "Intel 在愛爾蘭 Leixlip 投資 50 億歐元升級晶圓廠與設備，擴大 Intel 3、Xeon 6 與次世代 Xeon 產能。", signal: "明確設廠訊號", language: "英文" },
+  { collected: "2026-07-21", date: "2026-07-02", region: "德國", market: "foreign", category: "功率半導體／新廠啟用", title: "Infineon eröffnet in Dresden die weltweit größte Fabrik für Leistungshalbleiter", source: "Infineon Technologies", link: "https://www.infineon.com/de/press-release/2026/ifxpr202607-117", summary: "Infineon 德勒斯登 Smart Power Fab 提前啟用，投資 50 億歐元，產品支援 AI 資料中心電源、電網、車用與再生能源。", signal: "明確設廠訊號", language: "德文" },
+  { collected: "2026-07-21", date: "2026-06-24", region: "全球", market: "foreign", category: "市場報告／半導體", title: "Global Semiconductor Market Surges Beyond $1.5T 2026", source: "World Semiconductor Trade Statistics", link: "https://www.wsts.org/76/Recent-News-Release", summary: "WSTS 上修 2026 年全球半導體市場預測至 1.51 兆美元，主因 AI 基礎設施、HBM 與加速運算平台需求。", signal: "產能需求訊號", language: "英文" }
+];
+
+function buildTrackedCompany(config) {
+  return {
+    id: config.id, name: config.name, english: config.english, role: config.role,
+    shortName: config.shortName || config.name.replace("股份有限公司", "").replace("控股", "").replace("集團", ""),
+    updated: "2026-07-21",
+    built: true,
+    timeline: config.timeline || [],
+    monthlyAnalysis: config.monthlyAnalysis,
+    profile: config.profile,
+    technology: config.technology,
+    partners: config.partners,
+    sites: { items: config.sites },
+    newSites: { items: config.newSites }
+  };
+}
+
+const COMPANY_BACKLOG = [
+  { id: "acbel", name: "康舒科技股份有限公司", english: "AcBel Polytech", role: "電源供應器、電源轉換、智慧能源；歐洲控股與 OmniOn Power 相關業務",
+    monthlyAnalysis: "第一版以歐洲電源供應鏈與智慧能源布局為主軸。康舒需持續追蹤歐洲子公司、OmniOn Power 相關業務整合、商標與專利授權，以及高階電源營運是否轉化為在地研發、服務或製造需求。",
+    profile: { title: "電源與智慧能源供應商", body: "康舒以電源供應器、電源轉換與智慧能源應用為核心，適合作為資料中心、通訊電源、工業電源與新能源基礎設施需求的觀察標的。", tags: ["電源供應器", "智慧能源", "通訊電源"] },
+    technology: { title: "高階電源與能源轉換", body: "重點技術節點包含電源轉換、通訊電源、伺服器/資料中心電源、能源管理與相關智慧財產權布局。", tags: ["電源轉換", "資料中心電源", "能源管理"] },
+    partners: { title: "OmniOn Power 與歐洲營運節點", body: "需追蹤 OmniOn Power Technology GmbH、歐洲子公司與地方招商/能源基礎設施合作關係。", tags: ["OmniOn Power", "歐洲控股", "IP 授權"] },
+    sites: [{ location: "台灣", role: "總部 / 研發與管理" }, { location: "德國", role: "歐洲控股與電源業務節點" }],
+    newSites: [{ location: "德國 / 歐洲", rationale: "高階電源與智慧財產權營運可能帶動在地服務、測試或組裝需求。", status: "觀察中" }] },
+  { id: "inventec", name: "英業達股份有限公司", english: "Inventec", role: "伺服器、雲端設備、電子代工；捷克 Brno 新廠",
+    monthlyAnalysis: "第一版聚焦捷克 Brno 伺服器與雲端設備在地化。後續每日新聞需抓取 AI 伺服器、資料中心客戶、歐洲供應鏈韌性與捷克廠擴產訊號。",
+    profile: { title: "雲端與伺服器代工重點業者", body: "英業達是伺服器、雲端設備與電子代工供應鏈重要廠商，歐洲布局與資料中心需求密切相關。", tags: ["伺服器", "雲端設備", "ODM"] },
+    technology: { title: "伺服器與雲端設備製造", body: "重點觀察 AI 伺服器、一般伺服器、雲端設備、系統組裝與歐洲在地供應鏈配置。", tags: ["AI Server", "Cloud", "系統組裝"] },
+    partners: { title: "雲端與資料中心客戶", body: "合作節點以歐美雲端、伺服器與資料中心客戶為主，需由新聞與法說會逐步拆解。", tags: ["資料中心", "雲端客戶", "捷克供應鏈"] },
+    sites: [{ location: "台灣", role: "總部 / 研發管理" }, { location: "捷克 Brno", role: "歐洲伺服器與電子代工製造" }],
+    newSites: [{ location: "捷克 Brno（延伸）", rationale: "伺服器與雲端客戶在地化需求提升，需追蹤新廠投產後產能利用與擴產。", status: "觀察中" }] },
+  { id: "liteon", name: "光寶科技股份有限公司", english: "Lite-On Technology", role: "電源、車用充電、雲端電源、醫療器材；歐洲分公司與銷售網絡",
+    monthlyAnalysis: "第一版以歐洲電源、EV 充電、雲端電源與醫療器材產品認證為重點。後續需追蹤歐盟 CE 認證、通路服務、車用充電與資料中心電源訂單。",
+    timeline: [
+      { date: "2026-07-13", tag: "海外設廠", overseas: true, source: "official", sourceCategory: "official", market: "foreign", title: "光寶科技投資 US$9.19 億美元於德州麥金尼設立營運與製造基地", link: "https://www.liteon.com/zh-tw/news/press-center/content/liteon-mckinney-investment", linkLabel: "LITEON 官方新聞中心" },
+      { date: "2026-07-09", tag: "營收", overseas: false, source: "official", sourceCategory: "official", market: "domestic", title: "光寶科技六月份全球合併營收 NT$187 億元，AI 與雲端高階伺服器電源需求強勁", link: "https://www.liteon.com/zh-tw/news/press-center/content/liteon-monthly-sales-june-2026", linkLabel: "LITEON 官方新聞中心" }
+    ],
+    profile: { title: "電源與光電電子解決方案業者", body: "光寶產品涵蓋電源、雲端運算電源、車用充電與醫療器材，歐洲市場具產品認證與服務網絡需求。", tags: ["電源", "EV 充電", "醫療器材"] },
+    technology: { title: "雲端電源與車用充電", body: "重點技術包含雲端電源、EV 充電樁、醫療器材電源、工業用電源與能源效率設計。", tags: ["Cloud Power", "EV Charger", "CE 認證"] },
+    partners: { title: "歐洲客戶與通路服務網絡", body: "需追蹤歐洲客戶、車用充電營運商、醫療設備客戶與當地服務夥伴。", tags: ["歐洲通路", "車用充電", "醫療設備"] },
+    sites: [{ location: "台灣", role: "總部 / 研發管理" }, { location: "歐洲", role: "分公司與銷售服務網絡" }],
+    newSites: [{ location: "歐洲主要市場", rationale: "EV 充電與雲端電源需求可能推動在地測試、維修、倉儲與服務據點。", status: "評估中" }] },
+  { id: "teco", name: "東元電機股份有限公司", english: "TECO Electric & Machinery", role: "馬達、電力設備、智慧電網、綠能設備；德國、義大利、烏克蘭布局",
+    monthlyAnalysis: "第一版聚焦歐洲電網升級、烏克蘭戰後重建與高效能能源設備。後續新聞需標註是否涉及政府工程、電力基建、綠能與智慧電網。",
+    timeline: [
+      { date: "2026-07-15", tag: "日本布局", overseas: true, source: "official", sourceCategory: "official", market: "foreign", title: "東元攜智慧動力解決方案前進日本，TJM Series 機器人關節模組亮相", link: "https://www.teco.com.tw/zh-tw/press/news/dong-yuan-xie-zhi-hui-dong-li-jie-jue-fang-an-qian-jin-ri-ben-TJM-Series-quan-ji-lie-ji-qi-ren-guan-jie-mo-zu-shou-du-wan-zheng-liang-xiang", linkLabel: "TECO 官方新聞" },
+      { date: "2026-07-14", tag: "AIDC基建", overseas: true, source: "official", sourceCategory: "official", market: "foreign", title: "東元 115 年股東常會：積極佈局 AIDC 基建商機，衝高北美及東南亞營收", link: "https://tecoie.teco.com.tw/page/462", linkLabel: "TECO 電力能源網" }
+    ],
+    profile: { title: "電機、馬達與電力工程業者", body: "東元以馬達、電力設備、智慧電網與綠能相關解決方案為核心，適合追蹤歐洲基礎建設與能源轉型商機。", tags: ["馬達", "電力設備", "智慧電網"] },
+    technology: { title: "高效能馬達與電網設備", body: "重點技術包括高效馬達、電力設備、智慧電網、能源管理與綠能設備。", tags: ["高效馬達", "電網", "綠能"] },
+    partners: { title: "歐洲能源與基建合作節點", body: "需追蹤德國、義大利、烏克蘭當地電力工程、能源公司、政府採購與園區基建夥伴。", tags: ["德國", "義大利", "烏克蘭"] },
+    sites: [{ location: "台灣", role: "總部 / 電機製造" }, { location: "德國", role: "歐洲業務與技術據點" }, { location: "義大利", role: "歐洲業務節點" }, { location: "烏克蘭", role: "重建與電力基建觀察市場" }],
+    newSites: [{ location: "烏克蘭 / 中東歐", rationale: "戰後重建、電網升級與能源設備需求可能形成在地合作或服務據點。", status: "觀察中" }] },
+  { id: "merry", name: "美律實業股份有限公司", english: "Merry Electronics", role: "聲學元件、揚聲器、耳機、音訊產品；挪威 SEAS 相關布局",
+    monthlyAnalysis: "第一版聚焦挪威 SEAS 聲學技術與歐洲高階揚聲器市場。後續應追蹤研發人才、品牌/技術整合與歐洲製造或服務是否擴張。",
+    profile: { title: "聲學元件與音訊產品供應商", body: "美律以聲學元件、耳機、揚聲器與音訊模組為核心，歐洲布局偏向高階聲學技術與品牌製造能力。", tags: ["聲學", "揚聲器", "耳機"] },
+    technology: { title: "聲學設計與揚聲器製造", body: "重點包含高階揚聲器、耳機模組、聲學設計、材料與音訊產品量產能力。", tags: ["Acoustics", "Speaker", "Audio"] },
+    partners: { title: "SEAS Fabrikker 與歐洲聲學節點", body: "需追蹤 SEAS 相關技術、品牌、研發與挪威在地團隊延伸合作。", tags: ["SEAS", "挪威", "高階聲學"] },
+    sites: [{ location: "台灣", role: "總部 / 管理與研發" }, { location: "挪威", role: "聲學技術與製造節點" }],
+    newSites: [{ location: "挪威 / 歐洲", rationale: "高階聲學技術可作為歐洲研發與客戶服務節點。", status: "觀察中" }] },
+  { id: "usi", name: "環鴻科技股份有限公司", english: "Universal Scientific Industrial / USI", role: "EMS、電子製造服務、車用與工業電子；法國、波蘭、德國、英國據點",
+    monthlyAnalysis: "第一版以 Asteelflash 收購後歐洲 EMS 製造服務網絡為主。需每日追蹤法國、波蘭、德國、英國等地的在地製造、車用電子與工業電子訂單。",
+    profile: { title: "全球 EMS 與 SiP 製造服務業者", body: "環鴻科技具電子製造服務能力，歐洲據點可支援車用、工業、通訊與消費電子客戶在地化。", tags: ["EMS", "車用電子", "工業電子"] },
+    technology: { title: "電子製造服務與系統模組", body: "重點技術包含 EMS、SiP/模組製造、車用電子、工業電子與區域製造服務。", tags: ["EMS", "SiP", "模組製造"] },
+    partners: { title: "Asteelflash 與歐洲客戶群", body: "Asteelflash 為歐洲在地製造與客戶服務的重要節點，需追蹤整合後客戶與產能配置。", tags: ["Asteelflash", "法國", "波蘭"] },
+    sites: [{ location: "台灣", role: "管理與製造節點" }, { location: "法國", role: "歐洲 EMS 核心市場" }, { location: "波蘭", role: "歐洲製造據點" }, { location: "德國", role: "歐洲客戶服務" }, { location: "英國", role: "歐洲客戶服務" }],
+    newSites: [{ location: "波蘭 / 法國", rationale: "歐洲車用與工業電子在地製造需求提升，適合追蹤擴產與客戶轉單。", status: "觀察中" }] },
+  { id: "delta", name: "台達電子工業股份有限公司", english: "Delta Electronics", role: "電源、電力電子、通訊電源、EV 充電、工業自動化；荷蘭、斯洛伐克、德國布局",
+    monthlyAnalysis: "第一版聚焦歐洲電力/通訊電源、EV 充電與工業自動化。後續需追蹤 Eltek 等電源品牌整合、資料中心電源與電動車充電基建。",
+    profile: { title: "電源與工業自動化全球供應商", body: "台達在電源、電力電子、EV 充電與工業自動化領域具全球布局，歐洲為能源轉型與製造自動化重點市場。", tags: ["電源", "EV 充電", "工業自動化"] },
+    technology: { title: "電力電子與自動化解決方案", body: "重點包含電源轉換、通訊電源、EV 充電、資料中心電源、工業自動化與能源管理。", tags: ["Power Electronics", "EVSE", "Automation"] },
+    partners: { title: "Eltek 與歐洲能源客戶", body: "需追蹤 Eltek、歐洲電力/通訊電源客戶、車用充電營運商與自動化系統夥伴。", tags: ["Eltek", "荷蘭", "斯洛伐克"] },
+    sites: [{ location: "台灣", role: "總部 / 研發與製造" }, { location: "荷蘭", role: "歐洲總部" }, { location: "斯洛伐克", role: "大型生產基地" }, { location: "德國", role: "自動化與研發節點" }],
+    newSites: [{ location: "斯洛伐克 / 德國", rationale: "EV 充電、資料中心電源與工業自動化需求可能帶動產線擴充。", status: "觀察中" }] },
+  { id: "compal", name: "仁寶電腦工業股份有限公司", english: "Compal Electronics", role: "電腦代工、車用電子、電子控制單元；波蘭車用電子廠",
+    monthlyAnalysis: "第一版聚焦波蘭車用電子廠與 ECU、ADAS/ADS 感測器產線。每日新聞需追蹤波蘭增資、車用電子客戶、歐洲車廠在地化與自動化組裝線。",
+    profile: { title: "電腦代工與車用電子供應商", body: "仁寶除 PC/NB 代工外，近年車用電子布局是海外設廠觀察重點，波蘭可作為歐洲車廠與供應鏈入口。", tags: ["ODM", "車用電子", "波蘭"] },
+    technology: { title: "ECU、ADAS/ADS 與電子控制模組", body: "重點技術包括電子控制單元、車用電子模組、自動化組裝測試、ADAS/ADS 感測器相關產品。", tags: ["ECU", "ADAS", "ADS"] },
+    partners: { title: "歐洲車用電子客戶與 CGS Technology Poland", body: "需追蹤 CGS Technology Poland、歐洲車廠與 Tier 1 客戶合作。", tags: ["CGS Technology Poland", "車廠", "Tier 1"] },
+    sites: [{ location: "台灣", role: "總部 / 研發管理" }, { location: "波蘭", role: "車用電子製造與測試" }],
+    newSites: [{ location: "波蘭", rationale: "車用電子產能與 ADAS/ADS 感測器需求，需追蹤增資與產線擴充。", status: "進行中" }] },
+  { id: "advantech", name: "研華股份有限公司", english: "Advantech", role: "工業電腦、Edge AI、智慧製造、IoT；荷蘭、德國歐洲據點",
+    monthlyAnalysis: "第一版聚焦歐洲 Edge AI 與智慧製造落地。荷蘭 Eindhoven 服務中心與德國 Munich 創新中心可作為產業應用、客戶 PoC 與在地部署觀察點。",
+    profile: { title: "工業電腦與邊緣智慧平台業者", body: "研華聚焦工業電腦、IoT、Edge AI 與智慧製造，歐洲市場重視在地方案驗證與垂直應用部署。", tags: ["IPC", "Edge AI", "IoT"] },
+    technology: { title: "Edge AI 與智慧製造平台", body: "重點技術包含工業電腦、邊緣運算、智慧製造、IoT 平台與垂直領域應用。", tags: ["Edge AI", "智慧製造", "Sector-Lead"] },
+    partners: { title: "歐洲系統整合商與在地企業", body: "需追蹤德國、荷蘭與歐洲 10 國辦公據點的系統整合商、製造業客戶與應用夥伴。", tags: ["Eindhoven", "Munich", "系統整合"] },
+    sites: [{ location: "台灣", role: "總部 / 研發管理" }, { location: "荷蘭 Eindhoven", role: "歐洲總部與服務中心" }, { location: "德國 Munich", role: "創新研發中心" }, { location: "歐洲多國", role: "辦公與銷售服務據點" }],
+    newSites: [{ location: "德國 / 荷蘭", rationale: "Edge AI 與智慧製造方案需靠近製造客戶與系統整合商。", status: "觀察中" }] },
+  { id: "kenmec", name: "廣運機械工程股份有限公司", english: "Kenmec Group", role: "智慧物流、自動倉儲、工業自動化、機器人整合",
+    monthlyAnalysis: "第一版聚焦智慧物流、自動倉儲與歐洲自動化廠商合作。後續需追蹤 NEURA Robotics 等合作，以及方案是否輸出至歐洲製造、電商與航空業客戶。",
+    profile: { title: "智慧物流與自動化系統整合業者", body: "廣運集團具智慧物流、自動倉儲與自動化生產設備能力，可支援製造業、電商與航空業自動化需求。", tags: ["智慧物流", "自動倉儲", "系統整合"] },
+    technology: { title: "自動倉儲與機器人整合", body: "重點包含智慧物流系統、自動化倉儲、輸送設備、機器人與智慧工廠解決方案。", tags: ["AMR/AGV", "倉儲自動化", "機器人"] },
+    partners: { title: "歐洲自動化與機器人廠商", body: "需追蹤與德國 NEURA Robotics 等自動化與機器人業者的技術合作。", tags: ["NEURA Robotics", "德國", "技術結盟"] },
+    sites: [{ location: "台灣", role: "總部 / 系統整合與製造" }, { location: "歐洲", role: "方案輸出與合作市場" }],
+    newSites: [{ location: "德國 / 歐洲", rationale: "歐洲自動化與機器人合作可帶動展示、售服或整合據點需求。", status: "評估中" }] },
+  { id: "shayang", name: "祥儀企業股份有限公司", english: "Shayang Ye Industrial", role: "微型齒輪箱、馬達、傳動模組、AGV/服務型機器人",
+    monthlyAnalysis: "第一版聚焦高階微小型齒輪箱、電動工具、汽車零組件與自動化設備客戶。歐洲推廣重點可落在傳動模組、AGV 與服務型機器人。",
+    profile: { title: "精密傳動與微型齒輪箱業者", body: "祥儀具微型馬達、齒輪箱與傳動模組能力，產品可支援電動工具、車用零件、自動化設備與機器人。", tags: ["微型齒輪箱", "馬達", "傳動模組"] },
+    technology: { title: "微型傳動與機器人應用", body: "重點包含微型馬達、減速齒輪箱、AGV、服務型機器人與傳動模組客製化。", tags: ["Gearbox", "AGV", "服務型機器人"] },
+    partners: { title: "歐洲設備與車用零組件客戶", body: "需追蹤歐洲電動工具、汽車零組件、自動化設備廠與機器人客戶。", tags: ["電動工具", "汽車零組件", "自動化設備"] },
+    sites: [{ location: "台灣", role: "總部 / 研發製造" }, { location: "歐洲", role: "外銷與推廣市場" }],
+    newSites: [{ location: "歐洲主要工業國", rationale: "高階傳動模組若進入車用與機器人供應鏈，需觀察代理、倉儲與售服節點。", status: "評估中" }] },
+  { id: "aurotek", name: "和椿科技股份有限公司", english: "Aurotek Corporation", role: "工業自動化、機器人、控制元件代理、CNC/MES 整合",
+    monthlyAnalysis: "第一版聚焦德國等歐洲自動化品牌代理、CNC 與 MES 解決方案輸出。後續新聞需追蹤代理權、系統整合案與智慧工廠專案。",
+    profile: { title: "工業自動化與智慧工廠整合業者", body: "和椿以工業自動化元件代理、機器人應用、CNC 與 MES 整合為核心，具製造業數位轉型服務能力。", tags: ["工業自動化", "CNC", "MES"] },
+    technology: { title: "CNC、MES 與自動化控制", body: "重點技術包含自動控制元件、工業機器人、CNC 數控系統、MES 與無人工廠整合方案。", tags: ["CNC", "MES", "無人工廠"] },
+    partners: { title: "歐洲工業機器人與控制品牌", body: "需追蹤德國等歐洲品牌代理、技術合作與智慧工廠專案夥伴。", tags: ["德國品牌", "機器人", "代理整合"] },
+    sites: [{ location: "台灣", role: "總部 / 系統整合" }, { location: "歐洲", role: "技術代理與方案輸出市場" }],
+    newSites: [{ location: "德國 / 歐洲", rationale: "歐洲自動化品牌合作與智慧工廠專案可能帶動服務據點。", status: "觀察中" }] },
+  { id: "ffg", name: "友嘉集團", english: "Fair Friend Group / FFG", role: "工具機、航太加工、汽車加工設備；義大利、德國、瑞士、法國布局",
+    monthlyAnalysis: "第一版聚焦歐洲工具機併購整合與汽車/航太高階加工產線。友嘉在德國、義大利、瑞士與法國的實體產能，是園區與供應鏈韌性分析的重要案例。",
+    profile: { title: "全球工具機與自動化加工設備集團", body: "友嘉集團透過歐洲品牌與工廠布局，服務汽車、航太、模具與精密加工市場。", tags: ["工具機", "航太加工", "汽車產線"] },
+    technology: { title: "工具機、加工中心與 Turnkey Solutions", body: "重點包含立式/臥式加工中心、滾齒機、大型車床、旋轉式傳遞工具機與整廠自動化輸送工程。", tags: ["MAG", "Pfiffner", "Turnkey"] },
+    partners: { title: "MAG、Pfiffner 與歐洲工具機品牌", body: "需追蹤 MAG、Pfiffner、Jobs、Sigma、Sachman、Rambaudi 等歐洲品牌與工廠整合。", tags: ["MAG", "Pfiffner", "德國"] },
+    sites: [{ location: "台灣", role: "集團管理" }, { location: "德國", role: "歐洲營運總部與工具機產能" }, { location: "義大利", role: "航太與大型模具加工設備" }, { location: "瑞士", role: "精密旋轉式傳遞工具機" }, { location: "法國 / 匈牙利", role: "歐洲生產基地" }],
+    newSites: [{ location: "德國 / 義大利 / 瑞士", rationale: "歐洲實體產能與汽車、航太供應鏈在地化，需追蹤投資與產線更新。", status: "進行中" }] },
+  { id: "bizlink", name: "貿聯控股", english: "BizLink Holding", role: "線束、連接線、工業應用、醫療與車用線束；塞爾維亞、斯洛伐克據點",
+    monthlyAnalysis: "第一版聚焦 LEONI 相關事業收購整合、塞爾維亞與斯洛伐克歐洲製造基地。後續需追蹤 SMT、PVC 產線、工業自動化、醫療與車用線束訂單。",
+    profile: { title: "連接線與線束解決方案供應商", body: "貿聯產品涵蓋連接線、線束、工業應用、醫療、機器人與車用線束，是歐洲製造在地化與高端客戶供應鏈觀察標的。", tags: ["線束", "連接線", "車用"] },
+    technology: { title: "SMT、PVC 產線與高端線束", body: "重點包含表面黏著技術、PVC 膠料產線、工業應用線束、醫療與機器人連接解決方案。", tags: ["SMT", "PVC", "Industrial Cable"] },
+    partners: { title: "LEONI 事業整合與歐洲客戶", body: "需追蹤 LEONI 電器線束與工業應用事業整合，以及 Bosch、Dyson 等高端客戶供應鏈。", tags: ["LEONI", "Bosch", "Dyson"] },
+    sites: [{ location: "台灣", role: "管理與研發" }, { location: "塞爾維亞", role: "歐洲製造基地" }, { location: "斯洛伐克", role: "歐洲製造基地" }],
+    newSites: [{ location: "塞爾維亞 / 斯洛伐克", rationale: "LEONI 整合後歐洲產線延伸至半導體設備、工業自動化、醫療與車用線束。", status: "進行中" }] },
+  { id: "chicony", name: "群光電子股份有限公司", english: "Chicony Electronics", role: "PC 周邊、鍵盤、電源、鏡頭模組；捷克廠",
+    monthlyAnalysis: "第一版聚焦捷克廠服務歐洲一線 PC 品牌客戶。後續需追蹤東歐組裝、出貨、物流與關稅成本，以及 HP、Dell、Lenovo 等客戶在地供應鏈需求。",
+    profile: { title: "PC 周邊與電子組裝供應商", body: "群光以鍵盤、電源、鏡頭模組與 PC 周邊為核心，捷克廠可支援歐洲品牌客戶短鏈供應。", tags: ["PC 周邊", "鍵盤", "鏡頭模組"] },
+    technology: { title: "PC 零組件與消費電子組裝", body: "重點包含鍵盤、電源、鏡頭模組、消費性電子組裝與歐洲短鏈供應能力。", tags: ["Keyboard", "Power", "Camera Module"] },
+    partners: { title: "歐洲 PC 品牌與消費電子客戶", body: "需追蹤 HP、Dell、Lenovo 等品牌客戶，以及捷克在地製造對交期與關稅的影響。", tags: ["HP", "Dell", "Lenovo"] },
+    sites: [{ location: "台灣", role: "總部 / 研發管理" }, { location: "捷克", role: "歐洲 PC 周邊與消費電子組裝" }],
+    newSites: [{ location: "捷克", rationale: "縮短歐洲交期、降低物流與關稅成本，滿足歐洲在地製造與風險分散需求。", status: "觀察中" }] },
+  { id: "fortune", name: "華城電機股份有限公司", english: "Fortune Electric", role: "變壓器、電力設備、電網工程；北美 AI 資料中心商機",
+    monthlyAnalysis: "第一版聚焦北美 AI 資料中心、電網更新與大型變壓器訂單。後續需特別標記 AIDC、電網韌性、變壓器交期、北美與歐洲市場投資拓展。",
+    profile: { title: "變壓器與電力設備供應商", body: "華城以變壓器、開關設備與電力工程為核心，受惠資料中心、電網更新與能源基礎設施投資。", tags: ["變壓器", "電網", "AIDC"] },
+    technology: { title: "大型變壓器與電力系統", body: "重點包含大型變壓器、配電設備、電網工程、資料中心電力設備與高可靠度供電系統。", tags: ["Transformer", "Grid", "Data Center Power"] },
+    partners: { title: "北美資料中心與電網客戶", body: "需追蹤北美 AI 資料中心、電力公司、EPC 工程團隊與大型變壓器需求。", tags: ["北美", "AI 資料中心", "EPC"] },
+    sites: [{ location: "台灣", role: "總部 / 製造與工程" }, { location: "北美", role: "資料中心與電網需求市場" }, { location: "歐洲", role: "投資與拓展觀察市場" }],
+    newSites: [{ location: "北美", rationale: "AI 資料中心與電網更新需求推升大型變壓器訂單，需追蹤在地服務或產能布局。", status: "評估中" }, { location: "歐洲", rationale: "能源轉型與電網升級可能形成市場拓展機會。", status: "觀察中" }] }
+];
+
+const FOXCONN = {
+  id: "foxconn",
+  name: "鴻海精密工業股份有限公司",
+  shortName: "鴻海",
+  english: "Hon Hai Precision Industry / Foxconn",
+  role: "EMS、AI 伺服器、半導體封裝、衛星與通訊供應鏈",
+  updated: "2026-07-21",
+  built: true,
+  monthlyAnalysis: "近一個月鴻海動能集中在歐洲先進封裝與 AI／機器人生態系：法國 Tessalia 廠與 Thales、Radiall 共同投資揭幕，標誌其半導體封裝產能正式落地歐洲；同期 Czech Tech Day 展示 AI、機器人與電動移動技術，顯示捷克據點角色正從單純製造擴大為技術展示與客戶連結中心。財務面 6 月合併營收如期公告，未見重大波動；策略面則與 Sharp 簽署合作備忘錄，延續其消費電子與顯示技術結盟布局。整體而言，鴻海海外設廠訊號集中在歐洲（法國、捷克），美國仍以 AI 伺服器與資料中心需求為觀察重點，建議持續追蹤 Tessalia 後續產能規劃與捷克廠是否有進一步資本支出宣布。",
+  timeline: [
+    { date: "2026 進行中", pinned: true, tag: "海外設廠", overseas: true, source: "official", title: "法國 Tessalia 先進封裝廠揭幕，攜手 Thales、Radiall 共同投資", link: "https://www.foxconn.com/en-us/press-center/events/csr-events/2049", linkLabel: "Foxconn 官方活動頁" },
+    { date: "2026-07-20", tag: "海外訂單", overseas: true, source: "other", title: "鴻海奪 SpaceX AI 伺服器大單，下一步瞄準太空資料中心", link: "https://money.udn.com/money/story/11162/9637859", linkLabel: "經濟日報" },
+    { date: "2026-07-05", tag: "財務", overseas: false, source: "official", title: "公告 2026 年 6 月未審核合併營收", link: "https://www.foxconn.com/en-us", linkLabel: "Foxconn 官方首頁" },
+    { date: "2026-06-26", tag: "歐洲布局", overseas: true, source: "official", title: "Czech Tech Day：展示 AI、機器人與電動移動技術", link: "https://www.foxconn.com/en-us", linkLabel: "Foxconn 官方首頁" },
+    { date: "2026-06-24", tag: "策略合作", overseas: false, source: "official", title: "與 Sharp 簽署策略合作備忘錄（MOU）", link: "https://www.foxconn.com/en-us", linkLabel: "Foxconn 官方首頁" },
+    { date: "2026-06-05", tag: "海外結盟", overseas: true, source: "other", title: "鴻海強攻 AI 結盟美韓大咖：攜手英特爾打造 AI 平台、與 SK 集團布局 AI 伺服器及資料中心", link: "https://money.udn.com/money/story/5612/9546874", linkLabel: "經濟日報" },
+    { date: "2026-06-01", tag: "歐洲布局", overseas: true, source: "other", title: "鴻海攜手 Bull 宣布歐洲 AI 資料中心重大合作案", link: "https://money.udn.com/money/story/5612/9538440", linkLabel: "經濟日報" }
+  ],
+  profile: {
+    title: "全球科技製造服務與 3+3+3 策略",
+    body: "鴻海為全球科技服務與電子製造服務業者，官方網站揭示其投入電動車、數位健康、機器人三大新興產業，並發展 AI、半導體、次世代通訊三項技術。",
+    tags: ["3+3+3", "EMS", "AI", "半導體", "次世代通訊"]
+  },
+  technology: {
+    title: "產品技術與製造能量",
+    body: "第一版聚焦電動車、數位健康、機器人、人工智慧、半導體與次世代通訊；後續可再拆解至 AI server、EV 平台、SiP/FOWLP、衛星通訊與智慧製造。",
+    tags: ["電動車", "AI 伺服器", "機器人", "半導體封裝", "次世代通訊"]
+  },
+  partners: {
+    title: "Thales、Radiall、Sharp 與 MIH 生態系",
+    body: "已建檔合作節點包含法國 Tessalia 案中的 Thales、Radiall；近期新聞亦顯示與 Sharp 簽署策略合作備忘錄。MIH Consortium 作為 EV 開放生態系長期節點。",
+    tags: ["Thales", "Radiall", "Sharp", "MIH Consortium"]
+  },
+  sites: {
+    items: [
+      { location: "台灣（總部）", role: "總部 / 核心製造" },
+      { location: "美國", role: "美洲入口 / AI 伺服器客戶服務" },
+      { location: "墨西哥", role: "美洲入口 / 組裝製造" },
+      { location: "越南", role: "亞洲入口 / 分散產能" },
+      { location: "捷克", role: "歐洲入口 / AI・機器人展示" },
+      { location: "斯洛伐克", role: "歐洲入口 / 製造據點" }
+    ]
+  },
+  newSites: {
+    items: [
+      { location: "法國（Tessalia）", rationale: "先進封裝合資，與 Thales、Radiall 共同投資", status: "進行中" },
+      { location: "捷克（延伸）", rationale: "Czech Tech Day 展示 AI／機器人／電動移動，觀察後續產能承諾", status: "觀察中" },
+      { location: "美國", rationale: "AI 伺服器、資料中心需求；追蹤 CHIPS/48D 與州別補貼", status: "評估中" }
+    ]
+  }
+};
+
+const COMPANIES = [FOXCONN, ...COMPANY_BACKLOG.map(buildTrackedCompany)];
+
+function getSourceCategory(t) {
+  if (t.sourceCategory) return t.sourceCategory;
+  return t.source === "official" ? "official" : "industry";
+}
+function getMarket(t) {
+  return t.market || (t.overseas ? "foreign" : "domestic");
+}
+function countOverseas(c) {
+  const newsSignals = c.timeline.filter((t) => t.overseas).length;
+  const siteSignals = c.newSites.items.filter((s) => s.status !== "待建檔").length;
+  return newsSignals + siteSignals;
+}
+
+class Component extends DCLogic {
+  state = { view: "overview", companyId: null, newsFilters: [], timeRange: "all", newsVisibleCount: 5, industryNewsVisibleCount: 5 };
+
+  componentDidMount() {
+    this.setState({ newsFilters: this.props.defaultNewsFilter === "overseas" ? ["overseas"] : [] });
+  }
+
+  toggleNewsFilter(id) {
+    if (id === "all") { this.setState({ newsFilters: [], newsVisibleCount: 5 }); return; }
+    this.setState((s) => {
+      const has = s.newsFilters.includes(id);
+      return { newsFilters: has ? s.newsFilters.filter((f) => f !== id) : [...s.newsFilters, id], newsVisibleCount: 5 };
+    });
+  }
+
+  setTimeRange(range) {
+    this.setState({ timeRange: range, newsVisibleCount: 5 });
+  }
+
+  showMoreNews() {
+    this.setState((s) => ({ newsVisibleCount: s.newsVisibleCount + 5 }));
+  }
+
+  showMoreIndustryNews() {
+    this.setState((s) => ({ industryNewsVisibleCount: s.industryNewsVisibleCount + 5 }));
+  }
+
+  geocode(location) {
+    const table = [
+      ["台灣", [121.0, 23.7]], ["美國", [-98.5, 39.8]], ["墨西哥", [-102.5, 23.6]], ["越南", [105.8, 21.0]],
+      ["捷克", [15.5, 49.8]], ["斯洛伐克", [19.7, 48.7]], ["法國", [2.2, 46.6]], ["波蘭", [19.1, 52.0]],
+      ["德國", [10.5, 51.2]], ["義大利", [12.6, 42.8]], ["荷蘭", [5.3, 52.1]], ["挪威", [8.5, 60.5]],
+      ["塞爾維亞", [20.9, 44.0]], ["烏克蘭", [31.2, 48.4]], ["瑞士", [8.2, 46.8]], ["北美", [-97.0, 38.0]],
+      ["歐洲", [10.5, 50.0]]
+    ];
+    for (const [key, coord] of table) {
+      if (location.includes(key)) return coord;
+    }
+    return [10.5, 50.0];
+  }
+
+  buildMapUrl(sites, newSites) {
+    const toPoint = (s) => {
+      const [lon, lat] = this.geocode(s.location);
+      return { name: s.location, role: s.role || s.rationale || "", lon, lat };
+    };
+    const existing = (sites || []).map(toPoint);
+    const news = (newSites || []).map(toPoint);
+    return "./foxconn-map.html?existing=" + encodeURIComponent(JSON.stringify(existing)) + "&new=" + encodeURIComponent(JSON.stringify(news));
+  }
+
+  goDetail(id) {
+    this.setState({ view: "detail", companyId: id, newsFilters: this.props.defaultNewsFilter === "overseas" ? ["overseas"] : [], timeRange: "all", newsVisibleCount: 5 });
+    window.scrollTo(0, 0);
+  }
+
+  renderVals() {
+    const showPlaceholders = this.props.showPlaceholderCompanies !== false;
+    const sortByNews = this.props.sortOverviewBy === "newsCount";
+
+    let list = COMPANIES.filter((c) => showPlaceholders || c.built);
+    if (sortByNews) {
+      list = [...list].sort((a, b) => b.timeline.length - a.timeline.length);
+    }
+
+    const overviewCompanies = list.map((c) => ({
+      shortName: c.shortName,
+      english: c.english,
+      role: c.role,
+      newsCount: c.timeline.length,
+      overseasCount: c.timeline.filter((t) => t.overseas).length,
+      statusLabel: c.built ? "已建檔" : "建置中",
+      statusStyle: c.built ? "background:rgba(31,111,92,0.12);color:#1f6f5c;" : "background:#efeadf;color:#6f6a5e;",
+      onOpen: () => this.goDetail(c.id)
+    }));
+
+    const totalCompanies = COMPANIES.length;
+    const totalNews = COMPANIES.reduce((sum, c) => sum + c.timeline.length, 0);
+    const totalOverseas = COMPANIES.reduce((sum, c) => sum + countOverseas(c), 0);
+
+    const latestCollected = INDUSTRY_NEWS.reduce((latest, n) => (n.collected > latest ? n.collected : latest), "");
+    const industryNewsItems = INDUSTRY_NEWS.map((n) => ({
+      ...n,
+      marketLabel: n.market === "domestic" ? "國內" : "國外",
+      marketStyle: n.market === "domestic" ? "background:rgba(31,111,92,0.12);color:#1f6f5c;" : "background:rgba(178,89,31,0.12);color:#b2591f;"
+    }));
+
+    const raw = COMPANIES.find((c) => c.id === this.state.companyId) || FOXCONN;
+    const matchesFilter = () => true;
+    const NOW = new Date("2026-07-21");
+    const RANGE_DAYS = { "7d": 7, "30d": 30, "90d": 90 };
+    const matchesTimeRange = (t) => {
+      if (t.pinned || this.state.timeRange === "all") return true;
+      const d = new Date(t.date);
+      if (isNaN(d.getTime())) return true;
+      const days = (NOW - d) / 86400000;
+      return days <= RANGE_DAYS[this.state.timeRange];
+    };
+
+    const timelineAllFiltered = raw.timeline.filter((t) => matchesFilter(t) && matchesTimeRange(t)).map((t) => {
+      const market = getMarket(t);
+      return {
+        ...t,
+        borderColor: t.overseas ? OVERSEAS_COLOR : NEWS_COLOR,
+        sourceLabel: SOURCE_LABELS[getSourceCategory(t)] || getSourceCategory(t),
+        marketLabel: MARKET_LABELS[market] || market,
+        marketStyle: market === "foreign" ? "background:rgba(178,89,31,0.12);color:#b2591f;" : "background:rgba(28,53,58,0.08);color:#1c3f45;"
+      };
+    });
+    const visibleCount = this.state.newsVisibleCount || 5;
+    const timelineFiltered = timelineAllFiltered.slice(0, visibleCount);
+    const hasMoreNews = timelineAllFiltered.length > visibleCount;
+
+    const timeRangeOptions = [
+      { id: "all", label: "全部時間" },
+      { id: "7d", label: "近 7 天" },
+      { id: "30d", label: "近 30 天" },
+      { id: "90d", label: "近 90 天" }
+    ].map((opt) => ({
+      ...opt,
+      onClick: () => this.setTimeRange(opt.id),
+      style: this.state.timeRange === opt.id
+        ? "background:#1c3f45;color:#fbf9f3;border-color:#1c3f45;"
+        : "background:#ffffff;color:#6f6a5e;border-color:rgba(28,53,58,0.18);"
+    }));
+
+    const company = {
+      ...raw,
+      mapUrl: this.buildMapUrl(raw.sites.items, raw.newSites.items),
+      newsCount: raw.timeline.length,
+      overseasCount: raw.timeline.filter((t) => t.overseas).length,
+      techTagCount: raw.technology.tags.length,
+      partnerTagCount: raw.partners.tags.length,
+      siteCount: raw.sites.items.length,
+      newSiteCount: raw.newSites.items.length,
+      hasTimeline: raw.timeline.length > 0,
+      hasNoTimeline: raw.timeline.length === 0
+    };
+
+    return {
+      isOverview: this.state.view === "overview",
+      isDetail: this.state.view === "detail",
+      overviewCompanies,
+      totalCompanies,
+      totalNews,
+      totalOverseas,
+      latestCollected,
+      industryNewsItems,
+      industryNewsVisible: industryNewsItems.slice(0, this.state.industryNewsVisibleCount || 5),
+      hasMoreIndustryNews: industryNewsItems.length > (this.state.industryNewsVisibleCount || 5),
+      showMoreIndustryNews: () => this.showMoreIndustryNews(),
+      industryNewsSheetUrl: INDUSTRY_NEWS_SHEET_URL,
+      company,
+      timelineFiltered,
+      timeRangeOptions,
+      hasMoreNews,
+      showMoreNews: () => this.showMoreNews(),
+      goOverview: () => this.setState({ view: "overview" })
+    };
+  }
+}
+</script>
+</body>
 </html>

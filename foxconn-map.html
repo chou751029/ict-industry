@@ -5,7 +5,7 @@
 <script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
 <style>
-  html, body { margin: 0; padding: 0; height: 100%; background: #fdfcf8; font-family: "Noto Sans TC", "PingFang TC", system-ui, sans-serif; }
+  html, body { margin: 0; padding: 0; height: 100%; background: #fdfcf8; font-family: "Noto Sans TC", "PingFang TC", system-ui, sans-serif; position: relative; }
   #map { height: 100%; }
   #tip { position: absolute; pointer-events: none; padding: 5px 8px; border-radius: 6px; background: #1c3f45; color: #fbf9f3; font-size: 12px; font-weight: 700; opacity: 0; transform: translate(-50%,-125%); white-space: nowrap; z-index: 5; }
 </style>
@@ -13,20 +13,35 @@
 <body>
 <div id="tip"></div>
 <svg id="map" style="width:100%;height:100%;display:block;"></svg>
+<div id="zoomctl" style="position:absolute;right:10px;bottom:10px;display:flex;flex-direction:column;gap:4px;z-index:6;">
+  <button id="zoomIn" type="button" style="width:28px;height:28px;border:1px solid rgba(28,53,58,0.2);border-radius:6px;background:#ffffff;color:#1c3f45;font-size:16px;font-weight:800;cursor:pointer;line-height:1;">+</button>
+  <button id="zoomOut" type="button" style="width:28px;height:28px;border:1px solid rgba(28,53,58,0.2);border-radius:6px;background:#ffffff;color:#1c3f45;font-size:16px;font-weight:800;cursor:pointer;line-height:1;">−</button>
+</div>
 <script>
-const EXISTING = [
+const params = new URLSearchParams(location.search);
+function parsePoints(key, fallback) {
+  const raw = params.get(key);
+  if (!raw) return fallback;
+  try {
+    const parsed = JSON.parse(raw);
+    if (Array.isArray(parsed) && parsed.length) return parsed;
+  } catch (e) {}
+  return fallback;
+}
+
+const EXISTING = parsePoints("existing", [
   { name: "台灣（總部）", role: "總部 / 核心製造", lon: 121.5, lat: 25.05 },
   { name: "美國", role: "美洲入口 / AI 伺服器客戶服務", lon: -98.5, lat: 39.8 },
   { name: "墨西哥", role: "美洲入口 / 組裝製造", lon: -102.5, lat: 23.6 },
   { name: "越南", role: "亞洲入口 / 分散產能", lon: 105.8, lat: 21.0 },
   { name: "捷克", role: "歐洲入口 / AI・機器人展示", lon: 15.5, lat: 49.8 },
   { name: "斯洛伐克", role: "歐洲入口 / 製造據點", lon: 18.1, lat: 48.3 }
-];
-const NEW_SITES = [
+]);
+const NEW_SITES = parsePoints("new", [
   { name: "法國（Tessalia）", role: "先進封裝合資 · 進行中", lon: -0.37, lat: 49.18 },
   { name: "捷克（延伸）", role: "Czech Tech Day · 觀察中", lon: 15.6, lat: 50.2 },
   { name: "美國", role: "AI 伺服器 / 資料中心 · 評估中", lon: -97.7, lat: 30.3 }
-];
+]);
 
 const svg = d3.select("#map");
 const tip = d3.select("#tip");
@@ -44,7 +59,9 @@ async function render() {
   projection.translate([projection.translate()[0] + 10, projection.translate()[1] + 10]);
   const path = d3.geoPath(projection);
 
-  svg.append("g")
+  const zoomLayer = svg.append("g");
+
+  zoomLayer.append("g")
     .selectAll("path")
     .data(land.features)
     .join("path")
@@ -54,7 +71,7 @@ async function render() {
     .attr("stroke-width", 0.6);
 
   function plot(points, color, group) {
-    const g = svg.append("g");
+    const g = zoomLayer.append("g");
     g.selectAll("circle")
       .data(points)
       .join("circle")
@@ -78,6 +95,18 @@ async function render() {
 
   plot(EXISTING, "#1f6f5c");
   plot(NEW_SITES, "#b2591f");
+
+  const zoom = d3.zoom()
+    .scaleExtent([1, 12])
+    .on("zoom", (event) => {
+      zoomLayer.attr("transform", event.transform);
+      zoomLayer.selectAll("circle").attr("r", 6.5 / event.transform.k);
+      zoomLayer.selectAll("path").attr("stroke-width", 0.6 / event.transform.k);
+    });
+  svg.call(zoom);
+
+  document.getElementById("zoomIn").addEventListener("click", () => svg.transition().duration(200).call(zoom.scaleBy, 1.5));
+  document.getElementById("zoomOut").addEventListener("click", () => svg.transition().duration(200).call(zoom.scaleBy, 1 / 1.5));
 
   const legend = svg.append("g").attr("transform", "translate(14," + (height - 34) + ")");
   legend.append("circle").attr("r", 5).attr("cx", 6).attr("cy", 0).attr("fill", "#1f6f5c");

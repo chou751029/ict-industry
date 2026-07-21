@@ -4,10 +4,10 @@ Static GitHub Pages version of the TEEMA ICT industry tracking prototype.
 
 ## Files
 
-- `index.html` - app entry
-- `styles.css` - visual design
-- `app.js` - company data, filters, and interaction logic
-- `foxconn-map.html` - Foxconn site map iframe
+- `index.html` - current app entry, layout, and tracking data
+- `support.js` - runtime used by the current app
+- `foxconn-map.html` - interactive company site map
+- `app.js` and `styles.css` - legacy static build files retained for reference
 
 ## GitHub Pages
 
