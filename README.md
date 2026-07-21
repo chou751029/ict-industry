@@ -1,5 +1,3 @@
-/Users/chou751029/.zprofile:7: no such file or directory: /usr/local/bin/brew
-/Users/chou751029/.zprofile:9: no such file or directory: /usr/local/bin/brew
 # ICT Industry Tracking Platform
 
 Static GitHub Pages version of the TEEMA ICT industry tracking prototype.
