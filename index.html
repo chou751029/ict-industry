@@ -375,6 +375,7 @@ const COMPANY_WEBSITES = {
 };
 
 const INDUSTRY_NEWS = [
+  { collected: "2026-07-23", date: "2026-07-21", region: "美國／德州", market: "foreign", category: "AI 伺服器／智慧製造", title: "Wistron Celebrates Grand Opening of First U.S. Smart Factory Marking Milestone in Global Smart Manufacturing Strategy", source: "Wistron", link: "https://www.wistron.com/en/Newsroom/2026-07-22", summary: "緯創在德州 Fort Worth 啟用 D1 AI 智慧製造設施，約 324,000 平方英尺、投資約 7 億美元，已量產 NVIDIA GB300 Grace Blackwell Ultra Superchip，並將生產 Vera Rubin Superchip，屬台灣 ODM 供應鏈赴美製造在地化的重要案例。", signal: "明確設廠／量產訊號", language: "英文" },
   { collected: "2026-07-21", date: "2026-07-20", region: "美國／南卡羅來納州", market: "foreign", category: "AI 資料中心／能源政策", title: "NNSA Selects Amentum for AI Data Center and Energy Project at Savannah River Site", source: "U.S. Department of Energy / NNSA", link: "https://www.energy.gov/nnsa/articles/nnsa-selects-amentum-ai-data-center-and-energy-project-savannah-river-site", summary: "美國能源部 NNSA 選定 Amentum 進入分階段租賃協商，規劃在 Savannah River Site 建置 1GW AI 資料中心，搭配約 2GW 現地發電；目前仍須完成租約協商、許可與安全審查。", signal: "明確選址訊號", language: "英文" },
   { collected: "2026-07-21", date: "2026-07-20", region: "美國", market: "foreign", category: "光纖連接／供應鏈擴產", title: "Molex Announces Long-Term Supply Agreement with Prysmian to Accelerate Support for Data Center Growth and AI-Driven Demand", source: "Molex", link: "https://www.molex.com/en-us/news/molex-announces-long-term-supply-agreement-with-prysmian-to-accelerate-support-for-data-center-growth-and-ai-driven-demand", summary: "Molex 與 Prysmian 簽署最長 10 年光纖供應協議，將擴大美國光纖與光纜生產、使 Prysmian 美國光纖產能倍增，支援 AI 資料中心高速連接需求與供應鏈韌性。", signal: "明確擴產訊號", language: "英文" },
   { collected: "2026-07-21", date: "2026-07-20", region: "美國／德國", market: "foreign", category: "半導體設計／企業併購", title: "Siemens to acquire Precision Innovations to expand AI-powered system-on-a-chip design exploration and optimization", source: "Siemens Industry Software / PR Newswire", link: "https://www.prnewswire.com/news-releases/siemens-to-acquire-precision-innovations-to-expand-ai-powered-system-on-a-chip-design-exploration-and-optimization-302829701.html", summary: "Siemens 將收購 EDA 軟體公司 Precision Innovations，補強以 AI 進行 SoC 早期架構探索與功耗、效能、面積最佳化的能力；交易預計於 2026 年第三季完成。", signal: "技術整合訊號", language: "英文" },
@@ -393,7 +394,7 @@ function buildTrackedCompany(config) {
   return {
     id: config.id, name: config.name, english: config.english, role: config.role,
     shortName: config.shortName || config.name.replace("股份有限公司", "").replace("控股", "").replace("集團", ""),
-    updated: "2026-07-21",
+    updated: config.updated || "2026-07-21",
     built: true,
     timeline: config.timeline || [],
     monthlyAnalysis: config.monthlyAnalysis,
@@ -502,7 +503,11 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "波蘭 / 法國", rationale: "歐洲車用與工業電子在地製造需求提升，適合追蹤擴產與客戶轉單。", status: "觀察中" }] },
   { id: "delta", name: "台達電子工業股份有限公司", english: "Delta Electronics", role: "電源、電力電子、通訊電源、EV 充電、工業自動化；荷蘭、斯洛伐克、德國布局",
+    updated: "2026-07-23",
     monthlyAnalysis: "第一版聚焦歐洲電力/通訊電源、EV 充電與工業自動化。後續需追蹤 Eltek 等電源品牌整合、資料中心電源與電動車充電基建。",
+    timeline: [
+      { date: "2026-07-21", tag: "北美布局", overseas: true, source: "official", sourceCategory: "official", market: "foreign", title: "Delta Electronics Acquires 55,000-Square-Foot Facility in Fremont, Enhancing its Silicon Valley Footprint", link: "https://www.delta-americas.com/en-US/news/delta-electronics-acquires-55%2C000-square-foot-facility-in-fremont%2C-enhancing-its-silicon-valley-footprint", linkLabel: "Delta Americas 官方新聞" }
+    ],
     profile: { title: "電源與工業自動化全球供應商", body: "台達在電源、電力電子、EV 充電與工業自動化領域具全球布局，歐洲為能源轉型與製造自動化重點市場。", tags: ["電源", "EV 充電", "工業自動化"] },
     technology: { title: "電力電子與自動化解決方案", body: "重點包含電源轉換、通訊電源、EV 充電、資料中心電源、工業自動化與能源管理。", tags: ["Power Electronics", "EVSE", "Automation"] },
     partners: { title: "Eltek 與歐洲能源客戶", body: "需追蹤 Eltek、歐洲電力/通訊電源客戶、車用充電營運商與自動化系統夥伴。", tags: ["Eltek", "荷蘭", "斯洛伐克"] },
