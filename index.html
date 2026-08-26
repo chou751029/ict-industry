@@ -9,7 +9,7 @@
 <x-dc>
 <helmet>
   <style>
-    body { margin: 0; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif; }
+    body { margin: 0; overflow-x: hidden; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif; }
     a { color: #1f6f5c; }
     a:hover { color: #16493d; }
     * { box-sizing: border-box; }
@@ -44,12 +44,13 @@
       font-size: 19px;
     }
     @media (max-width: 720px) {
+      main { width: 100%; min-width: 0; overflow-x: hidden; }
       .site-header { display: block !important; padding: 14px 18px !important; }
       .site-brand { min-width: 0; gap: 10px !important; }
       .site-brand-title { font-size: 14px !important; line-height: 1.35; }
       .sheet-link { display: inline-flex !important; height: auto !important; min-height: 38px; margin: 12px 0 0 44px; padding: 7px 10px !important; justify-content: center; text-align: center; line-height: 1.35; }
-      .overview-intro, .detail-hero, .company-section-heading { display: block !important; }
-      .overview-stats, .detail-stats { width: 100%; margin-top: 16px; display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .overview-intro, .detail-hero, .company-section-heading { display: block !important; min-width: 0; }
+      .overview-stats, .detail-stats { width: 100% !important; max-width: 100%; margin-top: 16px; display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .overview-stats > div, .detail-stats > div { min-width: 0 !important; padding: 10px 6px !important; }
       .industry-header { align-items: flex-start !important; padding: 16px !important; }
       .industry-meta { align-items: flex-start !important; }
@@ -379,6 +380,8 @@ const COMPANY_WEBSITES = {
 const INDUSTRY_NEWS = [
   { collected: "2026-08-26", date: "2026-08-25", region: "美國／馬里蘭州 Frederick", market: "foreign", category: "通訊設備／關鍵基礎設施／美國在地製造", title: "Trump’s Transportation Secretary Duffy & FAA Administrator Bedford Celebrate Opening of Key Manufacturing Plant for Air Traffic Control Modernization", source: "Federal Aviation Administration", link: "https://www.faa.gov/newsroom/trumps-transportation-secretary-duffy-faa-administrator-bedford-celebrate-opening-key", summary: "美國 FAA 表示 Rohde & Schwarz USA 在馬里蘭州 Frederick 啟用 87,000 平方英尺製造廠、投資 4,000 萬美元，生產空中交通管制用數位 VoIP 語音交換器，對應全美航管現代化採購與美國製造要求。", signal: "明確新廠啟用／在地製造／聯邦採購需求", language: "英文" },
   { collected: "2026-08-26", date: "2026-08-25", region: "美國／全球", market: "foreign", category: "AI 工廠／伺服器／網通／液冷", title: "Cisco Expands Secure AI Factory with NVIDIA for the Rack-Scale Era", source: "Cisco Systems", link: "https://investor.cisco.com/news/news-details/2026/Cisco-Expands-Secure-AI-Factory-with-NVIDIA-for-the-Rack-Scale-Era/default.aspx", summary: "Cisco 與 NVIDIA、Supermicro 擴充機櫃級 AI Factory 方案，納入高密度 GPU 系統、液冷伺服器與 rack-to-fabric 液冷網路，預計 10 月供應。此為整合方案而非新設廠，但顯示 AI 資料中心的電力、液冷、網通、機櫃整合與供應鏈驗證需求同步上升。", signal: "間接 AI 工廠需求訊號／未揭露新設廠", language: "英文" },
+  { collected: "2026-08-26", date: "2026-08-24", region: "美國／俄亥俄州 Delaware", market: "foreign", category: "AI 資料中心／冷卻設備／北美在地製造擴產", title: "Digital Infrastructure Growth Drives $15 Million Wieland Expansion in Delaware", source: "JobsOhio", link: "https://www.jobsohio.com/newsroom/news-press/digital-infrastructure-growth-drives-15-million-wieland-expansion-in-delaware", summary: "JobsOhio 表示，德商 Wieland 將在俄亥俄州 Delaware 投資 1,500 萬美元設立第二座生產據點（10 萬平方英尺）、新增 100 個職位，製造支援資料中心冷卻系統的高效熱交換器，擴大北美供應能力。", signal: "明確新增產線／北美在地製造／資料中心冷卻供應鏈", language: "英文" },
+  { collected: "2026-08-26", date: "2026-08-24", region: "美國／加州 San Diego", market: "foreign", category: "AI 資料中心／電力電子／固態變壓器／政策補助", title: "UC San Diego to Test Innovative Power Technology for AI Data Centers", source: "UC San Diego Supercomputer Center", link: "https://www.sdsc.edu/news/2026/PR20260824-CEC-datacenter.html", summary: "UC San Diego 的 SDSC 將執行 848 萬美元加州能源委員會補助專案，導入兩組固態變壓器與控制器，從 12kV 電網轉供 800VDC、服務 2MW AI 運算負載；並建立資料中心彈性負載與併網容量規劃工具。", signal: "明確示範投資／州級補助／電網接入與 800VDC 架構訊號", language: "英文" },
   { collected: "2026-08-25", date: "2026-08-24", region: "台灣／馬來西亞／泰國", market: "foreign", category: "電力設備／AI 資料中心／匯流排／模組化製造", title: "70年老傳產「從馬達殺進AIDC」砍家電、拚轉型毛利率衝25%", source: "東森財經新聞", link: "https://fnc.ebc.net.tw/fncnews/business/216836", summary: "東元持續擴建台灣變壓器、配電盤與 GIS 產能，並在馬來西亞檳城建置匯流排產線；該產線於 2026 年 7 月底取得首筆資料中心訂單，預計 9 月底至 10 月出貨。馬來西亞／泰國資料中心工程與 MDC 實證，反映東南亞在地化製造、電力設備與系統整合需求。", signal: "明確海外產線／在地化製造；新廠已接單、待確認量產規模", language: "中文" },
   { collected: "2026-08-23", date: "2026-08-22", region: "中國／廣東珠海金灣", market: "foreign", category: "PCB／AI 資料中心／智慧製造擴產", title: "深圳市景旺电子股份有限公司关于调整珠海金湾基地扩产投资计划暨增加投资的公告", source: "上海證券報（公司法定資訊揭露）", link: "https://paper.cnstock.com/html/2026-08/22/content_2257934.htm", summary: "景旺電子將珠海金灣基地原關鍵製程強化案調整為超高多層 PCB 智慧製造項目，總投資預計人民幣 43.88 億元；主體廠房已在建，將導入先進設備與環保公用設施以擴充 AI 算力、高速網通與車用高階 PCB 產能。仍須股東會、備案、環評、規劃及施工許可。", signal: "明確既有基地擴產／新建智慧製造產線；行政許可中", language: "中文" },
   { collected: "2026-08-22", date: "2026-08-21", region: "台灣", market: "domestic", category: "線束／連接線／半導體設備／AI 資料中心", title: "《其他電》貿聯2026年H1 EPS達26.94元 下半年成長可期", source: "時報新聞／富聯網", link: "https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?pu=News_0002_5&sn=6278890001", summary: "貿聯第 2 季與上半年獲利創高，主要受惠半導體設備及資料中心業務；反映 AI 基建對高階線束、連接與光互連的需求持續，但未揭露新增海外產能。", signal: "間接／需求成長，未揭露新設廠", language: "中文" },
