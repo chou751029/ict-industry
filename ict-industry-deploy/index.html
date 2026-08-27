@@ -93,7 +93,7 @@
       <section class="overview-intro" style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;justify-content:space-between;margin-bottom:22px;">
         <div>
           <h1 style="margin:0 0 6px;font-size:28px;color:#1c3f45;">17 家企業總覽儀表板</h1>
-          <p style="margin:0;color:#6f6a5e;font-size:14px;max-width:640px;line-height:1.6;">每日彙整企業新聞、既有據點與新據點評估動態，優先掌握設廠、土地、產能與投資布局訊號。</p>
+          <p style="margin:0;color:#6f6a5e;font-size:14px;max-width:640px;line-height:1.6;">每日彙整企業新聞、既有據點與新據點評估動態，優先掌握海外設廠相關訊號。</p>
         </div>
         <div class="overview-stats" style="display:flex;gap:10px;">
           <div style="min-width:110px;padding:10px 14px;border:1px solid rgba(28,53,58,0.14);border-radius:8px;background:#ffffff;text-align:center;">
@@ -106,7 +106,7 @@
           </div>
           <div style="min-width:110px;padding:10px 14px;border:1px solid rgba(28,53,58,0.14);border-radius:8px;background:#ffffff;text-align:center;">
             <p style="margin:0;font-size:20px;font-weight:800;color:#b2591f;">{{ totalOverseas }}</p>
-            <p style="margin:2px 0 0;font-size:11px;color:#6f6a5e;">設廠布局訊號</p>
+            <p style="margin:2px 0 0;font-size:11px;color:#6f6a5e;">海外設廠訊號</p>
           </div>
         </div>
       </section>
@@ -173,7 +173,7 @@
             <p style="margin:0;font-size:12.5px;color:#6f6a5e;line-height:1.55;min-height:36px;">{{ c.role }}</p>
             <div style="display:flex;gap:8px;padding-top:8px;border-top:1px solid rgba(28,53,58,0.1);font-size:12px;color:#6f6a5e;">
               <span style="white-space:nowrap;flex-shrink:0;">📰 {{ c.newsCount }} 則新聞</span>
-              <span style="white-space:nowrap;flex-shrink:0;color:#b2591f;font-weight:700;">🏗 {{ c.overseasCount }} 設廠布局</span>
+              <span style="white-space:nowrap;flex-shrink:0;color:#b2591f;font-weight:700;">🏗 {{ c.overseasCount }} 海外設廠</span>
             </div>
           </article>
         </sc-for>
@@ -206,7 +206,7 @@
           </div>
           <div style="min-width:96px;padding:10px 12px;border:1px solid rgba(28,53,58,0.14);border-radius:8px;background:#ffffff;text-align:center;">
             <p style="margin:0;font-size:18px;font-weight:800;color:#b2591f;">{{ company.overseasCount }}</p>
-            <p style="margin:2px 0 0;font-size:11px;color:#6f6a5e;">設廠/投資布局</p>
+            <p style="margin:2px 0 0;font-size:11px;color:#6f6a5e;">海外設廠訊號</p>
           </div>
           <div style="min-width:96px;padding:10px 12px;border:1px solid rgba(28,53,58,0.14);border-radius:8px;background:#ffffff;text-align:center;">
             <p style="margin:0;font-size:12px;font-weight:700;color:#6f6a5e;">更新</p>
@@ -378,7 +378,9 @@ const COMPANY_WEBSITES = {
 };
 
 const INDUSTRY_NEWS = [
-  { collected: "2026-08-27", date: "2026-08-26", region: "美國／俄勒岡州 Tualatin", market: "foreign", category: "半導體設備／研發／潔淨室／美國製造聚落", title: "Lam Research Breaks Ground on New Oregon Lab to Accelerate AI Era Semiconductor Research & Development Locally, Globally", source: "Lam Research", link: "https://newsroom.lamresearch.com/2026-08-26-Lam-Research-Breaks-Ground-on-New-Oregon-Lab-to-Accelerate-AI-Era-Semiconductor-Research-Development-Locally,-Globally", summary: "Lam Research 在 Oregon Tualatin 動工興建 12 萬平方英尺研發實驗室，完工後將使潔淨室實驗空間增加逾 50%；該案為公司未來五年逾 30 億美元全球實驗網路投資的一環，預計 2028 年啟用，支援先進沉積、蝕刻、材料科學與硬體驗證。", signal: "明確新建研發／潔淨室設施；強化美國半導體製造聚落", language: "英文" },
+  { collected: "2026-08-27", date: "2026-08-26", region: "印度／馬哈拉施特拉邦 Pune", market: "foreign", category: "車用電子／EMS／PCBA／印度在地化製造", title: "Motherson Commences Commercial Production at New Pune Manufacturing Facility", source: "Electrical Mirror", link: "https://electricalmirror.net/motherson-commences-commercial-production-at-new-pune-manufacturing-facility/", summary: "Motherson 子公司 MECL 在 Pune 綠地製造廠開始商轉，新增 EMS 能力，生產 PCBA、ECU 與相關電子產品；初期年產能約 150 萬件，截至 8 月 26 日投資約 INR 9.4 億，並於 8 月 25 日取得 consent to operate。", signal: "明確新廠商轉／EMS 在地化／車用電子供應鏈", language: "英文" },
+  { collected: "2026-08-27", date: "2026-08-26", region: "美國／俄勒岡州 Tualatin", market: "foreign", category: "半導體設備／研發／潔淨室／美國製造聚落", title: "Lam Research Breaks Ground on New Oregon Lab to Accelerate AI Era Semiconductor Research & Development Locally, Globally", source: "Lam Research", link: "https://newsroom.lamresearch.com/2026-08-26-Lam-Research-Breaks-Ground-on-New-Oregon-Lab-to-Accelerate-AI-Era-Semiconductor-Research-Development-Locally,-Globally", summary: "Lam Research 在 Oregon Tualatin 動工興建 120,000 平方英尺研發實驗室，預計 2028 年啟用，將使潔淨室實驗空間增加逾 50%；該案是未來五年逾 30 億美元全球實驗網路投資的一環。", signal: "明確新建研發／潔淨室設施；強化美國半導體製造聚落", language: "英文" },
+  { collected: "2026-08-27", date: "2026-08-25", region: "印度／卡納塔克邦 Bengaluru", market: "foreign", category: "電子製造／Hi-Rel EMS／合資設廠／印度在地化", title: "Grand inauguration of the Syrma SGS Elemaster JV Plant in Bengaluru", source: "Elemaster Group", link: "https://www.elemaster.com/en/grand-inauguration-of-the-syrma-sgs-elemaster-jv-plant-in-bengaluru/", summary: "Elemaster 宣布與 Syrma SGS 的合資電子製造廠將於 9 月 2 日在 Bengaluru 正式揭幕，主攻高可靠度電子製造；公司原文定位為擴大印度製造布局的重要里程碑。", signal: "明確合資製造設施啟用／印度在地化；產能與客戶待追蹤", language: "英文" },
   { collected: "2026-08-27", date: "2026-08-25", region: "美國／德州 San Antonio", market: "foreign", category: "電力設備／資料中心／北美在地製造／州級補助", title: "Governor Abbott Announces IEM Expansion In Bexar County", source: "Office of the Texas Governor", link: "https://gov.texas.gov/news/post/governor-abbott-announces-iem-expansion-in-bexar-county", summary: "德州州長辦公室宣布 IEM 將於 San Antonio 的 Brooks City Base 設立先進製造廠，投資 2 億美元、最多新增 3,000 個職位；公司生產配電系統、遠端電力盤、開關設備與配電盤，支援資料中心等產業。州方提供 336 萬美元 Texas Enterprise Fund 補助（448 個職位）。", signal: "明確新設先進製造廠／州級補助／北美在地供應", language: "英文" },
   { collected: "2026-08-27", date: "2026-08-25", region: "韓國", market: "foreign", category: "半導體設備／機器人／產能擴建", title: "CPSYSTEM to Build Second Plant in Response to Expanding Semiconductor and Robotics Demand", source: "The Asia Business Daily", link: "https://view.asiae.co.kr/en/article/2026082508414232613", summary: "CPSYSTEM 已取得土地與廠房，將投資 71 億韓元興建第二廠，目標 2027 年上半年完工；新廠毗鄰既有廠，整合製造與物流，預計把產能提高至約三倍，以供應半導體超潔淨電纜拖鏈與機器人電纜保護方案。", signal: "明確擴產／既有廠旁新建／供應鏈韌性", language: "英文／韓文" },
   { collected: "2026-08-26", date: "2026-08-25", region: "美國／馬里蘭州 Frederick", market: "foreign", category: "通訊設備／關鍵基礎設施／美國在地製造", title: "Trump’s Transportation Secretary Duffy & FAA Administrator Bedford Celebrate Opening of Key Manufacturing Plant for Air Traffic Control Modernization", source: "Federal Aviation Administration", link: "https://www.faa.gov/newsroom/trumps-transportation-secretary-duffy-faa-administrator-bedford-celebrate-opening-key", summary: "美國 FAA 表示 Rohde & Schwarz USA 在馬里蘭州 Frederick 啟用 87,000 平方英尺製造廠、投資 4,000 萬美元，生產空中交通管制用數位 VoIP 語音交換器，對應全美航管現代化採購與美國製造要求。", signal: "明確新廠啟用／在地製造／聯邦採購需求", language: "英文" },
@@ -448,11 +450,7 @@ function buildTrackedCompany(config) {
 
 const COMPANY_BACKLOG = [
   { id: "acbel", name: "康舒科技股份有限公司", english: "AcBel Polytech", role: "電源供應器、電源轉換、智慧能源；歐洲控股與 OmniOn Power 相關業務",
-    updated: "2026-06-23",
     monthlyAnalysis: "第一版以歐洲電源供應鏈與智慧能源布局為主軸。康舒需持續追蹤歐洲子公司、OmniOn Power 相關業務整合、商標與專利授權，以及高階電源營運是否轉化為在地研發、服務或製造需求。",
-    timeline: [
-      { date: "2026-06-23", tag: "歐洲布局", overseas: true, layoutSignal: true, source: "official", sourceCategory: "official", market: "foreign", title: "康舒亮相 Power2Drive Europe，加速布局歐洲 EV 電力市場", link: "https://www.acbel.com/new/a51zi76JiBMu6Pw8", linkLabel: "AcBel 官方新聞" }
-    ],
     profile: { title: "電源與智慧能源供應商", body: "康舒以電源供應器、電源轉換與智慧能源應用為核心，適合作為資料中心、通訊電源、工業電源與新能源基礎設施需求的觀察標的。", tags: ["電源供應器", "智慧能源", "通訊電源"] },
     technology: { title: "高階電源與能源轉換", body: "重點技術節點包含電源轉換、通訊電源、伺服器/資料中心電源、能源管理與相關智慧財產權布局。", tags: ["電源轉換", "資料中心電源", "能源管理"] },
     partners: { title: "OmniOn Power 與歐洲營運節點", body: "需追蹤 OmniOn Power Technology GmbH、歐洲子公司與地方招商/能源基礎設施合作關係。", tags: ["OmniOn Power", "歐洲控股", "IP 授權"] },
@@ -464,11 +462,7 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "德國 / 歐洲", rationale: "高階電源與智慧財產權營運可能帶動在地服務、測試或組裝需求。", status: "觀察中" }] },
   { id: "inventec", name: "英業達股份有限公司", english: "Inventec", role: "伺服器、雲端設備、電子代工；捷克 Brno 新廠",
-    updated: "2026-08-26",
     monthlyAnalysis: "第一版聚焦捷克 Brno 伺服器與雲端設備在地化。後續每日新聞需抓取 AI 伺服器、資料中心客戶、歐洲供應鏈韌性與捷克廠擴產訊號。",
-    timeline: [
-      { date: "2026-08-24", tag: "產能布局", overseas: true, layoutSignal: true, source: "industry", sourceCategory: "industry", market: "foreign", title: "法人預期英業達受新產能、ASIC 與機櫃級 AI 伺服器業務成長帶動", link: "https://money.udn.com/money/amp/story/5607/9710993", linkLabel: "經濟日報" }
-    ],
     profile: { title: "雲端與伺服器代工重點業者", body: "英業達是伺服器、雲端設備與電子代工供應鏈重要廠商，歐洲布局與資料中心需求密切相關。", tags: ["伺服器", "雲端設備", "ODM"] },
     technology: { title: "伺服器與雲端設備製造", body: "重點觀察 AI 伺服器、一般伺服器、雲端設備、系統組裝與歐洲在地供應鏈配置。", tags: ["AI Server", "Cloud", "系統組裝"] },
     partners: { title: "雲端與資料中心客戶", body: "合作節點以歐美雲端、伺服器與資料中心客戶為主，需由新聞與法說會逐步拆解。", tags: ["資料中心", "雲端客戶", "捷克供應鏈"] },
@@ -501,11 +495,8 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "歐洲主要市場", rationale: "EV 充電與雲端電源需求可能推動在地測試、維修、倉儲與服務據點。", status: "評估中" }] },
   { id: "teco", name: "東元電機股份有限公司", english: "TECO Electric & Machinery", role: "馬達、電力設備、智慧電網、綠能設備；台灣、中國、印度、新加坡與美國等全球布局",
-    updated: "2026-08-25",
     monthlyAnalysis: "第一版聚焦歐洲電網升級、烏克蘭戰後重建與高效能能源設備。後續新聞需標註是否涉及政府工程、電力基建、綠能與智慧電網。",
     timeline: [
-      { date: "2026-08-24", tag: "海外產線", overseas: true, layoutSignal: true, source: "industry", sourceCategory: "industry", market: "foreign", title: "東元馬來西亞檳城匯流排產線接獲首筆資料中心訂單，預計 9 月底至 10 月出貨", link: "https://fnc.ebc.net.tw/fncnews/business/216836", linkLabel: "東森財經新聞" },
-      { date: "2026-08-20", tag: "MDC布局", overseas: true, layoutSignal: true, source: "industry", sourceCategory: "industry", market: "foreign", title: "MDC 把資料中心搬進工廠，東元建立馬來西亞模組化電氣生產能力", link: "https://uanalyze.com.tw/articles/4184353773", linkLabel: "優分析產業數據中心" },
       { date: "2026-07-15", tag: "日本布局", overseas: true, source: "official", sourceCategory: "official", market: "foreign", title: "東元攜智慧動力解決方案前進日本，TJM Series 機器人關節模組亮相", link: "https://www.teco.com.tw/zh-tw/press/news/dong-yuan-xie-zhi-hui-dong-li-jie-jue-fang-an-qian-jin-ri-ben-TJM-Series-quan-ji-lie-ji-qi-ren-guan-jie-mo-zu-shou-du-wan-zheng-liang-xiang", linkLabel: "TECO 官方新聞" },
       { date: "2026-07-14", tag: "AIDC基建", overseas: true, source: "official", sourceCategory: "official", market: "foreign", title: "東元 115 年股東常會：積極佈局 AIDC 基建商機，衝高北美及東南亞營收", link: "https://tecoie.teco.com.tw/page/462", linkLabel: "TECO 電力能源網" }
     ],
@@ -536,11 +527,7 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "挪威 / 歐洲", rationale: "高階聲學技術可作為歐洲研發與客戶服務節點。", status: "觀察中" }] },
   { id: "usi", name: "環鴻科技股份有限公司", english: "Universal Scientific Industrial / USI", role: "EMS、電子製造服務、車用與工業電子；法國、波蘭、德國、英國據點",
-    updated: "2026-05-27",
     monthlyAnalysis: "第一版以 Asteelflash 收購後歐洲 EMS 製造服務網絡為主。需每日追蹤法國、波蘭、德國、英國等地的在地製造、車用電子與工業電子訂單。",
-    timeline: [
-      { date: "2026-05-27", tag: "歐洲布局", overseas: true, layoutSignal: true, source: "official", sourceCategory: "official", market: "foreign", title: "USI 於德國 PCIM Europe 展出 SiC chip-embedded packaging 與先進功率模組", link: "https://www.usiglobal.com/en/news/sic-chip-embedded-packaging-tech-pcim2026", linkLabel: "USI 官方新聞" }
-    ],
     profile: { title: "全球 EMS 與 SiP 製造服務業者", body: "環鴻科技具電子製造服務能力，歐洲據點可支援車用、工業、通訊與消費電子客戶在地化。", tags: ["EMS", "車用電子", "工業電子"] },
     technology: { title: "電子製造服務與系統模組", body: "重點技術包含 EMS、SiP/模組製造、車用電子、工業電子與區域製造服務。", tags: ["EMS", "SiP", "模組製造"] },
     partners: { title: "Asteelflash 與歐洲客戶群", body: "Asteelflash 為歐洲在地製造與客戶服務的重要節點，需追蹤整合後客戶與產能配置。", tags: ["Asteelflash", "法國", "波蘭"] },
@@ -557,12 +544,10 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "波蘭 / 法國", rationale: "歐洲車用與工業電子在地製造需求提升，適合追蹤擴產與客戶轉單。", status: "觀察中" }] },
   { id: "delta", name: "台達電子工業股份有限公司", english: "Delta Electronics", role: "電源、電力電子、通訊電源、EV 充電、工業自動化；荷蘭、斯洛伐克、德國布局",
-    updated: "2026-08-21",
+    updated: "2026-07-23",
     monthlyAnalysis: "第一版聚焦歐洲電力/通訊電源、EV 充電與工業自動化。後續需追蹤 Eltek 等電源品牌整合、資料中心電源與電動車充電基建。",
     timeline: [
-      { date: "2026-08-19", tag: "跨區產線", overseas: true, layoutSignal: true, source: "industry", sourceCategory: "industry", market: "foreign", title: "台達展示具身 AI 與產線數位雙生，泰國 AI 伺服器電源產線已部署", link: "https://en.prnasia.com/releases/global/delta-showcases-embodied-ai-dual-arm-robot-platform-and-ai-enhanced-production-line-digital-twin-at-automation-taipei-2026-544553.shtml", linkLabel: "PR Newswire APAC" },
-      { date: "2026-07-21", tag: "北美布局", overseas: true, source: "official", sourceCategory: "official", market: "foreign", title: "Delta Electronics Acquires 55,000-Square-Foot Facility in Fremont, Enhancing its Silicon Valley Footprint", link: "https://www.delta-americas.com/en-US/news/delta-electronics-acquires-55%2C000-square-foot-facility-in-fremont%2C-enhancing-its-silicon-valley-footprint", linkLabel: "Delta Americas 官方新聞" },
-      { date: "2026-06-02", tag: "AIDC基建", overseas: false, layoutSignal: true, source: "official", sourceCategory: "official", market: "domestic", title: "台達發表預製 AI 模組化資料中心方案，可縮短部署時程", link: "https://www.deltaww.com/en-US/press/40339", linkLabel: "Delta 官方新聞" }
+      { date: "2026-07-21", tag: "北美布局", overseas: true, source: "official", sourceCategory: "official", market: "foreign", title: "Delta Electronics Acquires 55,000-Square-Foot Facility in Fremont, Enhancing its Silicon Valley Footprint", link: "https://www.delta-americas.com/en-US/news/delta-electronics-acquires-55%2C000-square-foot-facility-in-fremont%2C-enhancing-its-silicon-valley-footprint", linkLabel: "Delta Americas 官方新聞" }
     ],
     profile: { title: "電源與工業自動化全球供應商", body: "台達在電源、電力電子、EV 充電與工業自動化領域具全球布局，歐洲為能源轉型與製造自動化重點市場。", tags: ["電源", "EV 充電", "工業自動化"] },
     technology: { title: "電力電子與自動化解決方案", body: "重點包含電源轉換、通訊電源、EV 充電、資料中心電源、工業自動化與能源管理。", tags: ["Power Electronics", "EVSE", "Automation"] },
@@ -578,10 +563,9 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "斯洛伐克 / 德國", rationale: "EV 充電、資料中心電源與工業自動化需求可能帶動產線擴充。", status: "觀察中" }] },
   { id: "compal", name: "仁寶電腦工業股份有限公司", english: "Compal Electronics", role: "電腦代工、車用電子、電子控制單元；波蘭車用電子廠",
-    updated: "2026-08-26",
+    updated: "2026-08-05",
     timeline: [
-      { date: "2026-08-24", tag: "待複核產能", overseas: true, layoutSignal: true, source: "industry", sourceCategory: "industry", market: "foreign", title: "法人預期仁寶切入美系 CSP ASIC L11 組裝，台灣與美國新廠年底落成", link: "https://money.udn.com/money/amp/story/5607/9710993", linkLabel: "經濟日報" },
-      { date: "2026-08-04", tag: "智慧製造", overseas: false, source: "industry", sourceCategory: "industry", market: "domestic", title: "仁寶打造 AI Agent 一鍵自動化完成品質驗證", link: "https://www.ctee.com.tw/news/20260804701569-431202", linkLabel: "工商時報" },
+      { date: "2026-08-04", tag: "智慧製造", overseas: false, source: "media", sourceCategory: "media", market: "domestic", title: "仁寶打造 AI Agent 一鍵自動化完成品質驗證", link: "https://www.ctee.com.tw/news/20260804701569-431202", linkLabel: "工商時報" },
       { date: "2026-07-24", tag: "AI伺服器", overseas: true, source: "official", sourceCategory: "official", market: "foreign", title: "Compal Builds AI-Ready Infrastructure with 6th Gen AMD EPYC™ Server CPUs at AMD Advancing AI 2026", link: "https://www.compal.com/en-us/media/340/ren-bao-yu-amd-advancing-ai-2026-zhan-shi-cai-yong", linkLabel: "Compal 官方新聞稿" }
     ],
     monthlyAnalysis: "第一版聚焦波蘭車用電子廠與 ECU、ADAS/ADS 感測器產線。每日新聞需追蹤波蘭增資、車用電子客戶、歐洲車廠在地化與自動化組裝線。",
@@ -598,11 +582,7 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "波蘭", rationale: "車用電子產能與 ADAS/ADS 感測器需求，需追蹤增資與產線擴充。", status: "進行中" }] },
   { id: "advantech", name: "研華股份有限公司", english: "Advantech", role: "工業電腦、Edge AI、智慧製造、IoT；荷蘭、德國歐洲據點",
-    updated: "2026-08-26",
     monthlyAnalysis: "第一版聚焦歐洲 Edge AI 與智慧製造落地。荷蘭 Eindhoven 服務中心與德國 Munich 創新中心可作為產業應用、客戶 PoC 與在地部署觀察點。",
-    timeline: [
-      { date: "2026-08-25", tag: "Edge AI布局", overseas: true, layoutSignal: true, source: "official", sourceCategory: "official", market: "foreign", title: "Advantech 擴充支援 NVIDIA Jetson Orin Nano 2 的工業級 Edge AI 產品組合", link: "https://www.advantech.com/ja-jp/resources/news/advantech-expands-its-edge-ai-systems-portfolio-with-nvidia-jetson-orin-nano-2-to-redefine-entry-level-edge-ai-performance", linkLabel: "Advantech 官方新聞" }
-    ],
     profile: { title: "工業電腦與邊緣智慧平台業者", body: "研華聚焦工業電腦、IoT、Edge AI 與智慧製造，歐洲市場重視在地方案驗證與垂直應用部署。", tags: ["IPC", "Edge AI", "IoT"] },
     technology: { title: "Edge AI 與智慧製造平台", body: "重點技術包含工業電腦、邊緣運算、智慧製造、IoT 平台與垂直領域應用。", tags: ["Edge AI", "智慧製造", "Sector-Lead"] },
     partners: { title: "歐洲系統整合商與在地企業", body: "需追蹤德國、荷蘭與歐洲 10 國辦公據點的系統整合商、製造業客戶與應用夥伴。", tags: ["Eindhoven", "Munich", "系統整合"] },
@@ -616,11 +596,7 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "德國 / 荷蘭", rationale: "Edge AI 與智慧製造方案需靠近製造客戶與系統整合商。", status: "觀察中" }] },
   { id: "kenmec", name: "廣運機械工程股份有限公司", english: "Kenmec Group", role: "智慧物流、自動倉儲、工業自動化、機器人整合",
-    updated: "2026-01-26",
     monthlyAnalysis: "第一版聚焦智慧物流、自動倉儲與歐洲自動化廠商合作。後續需追蹤 NEURA Robotics 等合作，以及方案是否輸出至歐洲製造、電商與航空業客戶。",
-    timeline: [
-      { date: "2026-01-26", tag: "機器人布局", overseas: true, layoutSignal: true, source: "industry", sourceCategory: "industry", market: "foreign", title: "廣運代理德國 NEURA Robotics，2026 年機器人生意可望首度貢獻收入", link: "https://money.udn.com/money/story/5612/9288315", linkLabel: "經濟日報" }
-    ],
     profile: { title: "智慧物流與自動化系統整合業者", body: "廣運集團具智慧物流、自動倉儲與自動化生產設備能力，可支援製造業、電商與航空業自動化需求。", tags: ["智慧物流", "自動倉儲", "系統整合"] },
     technology: { title: "自動倉儲與機器人整合", body: "重點包含智慧物流系統、自動化倉儲、輸送設備、機器人與智慧工廠解決方案。", tags: ["AMR/AGV", "倉儲自動化", "機器人"] },
     partners: { title: "歐洲自動化與機器人廠商", body: "需追蹤與德國 NEURA Robotics 等自動化與機器人業者的技術合作。", tags: ["NEURA Robotics", "德國", "技術結盟"] },
@@ -643,11 +619,7 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "歐洲主要工業國", rationale: "高階傳動模組若進入車用與機器人供應鏈，需觀察代理、倉儲與售服節點。", status: "評估中" }] },
   { id: "aurotek", name: "和椿科技股份有限公司", english: "Aurotek Corporation", role: "工業自動化、機器人、控制元件代理、CNC/MES 整合",
-    updated: "2026-04-16",
     monthlyAnalysis: "第一版聚焦德國等歐洲自動化品牌代理、CNC 與 MES 解決方案輸出。後續新聞需追蹤代理權、系統整合案與智慧工廠專案。",
-    timeline: [
-      { date: "2026-04-16", tag: "自動化布局", overseas: false, layoutSignal: true, source: "official", sourceCategory: "official", market: "domestic", title: "和椿 2026 機器人新品發佈會，聚焦 AI 清潔、自動巡檢與工業物流搬運", link: "https://aurotek.com/robotic-product-launch-seminar/", linkLabel: "Aurotek 官方活動" }
-    ],
     profile: { title: "工業自動化與智慧工廠整合業者", body: "和椿以工業自動化元件代理、機器人應用、CNC 與 MES 整合為核心，具製造業數位轉型服務能力。", tags: ["工業自動化", "CNC", "MES"] },
     technology: { title: "CNC、MES 與自動化控制", body: "重點技術包含自動控制元件、工業機器人、CNC 數控系統、MES 與無人工廠整合方案。", tags: ["CNC", "MES", "無人工廠"] },
     partners: { title: "歐洲工業機器人與控制品牌", body: "需追蹤德國等歐洲品牌代理、技術合作與智慧工廠專案夥伴。", tags: ["德國品牌", "機器人", "代理整合"] },
@@ -676,12 +648,7 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "德國 / 義大利 / 瑞士", rationale: "歐洲實體產能與汽車、航太供應鏈在地化，需追蹤投資與產線更新。", status: "進行中" }] },
   { id: "bizlink", name: "貿聯控股", english: "BizLink Holding", role: "線束、連接線、工業應用、醫療與車用線束；塞爾維亞、斯洛伐克據點",
-    updated: "2026-06-10",
     monthlyAnalysis: "第一版聚焦 LEONI 相關事業收購整合、塞爾維亞與斯洛伐克歐洲製造基地。後續需追蹤 SMT、PVC 產線、工業自動化、醫療與車用線束訂單。",
-    timeline: [
-      { date: "2026-06-10", tag: "併購布局", overseas: true, layoutSignal: true, source: "official", sourceCategory: "official", market: "foreign", title: "BizLink 以 US$850M 企業價值收購 Interplex Datacom，擴大全球 AI 資料中心互連製造版圖", link: "https://www.bizlinktech.com/news/bizlink-expands-global-market-presence-and-deepens-customer-partnerships-by-acquiring-interplex-datacom", linkLabel: "BizLink 官方新聞" },
-      { date: "2026-06-04", tag: "AI基建", overseas: false, layoutSignal: true, source: "official", sourceCategory: "official", market: "domestic", title: "BizLink 展示支援 NVIDIA MGX 生態系的 AI Infrastructure Interconnect Solutions", link: "https://www.bizlinktech.com/news/bizlink-showcases-ai-infrastructure-interconnect-solutions-supporting-the-nvidia-mgx-ecosystem-at-computex-2026", linkLabel: "BizLink 官方新聞" }
-    ],
     profile: { title: "連接線與線束解決方案供應商", body: "貿聯產品涵蓋連接線、線束、工業應用、醫療、機器人與車用線束，是歐洲製造在地化與高端客戶供應鏈觀察標的。", tags: ["線束", "連接線", "車用"] },
     technology: { title: "SMT、PVC 產線與高端線束", body: "重點包含表面黏著技術、PVC 膠料產線、工業應用線束、醫療與機器人連接解決方案。", tags: ["SMT", "PVC", "Industrial Cable"] },
     partners: { title: "LEONI 事業整合與歐洲客戶", body: "需追蹤 LEONI 電器線束與工業應用事業整合，以及 Bosch、Dyson 等高端客戶供應鏈。", tags: ["LEONI", "Bosch", "Dyson"] },
@@ -728,11 +695,10 @@ const FOXCONN = {
   shortName: "鴻海",
   english: "Hon Hai Precision Industry / Foxconn",
   role: "EMS、AI 伺服器、半導體封裝、衛星與通訊供應鏈",
-  updated: "2026-08-12",
+  updated: "2026-07-21",
   built: true,
   monthlyAnalysis: "近一個月鴻海動能集中在歐洲先進封裝與 AI／機器人生態系：法國 Tessalia 廠與 Thales、Radiall 共同投資揭幕，標誌其半導體封裝產能正式落地歐洲；同期 Czech Tech Day 展示 AI、機器人與電動移動技術，顯示捷克據點角色正從單純製造擴大為技術展示與客戶連結中心。財務面 6 月合併營收如期公告，未見重大波動；策略面則與 Sharp 簽署合作備忘錄，延續其消費電子與顯示技術結盟布局。整體而言，鴻海海外設廠訊號集中在歐洲（法國、捷克），美國仍以 AI 伺服器與資料中心需求為觀察重點，建議持續追蹤 Tessalia 後續產能規劃與捷克廠是否有進一步資本支出宣布。",
   timeline: [
-    { date: "2026-08-12", tag: "國內土地", overseas: false, layoutSignal: true, source: "official", sourceCategory: "official", market: "domestic", title: "鴻海取得新北土城工業區土地及地上物，作為未來營運與產能發展規劃", link: "https://www.honhai.com.tw/zh-tw/press-center/press-releases/latest-news", linkLabel: "鴻海官方新聞中心" },
     { date: "2026 進行中", pinned: true, tag: "海外設廠", overseas: true, source: "official", title: "法國 Tessalia 先進封裝廠揭幕，攜手 Thales、Radiall 共同投資", link: "https://www.foxconn.com/en-us/press-center/events/csr-events/2049", linkLabel: "Foxconn 官方活動頁" },
     { date: "2026-07-20", tag: "海外訂單", overseas: true, source: "other", title: "鴻海奪 SpaceX AI 伺服器大單，下一步瞄準太空資料中心", link: "https://money.udn.com/money/story/11162/9637859", linkLabel: "經濟日報" },
     { date: "2026-07-05", tag: "財務", overseas: false, source: "official", title: "公告 2026 年 6 月未審核合併營收", link: "https://www.foxconn.com/en-us", linkLabel: "Foxconn 官方首頁" },
@@ -779,7 +745,6 @@ const FOXCONN = {
   newSites: {
     items: [
       { location: "法國（Tessalia）", rationale: "先進封裝合資，與 Thales、Radiall 共同投資", status: "進行中" },
-      { location: "台灣新北土城", rationale: "2026/08/12 董事會通過購置工業區土地及地上物，後續朝光通訊、超精密模具與精密成型等業務規劃。", status: "已取得土地" },
       { location: "捷克（延伸）", rationale: "Czech Tech Day 展示 AI／機器人／電動移動，觀察後續產能承諾", status: "觀察中" },
       { location: "美國", rationale: "AI 伺服器、資料中心需求；追蹤 CHIPS/48D 與州別補貼", status: "評估中" }
     ]
@@ -797,11 +762,6 @@ function getMarket(t) {
 }
 function countOverseas(c) {
   const newsSignals = c.timeline.filter((t) => t.overseas).length;
-  const siteSignals = c.newSites.items.filter((s) => s.status !== "待建檔").length;
-  return newsSignals + siteSignals;
-}
-function countLayoutSignals(c) {
-  const newsSignals = c.timeline.filter((t) => t.layoutSignal || t.overseas).length;
   const siteSignals = c.newSites.items.filter((s) => s.status !== "待建檔").length;
   return newsSignals + siteSignals;
 }
@@ -890,7 +850,7 @@ class Component extends DCLogic {
       english: c.english,
       role: c.role,
       newsCount: c.timeline.length,
-      overseasCount: countLayoutSignals(c),
+      overseasCount: c.timeline.filter((t) => t.overseas).length,
       statusLabel: c.built ? "已建檔" : "建置中",
       statusStyle: c.built ? "background:rgba(31,111,92,0.12);color:#1f6f5c;" : "background:#efeadf;color:#6f6a5e;",
       onOpen: () => this.goDetail(c.id)
@@ -898,7 +858,7 @@ class Component extends DCLogic {
 
     const totalCompanies = COMPANIES.length;
     const totalNews = COMPANIES.reduce((sum, c) => sum + c.timeline.length, 0);
-    const totalOverseas = COMPANIES.reduce((sum, c) => sum + countLayoutSignals(c), 0);
+    const totalOverseas = COMPANIES.reduce((sum, c) => sum + countOverseas(c), 0);
 
 const uniqueIndustryNews = INDUSTRY_NEWS
   .filter((news, index, items) => items.findIndex((item) => item.link === news.link) === index)
@@ -912,7 +872,7 @@ const uniqueIndustryNews = INDUSTRY_NEWS
 
     const raw = COMPANIES.find((c) => c.id === this.state.companyId) || FOXCONN;
     const matchesFilter = () => true;
-    const NOW = new Date("2026-08-27");
+    const NOW = new Date("2026-07-21");
     const RANGE_DAYS = { "7d": 7, "30d": 30, "90d": 90 };
     const matchesTimeRange = (t) => {
       if (t.pinned || this.state.timeRange === "all") return true;
@@ -926,7 +886,7 @@ const uniqueIndustryNews = INDUSTRY_NEWS
       const market = getMarket(t);
       return {
         ...t,
-        borderColor: (t.layoutSignal || t.overseas) ? OVERSEAS_COLOR : NEWS_COLOR,
+        borderColor: t.overseas ? OVERSEAS_COLOR : NEWS_COLOR,
         sourceLabel: SOURCE_LABELS[getSourceCategory(t)] || getSourceCategory(t),
         marketLabel: MARKET_LABELS[market] || market,
         marketStyle: market === "foreign" ? "background:rgba(178,89,31,0.12);color:#b2591f;" : "background:rgba(28,53,58,0.08);color:#1c3f45;"
@@ -954,7 +914,7 @@ const uniqueIndustryNews = INDUSTRY_NEWS
       website: COMPANY_WEBSITES[raw.id],
       mapUrl: this.buildMapUrl(raw.sites.items, []),
       newsCount: raw.timeline.length,
-      overseasCount: countLayoutSignals(raw),
+      overseasCount: raw.timeline.filter((t) => t.overseas).length,
       techTagCount: raw.technology.tags.length,
       partnerTagCount: raw.partners.tags.length,
       siteCount: raw.sites.items.length,
