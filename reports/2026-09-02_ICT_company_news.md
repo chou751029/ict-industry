@@ -47,3 +47,14 @@ AI 基礎設施投資從伺服器延伸至可用電力、閉迴路冷卻、餘�
 - `新聞追蹤` 新增 **0** 列；`ICT產業新聞` 新增 **3** 列；網站「近期 ICT 產業新聞」新增 **3** 筆。
 - 未寫入候選 **5** 筆：17 家企業之舊聞或已收錄連結 3 筆、清單／首頁 1 筆、未揭露投資或產能細節的摘要 1 筆。
 - 來源驗證：三筆均為可直接開啟的原文，且逐頁核對標題、日期、發布機構與內文主旨；Sheet 與全站新聞網址去重均無重複。
+
+## 增量執行（Asia/Taipei 2026-09-02）
+
+本次再完成 17 家逐一檢索（中文公司名／英文名或品牌／核心產品或海外據點事件詞，搭配企業官方、台灣主流與英語或母語來源），未發現 17 家企業專屬且未收錄的直接原文。另以台灣、北美、歐盟／中東歐、印度、東協與日韓的產業詞、設廠詞、政策詞搜尋；新增以下兩筆經逐頁驗證且未出現在 Sheet 或網站任何新聞區的產業訊號：
+
+4. *Bitdeer Announces Acquisition of 200 Acres Near Rockdale Facility in Milam County, Texas to Support AI/HPC Infrastructure Development* [Bitdeer 取得德州 Rockdale 設施附近 200 英畝土地，支援 AI／HPC 基礎設施開發]（Bitdeer Technologies Group，2026-09-01，英文；[直接原文](https://bitdeer.gcs-web.com/news-releases/news-release-details/bitdeer-announces-acquisition-200-acres-near-rockdale-facility)）。公司以現金約 1 億美元取得約 200 英畝綠地；Rockdale 基地既有 563MW 併網容量、規劃可達 742MW，另有專用供水。此案將土地控制權、可用電力與供水整合為 AI／HPC 分期開發條件。
+5. *Gradiant Secures Major Water Contract for Hyperscaler AI Data Center Campus in West Texas* [Gradiant 取得西德州超大規模 AI 資料中心園區水務合約]（Gradiant，2026-09-01，英文；[直接原文](https://gradiant.com/press-release/gradiant-secures-water-contract-hyperscaler-ai-data-center-west-texas/)）。Gradiant 將提供飲用水、廢水處理與零地表排放的整套服務；該案突顯缺水地區的資料中心選址，必須同步取得冷卻水、回收與排放方案，不能只比較土地及接電。
+
+- 美國 SOP 對應：兩案均直接補強 Step 2 州別選址矩陣（Texas 的電力、水資源、併網與地方條件），並納入 Step 3 的 10 年 TCO／EPC／公用工程時程風險。Texas 近期大型資料中心審核與 ERCOT 併網限制屬重要背景，但原始州長指令日期為 2026-08-03，非本輪新增 48 小時原文，故未另寫入資料表。
+- 本增量新增：`新聞追蹤` 0 列；`ICT產業新聞` 2 列；網站「近期 ICT 產業新聞」2 筆。新增資料均已開啟直接原文核對標題、發布日期、發布者與內文，並以完整原文網址完成全站與試算表去重。
+- 本增量未寫入候選 4 筆：17 家企業舊聞或已收錄連結 2 筆、列表／首頁 1 筆、法律分析所述之原始政策公告已逾 48 小時 1 筆。
