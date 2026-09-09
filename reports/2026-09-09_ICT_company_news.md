@@ -3,7 +3,7 @@
 - 執行時間：2026-09-09 09:03（Asia/Taipei）
 - 搜尋窗：2026-09-07 09:03 至 2026-09-09 09:03（48 小時）。
 - 依據：已讀取 17 家企業名單、每日追蹤規格、國別母語關鍵字、政策背景底稿、美國 ICT 投資 SOP 與 2026-09-08 執行記憶。
-- 結論：17 家名單企業未見可新增的已驗證重大原始來源；但全球產業雷達新增 3 筆已逐頁驗證的製造投資／在地化原始公告，已納入產業新聞資料表與網站。
+- 結論：17 家名單企業未見可新增的已驗證重大原始來源；全球產業雷達共新增 4 筆已逐頁驗證的製造投資／在地化／政策原始公告，已納入產業新聞資料表與網站。
 
 ## 來源驗證、去重與排除
 
@@ -50,13 +50,15 @@
 
 ## 產業鏈新增案例（已驗證）
 
-1. **Axcelis｜韓國平澤半導體設備新廠**：9 月 8 日公告將投資 3,500 萬美元，設置約 20 萬平方英尺製造、倉儲、Class 1,000／10,000 潔淨室與訓練中心；10 月 20 日動工、預定 2028 年下半年投產。[原文](https://www.prnewswire.com/news-releases/axcelis-to-build-new-manufacturing-facility-in-pyeongtaek-korea-302871737.html)（英文／Axcelis Technologies）。
-2. **Suniva｜南卡州太陽能電池新廠融資**：9 月 8 日 SEC 文件揭露完成 8.35 億美元募資，支應約 6 億美元、4.5GW 的 Laurens County 新廠；預期 2027 年底完成、2028 年全量爬坡並新增 564 個職位。[原文](https://www.sec.gov/Archives/edgar/data/22701/000121390026098099/ea030487601ex99-1.htm)（英文／Suniva SEC Exhibit 99.1）。
-3. **曉星重工｜美國 AI 電力在地製造**：9 月 7 日公告將以 22.9kV 固態變壓器拓展美國 AI 資料中心電力市場，並揭露 Memphis 變壓器廠累計 3 億美元投資及賓州斷路器合資在地生產布局。[原文](https://www.prnewswire.com/news-releases/hyosung-chairman-cho-hyun-joon-targets-us-ai-power-market-with-22-9kv-sst-302871204.html)（英文／Hyosung Heavy Industries）。
+1. **Rigetti｜CHIPS 量子運算研發獎勵**：9 月 8 日美國商務部確認最多 1 億美元 CHIPS and Science Act 研發獎勵，支持讀出電子、低溫系統與高連接度晶片架構的研發及製造能力擴充；公告未揭露新建廠。[原文](https://www.nist.gov/news-events/news/2026/09/department-commerce-announces-finalization-chips-rd-award-rigetti)（英文／美國商務部、NIST）。
+
+2. **Axcelis｜韓國平澤半導體設備新廠**：9 月 8 日公告將投資 3,500 萬美元，設置約 20 萬平方英尺製造、倉儲、Class 1,000／10,000 潔淨室與訓練中心；10 月 20 日動工、預定 2028 年下半年投產。[原文](https://www.prnewswire.com/news-releases/axcelis-to-build-new-manufacturing-facility-in-pyeongtaek-korea-302871737.html)（英文／Axcelis Technologies）。
+3. **Suniva｜南卡州太陽能電池新廠融資**：9 月 8 日 SEC 文件揭露完成 8.35 億美元募資，支應約 6 億美元、4.5GW 的 Laurens County 新廠；預期 2027 年底完成、2028 年全量爬坡並新增 564 個職位。[原文](https://www.sec.gov/Archives/edgar/data/22701/000121390026098099/ea030487601ex99-1.htm)（英文／Suniva SEC Exhibit 99.1）。
+4. **曉星重工｜美國 AI 電力在地製造**：9 月 7 日公告將以 22.9kV 固態變壓器拓展美國 AI 資料中心電力市場，並揭露 Memphis 變壓器廠累計 3 億美元投資及賓州斷路器合資在地生產布局。[原文](https://www.prnewswire.com/news-releases/hyosung-chairman-cho-hyun-joon-targets-us-ai-power-market-with-22-9kv-sst-302871204.html)（英文／Hyosung Heavy Industries）。
 
 ## 美國 SOP 對應與 TEEMA 意涵
 
-Suniva 與曉星兩案屬美國製造新增訊號：Suniva 應納入 **Step 2 場址矩陣**（南卡的勞動、地方誘因、許可與電力）與 **Step 3**（融資、供應商及量產爬坡的十年 TCO）；曉星案則優先對應 **Step 2** 的 Memphis／賓州電網設備聚落與 **Step 3** 的 AI 資料中心電力設備供應商共址及長交期採購。既有行動維持：
+Rigetti 屬 **Step 1** 聯邦 CHIPS 資助與合規觀察，應確認其資金適格支出、製造能力落點與供應鏈採購機會；Suniva 應納入 **Step 2 場址矩陣**（南卡的勞動、地方誘因、許可與電力）與 **Step 3**（融資、供應商及量產爬坡的十年 TCO）；曉星案則優先對應 **Step 2** 的 Memphis／賓州電網設備聚落與 **Step 3** 的 AI 資料中心電力設備供應商共址及長交期採購。既有行動維持：
 
 1. **Step 1｜聯邦法規／補貼／合規**：台系伺服器、電源、變壓器與 EMS 若有赴美公告，先核對 48D 資產資格、FEOC／出口管制及 USMCA 原產地。
 2. **Step 2｜州別選址**：優先查德州、俄亥俄、亞利桑那等地的接電容量、用水、地方減稅、人才與 EPC 排程。
@@ -74,7 +76,7 @@ Suniva 與曉星兩案屬美國製造新增訊號：Suniva 應納入 **Step 2 �
 
 ## 本次結果
 
-- 已驗證新增：3 筆產業鏈案例；無法驗證、不具實質設廠訊號或不符時窗而未寫入候選：6 筆。
-- Google 試算表：`新聞追蹤` 新增 0 列；`ICT產業新聞` 新增 3 列。
-- 網頁「近期 ICT 產業新聞」新增 3 筆；已同步部署目錄並待完成提交、推送與 Pages 載入確認。
+- 已驗證新增：4 筆產業鏈案例；無法驗證、不具實質設廠訊號或不符時窗而未寫入候選：6 筆。
+- Google 試算表：`新聞追蹤` 新增 0 列；`ICT產業新聞` 新增 4 列。
+- 網頁「近期 ICT 產業新聞」新增 4 筆；已同步部署目錄並待完成提交、推送與 Pages 載入確認。
 - Gmail 摘要：待本輪同步與部署驗證完成後寄送。
