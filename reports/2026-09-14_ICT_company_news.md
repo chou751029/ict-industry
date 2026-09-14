@@ -63,6 +63,7 @@
 - `新聞追蹤` 新增列數：0。
 - `ICT產業新聞` 新增列數：2。
 - 網頁新增筆數：2；已更新 `ICT產業追蹤平台設計/ICT產業追蹤平台.dc.html` 的 `INDUSTRY_NEWS`，並同步至 `ict-industry-deploy/index.html`。
+- Gmail 摘要寄送狀態：已寄出給 `me`（message id: `1a09e90af420cbbe`）。
 - 無法驗證而未寫入候選：4 筆（FT 付費牆、Argus JS 驗證頁、Adani / Jabil 未定位到直接新聞頁、搜尋引擎重新抓取舊聞 / 背景頁）。
 
 ## 人工複核清單
