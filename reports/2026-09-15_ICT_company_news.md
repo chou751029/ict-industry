@@ -88,3 +88,15 @@
   - `Submer and Edgecore Networks Sign MoU to Accelerate AI-Ready Data Center Infrastructure Across the Middle East, Turkey and Africa [Submer 與 Edgecore 簽署 MoU，加速中東、土耳其與非洲 AI-ready 資料中心基礎設施]`（2026-09-14，Edgecore Networks / TahawulTech，英文，<https://www.edge-core.com/media-report/submer-and-edgecore-networks-sign-mou-to-accelerate-ai-ready-data-center-infrastructure-across-the-middle-east-turkey-and-africa/>）：Edgecore 與 Submer 合作推動中東、土耳其與非洲 AI-ready data center infrastructure；屬台灣網通業者跨區 AI 資料中心基礎設施部署與供應鏈整合訊號。
 - 同步統計：`新聞追蹤` 新增列數 0；`ICT產業新聞` 新增列數 1（Edgecore / Submer；緯穎已由 14:24 手動補入）；網頁新增筆數 2（緯穎補同步 + Edgecore / Submer 新增）。
 - 美國 SOP 對應：緯穎對應 Step 2 德州場址與人才 / 電力 / 物流矩陣、Step 3 Taiwan + 1 製造與 10 年 TCO；Edgecore / Submer 為非美國案，納入區域 AI 基礎設施與資料中心供應鏈背景觀察。
+
+## 2026-09-15 16:22 增量複核與 Isembard 補收錄
+
+- 執行時間：2026-09-15 16:22（Asia/Taipei）；補查窗維持最近 48 小時。
+- 補查結論：17 家名單企業未找到新的、可逐頁驗證且尚未收錄的公司新聞；補充雷達新增 1 筆可驗證產業鏈案例，為 Isembard 倫敦 Southwark 精密製造廠。
+- 新增產業新聞：
+  - `Isembard Opens London's Largest Factory Since the Second World War [Isembard 啟用二戰以來倫敦最大工廠]`（2026-09-14，Isembard，英文，<https://isembard.com/uk/newsroom/southwark-launch/>）：Isembard 於倫敦 Southwark 啟用 16 萬平方英尺全球總部兼精密製造廠，服務航太、防務、能源與機器人客戶；工廠配置 3 軸 / 5 軸 milling、turn-mills、wire EDM 與恆溫量測實驗室，並讓 MasonOS、軟體、AI 與機器人工程團隊貼近產線。官方公告稱公司 2026 年初至今由 4 座增至 16 座英國、歐洲與美國工廠，目標 2028 年底英國達 100 座自有與加盟工廠。
+- 來源驗證：官方 Isembard newsroom 直接頁可開啟，標題、日期 `14 September 2026`、發布機構與主旨相符；Resilience Media 直接頁交叉佐證 Southwark 16 萬平方英尺、全球總部兼精密製造廠、機器人 / AI 工程貼近產線與英美歐工廠網路。ADS Advance 首頁有收錄該題，但舊式文章直連回到 404 / 訂閱區，未作為寫入來源。
+- 排除 / 待觀察候選：Fortaegis secure silicon、Exein embedded cybersecurity 與 STL AI data center fiber trunk assemblies 仍保留觀察；本輪未寫入，原因是未見明確新設廠、產線啟用、海外布局或供應鏈重組訊號。
+- 同步統計：`新聞追蹤` 新增列數 0；`ICT產業新聞` 新增列數 1（Isembard，Google Sheet row 97）；網頁新增筆數 1。
+- 美國 SOP 對應：Isembard 不是美國案，但其英美歐分散式精密製造網路可作為 Step 3 Taiwan + 1 / multi-site manufacturing、標準化製程、品質系統、IT / OT 安全與跨國工廠部署的背景案例。
+- 人工複核重點更新：應追蹤 Isembard UK / US / France / Germany 工廠各自的實際產能、客戶產業別、MasonOS 對生產排程 / 品質 / 報價的可量化影響，以及是否可能與機器人、無人系統、能源設備供應鏈形成電子零組件與精密加工需求。
