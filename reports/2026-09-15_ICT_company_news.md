@@ -2,7 +2,7 @@
 
 - 執行時間：2026-09-15 02:48（Asia/Taipei）；搜尋窗：2026-09-13 02:48 至 2026-09-15 02:48。
 - 結論：17 家名單企業本輪未找到新的、可逐頁驗證且尚未收錄的企業新聞；2026-09-14 華城相關新聞已於前次報告與試算表收錄，本輪不重複寫入。
-- 同產業鏈雷達：新增 3 筆可逐頁驗證且未與網站 / 試算表重複的產業新聞，涵蓋 AI/HPC 資料中心高速互連、美國 AI data center 電力線纜，以及日本主權 AI 伺服器。
+- 同產業鏈雷達：新增 2 筆可逐頁驗證且未與網站 / 試算表重複的產業新聞，涵蓋美國 AI data center 電力線纜與日本主權 AI 伺服器。
 
 ## 17 家企業逐一稽核
 
@@ -36,21 +36,19 @@
 
 ## 產業鏈動態與新增案例
 
-- `Cornelis Expands into Scale-Up Networking with Active Compute Fabric, $205M in Funding, and Qualcomm Collaboration at AI Infra Summit`（2026-09-14，Cornelis Networks，英文，<https://www.cornelis.com/stories/cornelis-expands-into-scaleup-networking-with-active-compute-fabric>）：Cornelis 發表 Active Compute Fabric，結合 scale-up / scale-out networking、in-fabric acceleration 與 programmable compute，並宣布 2.05 億美元融資支援下一代產品；CN6000 正與客戶取樣，預計 2026 年第 4 季擴大供應。
 - `Philatron to Showcase High-Performance U.S.-Made Power Cable Solutions for AI and Data Center Infrastructure at Data Center World POWER 2026`（2026-09-14，Philatron Wire and Cable / PR Newswire，英文，<https://www.prnewswire.com/news-releases/philatron-to-showcase-high-performance-us-made-power-cable-solutions-for-ai-and-data-center-infrastructure-at-data-center-world-power-2026-302877265.html>）：Philatron 將展示美國製造高效能電力線纜與客製纜線組件，對應 AI data center 供電、交期與 Buy America / 在地化供應需求。
 - `Fujitsu launches Made-in-Japan next-generation CPU 'FUJITSU-MONAKA' and 'FUJITSU-MONAKA server' for sovereign AI infrastructure`（2026-09-14，Fujitsu / PR Newswire，英文，<https://www.prnewswire.com/news-releases/fujitsu-launches-made-in-japan-next-generation-cpu-fujitsu-monaka-and-fujitsu-monaka-server-for-sovereign-ai-infrastructure-302877394.html>）：富士通發表日本製 MONAKA CPU 與伺服器，預計 2027 年交付，強化日本主權 AI 與高效運算基礎設施在地供應鏈。
 
 ## 美國 SOP 對應
 
 - Step 1（聯邦法規 / 補貼 / 合規）：本輪未見新的 CHIPS / 48D / IRA / FEOC 官方補助公告；Philatron 的 U.S.-made power cable 訊號可納入 Buy America / 客戶供應鏈合規訪談。
-- Step 2（州別選址矩陣）：美國資料中心電力線纜與 AI/HPC 高速互連需求顯示，州別選址仍需把電力容量、交期、在地供應商、接電與機櫃級架構放入矩陣。
-- Step 3（第三方輔導 / 決策程序）：Cornelis 的 scale-up networking 與 Fujitsu 主權 AI server 案例提醒，10 年 TCO 需同步評估伺服器、網路、CPU / 加速器與在地採購合規。
+- Step 2（州別選址矩陣）：美國資料中心電力線纜需求顯示，州別選址仍需把電力容量、交期、在地供應商與接電條件放入矩陣。
+- Step 3（第三方輔導 / 決策程序）：Fujitsu 主權 AI server 案例提醒，10 年 TCO 需同步評估伺服器、CPU / 加速器、冷卻與在地採購合規。
 
 ## 來源連結驗證結果
 
 | 來源 | 日期 | 驗證結果 | 處理 |
 | --- | --- | --- | --- |
-| Cornelis Networks | 2026-09-14 | 可直接開啟，標題、日期、來源與內文主旨相符 | 寫入 `ICT產業新聞` 與網站 |
 | Philatron / PR Newswire | 2026-09-14 | 可直接開啟，標題、日期、來源與內文主旨相符 | 寫入 `ICT產業新聞` 與網站 |
 | Fujitsu / PR Newswire | 2026-09-14 | 可直接開啟，標題、日期、來源與內文主旨相符 | 寫入 `ICT產業新聞` 與網站 |
 | 17 家企業官方 / 主流媒體命中 | 多為舊聞或已收錄 | 可定位者多已收錄或時窗外；部分為列表 / 背景頁 | 排除或背景觀察 |
@@ -58,15 +56,15 @@
 ## 同步結果
 
 - `新聞追蹤` 新增列數：0。
-- `ICT產業新聞` 新增列數：3。
-- 網頁新增筆數：3。
-- Gmail 摘要寄送狀態：待寄送。
-- 無法驗證而未寫入候選：5 筆（Isembard London factory 付費牆 / 官方直接頁不足、Hyperscale Data / Business Wire 連線無法穩定逐頁驗證、Buildots PR Newswire 連結回傳 404、European Commission Energy 候選連結回傳 404、已收錄華城 / Azbil / Trina Storage 重複連結）。
+- `ICT產業新聞` 新增列數：2。
+- 網頁新增筆數：2。
+- Gmail 摘要寄送狀態：已寄出至 `me`（message id: `1a0a2644c93249e4`）。
+- 無法驗證而未寫入候選：6 筆（Isembard London factory 付費牆 / 官方直接頁不足、Cornelis 原文頁未穩定露出發布日期、Hyperscale Data / Business Wire 連線無法穩定逐頁驗證、Buildots 公開搜尋結果與候選標題 / 金額不一致、European Commission Energy 候選連結回傳 404、已收錄華城 / Azbil / Trina Storage 重複連結）。
 
 ## 人工複核清單
 
-1. Cornelis CN6000 / Active Compute Fabric 的供應鏈、量產節點與 AI/HPC 客戶導入時程。
-2. Philatron 的 U.S.-made cable 是否可對應 Buy America / 聯邦採購或大型雲端客戶合規要求。
-3. Fujitsu MONAKA server 的實際製造、封裝、主機板與資料中心供應鏈分工。
+1. Philatron 的 U.S.-made cable 是否可對應 Buy America / 聯邦採購或大型雲端客戶合規要求。
+2. Fujitsu MONAKA server 的實際製造、封裝、主機板與資料中心供應鏈分工。
+3. Cornelis CN6000 / Active Compute Fabric 的發布日期、供應鏈、量產節點與 AI/HPC 客戶導入時程。
 4. 歐盟 PCI / PMI 第七版徵件需另找穩定官方原文，確認智慧電網、儲能與電力跨境項目是否形成台灣電力電子 / 變壓器供應商切入機會。
 5. Hyperscale Data Michigan AI data center 的實際電力容量、租賃條件、場址許可與融資是否有可公開驗證的一手來源。
