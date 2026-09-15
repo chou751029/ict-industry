@@ -68,3 +68,23 @@
 3. Cornelis CN6000 / Active Compute Fabric 的發布日期、供應鏈、量產節點與 AI/HPC 客戶導入時程。
 4. 歐盟 PCI / PMI 第七版徵件需另找穩定官方原文，確認智慧電網、儲能與電力跨境項目是否形成台灣電力電子 / 變壓器供應商切入機會。
 5. Hyperscale Data Michigan AI data center 的實際電力容量、租賃條件、場址許可與融資是否有可公開驗證的一手來源。
+
+## 2026-09-15 14:03 增量複核
+
+- 執行時間：2026-09-15 14:03（Asia/Taipei）；補查窗維持最近 48 小時。
+- 補查結論：未找到 08:09 後可逐頁驗證、尚未收錄且符合寫入條件的新企業或產業鏈新聞；本次不新增 Google 試算表列、不修改網站新聞資料。
+- 企業補查：鴻海 / Foxconn、台達 / Delta、光寶 / LITEON、康舒 / AcBel、英業達 / Inventec、東元 / TECO、貿聯 / BizLink、華城 / Fortune Electric 之官方頁與主流搜尋未見新直接原文。鴻海命中仍以 2026-09-02 或更早 AI 供應鏈訊號為主；其他命中多為舊聞、列表頁、首頁、無關頁或時窗外資料。
+- 產業雷達補查：`Sep. 15, 2026 electronics manufacturing AI data center`、`September 15 2026 data center manufacturing facility Business Wire`、`電子 製造 設廠 AI 資料中心 電源 2026 9月15日` 等查詢未產出新可寫入來源。PR Newswire 搜尋露出的 STL AI data center fiber trunk assemblies 候選屬產品 / 展示訊號，未見設廠、產線、補助或供應鏈重組內容，暫不寫入。
+- 網站驗證：`https://chou751029.github.io/ict-industry/` 已載入 Philatron 與 Fujitsu 兩筆 2026-09-14 新聞；未出現 Cornelis、Hyperscale Data、Buildots 或前次排除之不穩定歐盟能源候選。
+- 語法驗證：已抽取並檢查 `ICT產業追蹤平台設計/ICT產業追蹤平台.dc.html`、`ict-industry-deploy/index.html`、`index.html` 內嵌 JavaScript，三者均通過。
+- 本次增量統計：`新聞追蹤` 新增列數 0；`ICT產業新聞` 新增列數 0；網頁新增筆數 0；無法驗證而未寫入候選新增 1 筆（STL / PR Newswire AI data center fiber trunk assemblies，事件性不足）。
+
+## 2026-09-15 14:38 增量修正與平台同步
+
+- 執行時間：2026-09-15 14:38（Asia/Taipei）；補查窗維持最近 48 小時。
+- 修正結論：使用者指出緯穎新聞未出現在平台；查核後確認先前僅已寫入 Google Sheet `ICT產業新聞`，尚未同步到平台 `INDUSTRY_NEWS`。本次已補入平台、同步部署檔並準備推送。
+- 新增 / 補同步產業新聞：
+  - `Wiwynn Strengthens Global Supply Chain Resilience with Grand Opening of Advanced Manufacturing Facility in Texas [緯穎德州先進製造基地開幕，強化全球供應鏈韌性]`（2026-09-15，Wiwynn，英文，<https://www.wiwynn.com/news/wiwynn-strengthens-global-supply-chain-resilience-with-grand-opening-of-advanced-manufacturing-facility-in-texas>）：緯穎於美國德州 Socorro 舉行先進製造基地開幕，第一棟廠房已量產，第二棟預計 2027 年第二季投產；屬明確 AI / 雲端伺服器北美在地化製造訊號。
+  - `Submer and Edgecore Networks Sign MoU to Accelerate AI-Ready Data Center Infrastructure Across the Middle East, Turkey and Africa [Submer 與 Edgecore 簽署 MoU，加速中東、土耳其與非洲 AI-ready 資料中心基礎設施]`（2026-09-14，Edgecore Networks / TahawulTech，英文，<https://www.edge-core.com/media-report/submer-and-edgecore-networks-sign-mou-to-accelerate-ai-ready-data-center-infrastructure-across-the-middle-east-turkey-and-africa/>）：Edgecore 與 Submer 合作推動中東、土耳其與非洲 AI-ready data center infrastructure；屬台灣網通業者跨區 AI 資料中心基礎設施部署與供應鏈整合訊號。
+- 同步統計：`新聞追蹤` 新增列數 0；`ICT產業新聞` 新增列數 1（Edgecore / Submer；緯穎已由 14:24 手動補入）；網頁新增筆數 2（緯穎補同步 + Edgecore / Submer 新增）。
+- 美國 SOP 對應：緯穎對應 Step 2 德州場址與人才 / 電力 / 物流矩陣、Step 3 Taiwan + 1 製造與 10 年 TCO；Edgecore / Submer 為非美國案，納入區域 AI 基礎設施與資料中心供應鏈背景觀察。
