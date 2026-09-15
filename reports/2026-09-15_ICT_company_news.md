@@ -58,7 +58,7 @@
 - `新聞追蹤` 新增列數：0。
 - `ICT產業新聞` 新增列數：2。
 - 網頁新增筆數：2。
-- Gmail 摘要寄送狀態：已寄出至 `me`（message id: `1a0a2644c93249e4`）。
+- Gmail 摘要寄送狀態：已寄出至 `me`（message id: `1a0a265b1d935778`）。
 - 無法驗證而未寫入候選：6 筆（Isembard London factory 付費牆 / 官方直接頁不足、Cornelis 原文頁未穩定露出發布日期、Hyperscale Data / Business Wire 連線無法穩定逐頁驗證、Buildots 公開搜尋結果與候選標題 / 金額不一致、European Commission Energy 候選連結回傳 404、已收錄華城 / Azbil / Trina Storage 重複連結）。
 
 ## 人工複核清單
