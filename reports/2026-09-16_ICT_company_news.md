@@ -2,12 +2,12 @@
 
 執行時間：2026-09-16 02:16 CST（Asia/Taipei）  
 追蹤期間：2026-09-14 至 2026-09-16 執行當下前 48 小時  
-資料處理狀態：17 家企業逐一檢索；本次 17 家核心企業無新增可寫入 Google Sheet 的直接原文連結。新增 ICT 產業新聞 2 筆，皆已逐頁驗證並去重。
+資料處理狀態：17 家企業逐一檢索；本次 17 家核心企業無新增可寫入 Google Sheet 的直接原文連結。新增 ICT 產業新聞 3 筆，皆已逐頁驗證並去重。
 
 ## 一、重點趨勢
 
 1. 核心企業端：9/14 已收錄之華城／南亞 AI 電力訂單報導仍是本輪最接近 17 家名單的重大訊號；本次未找到 9/15 深夜至 9/16 凌晨新增且可直接驗證的核心企業設廠、擴廠、土地取得或補助公告。
-2. 產業鏈端：新增兩筆與 AI 資料中心電力、用電調度及歐洲自主 AI 基礎建設相關訊號，分別來自台灣主流媒體與可公開讀取的歐洲政策／產業報導。
+2. 產業鏈端：新增三筆與 AI 資料中心電力、用電調度、歐洲自主 AI 基礎建設及馬來西亞資料中心在地供應鏈政策相關訊號，來源包含台灣主流媒體、可公開讀取的歐洲政策／產業報導與馬來西亞官方招商機構。
 3. 美國 SOP 對應：本輪新增來源沒有新的美國企業設廠公告；但台灣 AIDC 用電與電網調度案例可納入 Step 3 的場址前置評估，用於提醒赴美或海外園區案需同步驗證電力容量、備援與需求響應條件。
 
 ## 二、本次新增新聞
@@ -18,6 +18,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | 2026-09-15 | 台灣 | AI資料中心／電力調度／半導體與系統廠用電 | AI時代供電需求殷切 台電董座：台灣不能當旁觀者 | 經濟日報／聯合新聞網 | https://money.udn.com/money/story/10871/9756082 | 間接：台灣 AI 資料中心與半導體／系統廠用電壓力，需前置納入園區電力配置與需求響應 |
 | 2026-09-14 | 歐洲 | AI基礎設施／資料中心／數位主權 | Europe must build own AI or risk being cut off from US and China growth, ECB’s Lagarde warns [Lagarde 警告歐洲須建立自有 AI，否則恐被美中成長隔絕] | The Guardian | https://www.theguardian.com/technology/2026/sep/14/europe-ai-datacentres-growth-us-china-ecb-christine-lagarde | 間接：歐洲自主 AI 與資料中心投資需求，推動電力、冷卻、網通與在地供應鏈需求 |
+| 2026-09-14 | 馬來西亞 | AI資料中心／政策招商／在地供應鏈／電力與水效率 | MIDA Charts Next Phase for Malaysia’s Data Centre Sector: From Attracting Investment to Building Value for SMEs and Malaysians [MIDA 推動馬來西亞資料中心從招商轉向在地價值與供應鏈能力] | Malaysian Investment Development Authority (MIDA) | https://www.mida.gov.my/media-release/mida-charts-next-phase-for-malaysias-data-centre-sector-from-attracting-investment-to-building-value-for-smes-and-malaysians/ | 間接：資料中心投資政策與在地供應鏈媒合訊號；非單一新設廠公告 |
 
 ## 三、17 家企業逐一摘要
 
@@ -127,12 +128,14 @@
 
 1. 台灣 AIDC 用電與電力調度：經濟日報報導台電董事長談 AI 時代供電需求，並提到 Google、NVIDIA、ASUS 等大型 ICT／AI 投資帶動用電壓力。此訊號雖非設廠公告，但對 TEEMA 園區的電力規劃、變壓器、配電盤、UPS、BBU、液冷與能源管理需求具高度參考性。
 2. 歐洲自主 AI 基礎設施：The Guardian 報導 ECB 總裁 Lagarde 對歐洲 AI 與資料中心自主能力的警示；可與 EU AI Gigafactories、EuroHPC、資料中心選址政策交叉追蹤。
+3. 馬來西亞資料中心在地供應鏈：MIDA 官方稿指出 Data Centre Nexus 2026 從招商轉向在地價值與供應鏈能力，討論 AI compute、能源與水資源效率、工程／電力／冷卻／資安／物流與本地供應商媒合，且 Delta Electronics Solutions 參與供應鏈相關討論。
 
 ## 五、各國政策與設廠誘因
 
 - 美國：本輪未見新的 CHIPS／州政府 ICT 製造補助公告；延續追蹤 MISO 大型負載併網、資料中心社區反對、NIST CHIPS R&D 補助與州別電力容量。
 - 歐盟：Lagarde 相關報導強調歐洲需加速 AI 與數位基礎設施投資，與 EU AI Gigafactories、Chips Act 及能源基礎設施需求相互連動。
 - 台灣：AIDC 用電需求與台電供電調度成為本輪最明確政策／基礎設施訊號，對 ICT 產業園區的用電容量與需求響應設計有直接參考。
+- 馬來西亞：MIDA 公告揭示資料中心政策進入供應鏈深化與資源效率階段；DCTF、PUE／WUE、CRESS、CGPP 與 InvestLokal 可作為東南亞資料中心園區招商與在地供應鏈媒合參考。
 
 ## 六、國別母語搜尋摘要
 
@@ -144,6 +147,7 @@
 | 法文 | centre de donnees IA electricite investissement site industriel septembre 2026 | 未見新增可寫入直接來源；持續追蹤法國與歐盟政策。 |
 | 日文 | データセンター 電力 製造拠点 投資 2026年9月15日 | 本輪未新增非重複直接來源。 |
 | 韓文 | 데이터센터 전력 제조 거점 투자 2026년 9월15일 | 本輪未新增非重複直接來源。 |
+| 英文／東協 | Malaysia data centre local supply chain MIDA Delta Electronics Solutions 2026 | 找到 MIDA 2026-09-14 官方稿，已逐頁核對並寫入 ICT 產業新聞。 |
 
 ## 七、來源連結驗證結果
 
@@ -151,6 +155,7 @@
 
 1. 經濟日報／聯合新聞網：`https://money.udn.com/money/story/10871/9756082`，已核對標題、2026-09-15 發布日期、媒體與主旨。
 2. The Guardian：`https://www.theguardian.com/technology/2026/sep/14/europe-ai-datacentres-growth-us-china-ecb-christine-lagarde`，已核對 200 回應、2026-09-14 日期、媒體與主旨。
+3. MIDA：`https://www.mida.gov.my/media-release/mida-charts-next-phase-for-malaysias-data-centre-sector-from-attracting-investment-to-building-value-for-smes-and-malaysians/`，已核對標題、2026-09-14 發布日期、官方機構與主旨。
 
 未寫入候選：
 
@@ -171,3 +176,4 @@
 3. 台灣 AIDC 供電容量：確認 Google、NVIDIA、ASUS 等案場的容量、地點、接電期程與園區供應鏈機會。
 4. 歐盟自主 AI 基礎設施：追蹤 AI Gigafactories、EuroHPC 與會員國補助是否帶動電子製造、電源、冷卻與網通在地供應商需求。
 5. 17 家企業官方新聞室與 MOPS：次日上午再補掃 2026-09-16 白天發布之公告。
+6. 馬來西亞 Data Centre Nexus 2026 後續：確認 14 家資料中心公司與 51 家本地供應商的媒合名單、Delta Electronics Solutions 參與範圍，以及 PUE／WUE、CRESS／CGPP 對外資 ICT 設備供應商的實際要求。
