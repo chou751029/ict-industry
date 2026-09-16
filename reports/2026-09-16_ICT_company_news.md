@@ -4,6 +4,8 @@
 追蹤期間：2026-09-14 至 2026-09-16 執行當下前 48 小時  
 資料處理狀態：17 家企業逐一檢索；本次 17 家核心企業無新增可寫入 Google Sheet 的直接原文連結。新增 ICT 產業新聞 3 筆，皆已逐頁驗證並去重。
 
+增量補充：2026-09-16 22:12 CST 再檢索 48 小時窗，新增貿聯核心企業新聞 1 筆、ICT 產業新聞 1 筆；另確認網站與試算表已於稍早同日收錄緯穎、Submer/Edgecore、Isembard、Philatron、Fujitsu 等 9/15 產業訊號，故不重複寫入。
+
 ## 一、重點趨勢
 
 1. 核心企業端：9/14 已收錄之華城／南亞 AI 電力訂單報導仍是本輪最接近 17 家名單的重大訊號；本次未找到 9/15 深夜至 9/16 凌晨新增且可直接驗證的核心企業設廠、擴廠、土地取得或補助公告。
@@ -17,8 +19,15 @@
 | 發布日期 | 地區／國家 | 分類 | 標題 | 來源 | 原文連結 | 海外設廠訊號 |
 | --- | --- | --- | --- | --- | --- | --- |
 | 2026-09-15 | 台灣 | AI資料中心／電力調度／半導體與系統廠用電 | AI時代供電需求殷切 台電董座：台灣不能當旁觀者 | 經濟日報／聯合新聞網 | https://money.udn.com/money/story/10871/9756082 | 間接：台灣 AI 資料中心與半導體／系統廠用電壓力，需前置納入園區電力配置與需求響應 |
+| 2026-09-16 | 澳洲／昆士蘭 | AI資料中心／超大規模投資／電力與區域基礎設施 | Anthropic lands deal in $31bn datacentre in western Queensland, David Crisafulli says [Anthropic 據稱落腳昆士蘭 310 億美元資料中心案] | The Guardian | https://www.theguardian.com/technology/2026/sep/16/anthropic-lands-31bn-datacentre-deal-in-western-queensland | 明確：大型 AI 資料中心客戶與投資計畫訊號；仍需追蹤最終合約、併網、用水、許可與設備供應商 |
 | 2026-09-14 | 歐洲 | AI基礎設施／資料中心／數位主權 | Europe must build own AI or risk being cut off from US and China growth, ECB’s Lagarde warns [Lagarde 警告歐洲須建立自有 AI，否則恐被美中成長隔絕] | The Guardian | https://www.theguardian.com/technology/2026/sep/14/europe-ai-datacentres-growth-us-china-ecb-christine-lagarde | 間接：歐洲自主 AI 與資料中心投資需求，推動電力、冷卻、網通與在地供應鏈需求 |
 | 2026-09-14 | 馬來西亞 | AI資料中心／政策招商／在地供應鏈／電力與水效率 | MIDA Charts Next Phase for Malaysia’s Data Centre Sector: From Attracting Investment to Building Value for SMEs and Malaysians [MIDA 推動馬來西亞資料中心從招商轉向在地價值與供應鏈能力] | Malaysian Investment Development Authority (MIDA) | https://www.mida.gov.my/media-release/mida-charts-next-phase-for-malaysias-data-centre-sector-from-attracting-investment-to-building-value-for-smes-and-malaysians/ | 間接：資料中心投資政策與在地供應鏈媒合訊號；非單一新設廠公告 |
+
+### 17 家企業新增新聞
+
+| 發布日期 | 企業 | 標題 | 來源 | 原文連結 | 訊號 |
+| --- | --- | --- | --- | --- | --- |
+| 2026-09-16 | 貿聯控股 / BizLink Holding | 貿聯2026年營運拚新高 新一代產品開始出貨 | 經濟日報 | https://money.udn.com/money/story/5710/9756604 | 間接：800 VDC 大電流產品開始出貨、Interplex Datacom 併購完成後產能／技術提升；未公告新設廠 |
 
 ## 三、17 家企業逐一摘要
 
@@ -107,10 +116,10 @@
 - 對 TEEMA 意涵：工具機與航太／車用加工設備仍與歐洲再工業化、精密製造案例相關。
 
 ### 15. 貿聯 / BizLink
-- 今日重點：未見重大新動態。
+- 今日重點：新增經濟日報報導，貿聯 800 VDC 大電流產品開始出貨，且 Interplex Datacom 併購完成後可望帶動產能、產品與技術提升。
 - 代表查詢：貿聯 LEONI Serbia Slovakia cable harness、BizLink data center cable Europe、BizLink industrial automation wire harness facility。
-- 海外設廠／國際布局訊號：無新增。
-- 對 TEEMA 意涵：AI 資料中心線束、半導體設備線纜與歐洲近岸製造為後續重點。
+- 海外設廠／國際布局訊號：間接；屬 AI 資料中心高壓供電與連接產品需求訊號，未揭露新增海外設廠。
+- 對 TEEMA 意涵：AI 資料中心線束、半導體設備線纜與歐洲近岸製造為後續重點；應追問 Interplex Datacom 整合後的產能地點、北美／歐洲交付地與在地服務配置。
 
 ### 16. 群光電子 / Chicony
 - 今日重點：未見重大新動態。
@@ -129,6 +138,7 @@
 1. 台灣 AIDC 用電與電力調度：經濟日報報導台電董事長談 AI 時代供電需求，並提到 Google、NVIDIA、ASUS 等大型 ICT／AI 投資帶動用電壓力。此訊號雖非設廠公告，但對 TEEMA 園區的電力規劃、變壓器、配電盤、UPS、BBU、液冷與能源管理需求具高度參考性。
 2. 歐洲自主 AI 基礎設施：The Guardian 報導 ECB 總裁 Lagarde 對歐洲 AI 與資料中心自主能力的警示；可與 EU AI Gigafactories、EuroHPC、資料中心選址政策交叉追蹤。
 3. 馬來西亞資料中心在地供應鏈：MIDA 官方稿指出 Data Centre Nexus 2026 從招商轉向在地價值與供應鏈能力，討論 AI compute、能源與水資源效率、工程／電力／冷卻／資安／物流與本地供應商媒合，且 Delta Electronics Solutions 參與供應鏈相關討論。
+4. 澳洲 AI 資料中心超大型投資：The Guardian 報導昆士蘭州長稱 Anthropic 將成為 Firmus Technologies 西昆士蘭 310 億美元 AI 資料中心計畫客戶；此案需追蹤併網、用水、許可、融資與設備供應商。
 
 ## 五、各國政策與設廠誘因
 
@@ -156,12 +166,15 @@
 1. 經濟日報／聯合新聞網：`https://money.udn.com/money/story/10871/9756082`，已核對標題、2026-09-15 發布日期、媒體與主旨。
 2. The Guardian：`https://www.theguardian.com/technology/2026/sep/14/europe-ai-datacentres-growth-us-china-ecb-christine-lagarde`，已核對 200 回應、2026-09-14 日期、媒體與主旨。
 3. MIDA：`https://www.mida.gov.my/media-release/mida-charts-next-phase-for-malaysias-data-centre-sector-from-attracting-investment-to-building-value-for-smes-and-malaysians/`，已核對標題、2026-09-14 發布日期、官方機構與主旨。
+4. 經濟日報：`https://money.udn.com/money/story/5710/9756604`，已核對標題、2026-09-16 00:36 發布日期、媒體與貿聯 800 VDC／Interplex Datacom 主旨。
+5. The Guardian：`https://www.theguardian.com/technology/2026/sep/16/anthropic-lands-31bn-datacentre-deal-in-western-queensland`，已核對標題、2026-09-16 發布日期、媒體與 Anthropic／Queensland 資料中心主旨。
 
 未寫入候選：
 
 1. 東元／Conduit Pharmaceuticals 合資 AI 資料中心相關媒體報導：發布於 2026-09-13，超出本輪 48 小時窗，且需回查公司公告、合資公司文件與投資條件。
 2. 部分中文財經站 AI 伺服器／電力瓶頸報導：內容重複或需要更完整原文佐證，未寫入。
 3. 搜尋結果頁、首頁、分類頁與日期不明頁面全部排除。
+4. ERCOT Data Center Impact RFI 與 Axios Flexible Power Coalition 報導：搜尋摘要顯示具資料中心電力政策價值，但來源頁遭 Incapsula／Cloudflare 擋下，無法逐頁確認內文，列待複核、不寫入。
 
 ## 八、美國 SOP 對應欄位
 
@@ -177,3 +190,11 @@
 4. 歐盟自主 AI 基礎設施：追蹤 AI Gigafactories、EuroHPC 與會員國補助是否帶動電子製造、電源、冷卻與網通在地供應商需求。
 5. 17 家企業官方新聞室與 MOPS：次日上午再補掃 2026-09-16 白天發布之公告。
 6. 馬來西亞 Data Centre Nexus 2026 後續：確認 14 家資料中心公司與 51 家本地供應商的媒合名單、Delta Electronics Solutions 參與範圍，以及 PUE／WUE、CRESS／CGPP 對外資 ICT 設備供應商的實際要求。
+7. 貿聯 Interplex Datacom 整合：確認交易完成日、產能地點、800 VDC 產品客戶驗證、北美／歐洲在地服務與線束／匯流排供應鏈配置。
+
+## 十、同步結果補充
+
+- `新聞追蹤` 本輪新增 1 列（貿聯，Google Sheet 第 74 列）。
+- `ICT產業新聞` 本輪新增 1 列（The Guardian／Anthropic Queensland，Google Sheet 第 101 列）。
+- 網站 `INDUSTRY_NEWS` 本輪新增 1 筆，並同步貿聯企業時間軸 1 筆；緯穎等稍早已存在資料未重複新增。
+- 無法驗證而未寫入候選：2 筆（ERCOT RFI、Axios Flexible Power Coalition）。
