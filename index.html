@@ -9,7 +9,8 @@
 <x-dc>
 <helmet>
   <style>
-    body { margin: 0; overflow-x: hidden; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif; }
+    html, body { width: 100%; max-width: 100%; overflow-x: hidden; }
+    body { margin: 0; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif; }
     a { color: #1f6f5c; }
     a:hover { color: #16493d; }
     * { box-sizing: border-box; }
@@ -44,19 +45,21 @@
       font-size: 19px;
     }
     @media (max-width: 720px) {
+      x-dc, x-dc > div, main, section, article { max-width: 100%; min-width: 0; overflow-x: hidden; }
       main { width: 100%; min-width: 0; overflow-x: hidden; }
       .site-header { display: block !important; padding: 14px 18px !important; }
       .site-brand { min-width: 0; gap: 10px !important; }
       .site-brand-title { font-size: 14px !important; line-height: 1.35; }
       .sheet-link { display: inline-flex !important; height: auto !important; min-height: 38px; margin: 12px 0 0 44px; padding: 7px 10px !important; justify-content: center; text-align: center; line-height: 1.35; }
       .overview-intro, .detail-hero, .company-section-heading { display: block !important; min-width: 0; }
-      .overview-stats, .detail-stats { width: 100% !important; max-width: 100%; margin-top: 16px; display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .overview-stats, .detail-stats { width: 100% !important; max-width: 100%; margin-top: 16px; display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .overview-stats > div, .detail-stats > div { min-width: 0 !important; padding: 10px 6px !important; }
       .industry-header { align-items: flex-start !important; padding: 16px !important; }
       .industry-meta { align-items: flex-start !important; }
       .industry-news-row { grid-template-columns: minmax(0, 1fr) !important; gap: 10px !important; padding: 15px 16px !important; }
-      .industry-news-row > div:nth-child(2), .industry-news-row h3, .industry-news-row p { min-width: 0; overflow-wrap: anywhere; }
+      .industry-news-row > div, .industry-news-row > div:nth-child(2), .industry-news-row h3, .industry-news-row p { max-width: 100%; min-width: 0; overflow-wrap: anywhere; word-break: break-word; }
       .industry-news-row h3 a { display: block; overflow-wrap: anywhere; word-break: break-word; }
+      .industry-news-row span { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
       .industry-news-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
       .industry-news-meta span { margin-top: 0 !important; }
       .industry-news-source { padding: 10px 0 0 !important; border-left: 0 !important; border-top: 1px solid rgba(28,53,58,0.14); }
@@ -378,6 +381,8 @@ const COMPANY_WEBSITES = {
 };
 
 const INDUSTRY_NEWS = [
+  { collected: "2026-09-17", date: "2026-09-17", region: "韓國／慶尚南道／昌原", market: "foreign", category: "製造AI／公用AI資料中心／智慧製造基礎設施", title: "Gyeongnam Opens Public AI Data Center With Free GPU Access [慶南公用製造 AI 資料中心開幕，支援中小製造業免費使用 GPU]", source: "Seoul Economic Daily", link: "https://en.sedaily.com/society/2026/09/17/gyeongnam-opens-public-ai-data-center-with-free-gpu-access", summary: "Seoul Economic Daily 報導，慶尚南道於昌原的企業支援館啟用 Gyeongnam Manufacturing AI Data Center，配置 40 張 NVIDIA B200 GPU 與 15 台工作站，2026 年底前免費供區內企業使用，2027 年起以低於民間 AI 資料中心的費率支援每年最多 300 家製造業者導入 AI。總事業費約 232.6 億韓元。", signal: "間接至明確：公用製造 AI 基礎設施開幕，降低中小製造業導入 AI/智慧工廠門檻；非單一企業設廠，但具產業園區 AI 共用算力與示範場域參考價值", language: "英文／韓文" },
+  { collected: "2026-09-17", date: "2026-09-17", region: "韓國／全北創新都市／製造現場", market: "foreign", category: "Physical AI／Dark Factory／模組化Edge AI資料中心／智慧製造", title: "KT, '피지컬 AI 다크팩토리' 구축 나선다…과기정통부 과제 참여 [KT 參與政府 Physical AI dark factory 建置課題]", source: "DigitalToday", link: "https://www.digitaltoday.co.kr/news/articleView.html?idxno=701209", summary: "DigitalToday 韓文原文報導，KT 參與韓國科學技術資訊通信部主導的「AI 기반 다크팩토리 설계·구축 솔루션 개발」課題，目標於全北創新都市附近建置 24 小時無人自動化 dark factory；KT 將以模組型 edge AI data center 基礎設施開發合成資料生成/驗證與 AI agent 運行環境，並於參與企業製造現場實證 dark factory 整合營運平台。", signal: "明確：政府主導 Physical AI/dark factory 示範與企業製造現場實證；具 AI 工廠、模組化 edge AI 資料中心與自動化平台需求訊號", language: "韓文" },
   { collected: "2026-09-17", date: "2026-09-16", region: "台灣", market: "domestic", category: "AI伺服器／ABF載板／PCB材料／國內擴產與海外產能", title: "AI帶動產能供不應求 欣興、金居積極擴產", source: "經濟日報／中央社", link: "https://money.udn.com/money/story/5612/9757957", summary: "經濟日報轉中央社報導指出 AI 伺服器、交換器與資料中心需求推升 ABF 載板與上游材料供應吃緊；欣興為三年後需求在桃園、新竹尋找新基地，桃園航空城產三專區第一期規劃 40 公頃高階 IC 載板專區；金居則規劃在東南亞擴張高階 HVLP 銅箔產能。", signal: "明確國內新基地尋址與東南亞材料產能擴張訊號；非 17 家名單企業，但高度關聯 AI 伺服器/資料中心供應鏈", language: "中文" },
   { collected: "2026-09-17", date: "2026-09-16", region: "美國", market: "foreign", category: "AI資料中心／彈性用電／電網接入／政策倡議", title: "Google, Nvidia and Emerald AI launch flexible data center power coalition [Google、Nvidia 與 Emerald AI 成立 AI 資料中心彈性用電聯盟]", source: "Axios", link: "https://www.axios.com/2026/09/16/tech-giants-launch-flexible-power-coalition-data-centers", summary: "Axios 報導 Google、Nvidia、Emerald AI 等成立 AI Energy Management Alliance，聚焦讓 AI 資料中心在尖峰或供電吃緊時降低用電，並爭取監管機構與電力公司以較快併網、較低升級成本回應。Google 稱已承諾 1GW 可調降電力需求。", signal: "間接：大型資料中心選址與併網規則可能改變；影響電源、UPS、BBU、能源管理與園區電力方案", language: "英文" },
   { collected: "2026-09-17", date: "2026-09-16", region: "美國", market: "foreign", category: "AI資料中心／電費成本／聯邦法規／大型負載", title: "House passes bill aimed at impact of data centers on energy costs [美國眾議院通過資料中心能源成本法案]", source: "Associated Press", link: "https://apnews.com/article/ai-data-centers-congress-f073380caa61b720fa424590b5bc7c87", summary: "AP 報導美國眾議院以 417-3 通過法案，要求州公用事業監管機關考量讓資料中心負擔新增電力與輸電升級完整成本；屬於資料中心大型負載、電網升級費用與社區成本外部性的重要政策訊號。", signal: "間接：美國資料中心開發成本與選址條件可能上升；應納入美國 SOP Step 1/2 法規與州別成本評估", language: "英文" },
