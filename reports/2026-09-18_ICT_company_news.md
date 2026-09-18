@@ -7,8 +7,8 @@
 ## 一、重點趨勢
 
 1. 17 家核心企業今日未找到新的、可逐頁驗證且未與既有試算表/網站重複的重大公司新聞；貿聯 2026-09-16 經濟日報新聞已在前次收錄，未重複新增。
-2. 今日新增焦點集中於印度半導體供應鏈：Tata Electronics 與 Fujifilm 圍繞 Dholera fab 建立材料生態系；Semicon 2.0 吸引設備、材料、氣體、化學品、基板等 110-120 億美元投資提案。
-3. 印度案例對 TEEMA 園區具參考性：晶圓廠周邊不只需要主廠，也需要化學品、材料、設備零組件、供應商園區、品質驗證與高純度公用設施共同設計。
+2. 今日新增焦點包含印度半導體供應鏈與美國先進製造選址誘因：Tata Electronics 與 Fujifilm 圍繞 Dholera fab 建立材料生態系；Semicon 2.0 吸引設備、材料、氣體、化學品、基板等 110-120 億美元投資提案；Tesla Project Crystal Sun 在 Texas Fort Bend County 的 JETI 程序通過 Lamar CISD 董事會。
+3. 印度案例對 TEEMA 園區具參考性：晶圓廠周邊不只需要主廠，也需要化學品、材料、設備零組件、供應商園區、品質驗證與高純度公用設施共同設計。美國 Tesla 案則提醒：大型製造投資的州別競爭，會同時牽動 property tax limitation、用地、公用設施、 workforce 與地方政治程序。
 
 ## 二、17 家企業逐一摘要
 
@@ -36,7 +36,18 @@
 
 ## 三、本次新增 ICT 產業新聞
 
-### 1. Tata Electronics, Fujifilm sign MoU to develop semiconductor materials ecosystem in Gujarat [Tata Electronics 與 Fujifilm 簽署 MOU，在 Gujarat 建立半導體材料生態系]
+### 1. Tesla's proposed $10.1 billion Fort Bend solar plant clear after Lamar CISD vote [Tesla Fort Bend 101 億美元太陽能製造案通過 Lamar CISD JETI 程序]
+
+- 發布日期：2026-09-17
+- 來源：Houston Chronicle；Texas Comptroller JETI 申請 PDF 交叉佐證
+- 語言/國家：英文 / 美國
+- 連結：https://www.houstonchronicle.com/neighborhood/fort-bend/article/tesla-fort-bend-solar-plant-tax-incentive-22436277.php
+- 佐證連結：https://assets.comptroller.texas.gov/open-data/jeti/J0050/J0050-tesla-lamar-app.pdf
+- 摘要：Lamar CISD 董事會一致通過 Tesla Project Crystal Sun 的 taxable value limitation 程序，案場若落地 Fort Bend County，總投資約 101 億美元，預計 2029Q1 商轉、2033 年約 9,712 名全職員工，產品為 photovoltaic solar cells 與 assembled solar modules。Texas Comptroller JETI 申請文件顯示 Tesla 仍在比較 Texas 與另一州選址，最終設廠尚待州長辦公室核准與公司決策。
+- 海外設廠訊號：明確但未最終落地；美國德州大型先進製造選址與租稅誘因程序推進。
+- TEEMA 意涵：赴美製造評估不只看土地，還須建立州/地方 property tax limitation、用地、公用設施、勞動力、校區/地方政府程序與替代州競爭條件的比較矩陣。
+
+### 2. Tata Electronics, Fujifilm sign MoU to develop semiconductor materials ecosystem in Gujarat [Tata Electronics 與 Fujifilm 簽署 MOU，在 Gujarat 建立半導體材料生態系]
 
 - 發布日期：2026-09-17
 - 來源：Express Computer
@@ -46,7 +57,7 @@
 - 海外設廠訊號：明確；半導體材料工廠、晶圓廠周邊供應商聚落與高純度化學品在地化。
 - TEEMA 意涵：園區若承接半導體或先進封裝周邊供應鏈，需同步設計化學品、材料倉儲、品質驗證、公用管線、消防/環安與供應商共址服務。
 
-### 2. $12 billion semiconductor bet: Semicon 2.0 draws fresh investment proposals [印度 Semicon 2.0 吸引 110-120 億美元新投資提案]
+### 3. $12 billion semiconductor bet: Semicon 2.0 draws fresh investment proposals [印度 Semicon 2.0 吸引 110-120 億美元新投資提案]
 
 - 發布日期：2026-09-17
 - 來源：The Financial Express
@@ -60,12 +71,13 @@
 
 - 印度 Dholera：Tata/Fujifilm 案凸顯 fab 周邊材料與高純度化學品本地化，屬半導體園區供應商聚落訊號。
 - 印度 Semicon 2.0：Applied Materials、Lam Research 與 Tata 供應商園區訊號代表設備、材料、基板與研發能量進入政策招商核心。
+- 美國先進製造誘因：Tesla Project Crystal Sun 顯示 JETI / school district taxable value limitation 對大型製造選址具關鍵影響；但此案仍屬競逐中，需追蹤 Texas Governor's Office、Comptroller、Tesla 最終投資決策與地方許可。
 - 美國資料中心與電力風險：昨日已收錄美國資料中心成本法案、Virginia 許可、Serverfarm 融資、Schneider 電力模組等；今日未重複新增，但仍為美國 SOP 追蹤基準。
 
 ## 五、各國政策與設廠誘因
 
 - 印度：Semicon 2.0 以 chip design、材料/設備、fab、advanced packaging、applied R&D、talent 六大方向推進，並以大型研究園區、供應商園區與外資材料設備投資建立完整生態系。
-- 美國：延續 2026-09-17 回填，AI 資料中心大型負載成本、社區/許可與併網仍是北美設廠與供應鏈布局風險。
+- 美國：新增 Texas JETI / Lamar CISD taxable value limitation 案例，顯示大型先進製造案會透過州級誘因與校區稅負程序降低 recurring tax cost；延續 2026-09-17 回填，AI 資料中心大型負載成本、社區/許可與併網仍是北美設廠與供應鏈布局風險。
 - 歐洲/韓國/日本：本日未找到新的 48 小時合格直接原文；延續追蹤 AI 工廠、Physical AI、主權 AI 與資料中心電力/冷卻政策。
 
 ## 六、國別母語搜尋摘要
@@ -74,6 +86,7 @@
 | --- | --- | --- | --- |
 | 印度 | Tata Electronics Fujifilm Dholera semiconductor materials September 2026 | 英文 | 已驗證新增 1 筆。 |
 | 印度 | Semicon 2.0 investment proposals Applied Materials Lam Research India September 2026 | 英文 | 已驗證新增 1 筆。 |
+| 美國 | Tesla Project Crystal Sun Fort Bend Lamar CISD JETI September 2026 | 英文 | 已驗證新增 1 筆；官方 PDF 交叉佐證，最終選址待查。 |
 | 美國 | AI data center manufacturing facility power September 18 2026 | 英文 | Crusoe/WSJ 為重要候選，但 WSJ 原文可讀內容有限，未寫入試算表。 |
 | 日本 | 半導体 補助金 データセンター 電力 製造拠点 | 日文 | 未找到新且可直接驗證之 48 小時來源。 |
 | 韓國 | 반도체 보조금 데이터센터 전력 제조 거점 | 韓文 | 昨日已收錄 Gyeongnam 與 KT；本輪未新增。 |
@@ -81,31 +94,33 @@
 
 ## 七、美國 SOP 對應
 
-本輪新增資料無直接美國設廠新聞，因此未修改 `USA_ICT_investment_SOP.md`。延續前次美國 SOP 重點：
+本輪新增 Tesla Project Crystal Sun / JETI 訊號，已回填 `USA_ICT_investment_SOP.md`：
 
 - Step 1：AI 資料中心大型負載費率、輸電升級成本與政策合規。
-- Step 2：Virginia、Texas、Arkansas、Georgia 等資料中心州別矩陣，新增許可、濕地、社區阻力、電力容量與融資條件。
-- Step 3：BBU/UPS/儲能/能源管理是否可支援可驗證彈性用電，並影響併網與 TCO。
+- Step 2：Texas 應新增 JETI / school district taxable value limitation、Governor approval、property tax recurring cost、替代州競爭、workforce 與公用設施條件；Virginia、Arkansas、Georgia 等資料中心州別矩陣延續許可、濕地、社區阻力、電力容量與融資條件。
+- Step 3：將 property tax limitation、州/校區/地方政府程序與替代州競標條件放入 10 年 TCO；BBU/UPS/儲能/能源管理是否可支援可驗證彈性用電，並影響併網與 TCO。
 
 ## 八、來源連結驗證結果
 
 | 來源 | 驗證狀態 | 檢核 |
 | --- | --- | --- |
+| Houston Chronicle / Tesla Project Crystal Sun | 已複核 | 可直接開啟文章頁；標題、日期 2026-09-17、來源與內文主旨相符。 |
+| Texas Comptroller / JETI J0050 Tesla Lamar app PDF | 已複核 | 可直接開啟 PDF；Project Crystal Sun、Tesla、Lamar CISD、JETI、選址競爭與 tax limitation 主旨相符。 |
 | Express Computer / Tata-Fujifilm | 已複核 | 可直接開啟文章頁；標題、日期 2026-09-17、來源與內文主旨相符。 |
 | The Financial Express / Semicon 2.0 | 已複核 | 可直接開啟文章頁；標題、日期時間 2026-09-17 21:34 IST、來源與內文主旨相符。 |
 | WSJ / Crusoe Spark | 待複核 | 可看到標題與部分內文，但屬付費/授權內容，未寫入試算表與網站。 |
 
 ## 九、人工複核清單
 
-1. Tata/Fujifilm MOU 是否已有 Fujifilm 或 Tata 官方新聞稿，並確認 Dholera 材料廠投資額、用地、時程、環評與高純度化學品許可。
-2. Applied Materials 印度 140 英畝研究園區是否已有官方新聞稿、州政府文件或土地/補助條件。
-3. Lam Research 印度矽零組件製造設施的城市、投資排程、產品範圍與供應商需求。
-4. Crusoe Spark / Spark Factory 最新融資與模組化資料中心量產進度，需找官方或可公開讀取來源替代 WSJ。
-5. 17 家核心企業中，貿聯 Interplex Datacom 併購完成後的產能配置與北美/歐洲服務布局。
+1. Tesla Project Crystal Sun 是否取得 Texas Governor's Office 核准、最終選址是否落在 Fort Bend County，以及用地、公用設施、環評與 workforce 條件。
+2. Tata/Fujifilm MOU 是否已有 Fujifilm 或 Tata 官方新聞稿，並確認 Dholera 材料廠投資額、用地、時程、環評與高純度化學品許可。
+3. Applied Materials 印度 140 英畝研究園區是否已有官方新聞稿、州政府文件或土地/補助條件。
+4. Lam Research 印度矽零組件製造設施的城市、投資排程、產品範圍與供應商需求。
+5. Crusoe Spark / Spark Factory 最新融資與模組化資料中心量產進度，需找官方或可公開讀取來源替代 WSJ。
 
 ## 十、寫入狀態
 
 - `新聞追蹤`：新增 0 列。
-- `ICT產業新聞`：新增 2 列。
-- 網站 `INDUSTRY_NEWS`：新增 2 筆。
+- `ICT產業新聞`：新增 3 列。
+- 網站 `INDUSTRY_NEWS`：新增 3 筆。
 - 無法驗證而未寫入候選：1 筆（WSJ / Crusoe Spark）。
