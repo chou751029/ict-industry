@@ -221,3 +221,7 @@ New York 特別註記：
 - Step 2 州別選址矩陣：美國資料中心場址除電價與補助外，需新增 `powered land`、`powered shell`、pre-assembled power generation systems、BESS、能源管理軟體、模組物流、港口／內陸運輸與在地 EPC／O&M 能量。若能源模組由歐洲或亞洲製造後輸美，州別評估也要納入進口、吊裝、庫存備品與服務半徑。
 - Step 3 第三方輔導與決策程序：10 年 TCO 模型新增「自備電力 CAPEX / OPEX」、「長期維運與可用率 SLA」、「備援 / 峰值電力可靠度」、「資料中心負載波動與能源管理軟體」、「是否可用預製模組縮短建置時程」；企業訪談題綱新增是否能提供發電模組、BESS、switchgear、transformer、線束與維修服務的在地化供應。
 - 製造鏈背景：Rehlko 常州基地將備援電力年產能由 5.5GW 倍增至 11GW，並以智慧產線、智慧倉儲、AGV 與 MES 提升產能而不擴大廠房 footprint；園區評估應同時追蹤自動化升級與實體擴廠，避免只以新建廠判斷供應鏈能力。
+- Step 1/2 同日增量：Texas 州長要求 TCEQ 暫停資料中心相關州級許可，等待 ERCOT、PUCT 與 TWDB 對 interconnection queue、水資源、自付成本與控制權完成稽核；Texas 州別矩陣需把 data center permitting pause、state agency regulatory approval、water supply / reuse、自備電力與外部成本分攤列為硬性風險欄位。
+- Step 2/3 同日增量：Zeo Energy / Ewyze 合作開發離網電力與資料中心基礎設施，顯示 site identification、land acquisition、permitting、engineering / construction、financing 與 commercialization 正被包裝為一體化 time-to-power 方案；第三方輔導團隊需能同時處理能源專案融資、EPC、微電網設計、資料中心客戶招商與州地方許可。
+- Step 2 國際對照：BDx 印尼 Jatiluhur 640MW AI Campus 2 已取得 845MVA grid capacity，首棟 120MW 預計 2027 年初上線；美國選址矩陣可借鏡「先鎖定電力容量 + phased campus + 高密度液冷」作為資料中心供應鏈招商條件。
+- Step 1 技術供應鏈：Kairos Power / Samsung C&T 與 Google / TVA Hermes 2 進展顯示 hyperscaler clean firm power 需求正在把先進核能、EPC、project delivery 與融資能力納入資料中心電力解方；州別評估應追蹤 SMR、核電 uprate、PPA 與監管許可時程對資料中心集群的影響。
