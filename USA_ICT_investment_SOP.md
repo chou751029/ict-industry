@@ -225,3 +225,11 @@ New York 特別註記：
 - Step 2/3 同日增量：Zeo Energy / Ewyze 合作開發離網電力與資料中心基礎設施，顯示 site identification、land acquisition、permitting、engineering / construction、financing 與 commercialization 正被包裝為一體化 time-to-power 方案；第三方輔導團隊需能同時處理能源專案融資、EPC、微電網設計、資料中心客戶招商與州地方許可。
 - Step 2 國際對照：BDx 印尼 Jatiluhur 640MW AI Campus 2 已取得 845MVA grid capacity，首棟 120MW 預計 2027 年初上線；美國選址矩陣可借鏡「先鎖定電力容量 + phased campus + 高密度液冷」作為資料中心供應鏈招商條件。
 - Step 1 技術供應鏈：Kairos Power / Samsung C&T 與 Google / TVA Hermes 2 進展顯示 hyperscaler clean firm power 需求正在把先進核能、EPC、project delivery 與融資能力納入資料中心電力解方；州別評估應追蹤 SMR、核電 uprate、PPA 與監管許可時程對資料中心集群的影響。
+
+### 2026-09-28 回填重點
+
+- Step 1 聯邦法規／補貼／合規：TerraFlow Energy 與 DG Matrix 以 VRFB 長時儲能、LDUPS 與 Interport 固態變壓器直接支援 live HPC cluster，顯示 AI 資料中心大型負載合規不只看發電容量，也要評估 behind-the-meter storage、SST、load flexibility、grid-interactive controls、power electronics 安規與 utility interconnection agreement。
+- Step 1/3 合規與資安：Software-defined MV switchgear 讓保護、控制、監測與配置更依賴軟體更新及遠端維運。赴美 ICT 製造與資料中心案需新增 OT cybersecurity、firmware/software update governance、供應商資安、NERC/utility interface 與現場變更管理複核。
+- Step 2 州別選址矩陣：Schneider Electric 軟體定義中壓設備主打最多 3 倍 faster ordering/manufacturing、最多 2 倍 faster commissioning，代表州別評估需加入 MV switchgear lead time、FAT/SAT capacity、local electrical contractor readiness、arc-flash safety、備品可得性與跨場址標準化能力。
+- Step 3 第三方輔導與決策程序：10 年 TCO 模型新增 SST/VRFB/LDUPS CAPEX、grid upgrade deferral value、commissioning labor reduction、predictive maintenance OPEX、停機風險降低、電力波動緩衝收益與是否能以負載彈性換取更快併網或較佳 utility agreement。
+- Step 3 訪談題綱：新增「企業是否願意採用 SST / 800VDC / 長時儲能 / 軟體定義中壓配電」、「是否可量化 AI/HPC 負載波動」、「是否已有可驗證需求響應或 behind-the-meter 控制策略」、「是否需要園區提供高功率電力測試、FAT/SAT 與資安驗證環境」。
