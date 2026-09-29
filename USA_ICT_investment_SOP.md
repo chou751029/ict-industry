@@ -233,3 +233,10 @@ New York 特別註記：
 - Step 2 州別選址矩陣：Schneider Electric 軟體定義中壓設備主打最多 3 倍 faster ordering/manufacturing、最多 2 倍 faster commissioning，代表州別評估需加入 MV switchgear lead time、FAT/SAT capacity、local electrical contractor readiness、arc-flash safety、備品可得性與跨場址標準化能力。
 - Step 3 第三方輔導與決策程序：10 年 TCO 模型新增 SST/VRFB/LDUPS CAPEX、grid upgrade deferral value、commissioning labor reduction、predictive maintenance OPEX、停機風險降低、電力波動緩衝收益與是否能以負載彈性換取更快併網或較佳 utility agreement。
 - Step 3 訪談題綱：新增「企業是否願意採用 SST / 800VDC / 長時儲能 / 軟體定義中壓配電」、「是否可量化 AI/HPC 負載波動」、「是否已有可驗證需求響應或 behind-the-meter 控制策略」、「是否需要園區提供高功率電力測試、FAT/SAT 與資安驗證環境」。
+
+### 2026-09-29 回填重點
+
+- Step 1 聯邦法規／補貼／合規：American Infrastructure Alliance 成立顯示美國 AI 資料中心開發正走向州地方 guardrails、社區利益、水資源、能源成本分攤與勞動力條件制度化；赴美 ICT 製造或資料中心供應鏈案需把 CBA、water/resource commitments、large-load cost allocation、union/workforce agreements 納入前期合規清單。
+- Step 2 州別選址矩陣：Submer / Corenix 模組化資料中心平台顯示場址評估需新增 factory-tested modules、FAT/SAT capacity、on-site commissioning labor、模組物流、吊裝與現場接電條件；州別比較不只土地與電力，也需比較可支援模組化部署的 EPC 與測試能力。
+- Step 2 國際對照：Johnson Controls / NUS STDCT 2.0 指出新加坡與熱帶市場 AI-ready data center 受限於電力、水與空間；選址矩陣需增加 cooling water strategy、thermal management validation、high-humidity reliability、controls cybersecurity 與人才/測試床可用性。
+- Step 3 第三方輔導與決策程序：10 年 TCO 模型需把模組工廠預製、FAT/SAT、現場 commissioning、冷卻/控制系統效率、社區與工會承諾成本，以及 guardrails 對許可時程的影響納入敏感度分析。
