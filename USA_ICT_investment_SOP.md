@@ -240,3 +240,4 @@ New York 特別註記：
 - Step 2 州別選址矩陣：Submer / Corenix 模組化資料中心平台顯示場址評估需新增 factory-tested modules、FAT/SAT capacity、on-site commissioning labor、模組物流、吊裝與現場接電條件；州別比較不只土地與電力，也需比較可支援模組化部署的 EPC 與測試能力。
 - Step 2 國際對照：Johnson Controls / NUS STDCT 2.0 指出新加坡與熱帶市場 AI-ready data center 受限於電力、水與空間；選址矩陣需增加 cooling water strategy、thermal management validation、high-humidity reliability、controls cybersecurity 與人才/測試床可用性。
 - Step 3 第三方輔導與決策程序：10 年 TCO 模型需把模組工廠預製、FAT/SAT、現場 commissioning、冷卻/控制系統效率、社區與工會承諾成本，以及 guardrails 對許可時程的影響納入敏感度分析。
+- Step 2 國際對照同日增量：VSMC（世界先進 / NXP 合資）新加坡 Tampines 300mm 晶圓廠開幕，月產能目標 2029 年達 44,000 片，支援 mixed-signal、power management、analog、interposer 與 HPC / 車用 / 工業應用。赴美 SOP 應將「合資模式、政府 / 園區支持、人才培訓、成熟製程東南亞備援、量產爬坡與供應鏈在地化」納入替代區域比較，避免只以美國補貼判斷投資地點。

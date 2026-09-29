@@ -3,8 +3,8 @@
 - 執行時間：2026-09-29 Asia/Taipei
 - 追蹤窗口：2026-09-27 至 2026-09-29（最近 48 小時）
 - 17 家企業新增已驗證新聞：0 筆
-- ICT 產業新聞新增已驗證新聞：3 筆
-- 網站新增：3 筆
+- ICT 產業新聞新增已驗證新聞：4 筆（含同日增量 1 筆）
+- 網站新增：4 筆（含同日增量 1 筆）
 - 來源驗證原則：已逐頁開啟來源頁，確認標題、發布日期、發布機構 / 媒體與內文主旨；未使用首頁、搜尋結果頁或無法定位原文之頁面。
 
 ## 今日重點趨勢
@@ -12,6 +12,7 @@
 1. AI 資料中心正從傳統現地建造轉向「模組化、工廠預製、工廠測試、現場 commissioning」的交付模式，Submer / Corenix 案凸顯 IT、電力、冷卻、網路一體化模組供應鏈。
 2. 亞太熱帶資料中心容量擴張受到電力、水與冷卻條件約束，Johnson Controls / NUS STDCT 2.0 顯示熱管理、控制系統與低耗水設計驗證會成為園區招商與資料中心供應鏈重點。
 3. 美國資料中心開發的州地方規範、勞動力、社區利益、水資源與電費分攤議題正在制度化，AIA 聯盟會影響選址、許可、EPC、電力設備與園區溝通流程。
+4. 同日增量查核新增 VSMC 新加坡 300mm 晶圓廠開幕案例，顯示台灣成熟製程 / 電源管理 / 車用與 HPC 供應鏈正透過東南亞先進製造節點分散產能與強化供應韌性。
 
 ## 17 家企業追蹤摘要
 
@@ -219,21 +220,27 @@
   摘要：American Infrastructure Alliance 宣布成立由工會、資料中心開發商與 AI 基礎設施業者組成的全國聯盟，成員包含 IBEW、QTS、SoftBank、SB Energy、OpenAI、Blackstone、CoreWeave、Prologis、PowerHouse、Digital Realty 等，主張在州與地方層級建立可執行 guardrails，兼顧水資源、能源成本與社區利益。  
   訊號：政策／許可訊號：美國資料中心開發將更常面對州地方 guardrails、社區利益、用水、電費分攤與勞動力條件，影響場址評估與 EPC 時程
 
+- **VSMC Celebrates the Grand Opening of Its First 300mm Fab in Singapore [VSMC 慶祝新加坡首座 300mm 晶圓廠開幕]**（2026-09-28，NXP Semiconductors，英文）  
+  連結：https://www.nxp.com/company/about-nxp/newsroom/NW-VSMC-V4  
+  摘要：VisionPower Semiconductor Manufacturing Company（VSMC）由世界先進（VIS）與 NXP 合資，於新加坡 Tampines 12 吋 / 300mm 晶圓廠舉行開幕；新聞稿稱月產能預計 2029 年達 44,000 片，已完成首批 sample lot 並維持量產時程，支援 mixed-signal、power management、analog、interposer 等製程，應用於 HPC、車用、工業、行動與消費市場。  
+  訊號：明確設廠 / 新廠開幕：台灣成熟製程與電源管理、車用、工業及 HPC 供應鏈在新加坡擴充 300mm 產能，帶動半導體材料、設備、廠務、人才與東南亞供應鏈韌性需求。
+
 ## 產業鏈案例
 
 - Submer / Corenix：適合作為 AI data center modular platform 與 factory acceptance test / site acceptance test 的案例；可追蹤其生產設施地點、供應商、NVIDIA reference design 對台灣電源、液冷、線束、機櫃與網通業者的採購可能。
 - Johnson Controls / NUS：適合作為熱帶市場資料中心冷卻與節水測試案例；可對照台灣、東南亞、印度與中東資料中心園區設計。
 - American Infrastructure Alliance：適合作為美國州地方資料中心 guardrails、社區與勞動力協商案例；可納入美國 SOP 的前期風險清單。
+- VSMC / VIS / NXP：適合作為台灣成熟製程在東南亞建立 300mm specialty foundry 產能的案例；可追蹤 2027 量產、2029 產能爬坡、Singapore EDB / JTC 支援、人才訓練與供應商在地化。
 
 ## 各國政策與設廠誘因
 
 - 美國：AIA 成立代表資料中心開發商、AI 基礎設施業者與工會正主動參與州地方規範。SOP 應把 guardrails、water resources、energy cost allocation、community benefit agreement、workforce/labor availability 納入 Step 2 場址矩陣。
-- 新加坡 / 亞太：STDCT 2.0 與 Jurong Island live testbed 指向政府、學研與產業共同驗證 AI-ready data center 的低碳與高密度部署路徑；招商誘因不只土地與稅務，也包含測試場域、人才與工程驗證能力。
+- 新加坡 / 亞太：STDCT 2.0 與 Jurong Island live testbed 指向政府、學研與產業共同驗證 AI-ready data center 的低碳與高密度部署路徑；VSMC Tampines 300mm fab 開幕則顯示新加坡以 EDB / JTC、人才與半導體聚落支援成熟製程、電源管理、車用與 HPC 供應鏈。招商誘因不只土地與稅務，也包含測試場域、人才與工程驗證能力。
 - 全球：Corenix 模式顯示模組化資料中心供應鏈可能跨國分工，生產設施與場址施工分離；園區若能提供電力測試、FAT/SAT、物流與工程人才，可能更容易吸引模組供應商。
 
 ## 國別母語搜尋摘要
 
-- 英文：使用 AI data center power / modular data center platforms / electronics manufacturing facility / data center guardrails / factory tested modules 等查詢，新增 3 筆已驗證資料。
+- 英文：使用 AI data center power / modular data center platforms / electronics manufacturing facility / data center guardrails / factory tested modules / 300mm fab Singapore 等查詢，新增 4 筆已驗證資料。
 - 中文：使用 鴻海、光寶、英業達、台達、華城、貿聯、設廠、擴廠、AI伺服器、資料中心 等查詢，未見 17 家核心企業新直接原文。
 - 日文：使用 データセンター 電力、製造拠点、生産拠点、AI インフラ 等代表查詢，未見本窗格可寫入新資料。
 - 韓文：使用 데이터센터 전력、생산 거점、제조 거점、AI 인프라 等代表查詢，未見本窗格可寫入新資料。
@@ -244,10 +251,11 @@
 - Step 1 聯邦法規 / 補貼 / 合規：資料中心開發需前置評估州地方 guardrails、用水、能源成本分攤、社區利益與勞動條件，避免補貼模型忽略許可與社會授權。
 - Step 2 州別選址矩陣：新增 modular data center factory-tested delivery、FAT/SAT capacity、water-stress cooling strategy、union/workforce readiness、community benefit commitments。
 - Step 3 第三方輔導與決策程序：第三方團隊需能整合資料中心模組供應商、冷卻/控制系統商、EPC、州地方政府、工會與社區溝通，並把 commissioning、SAT、維運責任納入 TCO。
+- 國際對照：VSMC 新加坡 300mm fab 顯示非美國場址也可能以政府招商、半導體聚落、人才培訓與供應鏈韌性吸引台灣成熟製程外溢產能；赴美 SOP 可借鏡其「合資 + 政府 / 園區 + 人才管線 + 量產時程」作為替代區域比較欄位。
 
 ## 來源連結驗證結果
 
-- 已驗證：3 筆，均可直接開啟原文並核對標題、日期、來源與內文主旨。
+- 已驗證：4 筆，均可直接開啟原文並核對標題、日期、來源與內文主旨。
 - 排除重複：2 筆，TerraFlow / DG Matrix 與 Schneider Electric 已於 2026-09-28 收錄。
 - 無法驗證或未寫入候選：2 筆，主要為二手轉載、列表頁或無足夠設廠/投資訊號。
 
@@ -257,4 +265,10 @@
 2. Johnson Controls / NUS STDCT 2.0 是否揭露具體熱管理技術、節水節電數據、合作設備供應商與 Jurong Island 後續示範案。
 3. American Infrastructure Alliance 的七個重點州、政策文本、water / energy guardrails 與是否影響 Ohio、Texas、Virginia 等 AI data center 熱區。
 4. 美國資料中心 guardrails 是否會轉化為地方 CBA、工會條件、電力升級自付條款或大型負載費率。
-5. 台灣電源、液冷、線束、機櫃與網通業者是否能進入 modular data center platform 的工廠預製供應鏈。
+5. VSMC 的 2027 量產與 2029 月產 44,000 片爬坡是否拉動台灣 / 新加坡材料、設備、廠務、測試與人才需求，並形成成熟製程東南亞備援模式。
+
+## 同日增量更新（2026-09-29 16:00 Asia/Taipei）
+
+- 新增 1 筆已逐頁驗證 ICT 產業新聞：VSMC Celebrates the Grand Opening of Its First 300mm Fab in Singapore（NXP Semiconductors，2026-09-28）。
+- 17 家核心企業新增列：0；此筆為非 17 家名單內之產業鏈跨國製造 / 半導體供應鏈案例。
+- 已同步規劃寫入 Google 試算表 `ICT產業新聞`、網站 `INDUSTRY_NEWS` 與美國 SOP 國際對照欄位。
