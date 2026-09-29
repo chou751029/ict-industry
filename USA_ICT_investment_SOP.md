@@ -241,3 +241,11 @@ New York 特別註記：
 - Step 2 國際對照：Johnson Controls / NUS STDCT 2.0 指出新加坡與熱帶市場 AI-ready data center 受限於電力、水與空間；選址矩陣需增加 cooling water strategy、thermal management validation、high-humidity reliability、controls cybersecurity 與人才/測試床可用性。
 - Step 3 第三方輔導與決策程序：10 年 TCO 模型需把模組工廠預製、FAT/SAT、現場 commissioning、冷卻/控制系統效率、社區與工會承諾成本，以及 guardrails 對許可時程的影響納入敏感度分析。
 - Step 2 國際對照同日增量：VSMC（世界先進 / NXP 合資）新加坡 Tampines 300mm 晶圓廠開幕，月產能目標 2029 年達 44,000 片，支援 mixed-signal、power management、analog、interposer 與 HPC / 車用 / 工業應用。赴美 SOP 應將「合資模式、政府 / 園區支持、人才培訓、成熟製程東南亞備援、量產爬坡與供應鏈在地化」納入替代區域比較，避免只以美國補貼判斷投資地點。
+
+### 2026-09-30 回填重點
+
+- Step 2 州別選址矩陣：台達在新加坡展示 prefabricated AI Modular Data Center、800VDC In-Row Power、BBU、液冷、SOFC、SST 與微電網，顯示 AI factory 場址不只要比較土地與電價，也要比較 800VDC / SST 測試、FAT/SAT、液冷驗證、現地能源與備援電力整合能力。
+- Step 2 / Step 3：東元與 TECOBAR 的 MDC 與 Penang busway plant 案例顯示資料中心供應鏈正在把 IT、冷卻、電力、發電機、EMS、busway、模組預製、現場安裝與 handover 包成整體交付。赴美或東南亞場址評估應新增 busway / switchgear / generator / EMS 模組製造與服務半徑欄位。
+- Step 3 第三方輔導與決策程序：仁寶 OCP AI factory infrastructure 訊號表示伺服器 ODM 會被客戶要求提供 grid-to-GPU 等級的電力、冷卻與 rack-scale engineering 協作。企業訪談題綱需新增「是否具備資料中心級 800VDC 驗證平台、預出貨 power-on test、UL / safety certification 路徑與高功率液冷測試能力」。
+- 國際對照：ProLogium Dunkirk gigafactory 進入電力基礎設施與 ENEDIS 電網接入執行，顯示歐洲大型製造案的關鍵里程碑包含 grid connection、local supplier qualification、training partnership、HSE coordination 與施工平台準備；赴美 SOP 的建廠決策程序可對照納入「接電里程碑」與「地方人才培訓協議」。
+- 國際對照：Yokogawa 加入新加坡 NUS STDCT 2.0，多 MW 熱帶 AI data center testbed 將把能源管理、冷卻、控制、自主營運與資產可靠度一起驗證；美國 SOP 中的場址評估與 TCO 模型應加入 controls cybersecurity、autonomous operations、humid climate validation 與操作資料回饋機制。
