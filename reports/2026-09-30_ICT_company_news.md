@@ -107,4 +107,4 @@
 - `新聞追蹤` 新增列數：3。
 - `ICT產業新聞` 新增列數：5。
 - 網頁 `INDUSTRY_NEWS` 新增筆數：5。
-- Gmail 摘要：待寄送。
+- Gmail 摘要：已寄送至 `me`；Gmail message id `1a0ee24d89a1492c`。
