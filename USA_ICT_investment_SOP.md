@@ -249,3 +249,4 @@ New York 特別註記：
 - Step 3 第三方輔導與決策程序：仁寶 OCP AI factory infrastructure 訊號表示伺服器 ODM 會被客戶要求提供 grid-to-GPU 等級的電力、冷卻與 rack-scale engineering 協作。企業訪談題綱需新增「是否具備資料中心級 800VDC 驗證平台、預出貨 power-on test、UL / safety certification 路徑與高功率液冷測試能力」。
 - 國際對照：ProLogium Dunkirk gigafactory 進入電力基礎設施與 ENEDIS 電網接入執行，顯示歐洲大型製造案的關鍵里程碑包含 grid connection、local supplier qualification、training partnership、HSE coordination 與施工平台準備；赴美 SOP 的建廠決策程序可對照納入「接電里程碑」與「地方人才培訓協議」。
 - 國際對照：Yokogawa 加入新加坡 NUS STDCT 2.0，多 MW 熱帶 AI data center testbed 將把能源管理、冷卻、控制、自主營運與資產可靠度一起驗證；美國 SOP 中的場址評估與 TCO 模型應加入 controls cybersecurity、autonomous operations、humid climate validation 與操作資料回饋機制。
+- Step 1 / Step 2 同日增量：Infineon 與 Eaton 的 800VDC AI data center SST / SiC 合作顯示，場址評估需把中壓固態變壓器、SiC 功率模組、IEC / UL 安規、電網介面、供應商 roadmap 與 APAC / 北美部署差異納入前期技術盡調；Step 3 的 10 年 TCO 應比較傳統多級 AC/DC 配電與 SST / 800VDC 架構在效率、功率密度、commissioning、維修與備品上的差異。

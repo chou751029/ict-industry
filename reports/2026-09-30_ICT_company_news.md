@@ -105,6 +105,24 @@
 ## 九、同步統計
 
 - `新聞追蹤` 新增列數：3。
-- `ICT產業新聞` 新增列數：5。
-- 網頁 `INDUSTRY_NEWS` 新增筆數：5。
+- `ICT產業新聞` 新增列數：6（含同日增量 1 筆）。
+- 網頁 `INDUSTRY_NEWS` 新增筆數：6（含同日增量 1 筆）。
 - Gmail 摘要：已寄送至 `me`；Gmail message id `1a0ee24d89a1492c`。
+
+## 十、同日增量追蹤（2026-09-30 下午）
+
+### 新增產業鏈案例
+
+6. **Infineon and Eaton leverage silicon carbide technology to advance solid-state transformers for 800 VDC AI data center power architectures [Infineon 與 Eaton 以 SiC 技術推進 800VDC AI 資料中心固態變壓器架構]**  
+   - 日期：2026-09-29；來源：Infineon Technologies；語言：英文；連結：https://www.infineon.com/press-release/2026/infpr202609-146  
+   - 摘要：Infineon 宣布將供應 SiC 功率元件給 Eaton 中壓固態變壓器 MVSST 2.0 平台，支援 APAC 的 800VDC AI data center 電力架構；平台以較少轉換級數提升效率、功率密度與部署彈性，並已取得 IEC 認證。
+   - 訊號：非新設廠公告，但與台達、東元、仁寶本日 800VDC / SST / AI factory infrastructure 主題相互印證，顯示 AI data center 電力架構正在拉動 SiC 功率元件、SST、配電與電網連接供應鏈。
+   - 美國 SOP 對應：Step 2 場址電力、SST / 800VDC 測試與電網連接；Step 3 10 年 TCO、FAT/SAT、安規認證與供應商技術路線評估。
+
+### 同日增量同步統計
+
+- `新聞追蹤` 增量新增列數：0。
+- `ICT產業新聞` 增量新增列數：1。
+- 網頁 `INDUSTRY_NEWS` 增量新增筆數：1。
+- Gmail 同日增量摘要：已寄送至 `me`；Gmail message id `1a0f0b5e248eff64`。
+- 無法驗證而未寫入候選數：2（Phaidra / Aligned 偏軟體營運平台，缺乏製造或設廠訊號；Brightray Macao 模組協議發布於 2026-09-25，超出本輪 48 小時窗）。
