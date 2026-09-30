@@ -250,3 +250,10 @@ New York 特別註記：
 - 國際對照：ProLogium Dunkirk gigafactory 進入電力基礎設施與 ENEDIS 電網接入執行，顯示歐洲大型製造案的關鍵里程碑包含 grid connection、local supplier qualification、training partnership、HSE coordination 與施工平台準備；赴美 SOP 的建廠決策程序可對照納入「接電里程碑」與「地方人才培訓協議」。
 - 國際對照：Yokogawa 加入新加坡 NUS STDCT 2.0，多 MW 熱帶 AI data center testbed 將把能源管理、冷卻、控制、自主營運與資產可靠度一起驗證；美國 SOP 中的場址評估與 TCO 模型應加入 controls cybersecurity、autonomous operations、humid climate validation 與操作資料回饋機制。
 - Step 1 / Step 2 同日增量：Infineon 與 Eaton 的 800VDC AI data center SST / SiC 合作顯示，場址評估需把中壓固態變壓器、SiC 功率模組、IEC / UL 安規、電網介面、供應商 roadmap 與 APAC / 北美部署差異納入前期技術盡調；Step 3 的 10 年 TCO 應比較傳統多級 AC/DC 配電與 SST / 800VDC 架構在效率、功率密度、commissioning、維修與備品上的差異。
+
+### 2026-10-01 回填重點
+
+- Step 1 聯邦補貼／電網合規：Entergy 獲 DOE Grid Resilience and Innovation Partnerships 1,370 萬美元補助，將以先進輸電容量解方支援 Mississippi、Arkansas、Louisiana 與 Texas 大型負載成長；赴美 ICT 製造與資料中心供應鏈應把聯邦電網補助、utility upgrade plan、成本分攤與可靠度改善納入合規和 TCO 前置評估。
+- Step 2 州別選址矩陣：Texas / Gulf South 欄位新增「DOE / GRIP 電網升級覆蓋」、「advanced conductor / dynamic line rating / reconductoring」、「utility 可承諾容量與時程」、「資料中心、半導體、造船、鋼鐵、化工大型負載競爭」等指標。選址不應只看園區土地與稅務優惠，也要看輸電升級是否已獲補助與執行窗口。
+- Step 3 第三方輔導與決策程序：Entergy SPARK 計畫採 dynamic line rating、地理測繪、變電站與端點升級以釋放既有輸電走廊容量，顯示企業場址評估需把 utility 可提供的容量釋放工具、完成時程與可驗證承諾列入 RFI，而不只要求總裝置容量或平均電價。
+- Step 3 訪談題綱：新增「目標州別或園區是否位於 DOE / utility 電網升級走廊」、「utility 是否可量化接電前後容量差異」、「若 utility 接電延遲，是否可透過 BBU / SST / 現地發電 / 儲能降低 time-to-power 風險」。
