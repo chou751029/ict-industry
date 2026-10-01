@@ -257,3 +257,4 @@ New York 特別註記：
 - Step 2 州別選址矩陣：Texas / Gulf South 欄位新增「DOE / GRIP 電網升級覆蓋」、「advanced conductor / dynamic line rating / reconductoring」、「utility 可承諾容量與時程」、「資料中心、半導體、造船、鋼鐵、化工大型負載競爭」等指標。選址不應只看園區土地與稅務優惠，也要看輸電升級是否已獲補助與執行窗口。
 - Step 3 第三方輔導與決策程序：Entergy SPARK 計畫採 dynamic line rating、地理測繪、變電站與端點升級以釋放既有輸電走廊容量，顯示企業場址評估需把 utility 可提供的容量釋放工具、完成時程與可驗證承諾列入 RFI，而不只要求總裝置容量或平均電價。
 - Step 3 訪談題綱：新增「目標州別或園區是否位於 DOE / utility 電網升級走廊」、「utility 是否可量化接電前後容量差異」、「若 utility 接電延遲，是否可透過 BBU / SST / 現地發電 / 儲能降低 time-to-power 風險」。
+- Step 1 / Step 3 同日增量：金像電引進 Amazon 私募並核准 NT$79 億新廠投資，顯示 AI server PCB 供應鏈的客戶策略入股、產能鎖定與高階板 CAPEX 正成為 hyperscaler 供應鏈韌性工具。赴美或北美供應鏈輔導需新增「CSP 是否以股權／長約鎖定關鍵零組件產能」、「台灣新廠與泰國／中國／北美客戶支援如何分工」、「PCB / CCL / substrate 是否涉及客戶資安、出口管制、Buy America 或供應鏈透明度要求」等訪談題。

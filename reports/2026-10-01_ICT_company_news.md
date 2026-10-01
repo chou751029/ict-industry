@@ -6,6 +6,8 @@
 
 本輪最近 48 小時內，17 家核心企業未找到新的、可直接逐頁驗證且未重複的設廠／擴廠／海外投資訊號。產業鏈雷達新增 1 筆已驗證資料：Entergy 獲美國能源部 1,370 萬美元補助，用於 Arkansas、Louisiana 與 Mississippi 既有輸電線的容量與可靠度升級；Entergy 服務區亦含 Texas，該案會影響 AI 資料中心、半導體、造船、鋼鐵與化工等大型負載選址條件。
 
+同日增量檢查補充 1 筆已驗證產業鏈資料：Focus Taiwan/CNA 可直接開啟並確認金像電公告 Amazon 參與私募，且金像電董事會另核准 NT$79 億新廠投資。此案不屬原 17 家核心企業，但屬 AI server PCB 與台灣高階板產能擴張的重要供應鏈訊號，已追加至 `ICT產業新聞` 與網站。
+
 ## 二、17 家企業逐一摘要
 
 | 企業 | 今日重點 | 已驗證新訊號 | 海外設廠 / 國際布局訊號 | TEEMA / 園區意涵 | 後續追蹤問題 |
@@ -42,16 +44,22 @@
    - 訊號：政策／基礎設施訊號。非單一企業設廠，但美國南部電網升級會影響 AI 資料中心、半導體及 ICT 製造選址、接電時程與地方誘因。
    - 美國 SOP 對應：Step 1 聯邦補助與電網合規；Step 2 Texas / Gulf South 州別選址矩陣；Step 3 TCO、接電時程、utility agreement 與專案融資敏感度。
 
+2. **Amazon taking part in Taiwan PCB maker's private placement [Amazon 參與台灣 PCB 廠金像電私募]**  
+   - 日期：2026-09-29；來源：Focus Taiwan / CNA；語言：英文／台灣；連結：https://focustaiwan.tw/business/202609290021  
+   - 摘要：Focus Taiwan/CNA 報導金像電公告 Amazon 將以策略投資人身分參與私募，約 186 萬股、每股 NT$856，金額約 NT$15.89 億；金像電另公告董事會核准 NT$79 億新廠投資，含土地、建物與設備，預計 2026Q4 啟動並以可轉債支應。
+   - 訊號：明確產能擴張／客戶策略投資訊號。金像電非原 17 家，但屬 AI server PCB 供應鏈；需追蹤 AWS / Trainium 需求、台灣高階板新廠、泰國／中國產能配置與北美客戶在地化支援。
+   - 美國 SOP 對應：Step 1 客戶／CSP 合規與敏感供應鏈盤點；Step 2 台灣與北美 AI server PCB 供應鏈對接；Step 3 Taiwan + 1 產能配置、客戶鎖單、CAPEX 與融資情境。
+
 ## 四、各國政策與設廠誘因 / 美國 SOP 對應
 
 - 美國：Entergy / DOE 案顯示 GRIP 等聯邦電網補助開始具體流向大型負載成長州。對赴美 ICT 製造、AI data center 電力設備、變壓器、PSU、BBU、switchgear 與冷卻供應鏈而言，州別選址應新增「電網升級補助覆蓋區」、「dynamic line rating / reconductoring 進度」、「utility 是否可承諾容量與時程」。
-- 亞洲 / 台灣：OCP APAC Summit 2026 仍是台灣 AI 資料中心供應鏈訊號密集來源；但本輪新增候選若無法取得穩定直接原文，僅列待複核，不寫入試算表或網站。
+- 亞洲 / 台灣：OCP APAC Summit 2026 仍是台灣 AI 資料中心供應鏈訊號密集來源；金像電 / Amazon 私募與新廠投資案顯示高階 PCB 產能、客戶策略入股與 AI server 客製化需求可能成為台灣供應鏈擴產壓力來源。
 
 ## 五、國別母語搜尋摘要
 
 | 語言 / 區域 | 代表查詢 | 結果 |
 | --- | --- | --- |
-| 中文 / 台灣 | `2026/09/30 鴻海 設廠 AI 伺服器`、`金像電 Amazon 私募 公開資訊觀測站` | 未找到核心 17 家新的直接原文；金像電 / Amazon 為重要候選但目前以媒體與 MOPS 動態頁為主，未寫入。 |
+| 中文 / 台灣 | `2026/09/30 鴻海 設廠 AI 伺服器`、`金像電 Amazon 私募 公開資訊觀測站`、`Gold Circuit Amazon private placement new plant` | 未找到核心 17 家新的直接原文；增量檢查驗證 Focus Taiwan/CNA 直接頁後，已將金像電 / Amazon 作為非 17 家 AI server PCB 產業訊號寫入。 |
 | 英文 / 美國 | `Sep 30 2026 AI data center power manufacturing PRNewswire`、`Sep 30 2026 data center grid DOE Entergy` | 驗證 Transmart 與 Entergy 兩筆直接原文。 |
 | 日文 / 日本 | `データセンター 電力 製造拠点 2026 9月30日` | 未找到較上述 2 筆更直接且未重複的合格 ICT 製造 / 設廠來源。 |
 | 韓文 / 韓國 | `AI 데이터센터 전력 제조 2026 9월 30일` | 未找到合格直接原文；三星光州 HVAC 產線為舊聞，已非本窗。 |
@@ -63,19 +71,19 @@
 | 來源 | 發布日期 | 驗證結果 | 寫入 |
 | --- | --- | --- | --- |
 | Entergy | 2026-09-30 | 可直接開啟；標題、日期、發布者、DOE $13.7M / grid reliability / SPARK / dynamic line rating 主旨相符 | `ICT產業新聞`、網站 |
+| Focus Taiwan / CNA | 2026-09-29 | 可直接開啟；標題、日期、發布者、Amazon 私募、約 186 萬股、NT$15.89 億、NT$79 億新廠投資主旨相符 | `ICT產業新聞`、網站 |
 
 ## 七、未寫入候選與排除原因
 
-- Gold Circuit Electronics / Amazon 私募：時間窗內且與 AI server PCB 供應鏈高度相關，但目前未取得可穩定直接定位的公司或主管機關原文頁；僅列待複核，不寫入試算表或網站。
 - Transmart / OCP APAC Summit 2026：搜尋結果指向 AI data center power supply，但無法取得穩定可直接驗證的原文頁；不寫入試算表或網站。
 - Data center financing / community opposition 多筆二手報導：主題符合美國 SOP，但多為延伸分析、無新增設廠或政策原文，未寫入。
 - 台達、東元、仁寶、Infineon/Eaton：皆為 9/30 已收錄事件，本輪不重複寫入。
 
-無法驗證而未寫入候選數：4。
+無法驗證而未寫入候選數：3。
 
 ## 八、人工複核清單
 
-1. Gold Circuit Electronics / Amazon 私募案的一手公告、私募條件、用途、產能與是否涉及海外客戶在地化。
+1. Gold Circuit Electronics / Amazon 私募案的公司／主管機關原始公告、私募條件、用途、產能與是否涉及海外客戶在地化。
 2. Entergy DOE GRIP 補助涵蓋的具體線路、升級容量、完成時程，以及 Texas / Gulf South 資料中心和半導體專案接電影響。
 3. Transmart / OCP APAC Summit 2026 原文與北美客戶合作是否可由公司官網、OCP 或直接新聞稿驗證。
 4. 800VDC / ORv3 / NVIDIA Rubin PSU 磁材、平面變壓器與高壓大電流測試是否成為台灣供應商赴美或東南亞設點的新需求。
@@ -84,6 +92,6 @@
 ## 九、同步統計
 
 - `新聞追蹤` 新增列數：0。
-- `ICT產業新聞` 新增列數：1。
-- 網頁 `INDUSTRY_NEWS` 新增筆數：1。
-- Gmail 摘要：已寄送至 `me`；Gmail message id `1a0f569ee234ae98`。
+- `ICT產業新聞` 新增列數：2（上午 Entergy 1 筆；同日增量金像電 / Amazon 1 筆）。
+- 網頁 `INDUSTRY_NEWS` 新增筆數：2（上午 Entergy 1 筆；同日增量金像電 / Amazon 1 筆）。
+- Gmail 摘要：上午已寄送至 `me`；Gmail message id `1a0f569ee234ae98`。同日增量摘要另行寄送。
