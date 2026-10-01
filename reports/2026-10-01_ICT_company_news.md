@@ -94,4 +94,4 @@
 - `新聞追蹤` 新增列數：0。
 - `ICT產業新聞` 新增列數：2（上午 Entergy 1 筆；同日增量金像電 / Amazon 1 筆）。
 - 網頁 `INDUSTRY_NEWS` 新增筆數：2（上午 Entergy 1 筆；同日增量金像電 / Amazon 1 筆）。
-- Gmail 摘要：上午已寄送至 `me`；Gmail message id `1a0f569ee234ae98`。同日增量摘要另行寄送。
+- Gmail 摘要：上午已寄送至 `me`；Gmail message id `1a0f569ee234ae98`。同日增量摘要已寄送至 `me`；Gmail message id `1a0f5dd30556612f`。
