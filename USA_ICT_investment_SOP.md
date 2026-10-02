@@ -258,3 +258,10 @@ New York 特別註記：
 - Step 3 第三方輔導與決策程序：Entergy SPARK 計畫採 dynamic line rating、地理測繪、變電站與端點升級以釋放既有輸電走廊容量，顯示企業場址評估需把 utility 可提供的容量釋放工具、完成時程與可驗證承諾列入 RFI，而不只要求總裝置容量或平均電價。
 - Step 3 訪談題綱：新增「目標州別或園區是否位於 DOE / utility 電網升級走廊」、「utility 是否可量化接電前後容量差異」、「若 utility 接電延遲，是否可透過 BBU / SST / 現地發電 / 儲能降低 time-to-power 風險」。
 - Step 1 / Step 3 同日增量：金像電引進 Amazon 私募並核准 NT$79 億新廠投資，顯示 AI server PCB 供應鏈的客戶策略入股、產能鎖定與高階板 CAPEX 正成為 hyperscaler 供應鏈韌性工具。赴美或北美供應鏈輔導需新增「CSP 是否以股權／長約鎖定關鍵零組件產能」、「台灣新廠與泰國／中國／北美客戶支援如何分工」、「PCB / CCL / substrate 是否涉及客戶資安、出口管制、Buy America 或供應鏈透明度要求」等訪談題。
+
+### 2026-10-02 回填重點
+
+- Step 2 州別選址矩陣：LG Electronics 選擇 Virginia Windsor / Isle of Wight County 建立 AI data center air-cooled chiller 生產據點，並由 Virginia 官方公告確認 164 個就業與逾 6,390 萬美元資本投資。Virginia 欄位除資料中心電力、zoning 與社區風險外，需新增「冷卻設備在地製造」、「HVAC/chiller 供應商聚落」、「Hampton Roads 物流與 460 Commerce Center / intermodal park」以及州地方就業誘因。
+- Step 3 第三方輔導與決策程序：LG 同步擴充韓國 Pyeongtaek、Changwon 產線，表示 AI data center cooling 供應鏈會採「美國在地供應 + 亞洲量產備援」雙軌架構。企業訪談題綱應新增 chiller / CDU / cold plate / cooling management software 的產能、備品、維修半徑、commissioning 人力與 hyperscaler 驗證流程。
+- Step 2 / Step 3：投資審議司核准廣達、緯創與英業達對美國、泰國與墨西哥的海外投資，反映台灣 AI server ODM 正把 North America + Southeast Asia 製造配置常態化。美國 SOP 應把 Tennessee、Texas / California / Ohio 之外的 server assembly 與 PCBA 據點納入供應商共址、客戶在地化、USMCA / tariff、RVC 與資安分工評估。
+- Step 1 合規與補貼：英業達北美伺服器組裝、緯創美國 PCBA 與廣達 Tennessee 伺服器組裝投資雖屬企業投資核准訊號，仍需追蹤最終州別、地方補助、電力容量、建照、客戶要求與是否涉及 Buy America、出口管制、CSP 供應鏈透明度或國安訂單條款。
