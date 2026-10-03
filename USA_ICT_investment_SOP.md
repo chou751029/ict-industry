@@ -271,3 +271,4 @@ New York 特別註記：
 - Step 1 聯邦法規／補貼／合規：東元董事會通過印尼變壓器工廠、印尼既有廠房改造與馬來西亞檳城新廠投資，且中央社報導目的包含爭取美國變壓器訂單。赴美電網與 AI data center 供應鏈評估需新增「東南亞製造原產地、關稅、公共電力設備採購規格、UL / ANSI / IEEE 認證、北美售服與備品」欄位，避免只從美國本地製造或台灣出口二分法判斷可行性。
 - Step 2 州別選址矩陣：美國資料中心與電網升級州別需求正在外溢到東南亞變壓器、busway、MDC、MEP 與電力設備供應基地。州別矩陣應增加「非美製造基地可支援品項」、「交期與海運風險」、「美國客戶是否接受東協來源」、「大型變壓器運輸與測試容量」作為 Texas、Virginia、Ohio、Georgia 等州的大型負載供應鏈欄位。
 - Step 3 第三方輔導與決策程序：光寶高雄 88.5 億元資本支出與 AmpUp 收購顯示，AI data center power、EV charging 與能源管理軟體正在整合。訪談題綱新增「企業是否同時具備高階電源製造與北美能源軟體／維運平台」、「高雄或台灣擴產產品是否供應美國資料中心、EV charging 或 utility 客戶」、「是否需要園區提供高功率測試、廠房機電、UL / grid interconnection 輔導與北美平台合作媒合」。
+- Step 1 / Step 2 同日增量：EMD Electronics 在 Wisconsin Sheboygan Falls 啟用 38,000 平方英尺半導體材料 R&D facility，並提及 WEDC 支援與高技能職缺。赴美 ICT / 半導體材料供應鏈評估需新增「advanced materials R&D facility」、「州級研發誘因」、「客戶認證與試產轉量產路徑」、「材料供應鏈人才與既有美國基地」欄位；Wisconsin 可作為 Texas、Arizona、New York 之外的材料研發與供應鏈韌性觀察州。
