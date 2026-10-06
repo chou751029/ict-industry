@@ -259,6 +259,12 @@ New York 特別註記：
 - Step 3 訪談題綱：新增「目標州別或園區是否位於 DOE / utility 電網升級走廊」、「utility 是否可量化接電前後容量差異」、「若 utility 接電延遲，是否可透過 BBU / SST / 現地發電 / 儲能降低 time-to-power 風險」。
 - Step 1 / Step 3 同日增量：金像電引進 Amazon 私募並核准 NT$79 億新廠投資，顯示 AI server PCB 供應鏈的客戶策略入股、產能鎖定與高階板 CAPEX 正成為 hyperscaler 供應鏈韌性工具。赴美或北美供應鏈輔導需新增「CSP 是否以股權／長約鎖定關鍵零組件產能」、「台灣新廠與泰國／中國／北美客戶支援如何分工」、「PCB / CCL / substrate 是否涉及客戶資安、出口管制、Buy America 或供應鏈透明度要求」等訪談題。
 
+### 2026-10-06 回填重點
+
+- Step 2 州別選址矩陣：鴻海德州廠支援 Oracle Cloud Infrastructure / NVIDIA Vera Rubin AI 機櫃產出，顯示 Texas 既有 AI server manufacturing site 已進入客戶現場驗證與出貨敘事。Texas 欄位需新增「既有廠房可轉為 AI 機櫃量產的速度」、「客戶現場驗證」、「rack-scale power-on / burn-in / liquid-cooling test capacity」、「Oracle / NVIDIA 等 CSP 或加速器客戶靠近需求」。
+- Step 3 第三方輔導與決策程序：赴美評估不應只看綠地新廠，也要評估既有廠房改造、產線自動化、測試托盤／busbar／connector 組裝、良率與 cycle time。訪談題綱新增「是否已有可供客戶到場驗證的美國量產線」、「AI rack / tray / busbar 自動化是否已量產導入」、「美國廠與台灣母廠在製程知識、測試規範與品質追溯如何分工」。
+- Step 3 / TCO：NVIDIA 與鴻海 GB300 測試托盤機器人組裝案例顯示，AI 伺服器工廠 TCO 需把 adaptive robotics、force-control tooling、vision / Isaac / Omniverse workflow、治具更換、低量多變產品設計迭代與 99%+ task success 目標納入自動化投資回收分析。
+
 ### 2026-10-02 回填重點
 
 - Step 2 州別選址矩陣：LG Electronics 選擇 Virginia Windsor / Isle of Wight County 建立 AI data center air-cooled chiller 生產據點，並由 Virginia 官方公告確認 164 個就業與逾 6,390 萬美元資本投資。Virginia 欄位除資料中心電力、zoning 與社區風險外，需新增「冷卻設備在地製造」、「HVAC/chiller 供應商聚落」、「Hampton Roads 物流與 460 Commerce Center / intermodal park」以及州地方就業誘因。
