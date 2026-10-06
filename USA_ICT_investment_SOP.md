@@ -265,6 +265,12 @@ New York 特別註記：
 - Step 3 第三方輔導與決策程序：赴美評估不應只看綠地新廠，也要評估既有廠房改造、產線自動化、測試托盤／busbar／connector 組裝、良率與 cycle time。訪談題綱新增「是否已有可供客戶到場驗證的美國量產線」、「AI rack / tray / busbar 自動化是否已量產導入」、「美國廠與台灣母廠在製程知識、測試規範與品質追溯如何分工」。
 - Step 3 / TCO：NVIDIA 與鴻海 GB300 測試托盤機器人組裝案例顯示，AI 伺服器工廠 TCO 需把 adaptive robotics、force-control tooling、vision / Isaac / Omniverse workflow、治具更換、低量多變產品設計迭代與 99%+ task success 目標納入自動化投資回收分析。
 
+### 2026-10-07 回填重點
+
+- Step 1 聯邦／州別合規與電網許可：Oracle / Vantage Wisconsin Project Lighthouse 案顯示，大型 AI data center 即使建物施工推進，仍可能因 PSC 重新審查輸電線 CPCN、申請完整性撤銷與環境／路由變更而延後供電。赴美 ICT 製造與資料中心供應鏈評估需把 utility interconnection docket、CPCN 完整性、重新送件風險、成本分攤、ratepayer protection 與分階段供電承諾納入合規前置清單。
+- Step 2 州別選址矩陣：Wisconsin 應新增「1GW 級大型負載接電審查」、「高壓輸電線路由與地方反對」、「PSC / DNR / 地方政府多層級許可」、「部分供電 vs 全載供電時程」、「客戶是否承擔輸電成本」等欄位。對 Texas、Virginia、Ohio、Georgia 等州亦應套用同樣的 time-to-power 風險檢核。
+- Step 3 第三方輔導與決策程序：10 年 TCO 模型新增「接電審查重啟 6/12/18 個月」敏感度，以及若建物先完成但電力未到位時的設備閒置、客戶交付延遲、臨時電源、BBU/UPS/現地發電與合約違約風險。訪談題綱新增「企業是否已拿到 utility 可驗證接電里程碑」與「是否能以分階段負載、需求響應或自付升級換取更確定的供電時程」。
+
 ### 2026-10-02 回填重點
 
 - Step 2 州別選址矩陣：LG Electronics 選擇 Virginia Windsor / Isle of Wight County 建立 AI data center air-cooled chiller 生產據點，並由 Virginia 官方公告確認 164 個就業與逾 6,390 萬美元資本投資。Virginia 欄位除資料中心電力、zoning 與社區風險外，需新增「冷卻設備在地製造」、「HVAC/chiller 供應商聚落」、「Hampton Roads 物流與 460 Commerce Center / intermodal park」以及州地方就業誘因。
