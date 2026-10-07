@@ -270,6 +270,8 @@ New York 特別註記：
 - Step 1 聯邦／州別合規與電網許可：Oracle / Vantage Wisconsin Project Lighthouse 案顯示，大型 AI data center 即使建物施工推進，仍可能因 PSC 重新審查輸電線 CPCN、申請完整性撤銷與環境／路由變更而延後供電。赴美 ICT 製造與資料中心供應鏈評估需把 utility interconnection docket、CPCN 完整性、重新送件風險、成本分攤、ratepayer protection 與分階段供電承諾納入合規前置清單。
 - Step 2 州別選址矩陣：Wisconsin 應新增「1GW 級大型負載接電審查」、「高壓輸電線路由與地方反對」、「PSC / DNR / 地方政府多層級許可」、「部分供電 vs 全載供電時程」、「客戶是否承擔輸電成本」等欄位。對 Texas、Virginia、Ohio、Georgia 等州亦應套用同樣的 time-to-power 風險檢核。
 - Step 3 第三方輔導與決策程序：10 年 TCO 模型新增「接電審查重啟 6/12/18 個月」敏感度，以及若建物先完成但電力未到位時的設備閒置、客戶交付延遲、臨時電源、BBU/UPS/現地發電與合約違約風險。訪談題綱新增「企業是否已拿到 utility 可驗證接電里程碑」與「是否能以分階段負載、需求響應或自付升級換取更確定的供電時程」。
+- Step 1 / Step 2 同日增量：Google 與 Constellation 以 20 年期 PPA 支援 PJM 既有核電機組新增 890MW 容量，顯示 hyperscaler 正以 long-term offtake、核電 uprate、雲端 AI 營運最佳化與 ratepayer cost insulation 方式取得 firm power。赴美 ICT 製造與 AI data center 場址評估需新增「既有核電增容可用性」、「PJM 容量與輸電限制」、「Illinois / Pennsylvania / New Jersey 既有電力資產 proximity」、「NRC / plant upgrade / construction labor 時程」與「PPA 是否真正新增容量而非轉移既有供電」等欄位。
+- Step 3 同日增量：10 年 TCO 與 RFI 應新增 firm power premium、PPA tenor、capacity delivery before 2032、2,700MW 既有供電搭配 890MW 新增容量的分拆、Google Cloud / Gemini Enterprise 對電網營運與電廠維護的角色，以及若核電 uprate 延遲時的備援電力、需求響應、BBU/UPS 與現地發電替代方案。
 
 ### 2026-10-02 回填重點
 

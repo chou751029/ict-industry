@@ -84,3 +84,19 @@
 - 網站「近期 ICT 產業新聞」：新增 1 筆。
 - Gmail 摘要：已送出。
 - 無法驗證而未寫入候選：1 筆（Investing.com 鴻海股價 / 機器人合作傳聞性摘要）。
+
+## 同日增量補充（2026-10-07 下午續跑）
+
+- 增量搜尋時間窗：延續 2026-10-05 至 2026-10-07 執行當下，並以今日稍早已寫入之連結為去重基準。
+- 17 家企業：未新增非重複、可直接驗證且符合寫入條件的企業新聞；中央社 `貿聯受惠併購案加持　9月營收93億元創歷史次高` 與稍早已寫入之自由財經貿聯項目屬同一事件，僅作交叉驗證，不重複寫入。
+- 產業鏈案例新增 1 筆：`Google and Constellation Announce Landmark Agreement to Bring 890 MW of New Nuclear Capacity to PJM Grid as Part of Long-Term Power Deal`（2026-10-06，Constellation Energy；Google 官方部落格交叉佐證）。Google 與 Constellation 以 20 年期購電協議支援 Illinois、Pennsylvania、New Jersey 共 11 座既有核能機組 uprate，為 PJM 電網新增 890MW 可靠容量；另有 2,700MW 既有發電供應協議與 Google Cloud / Gemini Enterprise 電網營運最佳化合作。此訊號已追加至 `ICT產業新聞` 與網站「近期 ICT 產業新聞」。
+- 美國 SOP 對應：Step 1 納入 hyperscaler PPA、核能 uprate、PJM 容量市場與大型負載可靠電力合規；Step 2 對 Illinois / Pennsylvania / New Jersey 及 PJM 州別新增既有核電增容、construction labor、NRC / plant upgrade 時程與 utility / grid operator 協調；Step 3 將 long-term PPA、firm power premium、capacity delivery before 2032、AI for grid operations、ratepayer cost insulation 納入 10 年 TCO 與場址 RFI。
+- 來源驗證：Constellation 官方頁可直接開啟，標題、2026-10-06 日期、發布者與 890MW / PJM / 20 年 PPA 主旨相符；Google 官方部落格可直接開啟，確認該案由 Google 資料中心成長驅動，並說明 6 座營運中核電廠、4,400 個既有工作、7,200 個施工工作與 2032 年前新增容量等資訊。
+- 排除 / 待複核：JERA / Dell / RHAELM 日本 AI infrastructure MOU 官方發布日期為 2026-10-01，超出本輪 48 小時窗；TechRadar 10/05 文章僅作背景觀察，不寫入。TechRadar BWRX-300 / TVA SMR 文章需追溯 NRC 或 TVA 官方頁後再判定，暫列待複核。
+
+### 同日增量寫入紀錄
+
+- `新聞追蹤`：新增 0 列。
+- `ICT產業新聞`：本次增量新增 1 列（Google / Constellation PJM 核能增容與 AI data center 電力）。
+- 網站「近期 ICT 產業新聞」：本次增量新增 1 筆。
+- 無法驗證或未寫入候選：2 筆（JERA / Dell / RHAELM 官方發布超出 48 小時窗；BWRX-300 / TVA SMR 需官方頁複核）。
