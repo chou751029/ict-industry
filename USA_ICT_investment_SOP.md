@@ -286,3 +286,10 @@ New York 特別註記：
 - Step 2 州別選址矩陣：美國資料中心與電網升級州別需求正在外溢到東南亞變壓器、busway、MDC、MEP 與電力設備供應基地。州別矩陣應增加「非美製造基地可支援品項」、「交期與海運風險」、「美國客戶是否接受東協來源」、「大型變壓器運輸與測試容量」作為 Texas、Virginia、Ohio、Georgia 等州的大型負載供應鏈欄位。
 - Step 3 第三方輔導與決策程序：光寶高雄 88.5 億元資本支出與 AmpUp 收購顯示，AI data center power、EV charging 與能源管理軟體正在整合。訪談題綱新增「企業是否同時具備高階電源製造與北美能源軟體／維運平台」、「高雄或台灣擴產產品是否供應美國資料中心、EV charging 或 utility 客戶」、「是否需要園區提供高功率測試、廠房機電、UL / grid interconnection 輔導與北美平台合作媒合」。
 - Step 1 / Step 2 同日增量：EMD Electronics 在 Wisconsin Sheboygan Falls 啟用 38,000 平方英尺半導體材料 R&D facility，並提及 WEDC 支援與高技能職缺。赴美 ICT / 半導體材料供應鏈評估需新增「advanced materials R&D facility」、「州級研發誘因」、「客戶認證與試產轉量產路徑」、「材料供應鏈人才與既有美國基地」欄位；Wisconsin 可作為 Texas、Arizona、New York 之外的材料研發與供應鏈韌性觀察州。
+
+### 2026-10-08 回填重點
+
+- Step 1 聯邦／州別合規與電力接入：DarkHorse / Hopkinsville 案顯示，50MW 級 AI/HPC 場址即使取得 TVA 容量核准，仍須把 18 個月地方許可、utility construction、變電站預付款、服務開始條件與客戶合約不確定性列入前置合規清單。赴美 ICT 製造或 AI data center 供應鏈評估需新增「substation advance funding」、「permit contingency」、「utility-owned substation transfer」與「容量核准不等於可即時送電」等檢核。
+- Step 2 州別選址矩陣：Kentucky / TVA region 應新增「161kV delivery point」、「地方公用事業可新增容量」、「HES / TVA / municipal utility 協調」、「closed-loop cooling 承諾」、「無稅賦減免但自付公共基礎設施」等欄位，作為 Texas、Virginia、Ohio 之外中南部州大型負載選址對照。
+- Step 2 / Step 3 先進製造誘因：Anduril Maryland Arsenal-2 顯示，軟體定義製造與國防科技供應鏈會被州級經濟發展機構以私人投資匹配、workforce center、maritime prosperity zone、港口／鐵路／重工場址再利用來競逐。州別矩陣應新增「brownfield heavy-industrial reuse」、「workforce training center」、「state/county incentive match」與「software-defined factory / digital thread」欄位，供 ICT 智慧製造、機器人與國防電子供應鏈選址比較。
+- Step 3 第三方輔導與決策程序：10 年 TCO 模型需把企業自付公共基礎設施、提前付款、地方誘因需議會核准、變電站／訓練中心所有權歸屬、港口與多式聯運價值、以及許可未通過時的 sunk cost 風險列入敏感度分析。訪談題綱新增「企業是否願意用自付基礎設施換取容量與時程確定性」及「是否能把軟體定義產線、數位孿生與人才訓練中心納入州政府誘因談判」。
