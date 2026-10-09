@@ -6,7 +6,7 @@
 ## 一、重點趨勢
 
 1. 核心 17 家企業新增 2 筆可寫入來源：光寶第 3 季營收年增三成，AI 與雲端高階電源需求延續；中央社同篇報導英業達第 3 季營收創新高、仁寶 9 月營收月增，反映 AI 伺服器與客戶拉貨動能。
-2. 跨企業 ICT 產業鏈新增 6 筆：AES Indiana / Google Monrovia 供電協議、Nucor Indiana rebar micro mill、台塑新智能 / 創曦資訊麥寮 AIDC、家登 Arizona 製造設施、智邦新加坡子公司、南亞 / LS ELECTRIC 策略合作。
+2. 跨企業 ICT 產業鏈新增 6 筆：AES Indiana / Google Monrovia 大型負載供電核准、Nucor utility structures 產能擴充、台塑新智能 / 創曦資訊麥寮 AIDC、家登 Arizona 製造設施、智邦新加坡子公司、南亞 / LS ELECTRIC 策略合作。
 3. 美國訊號集中於「大型負載供電 + 在地供應鏈」：Indiana 供電協議與鋼材微型鋼廠、Arizona 半導體零組件製造、Google / utility agreement 都指向赴美選址必須先做電力、IURC / 公用事業審查、EPC 材料與客戶靠近評估。
 
 ## 二、17 家企業逐一摘要
@@ -168,25 +168,25 @@
 
 ## 三、產業鏈動態與案例
 
-### 新增 1：AES Indiana / Google Monrovia data center power
+### 新增 1：AES Indiana / Google Monrovia data center large-load plan
 
-- 原文標題：AES Indiana Announces Agreement with Google to Power Its Data Center Campus in Monrovia [AES Indiana 宣布與 Google 達成 Monrovia 資料中心園區供電協議]
-- 日期：2026-10-08
+- 原文標題：IURC Approves Customer-Protected Growth Plan to Serve Large Load Investment, Delivering an Estimated $770 Million in Customer Savings [IURC 核准 AES Indiana 服務大型負載投資的客戶保護成長計畫]
+- 日期：2026-10-07
 - 來源：AES Indiana
 - 語言：英文 / 美國官方
-- 連結：https://www.aesindiana.com/about-us/press-releases/aes-indiana-announces-agreement-google-power-its-data-center-campus-monrovia
-- 摘要：AES Indiana 與 Google 簽署長期供電協議，支援 Google 位於 Indiana Monrovia 的資料中心園區；AES 表示將以多元電源與輸配電投資支援大型負載成長，並須經 Indiana Utility Regulatory Commission 審查。
+- 連結：https://www.aesindiana.com/press-release/iurc-approves-customer-protected-growth-plan-serve-large-load-investment-delivering
+- 摘要：AES Indiana 宣布 Indiana Utility Regulatory Commission 已核准其服務大型負載投資的 customer-protected growth plan；新聞稿說明該計畫支援 Google 位於 Indiana 的資料中心投資，並以客戶保護、輸配電投資與長期節省作為核准重點。
 - 設廠 / 供應鏈訊號：明確 AI data center 電力與州別選址訊號。
 
-### 新增 2：Nucor / Indiana rebar micro mill
+### 新增 2：Nucor / utility structures production capabilities
 
-- 原文標題：Nucor Announces New Rebar Micro Mill in Indiana [Nucor 宣布於 Indiana 新建鋼筋微型鋼廠]
+- 原文標題：Nucor Announces Expansion of Utility Structures Production Capabilities [Nucor 宣布擴充公用事業結構件產能]
 - 日期：2026-10-08
 - 來源：Nucor / PRNewswire
 - 語言：英文 / 美國官方
-- 連結：https://www.prnewswire.com/news-releases/nucor-announces-new-rebar-micro-mill-in-indiana-302902440.html
-- 摘要：Nucor 將在 Indiana Crawfordsville 新建年產 50 萬噸 rebar micro mill，投資約 8.6 億美元、創造約 200 個全職職缺，補強 Midwest 建築與資料中心等基礎設施鋼材需求。
-- 設廠 / 供應鏈訊號：間接至明確；大型資料中心與電網建設帶動鋼材、EPC、土建與地方公用設施需求。
+- 連結：https://www.prnewswire.com/news-releases/nucor-announces-expansion-of-utility-structures-production-capabilities-302902440.html
+- 摘要：Nucor 宣布擴充 utility structures production capabilities，聚焦輸電、配電與公用事業基礎設施用結構件。此案不是新建 Indiana rebar micro mill，而是電網與大型負載基礎設施供應鏈產能擴充訊號。
+- 設廠 / 供應鏈訊號：間接至明確；AI 資料中心與電網升級帶動 transmission / utility structures、EPC、土建與地方公用設施需求。
 
 ### 新增 3：台塑新智能 / 麥寮 AIDC
 
@@ -231,14 +231,14 @@
 ## 四、各國政策與設廠誘因
 
 - 美國 Indiana：AES / Google 案顯示資料中心選址已與 utility agreement、IURC 審查、輸配電投資、電源組合與大型負載成本分攤綁定。
-- 美國 Indiana / Midwest：Nucor 新 rebar micro mill 顯示資料中心、電網與基建工程正在拉動土建材料與區域製造投資。
+- 美國 / 電網供應鏈：Nucor utility structures 產能擴充顯示資料中心、輸配電與基建工程正在拉動電網結構件與區域製造投資。
 - 美國 Arizona：家登 Glendale 旗艦製造設施顯示 TSMC Arizona 周邊正形成半導體零組件與航太製造供應鏈，客戶靠近與在地服務成為投資理由。
 - 台灣：麥寮 AIDC 與能源管理案例顯示既有工業基地可轉為 AI 算力與電力調度場域。
 
 ## 五、國別母語搜尋摘要
 
 - 中文：`光寶 第3季 雲端高階電源 2026/10/08`、`英業達 第3季營收 AI伺服器 2026/10/08`、`台塑新智能 AIDC 麥寮`、`智邦 新加坡 子公司 AI`、`南亞 LS ELECTRIC AI資料中心`。
-- 英文 / 美國：`AES Indiana Google Monrovia data center power agreement`、`Nucor Indiana rebar micro mill data center infrastructure`、`Gudeng Glendale Arizona manufacturing facility`.
+- 英文 / 美國：`AES Indiana IURC large load Google data center`、`Nucor utility structures production capabilities transmission infrastructure`、`Gudeng Glendale Arizona manufacturing facility`.
 - 德文：`Rechenzentrum Netzanschluss Investition Oktober 2026`；未找到本輪合格新增。
 - 法文：`centre de donnees raccordement electrique investissement octobre 2026`；未找到本輪合格新增。
 - 日文：`データセンター 電力 建設許可 2026年10月 AI`；未找到本輪合格新增。
@@ -250,8 +250,8 @@
 | --- | --- | --- |
 | 已複核 / 寫入 | 中央社光寶 | 可直接開啟，標題、2026-10-08 日期、來源與第 3 季營收 / 雲端高階電源主旨相符。 |
 | 已複核 / 寫入 | 中央社英業達 / 仁寶 | 可直接開啟，標題、2026-10-08 日期、來源與營收 / AI 伺服器需求主旨相符。 |
-| 已複核 / 寫入 | AES Indiana | 可直接開啟，標題、日期、發布者與 Google Monrovia 供電協議主旨相符。 |
-| 已複核 / 寫入 | Nucor / PRNewswire | 可直接開啟，標題、日期、發布者與 Indiana rebar micro mill 主旨相符。 |
+| 已複核 / 寫入 | AES Indiana | 可直接開啟，標題、2026-10-07 日期、發布者與 IURC 核准大型負載 / Google data center 支援計畫主旨相符。 |
+| 已複核 / 寫入 | Nucor / PRNewswire | 可直接開啟，標題、日期、發布者與 utility structures production capabilities 擴充主旨相符；已修正草稿中 rebar micro mill 錯配。 |
 | 已複核 / 寫入 | 中央社台塑新智能 | 可直接開啟，標題、日期、來源與麥寮 AIDC 主旨相符。 |
 | 已複核 / 寫入 | Arizona Commerce Authority | 可直接開啟，標題、日期、發布機構與家登 Glendale 製造設施主旨相符。 |
 | 已複核 / 寫入 | 中央社智邦 | 可直接開啟，標題、日期、來源與新加坡子公司預算主旨相符。 |
@@ -277,7 +277,7 @@
 ## 九、人工複核清單
 
 1. AES / Google Monrovia 供電協議的 IURC 審查文件、費率設計與成本分攤。
-2. Nucor Indiana micro mill 是否直接鎖定資料中心 / 電網工程客戶，以及用電、環評、施工期程。
+2. Nucor utility structures 擴充是否直接鎖定資料中心 / 輸配電工程客戶，以及產能、認證、交期與區域製造配置。
 3. 家登 Glendale 設施的產品範圍、認證、TSMC / 航太客戶與 Arizona 州地方誘因。
 4. 智邦新加坡子公司預算、功能定位與是否延伸到區域製造、維修或 OCP 客戶支援。
 5. 南亞 / LS ELECTRIC 合作中變壓器、配電盤、busbar 與美日 AI data center 訂單分工。

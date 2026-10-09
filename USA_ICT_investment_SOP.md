@@ -276,7 +276,7 @@ New York 特別註記：
 ### 2026-10-09 回填重點
 
 - Step 1 聯邦／州別法規與公用事業合規：AES Indiana 與 Google Monrovia data center campus 長期供電協議顯示，AI 資料中心或大型 ICT 製造案的可行性需前置審查 utility agreement、Indiana Utility Regulatory Commission 核准程序、輸配電投資、電源組合與大型負載成本分攤；合約簽署本身不等於供電風險已解除。
-- Step 2 州別選址矩陣：Indiana 應新增「大型資料中心 utility agreement」、「IURC 審查時程」、「輸配電投資與成本回收」、「Midwest 土建與鋼材供應鏈」、「Google / hyperscaler 帶動周邊 EPC 與材料需求」等欄位。Nucor Crawfordsville rebar micro mill 亦顯示資料中心與電網工程會拉動區域基礎材料投資。
+- Step 2 州別選址矩陣：Indiana 應新增「大型資料中心 utility agreement」、「IURC 審查時程」、「輸配電投資與成本回收」、「Midwest 土建與電網結構件供應鏈」、「Google / hyperscaler 帶動周邊 EPC 與材料需求」等欄位。Nucor utility structures production capabilities 擴充亦顯示資料中心與電網工程會拉動 transmission / utility structures、土建與區域基礎材料投資。
 - Step 2 Arizona 欄位：家登 Glendale 12,000 平方英尺美國旗艦製造設施顯示 TSMC Arizona 周邊供應鏈正在吸收半導體與航太零組件在地製造。Arizona 選址矩陣需新增「客戶靠近小型製造據點」、「半導體零組件認證與潔淨製造需求」、「州招商窗口」、「TSMC / Intel / 航太客戶服務半徑」與「台灣母廠分工」。
 - Step 3 第三方輔導與決策程序：10 年 TCO 模型需新增 utility approval delay、rate case / rider 風險、輸配電升級分攤、土建材料交期、EPC 工期、在地維修與小型衛星製造據點的客戶驗證價值。企業訪談題綱新增「是否已有 utility 可驗證供電協議與監管審查路徑」、「是否願意負擔專屬電力或輸配電升級」、「是否需要先設小型製造／維修據點靠近晶圓廠或資料中心客戶」。
 
