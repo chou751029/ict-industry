@@ -273,6 +273,13 @@ New York 特別註記：
 - Step 1 / Step 2 同日增量：Google 與 Constellation 以 20 年期 PPA 支援 PJM 既有核電機組新增 890MW 容量，顯示 hyperscaler 正以 long-term offtake、核電 uprate、雲端 AI 營運最佳化與 ratepayer cost insulation 方式取得 firm power。赴美 ICT 製造與 AI data center 場址評估需新增「既有核電增容可用性」、「PJM 容量與輸電限制」、「Illinois / Pennsylvania / New Jersey 既有電力資產 proximity」、「NRC / plant upgrade / construction labor 時程」與「PPA 是否真正新增容量而非轉移既有供電」等欄位。
 - Step 3 同日增量：10 年 TCO 與 RFI 應新增 firm power premium、PPA tenor、capacity delivery before 2032、2,700MW 既有供電搭配 890MW 新增容量的分拆、Google Cloud / Gemini Enterprise 對電網營運與電廠維護的角色，以及若核電 uprate 延遲時的備援電力、需求響應、BBU/UPS 與現地發電替代方案。
 
+### 2026-10-09 回填重點
+
+- Step 1 聯邦／州別法規與公用事業合規：AES Indiana 與 Google Monrovia data center campus 長期供電協議顯示，AI 資料中心或大型 ICT 製造案的可行性需前置審查 utility agreement、Indiana Utility Regulatory Commission 核准程序、輸配電投資、電源組合與大型負載成本分攤；合約簽署本身不等於供電風險已解除。
+- Step 2 州別選址矩陣：Indiana 應新增「大型資料中心 utility agreement」、「IURC 審查時程」、「輸配電投資與成本回收」、「Midwest 土建與鋼材供應鏈」、「Google / hyperscaler 帶動周邊 EPC 與材料需求」等欄位。Nucor Crawfordsville rebar micro mill 亦顯示資料中心與電網工程會拉動區域基礎材料投資。
+- Step 2 Arizona 欄位：家登 Glendale 12,000 平方英尺美國旗艦製造設施顯示 TSMC Arizona 周邊供應鏈正在吸收半導體與航太零組件在地製造。Arizona 選址矩陣需新增「客戶靠近小型製造據點」、「半導體零組件認證與潔淨製造需求」、「州招商窗口」、「TSMC / Intel / 航太客戶服務半徑」與「台灣母廠分工」。
+- Step 3 第三方輔導與決策程序：10 年 TCO 模型需新增 utility approval delay、rate case / rider 風險、輸配電升級分攤、土建材料交期、EPC 工期、在地維修與小型衛星製造據點的客戶驗證價值。企業訪談題綱新增「是否已有 utility 可驗證供電協議與監管審查路徑」、「是否願意負擔專屬電力或輸配電升級」、「是否需要先設小型製造／維修據點靠近晶圓廠或資料中心客戶」。
+
 ### 2026-10-02 回填重點
 
 - Step 2 州別選址矩陣：LG Electronics 選擇 Virginia Windsor / Isle of Wight County 建立 AI data center air-cooled chiller 生產據點，並由 Virginia 官方公告確認 164 個就業與逾 6,390 萬美元資本投資。Virginia 欄位除資料中心電力、zoning 與社區風險外，需新增「冷卻設備在地製造」、「HVAC/chiller 供應商聚落」、「Hampton Roads 物流與 460 Commerce Center / intermodal park」以及州地方就業誘因。
