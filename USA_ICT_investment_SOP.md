@@ -280,6 +280,11 @@ New York 特別註記：
 - Step 2 Arizona 欄位：家登 Glendale 12,000 平方英尺美國旗艦製造設施顯示 TSMC Arizona 周邊供應鏈正在吸收半導體與航太零組件在地製造。Arizona 選址矩陣需新增「客戶靠近小型製造據點」、「半導體零組件認證與潔淨製造需求」、「州招商窗口」、「TSMC / Intel / 航太客戶服務半徑」與「台灣母廠分工」。
 - Step 3 第三方輔導與決策程序：10 年 TCO 模型需新增 utility approval delay、rate case / rider 風險、輸配電升級分攤、土建材料交期、EPC 工期、在地維修與小型衛星製造據點的客戶驗證價值。企業訪談題綱新增「是否已有 utility 可驗證供電協議與監管審查路徑」、「是否願意負擔專屬電力或輸配電升級」、「是否需要先設小型製造／維修據點靠近晶圓廠或資料中心客戶」。
 
+### 2026-10-10 回填重點
+
+- Step 2 國際對照：Bitdeer AI 在馬來西亞 A901 67MW AI data center campus 與 KONST / ADATA 亞洲 AI data center buildout 融資訊號顯示，東協正在成為美國以外的 AI Cloud / AI data center 第二方案。美國州別選址矩陣應新增「與馬來西亞、泰國、新加坡等東協市場的 time-to-power、電價、土地、資料中心許可、資料治理與稅務誘因比較」。
+- Step 3 第三方輔導與決策程序：企業訪談題綱新增「若美國接電、許可或社區溝通延遲，是否以東協 AI data center / service hub 作為 phased deployment」、「是否透過台灣 ICT 資本、記憶體、伺服器、電源、網通或冷卻供應鏈投資亞洲算力基礎設施」、「美國廠與東協 AI Cloud 節點如何分工以服務不同客戶與資料主權要求」。
+
 ### 2026-10-02 回填重點
 
 - Step 2 州別選址矩陣：LG Electronics 選擇 Virginia Windsor / Isle of Wight County 建立 AI data center air-cooled chiller 生產據點，並由 Virginia 官方公告確認 164 個就業與逾 6,390 萬美元資本投資。Virginia 欄位除資料中心電力、zoning 與社區風險外，需新增「冷卻設備在地製造」、「HVAC/chiller 供應商聚落」、「Hampton Roads 物流與 460 Commerce Center / intermodal park」以及州地方就業誘因。
