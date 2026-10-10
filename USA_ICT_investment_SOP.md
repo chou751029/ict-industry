@@ -284,6 +284,8 @@ New York 特別註記：
 
 - Step 2 國際對照：Bitdeer AI 在馬來西亞 A901 67MW AI data center campus 與 KONST / ADATA 亞洲 AI data center buildout 融資訊號顯示，東協正在成為美國以外的 AI Cloud / AI data center 第二方案。美國州別選址矩陣應新增「與馬來西亞、泰國、新加坡等東協市場的 time-to-power、電價、土地、資料中心許可、資料治理與稅務誘因比較」。
 - Step 3 第三方輔導與決策程序：企業訪談題綱新增「若美國接電、許可或社區溝通延遲，是否以東協 AI data center / service hub 作為 phased deployment」、「是否透過台灣 ICT 資本、記憶體、伺服器、電源、網通或冷卻供應鏈投資亞洲算力基礎設施」、「美國廠與東協 AI Cloud 節點如何分工以服務不同客戶與資料主權要求」。
+- Step 2 Arizona 欄位同日增量：Mercury Systems 在 Phoenix 既有園區新增 50,000 平方英尺高度自動化航太國防電子製造空間，顯示 Arizona 不只吸收半導體前段與零組件供應鏈，也能承接 PCB 組裝、記憶體解決方案、高效能邊緣運算硬體與先進封裝相關製造。Arizona 選址矩陣應新增「既有電子製造園區擴建速度」、「航太國防客戶與半導體聚落交集」、「PCB / advanced packaging / rugged edge computing 產線需求」、「50 人級擴建的人才與培訓」與「州招商機構可驗證擴建案例」。
+- Step 3 第三方輔導與決策程序同日增量：赴美 ICT 製造評估需把 brownfield / existing-campus expansion 納入 greenfield 之外的情境；訪談題綱新增「企業是否可先用既有廠區擴建取得客戶驗證與產能」、「高度自動化產線是否需州級 workforce accelerator 或社區大學配套」、「PCB 組裝、記憶體、space drive、advanced packaging 與 AI edge processing 產品是否涉及 ITAR / export control / secure supply chain 要求」。
 
 ### 2026-10-02 回填重點
 

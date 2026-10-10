@@ -230,3 +230,23 @@
 - `ICT產業新聞`：新增 2 列。
 - 網頁 `INDUSTRY_NEWS`：新增 2 筆。
 - 無法驗證而未寫入候選：3 筆。
+
+## 十、同日增量補充（2026-10-10 15:00 CST）
+
+### 新增 3：Mercury Systems / Phoenix 航太國防電子製造設施擴建
+
+- 原文標題：Mercury Systems Celebrates Expansion Of Production Facility In Phoenix [Mercury Systems 擴建 Phoenix 電子製造設施]
+- 日期：2026-10-08
+- 來源：Arizona Commerce Authority
+- 語言：英文／美國官方
+- 連結：https://www.azcommerce.com/news-events/news/2026/10/mercury-systems-grand-opening/
+- 摘要：Arizona Commerce Authority 宣布 Mercury Systems 擴建 Phoenix 生產設施，新增 50,000 平方英尺高度自動化製造空間，用於提升航太國防電子、PCB 組裝、記憶體解決方案、高效能 space drives 與先進封裝相關產能，並預計下一年創造逾 50 個職缺。
+- 設廠 / 供應鏈訊號：明確美國既有廠擴建與在地化先進電子製造訊號；需追蹤 Arizona 州級誘因、客戶需求、PCB / advanced packaging 供應鏈、人才與後續產能爬坡。
+
+### 同日增量更新
+
+- `新聞追蹤`：新增 0 列。
+- `ICT產業新聞`：本次增量新增 1 列；2026-10-10 累計新增 3 列。
+- 網頁 `INDUSTRY_NEWS`：本次增量新增 1 筆；2026-10-10 累計新增 3 筆。
+- 來源驗證：Mercury / ACA 直接頁可開啟，標題、2026-10-08 日期、發布機構與 Phoenix 生產設施擴建主旨相符。
+- 最值得人工複核新增議題：Mercury Phoenix 擴建是否取得州或地方誘因、具體產線設備與先進封裝範圍、以及是否支援資料中心／國防 AI edge processing 相關客戶。
