@@ -307,3 +307,11 @@ New York 特別註記：
 - Step 2 州別選址矩陣：Kentucky / TVA region 應新增「161kV delivery point」、「地方公用事業可新增容量」、「HES / TVA / municipal utility 協調」、「closed-loop cooling 承諾」、「無稅賦減免但自付公共基礎設施」等欄位，作為 Texas、Virginia、Ohio 之外中南部州大型負載選址對照。
 - Step 2 / Step 3 先進製造誘因：Anduril Maryland Arsenal-2 顯示，軟體定義製造與國防科技供應鏈會被州級經濟發展機構以私人投資匹配、workforce center、maritime prosperity zone、港口／鐵路／重工場址再利用來競逐。州別矩陣應新增「brownfield heavy-industrial reuse」、「workforce training center」、「state/county incentive match」與「software-defined factory / digital thread」欄位，供 ICT 智慧製造、機器人與國防電子供應鏈選址比較。
 - Step 3 第三方輔導與決策程序：10 年 TCO 模型需把企業自付公共基礎設施、提前付款、地方誘因需議會核准、變電站／訓練中心所有權歸屬、港口與多式聯運價值、以及許可未通過時的 sunk cost 風險列入敏感度分析。訪談題綱新增「企業是否願意用自付基礎設施換取容量與時程確定性」及「是否能把軟體定義產線、數位孿生與人才訓練中心納入州政府誘因談判」。
+
+### 2026-10-11 回填重點
+
+- Step 1 聯邦法規／補貼／合規：USITC 337-TA-1526 對特定垂直供電系統、零組件與含該系統的 computing systems 啟動調查，名單包含 Delta、Foxconn / FII / Ingrasys、Quanta、Flex、Celestica 等 AI server 供應鏈業者。赴美 ICT 製造與資料中心供應鏈評估需新增 ITC 337、limited exclusion order、專利 freedom-to-operate、替代設計與客戶供貨連續性檢核。
+- Step 2 Texas 州別選址矩陣：光寶 LITE-ON, INC. McKinney 廠簽訂上限 3.48 億美元新建工程統包合約，顯示 Texas ICT 製造案已進入 EPC / 施工準備階段；矩陣需新增「EPC 統包商能力」、「建照 / 接電 / workforce 時程」、「McKinney / Dallas-Fort Worth 電源與 AI infrastructure 聚落」及「台灣高雄 / 美國 Texas / 波蘭液冷投資分工」。
+- Step 2 Texas 大型負載風險：TDLR Project Longhorn - Building One 登錄顯示 Bastrop County Cedar Creek 近 50 萬平方英尺 AI data center 建築規劃；DCD 對可能租戶與現地天然氣電力規劃的報導需標為待查。Texas 欄位需同步追蹤 TDLR building filing、TCEQ air permit、ERCOT interconnection、water / cooling、Texas data center permitting pause 與 behind-the-meter power。
+- Step 2 New York / advanced packaging：GlobalFoundries 與 TSMC 建立 20 億美元美國矽中介層供應協議，預計在 Malta 廠支援 CoWoS 先進 AI 封裝並於 2028 年上半年量產爬坡。New York 欄位需新增 silicon interposer、embedded deep trench capacitor、advanced packaging supply chain、CHIPS / 州級誘因、客戶認證與 CoWoS capacity bottleneck。
+- Step 3 第三方輔導與決策程序：企業訪談題綱新增「是否已完成 AI server power delivery IP / 337 風險盤點」、「EPC 合約簽署後的建照、接電、消防、UL / safety certification 與客戶驗證里程碑」、「若美國 advanced packaging 需要在地矽中介層，台灣供應商如何切入設備、材料、測試與工程服務」。
