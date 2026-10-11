@@ -315,3 +315,9 @@ New York 特別註記：
 - Step 2 Texas 大型負載風險：TDLR Project Longhorn - Building One 登錄顯示 Bastrop County Cedar Creek 近 50 萬平方英尺 AI data center 建築規劃；DCD 對可能租戶與現地天然氣電力規劃的報導需標為待查。Texas 欄位需同步追蹤 TDLR building filing、TCEQ air permit、ERCOT interconnection、water / cooling、Texas data center permitting pause 與 behind-the-meter power。
 - Step 2 New York / advanced packaging：GlobalFoundries 與 TSMC 建立 20 億美元美國矽中介層供應協議，預計在 Malta 廠支援 CoWoS 先進 AI 封裝並於 2028 年上半年量產爬坡。New York 欄位需新增 silicon interposer、embedded deep trench capacitor、advanced packaging supply chain、CHIPS / 州級誘因、客戶認證與 CoWoS capacity bottleneck。
 - Step 3 第三方輔導與決策程序：企業訪談題綱新增「是否已完成 AI server power delivery IP / 337 風險盤點」、「EPC 合約簽署後的建照、接電、消防、UL / safety certification 與客戶驗證里程碑」、「若美國 advanced packaging 需要在地矽中介層，台灣供應商如何切入設備、材料、測試與工程服務」。
+
+### 2026-10-12 回填重點
+
+- Step 1 聯邦法規／補貼／合規：中央社補充鴻海、台達與廣達對 USITC 337 調查的回應；公司目前均表示依法定程序因應且產品營運未受影響，但赴美 ICT 製造評估仍需把 ITC 337、專利範圍釐清、客戶供貨連續性、替代設計與 limited exclusion order 風險列為前置合規項目。
+- Step 2 州別選址矩陣：NOARK Electric 的資料中心電力基礎設施訊號顯示，AI data center 專案不只需要變壓器與大型電力設備，也需要低壓／中壓配電、保護元件、North American compliance、localized assembly、service support 與備品物流。Texas、Virginia、Ohio、Indiana、Arizona 等州別評估應新增「電力配電設備在地組裝與服務半徑」欄位。
+- Step 3 第三方輔導與決策程序：訪談題綱新增「供應商是否具備北美在地 assembly / service / compliance team」、「UL / CSA / utility acceptance 與客戶現場 commissioning 是否已建立」、「若 337 調查導致設計變更，是否能快速完成替代料源、測試、認證與客戶再導入」。
