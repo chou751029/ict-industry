@@ -321,3 +321,4 @@ New York 特別註記：
 - Step 1 聯邦法規／補貼／合規：中央社補充鴻海、台達與廣達對 USITC 337 調查的回應；公司目前均表示依法定程序因應且產品營運未受影響，但赴美 ICT 製造評估仍需把 ITC 337、專利範圍釐清、客戶供貨連續性、替代設計與 limited exclusion order 風險列為前置合規項目。
 - Step 2 州別選址矩陣：NOARK Electric 的資料中心電力基礎設施訊號顯示，AI data center 專案不只需要變壓器與大型電力設備，也需要低壓／中壓配電、保護元件、North American compliance、localized assembly、service support 與備品物流。Texas、Virginia、Ohio、Indiana、Arizona 等州別評估應新增「電力配電設備在地組裝與服務半徑」欄位。
 - Step 3 第三方輔導與決策程序：訪談題綱新增「供應商是否具備北美在地 assembly / service / compliance team」、「UL / CSA / utility acceptance 與客戶現場 commissioning 是否已建立」、「若 337 調查導致設計變更，是否能快速完成替代料源、測試、認證與客戶再導入」。
+- Step 2 / Step 3 同日補充：台達與康舒因 AI 伺服器與資料中心電源需求加碼資本支出，台達重建泰國一廠且三座泰國新廠今明兩年陸續完工，並同步推進台灣、中國與美國建廠／研發據點；康舒台灣本部與美國子公司 OmniOn 導入製造設備與高階產線，支援 30kW、33kW 與後續百千瓦級大電力機櫃。赴美 SOP 應新增「高功率電源跨地產能分工」、「OmniOn 美國產線能力」、「泰國作為非中產能備援」、「百千瓦級 power shelf / cabinet 測試驗證」、「液冷與高壓直流供電架構客戶認證」等訪談與場址評估欄位。
