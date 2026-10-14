@@ -329,3 +329,10 @@ New York 特別註記：
 - Step 2 州別選址矩陣：華城台中重電廠預計 2027Q2 完工且外銷比重將逾 60%，大同推模組化 AI 資料中心基建，顯示美國州別評估需新增「外銷型台灣重電產能」、「北美服務半徑」、「模組化資料中心電力基建」、「現場 commissioning / O&M」與「大型變壓器測試容量」欄位。
 - Step 2 / 國際對照：泰國推動 IC 設計訓練中心、PCB 大學與資料中心標準，代表東協不只提供低成本製造，也在制度化人才與標準；美國場址比較需加入泰國在人才、資料中心標準、PCB / electronics cluster、BOI / 園區誘因與 time-to-power 的替代方案。
 - Step 3 第三方輔導與決策程序：企業訪談題綱新增「若設備投資放在泰國或台灣，如何支援美國客戶交付、認證、備品與售服」、「資料中心基建供應商是否能提供模組化設計、現場 commissioning、UL / IEEE / CSA 認證與電力系統維運」、「重電或自動化系統整合商是否具備海外服務據點或合作 EPC 網絡」。
+
+### 2026-10-14 回填重點
+
+- Step 1 聯邦法規／補貼／合規：鴻海 OCP Global Summit 新一代 AI 機櫃訊號顯示，赴美 AI server / data center computing systems 供應鏈需同步盤點 OCP / hyperscaler 規格、vertical power delivery、busbar / power shelf IP、ITC 337 風險、替代設計與客戶再認證時程。
+- Step 2 州別選址矩陣：東元資料中心與儲能雙引擎、印尼變壓器、檳城 busway / MDC、澳洲儲能及北美需求，表示 Texas、Virginia、Ohio、Indiana 等大型負載州別評估需新增「非美電力設備備援基地」、「東協變壓器 / busway 產能」、「MDC 模組化交付」、「BESS / PCS 整合」與「北美認證 / 售服半徑」欄位。
+- Step 2 / 國際對照：定穎泰國設備投資、大同 TTG AIDC CUBE 與台塑新智能 AIDC 電池模組 / 美國資料中心專案，分別代表東協 PCB 備援、台灣模組化 AI 資料中心電力基建與備援電池系統。美國場址比較需納入 PCB、UPS / BESS、電源與資料中心基建零組件的台灣 / 泰國供應韌性、運輸時程、關稅與客戶來源要求。
+- Step 3 第三方輔導與決策程序：訪談題綱新增「AI rack / UPS / BESS / 變壓器 / busway / PCB 是否具備 OCP、UL、IEEE、CSA 或 hyperscaler 認證」、「企業若以台灣或泰國產能支援美國客戶，如何配置備品、維修、現場 commissioning 與責任歸屬」、「是否需要園區提供高功率測試、資料中心電力基建示範線與國際品牌合作媒合」。
