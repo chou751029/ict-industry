@@ -336,3 +336,9 @@ New York 特別註記：
 - Step 2 州別選址矩陣：東元資料中心與儲能雙引擎、印尼變壓器、檳城 busway / MDC、澳洲儲能及北美需求，表示 Texas、Virginia、Ohio、Indiana 等大型負載州別評估需新增「非美電力設備備援基地」、「東協變壓器 / busway 產能」、「MDC 模組化交付」、「BESS / PCS 整合」與「北美認證 / 售服半徑」欄位。
 - Step 2 / 國際對照：定穎泰國設備投資、大同 TTG AIDC CUBE 與台塑新智能 AIDC 電池模組 / 美國資料中心專案，分別代表東協 PCB 備援、台灣模組化 AI 資料中心電力基建與備援電池系統。美國場址比較需納入 PCB、UPS / BESS、電源與資料中心基建零組件的台灣 / 泰國供應韌性、運輸時程、關稅與客戶來源要求。
 - Step 3 第三方輔導與決策程序：訪談題綱新增「AI rack / UPS / BESS / 變壓器 / busway / PCB 是否具備 OCP、UL、IEEE、CSA 或 hyperscaler 認證」、「企業若以台灣或泰國產能支援美國客戶，如何配置備品、維修、現場 commissioning 與責任歸屬」、「是否需要園區提供高功率測試、資料中心電力基建示範線與國際品牌合作媒合」。
+
+### 2026-10-15 回填重點
+
+- Step 2 州別選址矩陣／國際對照：Microsoft 法國 Haut-Rhin 資料中心案通過 Mulhouse 都市圈公共利益宣告後，仍須完成省政府命令、建照、兩條 225kV 地下線接入與環境條件；年用電逾 1,500GWh、水、噪音與社區反對均為顯性風險。美國州別矩陣應將「地方公共利益程序、RTE/utility 接電、備援發電環境分類、水與社區條件」列為大型負載共同欄位。
+- Step 3 第三方輔導與決策程序：台達 SOFC 試量產、觀音電堆／系統量產基地與預製 SST 直流方案，顯示 AI 場址的 time-to-power 可採「電網 + 現地 SOFC + 儲能 + 預製直流配電」組合。企業訪談應確認燃料／併網／排放許可、UL/IEEE/utility acceptance、模組 FAT/SAT、維運 SLA 與客戶驗證節點。
+- Step 2／Step 3：崇越擬於 Idaho Boise 建置第 3 個美國服務點，連結 Phoenix、Dallas 與 Boise 的先進邏輯、AI server 與 HBM 聚落；赴美專案除工廠外，應量化在地工程、組裝、倉儲、備品與技術服務網的服務半徑、人力、啟用時程與 TCO。
