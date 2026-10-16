@@ -348,3 +348,6 @@ New York 特別註記：
 - Step 2 Texas／Houston：鴻海子公司 Foxconn Assembly Holding Corporation 向 Texas Houston 的 Q-Edge Corporation 增資 5.37 億美元，強化既有美國 AI 製造平台的資本底座。州別選址矩陣應新增「既有廠房資本化／擴產速度」、「AI server、rack、液冷與測試產能」、「utility、建照、人才與地方誘因的實際里程碑」；投資額本身不等同新增可用產能，須要求公司補充用途與啟用時程。
 - Step 1／Step 3 供應鏈安全與決策程序：正文／Starman Gemtek 擬以既有美國廠房量產 800G／1.6T 光收發器，顯示 AI 資料中心網路也走向在地化組裝、封裝、測試與客戶認證。RFI 應新增「光模組／矽光子原產地與出口管制」、「防務／CSP 供應鏈安全」、「客戶驗證、burn-in／測試、維修與備品服務半徑」及「合資公司治理、IP 與量產良率」欄位。
 - Step 2／Step 3 電力架構：台達 SST-based DC Power System 與微電網／SOFC 訊號支持把「中壓轉 800VDC、現地發電／儲能、預製化交付、FAT/SAT、UL／IEEE／utility acceptance」列為美國 AI 資料中心及高功率 ICT 廠房的共同場址評估條件，並在 10 年 TCO 中比較傳統 AC 架構、SST 直流架構與備援能源方案。
+- Step 1／Step 2 晚間補充：GlobalFoundries 規劃以日美投資資金推進兩座 New York 晶圓廠，首座新 300mm 廠目標 2029 投產，並連動最高 9.55 億美元 CHIPS 補助重新分配。州別矩陣應把「聯邦補助重編條件、跨國主權資金、300mm 廠量產時程、NY／VT 既有廠現代化、接電／水／人才」納入半導體選址與 10 年 TCO。
+- Step 2 Texas／Step 3 園區決策：經濟部與電電公會提出德州 AI 供應鏈園區構想，單一園區估 20 至 40 億美元、由業者出資政府協助，服務含鴻海與台積電供應鏈。此案尚未確認土地或入園企業；RFI 需先釐清 site control、utility 容量／升級費、水、環評、稅務誘因、園區治理、共同廠務、人才、倉儲與供應商導入條件。
+- Step 2 Texas／風險標示：台積電已證實派團隊評估德州並與 Terafab 討論合作，但未作出設廠承諾。矩陣須把此類「評估中」案件與已取得土地／建照／補助／CAPEX 的案件分級，禁止以媒體評估訊號推估已落地產能。
