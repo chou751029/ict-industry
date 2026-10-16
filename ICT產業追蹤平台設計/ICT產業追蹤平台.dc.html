@@ -381,6 +381,7 @@ const COMPANY_WEBSITES = {
 };
 
 const INDUSTRY_NEWS = [
+  { collected: "2026-10-16", date: "2026-10-15", region: "台灣／美國", market: "foreign", category: "光通訊／800G／1.6T／矽光子／美國在地製造", title: "正文衝刺美國製造量能 與當地企業設合資公司 [Gemtek forms U.S. joint venture for 800G and 1.6T optical transceiver manufacturing]", source: "經濟日報", link: "https://money.udn.com/money/story/5710/9817723", summary: "經濟日報 10/15 報導，正文與 Starman New Photonics 合資成立 Starman Gemtek，在美國製造 800G／1.6T 光收發器；正文初期投資 1,500 萬美元、Starman 投資 3,000 萬美元，預計最快半年後量產，採用 Starman 當地既有廠房。", signal: "明確美國在地量產／合資與既有廠房導入訊號；州別、產能、就業、誘因、客戶認證與實際投產進度待追蹤", language: "中文／台灣" },
   { collected: "2026-10-15", date: "2026-10-14", region: "台灣／美國", market: "foreign", category: "半導體材料／在地服務／工程與物流／供應鏈在地化", title: "崇越加速美國布局　瞄準愛達荷州擬設立第3個服務據點 [Summit Tech targets a third U.S. service location in Idaho]", source: "中央社", link: "https://www.cna.com.tw/news/afe/202610140061.aspx", summary: "中央社 10/14 報導崇越已在 Phoenix 與 Dallas 設點，擬在 Idaho Boise 設第 3 個美國服務據點，提供技術服務、工程支援、在地組裝與倉儲物流，支援美國半導體製造與 HBM 供應鏈落地。", signal: "明確美國服務據點擴張訊號；需追蹤設立時間、投資、人力與客戶／供應鏈覆蓋範圍", language: "中文／台灣" },
   { collected: "2026-10-15", date: "2026-10-14", region: "台灣／全球", market: "domestic", category: "先進封裝／AI供電／3D SiP／垂直電壓調節", title: "日月光擴展供電平台設計　強化次世代AI電力傳輸 [ASE advances vertical power delivery for next-generation AI systems]", source: "中央社", link: "https://www.cna.com.tw/news/afe/202610140020.aspx", summary: "中央社 10/14 報導日月光半導體 PowerSiP 推出 3D SiP 垂直整合 VRM 解決方案，瞄準 AI 資料中心、HPC、GPU、TPU 與 ASIC；設計可把電源從 PCB 垂直傳輸到晶片，稱可降低 50% 以上寄生佈線損耗。", signal: "明確 AI 電力傳輸與封裝技術訊號；非新廠公告，需追蹤量產、客戶驗證與供應鏈在地化需求", language: "中文／台灣" },
   { collected: "2026-10-15", date: "2026-10-13", region: "法國／Haut-Rhin／Mulhouse", market: "foreign", category: "AI資料中心／建築許可／電網接入／環境與社區風險", title: "Le projet de data center de Microsoft dans le Haut-Rhin franchit une nouvelle étape [Microsoft 法國 Haut-Rhin 資料中心專案邁入新階段]", source: "Connaissance des Énergies / AFP", link: "https://www.connaissancedesenergies.org/afp/lagglomeration-de-mulhouse-fait-franchir-une-nouvelle-etape-au-projet-de-data-center-de-microsoft-261012", summary: "AFP 10/13 報導 Mulhouse 都市圈核准 Microsoft 約 20 億歐元、36 公頃資料中心案的公共利益宣告；仍須取得省政府命令與建照，RTE 規劃由 Sud Alsace 變電站引兩條 225kV 地下線，預估年用電逾 1,500GWh，並面臨水、噪音與社區反對議題。", signal: "明確 AI 資料中心選址、接電與許可訊號；尚未開工，需追蹤省政府命令、建照、RTE 接入與環境條件", language: "法文／法國" },
@@ -715,9 +716,10 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "波蘭 / 法國", rationale: "歐洲車用與工業電子在地製造需求提升，適合追蹤擴產與客戶轉單。", status: "觀察中" }] },
   { id: "delta", name: "台達電子工業股份有限公司", english: "Delta Electronics", role: "電源、電力電子、通訊電源、EV 充電、工業自動化；荷蘭、斯洛伐克、德國布局",
-    updated: "2026-10-12",
-    monthlyAnalysis: "第一版聚焦歐洲電力/通訊電源、EV 充電與工業自動化。10/11 中央社補充 USITC 337 調查後台達回應，表示將依程序因應且相關產品目前未受影響；後續需追蹤 337-TA-1526 對資料中心電源、800VDC、rack-scale power 與美國客戶交付的實質影響。",
+    updated: "2026-10-16",
+    monthlyAnalysis: "增量焦點為 AI 資料中心電力架構：台達 10/14 官方發表 SST-based DC Power System、微電網與 SOFC 方案，延伸既有預製化 AI 資料中心能力。後續需追蹤產品量產地、容量、UL／IEEE／utility acceptance、北美專案與 SOFC／儲能整合條件；另持續追蹤 337-TA-1526 對資料中心電源、800VDC、rack-scale power 與美國客戶交付的實質影響。",
     timeline: [
+      { date: "2026-10-14", tag: "官方產品／SST直流供電", overseas: false, source: "official", sourceCategory: "official", market: "domestic", title: "Delta 發表供 AI 時代使用的 SST-based DC Power System，以及微電網與 SOFC 解決方案", link: "https://www.deltaww.com/en-US/press/41167", linkLabel: "Delta 官方" },
       { date: "2026-10-14", tag: "SOFC製造／AI資料中心電力", overseas: false, source: "media", sourceCategory: "media", market: "domestic", title: "中央社報導台達與大台北瓦斯建置國產 550kW SOFC 案場；台南2廠年底試量產、觀音基地規劃 2028 年量產，並展示預製 SST 直流方案", link: "https://www.cna.com.tw/news/afe/202610140255.aspx", linkLabel: "中央社" },
       { date: "2026-10-10", tag: "AI資料中心電源／資本支出", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "台達資本支出調升至約 700 億元，重建泰國一廠並推進泰國三座新廠及台灣、中國、美國建廠與研發據點擴建", link: "https://money.udn.com/money/story/5612/9805564?from=edn_next_story", linkLabel: "經濟日報" },
       { date: "2026-10-11", tag: "美國合規／337調查回應", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "中央社報導 USITC 337 調查後，台達表示將依程序積極因應，相關產品目前未受影響", link: "https://www.cna.com.tw/news/afe/202610110175.aspx", linkLabel: "中央社" },
@@ -894,6 +896,7 @@ const FOXCONN = {
   built: true,
   monthlyAnalysis: "本次增量焦點轉向美國 AI 伺服器在地製造：鴻海官方公告 2026 年 9 月自結合併營收，提供營運動能背景；經濟日報另報導 Oracle Cloud Infrastructure 負責人親訪鴻海德州廠，見證 Vera Rubin 平台 AI 機櫃產出，屬既有美國廠量產／出貨訊號。NVIDIA 與鴻海 GB300 測試托盤機器人組裝案例則補強 AI 工廠自動化趨勢。後續需追蹤 Texas/Houston 產能、接電、員工、地方誘因與 Oracle/NVIDIA 供應鏈要求是否進一步公開。",
   timeline: [
+    { date: "2026-10-15", tag: "美國投資／AI製造", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "鴻海子公司 Foxconn Assembly Holding Corporation 取得 Texas Houston 的 Q-Edge Corporation 股份、交易額 5.37 億美元；報導指出用於擴大美國 AI 相關製造規模", link: "https://www.cna.com.tw/news/afe/202610150345.aspx", linkLabel: "中央社" },
     { date: "2026-10-13", tag: "OCP／AI機櫃", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "鴻海參加 OCP Global Summit，聚焦新一代 AI 伺服器機櫃與資料中心方案", link: "https://www.cna.com.tw/news/afe/202610130153.aspx", linkLabel: "中央社" },
     { date: "2026-10-11", tag: "美國合規／337調查回應", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "中央社報導 USITC 337 調查後，鴻海表示本案仍處立案初期，已組專業團隊釐清專利及產品範圍，初步評估目前未對生產營運、出貨及客戶合作造成重大影響", link: "https://www.cna.com.tw/news/afe/202610110175.aspx", linkLabel: "中央社" },
     { date: "2026-10-09", tag: "美國合規／337調查", overseas: true, source: "official", sourceCategory: "official", market: "foreign", title: "USITC 對垂直供電系統及含該系統之電腦系統啟動 337 調查，名單含 Hon Hai / FII / Ingrasys", link: "https://www.usitc.gov/press_room/news_release/2026/er1009_69342.htm", linkLabel: "USITC" },

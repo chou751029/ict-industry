@@ -342,3 +342,9 @@ New York 特別註記：
 - Step 2 州別選址矩陣／國際對照：Microsoft 法國 Haut-Rhin 資料中心案通過 Mulhouse 都市圈公共利益宣告後，仍須完成省政府命令、建照、兩條 225kV 地下線接入與環境條件；年用電逾 1,500GWh、水、噪音與社區反對均為顯性風險。美國州別矩陣應將「地方公共利益程序、RTE/utility 接電、備援發電環境分類、水與社區條件」列為大型負載共同欄位。
 - Step 3 第三方輔導與決策程序：台達 SOFC 試量產、觀音電堆／系統量產基地與預製 SST 直流方案，顯示 AI 場址的 time-to-power 可採「電網 + 現地 SOFC + 儲能 + 預製直流配電」組合。企業訪談應確認燃料／併網／排放許可、UL/IEEE/utility acceptance、模組 FAT/SAT、維運 SLA 與客戶驗證節點。
 - Step 2／Step 3：崇越擬於 Idaho Boise 建置第 3 個美國服務點，連結 Phoenix、Dallas 與 Boise 的先進邏輯、AI server 與 HBM 聚落；赴美專案除工廠外，應量化在地工程、組裝、倉儲、備品與技術服務網的服務半徑、人力、啟用時程與 TCO。
+
+### 2026-10-16 回填重點
+
+- Step 2 Texas／Houston：鴻海子公司 Foxconn Assembly Holding Corporation 向 Texas Houston 的 Q-Edge Corporation 增資 5.37 億美元，強化既有美國 AI 製造平台的資本底座。州別選址矩陣應新增「既有廠房資本化／擴產速度」、「AI server、rack、液冷與測試產能」、「utility、建照、人才與地方誘因的實際里程碑」；投資額本身不等同新增可用產能，須要求公司補充用途與啟用時程。
+- Step 1／Step 3 供應鏈安全與決策程序：正文／Starman Gemtek 擬以既有美國廠房量產 800G／1.6T 光收發器，顯示 AI 資料中心網路也走向在地化組裝、封裝、測試與客戶認證。RFI 應新增「光模組／矽光子原產地與出口管制」、「防務／CSP 供應鏈安全」、「客戶驗證、burn-in／測試、維修與備品服務半徑」及「合資公司治理、IP 與量產良率」欄位。
+- Step 2／Step 3 電力架構：台達 SST-based DC Power System 與微電網／SOFC 訊號支持把「中壓轉 800VDC、現地發電／儲能、預製化交付、FAT/SAT、UL／IEEE／utility acceptance」列為美國 AI 資料中心及高功率 ICT 廠房的共同場址評估條件，並在 10 年 TCO 中比較傳統 AC 架構、SST 直流架構與備援能源方案。
