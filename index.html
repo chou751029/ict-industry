@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICT 企業跨國設廠追蹤平台</title>
 <script src="./support.js"></script>
+<script src="./companies-expanded.js"></script>
 </head>
 <body>
 <x-dc>
@@ -44,6 +46,12 @@
       flex-basis: 32px;
       font-size: 19px;
     }
+    .company-toolbar { display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 16px; }
+    .company-search { width:min(100%,320px);height:40px;padding:0 12px;border:1px solid rgba(28,53,58,0.2);border-radius:7px;background:#fff;color:#1c3f45;font:inherit;font-size:13px; }
+    .company-search:focus { outline:2px solid rgba(31,111,92,0.2);border-color:#1f6f5c; }
+    .category-filters { display:flex;gap:6px;flex-wrap:wrap; }
+    .category-filter { min-height:36px;padding:0 11px;border:1px solid;border-radius:7px;font-size:12px;font-weight:800;cursor:pointer; }
+    .category-badge { display:inline-flex;align-items:center;min-height:23px;padding:3px 7px;border-radius:5px;background:#eef3f1;color:#1f6f5c;font-size:10.5px;font-weight:800; }
     @media (max-width: 720px) {
       x-dc, x-dc > div, main, section, article { max-width: 100%; min-width: 0; overflow-x: hidden; }
       main { width: 100%; min-width: 0; overflow-x: hidden; }
@@ -70,6 +78,10 @@
       .site-map { height: 340px !important; }
       .detail-company-name { align-items: flex-start !important; }
       .detail-website-link { width: 29px; height: 29px; flex-basis: 29px; font-size: 17px; }
+      .company-toolbar { align-items:stretch; }
+      .company-search { width:100%; }
+      .category-filters { width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .category-filter { width:100%;padding:7px 6px;line-height:1.3; }
     }
     @media (max-width: 420px) {
       .overview-stats, .detail-stats { gap: 6px !important; }
@@ -95,7 +107,7 @@
 
       <section class="overview-intro" style="display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;justify-content:space-between;margin-bottom:22px;">
         <div>
-          <h1 style="margin:0 0 6px;font-size:28px;color:#1c3f45;">17 家企業總覽儀表板</h1>
+          <h1 style="margin:0 0 6px;font-size:28px;color:#1c3f45;">49 家企業總覽儀表板</h1>
           <p style="margin:0;color:#6f6a5e;font-size:14px;max-width:640px;line-height:1.6;">每日彙整企業新聞、既有據點與新據點評估動態，優先掌握海外設廠相關訊號。</p>
         </div>
         <div class="overview-stats" style="display:flex;gap:10px;">
@@ -158,29 +170,42 @@
       <div class="company-section-heading" style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:14px;">
         <div>
           <p style="margin:0 0 4px;font-size:11px;font-weight:800;color:#1f6f5c;text-transform:uppercase;letter-spacing:0.04em;">Company Watchlist</p>
-          <h2 style="margin:0;font-size:20px;color:#1c3f45;">17 家企業追蹤</h2>
+          <h2 style="margin:0;font-size:20px;color:#1c3f45;">49 家企業追蹤</h2>
         </div>
         <p style="margin:0;max-width:420px;text-align:right;font-size:13px;color:#6f6a5e;line-height:1.6;">點選企業查看公司簡介、產品技術、合作業者、全球據點與新據點評估。</p>
       </div>
 
+      <div class="company-toolbar">
+        <input class="company-search" type="search" value="{{ companyQuery }}" placeholder="搜尋企業、英文名稱或技術領域" aria-label="搜尋企業" onInput="{{ onCompanySearch }}" />
+        <div class="category-filters" aria-label="企業分類篩選">
+          <sc-for list="{{ categoryOptions }}" as="opt" hint-placeholder-count="5">
+            <button class="category-filter" type="button" style="{{ opt.style }}" onClick="{{ opt.onClick }}">{{ opt.label }} {{ opt.count }}</button>
+          </sc-for>
+        </div>
+      </div>
+
       <section style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;">
-        <sc-for list="{{ overviewCompanies }}" as="c" hint-placeholder-count="17">
+        <sc-for list="{{ overviewCompanies }}" as="c" hint-placeholder-count="12">
           <article style="display:flex;flex-direction:column;gap:10px;padding:16px;border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;cursor:pointer;" onClick="{{ c.onOpen }}">
             <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;">
               <div style="min-width:0;">
                 <h3 style="margin:0 0 3px;font-size:16px;color:#1c3f45;line-height:1.3;">{{ c.shortName }}</h3>
                 <p style="margin:0;font-size:11px;color:#6f6a5e;">{{ c.english }}</p>
               </div>
-              <span style="flex:0 0 auto;padding:3px 8px;border-radius:6px;font-size:11px;font-weight:800;{{ c.statusStyle }}">{{ c.statusLabel }}</span>
+              <span class="category-badge">{{ c.categoryLabel }}</span>
             </div>
             <p style="margin:0;font-size:12.5px;color:#6f6a5e;line-height:1.55;min-height:36px;">{{ c.role }}</p>
             <div style="display:flex;gap:8px;padding-top:8px;border-top:1px solid rgba(28,53,58,0.1);font-size:12px;color:#6f6a5e;">
               <span style="white-space:nowrap;flex-shrink:0;">📰 {{ c.newsCount }} 則新聞</span>
               <span style="white-space:nowrap;flex-shrink:0;color:#b2591f;font-weight:700;">🏗 {{ c.overseasCount }} 海外設廠</span>
+              <span style="margin-left:auto;white-space:nowrap;color:#6f6a5e;font-weight:700;">{{ c.priority }} 級</span>
             </div>
           </article>
         </sc-for>
       </section>
+      <sc-if value="{{ hasNoCompanyResults }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top:14px;padding:28px 18px;text-align:center;border:1px dashed rgba(28,53,58,0.24);border-radius:8px;color:#6f6a5e;font-size:13px;">找不到符合條件的企業，請調整搜尋字詞或分類。</div>
+      </sc-if>
     </main>
   </sc-if>
 
@@ -255,6 +280,9 @@
                   <p style="margin:0;font-size:12px;color:#6f6a5e;line-height:1.55;">{{ n.rationale }}</p>
                 </div>
               </sc-for>
+              <sc-if value="{{ company.hasNoNewSites }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:12px;border:1px dashed rgba(178,89,31,0.35);border-radius:6px;background:#fff;color:#6f6a5e;font-size:12px;line-height:1.6;">目前未見可由官方來源確認的新據點評估訊號；後續僅在有明確公告、法說或政府招商資料時新增。</div>
+              </sc-if>
             </div>
           </article>
         </div>
@@ -468,7 +496,7 @@ const INDUSTRY_NEWS = [
   { collected: "2026-09-18", date: "2026-09-17", region: "印度／全國／Bengaluru／Dholera", market: "foreign", category: "半導體政策／設備材料／研發園區／供應商聚落", title: "$12 billion semiconductor bet: Semicon 2.0 draws fresh investment proposals [印度 Semicon 2.0 吸引 110-120 億美元新投資提案]", source: "The Financial Express", link: "https://www.financialexpress.com/business/industry-12-billion-semiconductor-bet-semicon-2-0-draws-fresh-investment-proposals-4341666/", summary: "The Financial Express 報導，印度 Semicon 2.0 收到約 110-120 億美元投資提案，涵蓋半導體設備、材料、氣體、化學品與基板；Applied Materials 宣布印度 Vision 2035，包含 140 英畝先進半導體研究園區與在地供應鏈擴大，Lam Research 則規劃約 1,000 億盧比在印度建立首座矽零組件製造設施並擴大 R&D。", signal: "明確至間接：國家級半導體供應鏈招商與設備材料製造在地化；個別投資仍須追蹤公司正式公告、州別許可與園區公用設施條件", language: "英文" },
   { collected: "2026-09-17", date: "2026-09-17", region: "韓國／慶尚南道／昌原", market: "foreign", category: "製造AI／公用AI資料中心／智慧製造基礎設施", title: "Gyeongnam Opens Public AI Data Center With Free GPU Access [慶南公用製造 AI 資料中心開幕，支援中小製造業免費使用 GPU]", source: "Seoul Economic Daily", link: "https://en.sedaily.com/society/2026/09/17/gyeongnam-opens-public-ai-data-center-with-free-gpu-access", summary: "Seoul Economic Daily 報導，慶尚南道於昌原的企業支援館啟用 Gyeongnam Manufacturing AI Data Center，配置 40 張 NVIDIA B200 GPU 與 15 台工作站，2026 年底前免費供區內企業使用，2027 年起以低於民間 AI 資料中心的費率支援每年最多 300 家製造業者導入 AI。總事業費約 232.6 億韓元。", signal: "間接至明確：公用製造 AI 基礎設施開幕，降低中小製造業導入 AI/智慧工廠門檻；非單一企業設廠，但具產業園區 AI 共用算力與示範場域參考價值", language: "英文／韓文" },
   { collected: "2026-09-17", date: "2026-09-17", region: "韓國／全北創新都市／製造現場", market: "foreign", category: "Physical AI／Dark Factory／模組化Edge AI資料中心／智慧製造", title: "KT, '피지컬 AI 다크팩토리' 구축 나선다…과기정통부 과제 참여 [KT 參與政府 Physical AI dark factory 建置課題]", source: "DigitalToday", link: "https://www.digitaltoday.co.kr/news/articleView.html?idxno=701209", summary: "DigitalToday 韓文原文報導，KT 參與韓國科學技術資訊通信部主導的「AI 기반 다크팩토리 설계·구축 솔루션 개발」課題，目標於全北創新都市附近建置 24 小時無人自動化 dark factory；KT 將以模組型 edge AI data center 基礎設施開發合成資料生成/驗證與 AI agent 運行環境，並於參與企業製造現場實證 dark factory 整合營運平台。", signal: "明確：政府主導 Physical AI/dark factory 示範與企業製造現場實證；具 AI 工廠、模組化 edge AI 資料中心與自動化平台需求訊號", language: "韓文" },
-  { collected: "2026-09-17", date: "2026-09-16", region: "台灣", market: "domestic", category: "AI伺服器／ABF載板／PCB材料／國內擴產與海外產能", title: "AI帶動產能供不應求 欣興、金居積極擴產", source: "經濟日報／中央社", link: "https://money.udn.com/money/story/5612/9757957", summary: "經濟日報轉中央社報導指出 AI 伺服器、交換器與資料中心需求推升 ABF 載板與上游材料供應吃緊；欣興為三年後需求在桃園、新竹尋找新基地，桃園航空城產三專區第一期規劃 40 公頃高階 IC 載板專區；金居則規劃在東南亞擴張高階 HVLP 銅箔產能。", signal: "明確國內新基地尋址與東南亞材料產能擴張訊號；非 17 家名單企業，但高度關聯 AI 伺服器/資料中心供應鏈", language: "中文" },
+  { collected: "2026-09-17", date: "2026-09-16", region: "台灣", market: "domestic", category: "AI伺服器／ABF載板／PCB材料／國內擴產與海外產能", title: "AI帶動產能供不應求 欣興、金居積極擴產", source: "經濟日報／中央社", link: "https://money.udn.com/money/story/5612/9757957", summary: "經濟日報轉中央社報導指出 AI 伺服器、交換器與資料中心需求推升 ABF 載板與上游材料供應吃緊；欣興為三年後需求在桃園、新竹尋找新基地，桃園航空城產三專區第一期規劃 40 公頃高階 IC 載板專區；金居則規劃在東南亞擴張高階 HVLP 銅箔產能。", signal: "明確國內新基地尋址與東南亞材料產能擴張訊號；非 49 家名單企業，但高度關聯 AI 伺服器/資料中心供應鏈", language: "中文" },
   { collected: "2026-09-17", date: "2026-09-16", region: "美國", market: "foreign", category: "AI資料中心／彈性用電／電網接入／政策倡議", title: "Google, Nvidia and Emerald AI launch flexible data center power coalition [Google、Nvidia 與 Emerald AI 成立 AI 資料中心彈性用電聯盟]", source: "Axios", link: "https://www.axios.com/2026/09/16/tech-giants-launch-flexible-power-coalition-data-centers", summary: "Axios 報導 Google、Nvidia、Emerald AI 等成立 AI Energy Management Alliance，聚焦讓 AI 資料中心在尖峰或供電吃緊時降低用電，並爭取監管機構與電力公司以較快併網、較低升級成本回應。Google 稱已承諾 1GW 可調降電力需求。", signal: "間接：大型資料中心選址與併網規則可能改變；影響電源、UPS、BBU、能源管理與園區電力方案", language: "英文" },
   { collected: "2026-09-17", date: "2026-09-16", region: "美國", market: "foreign", category: "AI資料中心／電費成本／聯邦法規／大型負載", title: "House passes bill aimed at impact of data centers on energy costs [美國眾議院通過資料中心能源成本法案]", source: "Associated Press", link: "https://apnews.com/article/ai-data-centers-congress-f073380caa61b720fa424590b5bc7c87", summary: "AP 報導美國眾議院以 417-3 通過法案，要求州公用事業監管機關考量讓資料中心負擔新增電力與輸電升級完整成本；屬於資料中心大型負載、電網升級費用與社區成本外部性的重要政策訊號。", signal: "間接：美國資料中心開發成本與選址條件可能上升；應納入美國 SOP Step 1/2 法規與州別成本評估", language: "英文" },
   { collected: "2026-09-17", date: "2026-09-16", region: "美國／Virginia／Prince William County", market: "foreign", category: "AI資料中心／建廠申請／濕地與許可／在地基礎設施", title: "Microsoft files to build data center campus in Prince William County, Virginia [Microsoft 申請在維州 Prince William County 建資料中心園區]", source: "Data Center Dynamics", link: "https://www.datacenterdynamics.com/en/news/microsoft-files-to-build-data-center-campus-in-prince-william-county-virginia/", summary: "DCD 報導 Microsoft 向美國陸軍工兵署 Norfolk District 申請 MNZ07 Wellington Data Center，擬於 123 英畝土地興建兩棟單層資料中心及現地變電站；案場涉及 955 linear feet 河道與 1.95 英畝濕地影響，並已於 7 月向 Virginia DEQ 申請。", signal: "明確：資料中心建廠／許可訊號；電力、變電站、濕地與社區風險需納入美國 SOP Step 2 場址評估", language: "英文" },
@@ -598,6 +626,9 @@ function buildTrackedCompany(config) {
   return {
     id: config.id, name: config.name, english: config.english, role: config.role,
     shortName: config.shortName || config.name.replace("股份有限公司", "").replace("控股", "").replace("集團", ""),
+    category: config.category,
+    priority: config.priority || "A",
+    website: config.website,
     updated: config.updated || "2026-07-21",
     built: true,
     timeline: config.timeline || [],
@@ -607,7 +638,7 @@ function buildTrackedCompany(config) {
     partners: config.partners,
     sites: { items: config.sites },
     sitesVerified: config.sitesVerified || "2026-07-21",
-    newSites: { items: config.newSites }
+    newSites: { items: config.newSites || [] }
   };
 }
 
@@ -961,7 +992,26 @@ const FOXCONN = {
   }
 };
 
-const COMPANIES = [FOXCONN, ...COMPANY_BACKLOG.map(buildTrackedCompany)];
+const CATEGORY_META = {
+  all: { label: "全部" },
+  semiconductor: { label: "半導體／IC" },
+  systems: { label: "系統製造／零組件" },
+  network: { label: "網通／通訊" },
+  brand: { label: "品牌／終端" },
+  infrastructure: { label: "需求／基礎設施" }
+};
+const ORIGINAL_CATEGORY = {
+  foxconn: "systems", acbel: "systems", inventec: "systems", liteon: "systems", teco: "infrastructure",
+  merry: "systems", usi: "systems", delta: "infrastructure", compal: "systems", advantech: "systems",
+  kenmec: "systems", shayang: "systems", aurotek: "systems", ffg: "systems", bizlink: "systems",
+  chicony: "systems", fortune: "infrastructure"
+};
+const EXPANDED_COMPANIES = (window.EXPANDED_COMPANY_CONFIGS || []).map(buildTrackedCompany);
+const COMPANIES = [FOXCONN, ...COMPANY_BACKLOG.map(buildTrackedCompany), ...EXPANDED_COMPANIES].map((c) => ({
+  ...c,
+  category: c.category || ORIGINAL_CATEGORY[c.id] || "systems",
+  priority: c.priority || "A"
+}));
 
 function getSourceCategory(t) {
   if (t.sourceCategory) return t.sourceCategory;
@@ -977,7 +1027,7 @@ function countOverseas(c) {
 }
 
 class Component extends DCLogic {
-  state = { view: "overview", companyId: null, newsFilters: [], timeRange: "all", newsVisibleCount: 5, industryNewsVisibleCount: 5 };
+  state = { view: "overview", companyId: null, newsFilters: [], timeRange: "all", newsVisibleCount: 5, industryNewsVisibleCount: 5, companyCategory: "all", companyQuery: "" };
 
   componentDidMount() {
     this.setState({ newsFilters: this.props.defaultNewsFilter === "overseas" ? ["overseas"] : [] });
@@ -1001,6 +1051,14 @@ class Component extends DCLogic {
 
   showMoreIndustryNews() {
     this.setState((s) => ({ industryNewsVisibleCount: s.industryNewsVisibleCount + 5 }));
+  }
+
+  setCompanyCategory(category) {
+    this.setState({ companyCategory: category });
+  }
+
+  handleCompanySearch(event) {
+    this.setState({ companyQuery: event.target.value || "" });
   }
 
   geocode(location) {
@@ -1050,7 +1108,10 @@ class Component extends DCLogic {
     const showPlaceholders = this.props.showPlaceholderCompanies !== false;
     const sortByNews = this.props.sortOverviewBy === "newsCount";
 
-    let list = COMPANIES.filter((c) => showPlaceholders || c.built);
+    const query = (this.state.companyQuery || "").trim().toLowerCase();
+    let list = COMPANIES.filter((c) => showPlaceholders || c.built)
+      .filter((c) => this.state.companyCategory === "all" || c.category === this.state.companyCategory)
+      .filter((c) => !query || [c.name, c.shortName, c.english, c.role, ...(c.technology?.tags || [])].join(" ").toLowerCase().includes(query));
     if (sortByNews) {
       list = [...list].sort((a, b) => b.timeline.length - a.timeline.length);
     }
@@ -1061,6 +1122,8 @@ class Component extends DCLogic {
       role: c.role,
       newsCount: c.timeline.length,
       overseasCount: c.timeline.filter((t) => t.overseas).length,
+      categoryLabel: CATEGORY_META[c.category]?.label || c.category,
+      priority: c.priority,
       statusLabel: c.built ? "已建檔" : "建置中",
       statusStyle: c.built ? "background:rgba(31,111,92,0.12);color:#1f6f5c;" : "background:#efeadf;color:#6f6a5e;",
       onOpen: () => this.goDetail(c.id)
@@ -1069,6 +1132,18 @@ class Component extends DCLogic {
     const totalCompanies = COMPANIES.length;
     const totalNews = COMPANIES.reduce((sum, c) => sum + c.timeline.length, 0);
     const totalOverseas = COMPANIES.reduce((sum, c) => sum + countOverseas(c), 0);
+    const categoryOptions = Object.keys(CATEGORY_META).map((id) => {
+      const count = id === "all" ? COMPANIES.length : COMPANIES.filter((c) => c.category === id).length;
+      return {
+        id,
+        label: CATEGORY_META[id].label,
+        count,
+        onClick: () => this.setCompanyCategory(id),
+        style: this.state.companyCategory === id
+          ? "background:#1c3f45;color:#fbf9f3;border-color:#1c3f45;"
+          : "background:#ffffff;color:#6f6a5e;border-color:rgba(28,53,58,0.18);"
+      };
+    });
 
 const uniqueIndustryNews = INDUSTRY_NEWS
   .filter((news, index, items) => items.findIndex((item) => item.link === news.link) === index)
@@ -1121,7 +1196,7 @@ const uniqueIndustryNews = INDUSTRY_NEWS
 
     const company = {
       ...raw,
-      website: COMPANY_WEBSITES[raw.id],
+      website: raw.website || COMPANY_WEBSITES[raw.id],
       mapUrl: this.buildMapUrl(raw.sites.items, []),
       newsCount: raw.timeline.length,
       overseasCount: raw.timeline.filter((t) => t.overseas).length,
@@ -1130,13 +1205,18 @@ const uniqueIndustryNews = INDUSTRY_NEWS
       siteCount: raw.sites.items.length,
       newSiteCount: raw.newSites.items.length,
       hasTimeline: raw.timeline.length > 0,
-      hasNoTimeline: raw.timeline.length === 0
+      hasNoTimeline: raw.timeline.length === 0,
+      hasNoNewSites: raw.newSites.items.length === 0
     };
 
     return {
       isOverview: this.state.view === "overview",
       isDetail: this.state.view === "detail",
       overviewCompanies,
+      companyQuery: this.state.companyQuery,
+      onCompanySearch: (event) => this.handleCompanySearch(event),
+      categoryOptions,
+      hasNoCompanyResults: overviewCompanies.length === 0,
       totalCompanies,
       totalNews,
       totalOverseas,
