@@ -290,7 +290,7 @@
         <article style="border:1px solid rgba(28,53,58,0.14);border-radius:10px;background:#ffffff;padding:14px;">
           <p style="margin:0 0 4px;font-size:11px;font-weight:800;color:#1c3f45;text-transform:uppercase;letter-spacing:0.04em;">官方確認既有據點地圖</p>
           <p style="margin:0 0 10px;font-size:11px;color:#6f6a5e;">地圖僅呈現上方已由企業官網、年報或官方報告確認的據點；評估地點不列入。</p>
-          <iframe class="site-map" src="{{ company.mapUrl }}" title="全球據點地圖" style="width:100%;height:420px;border:0;border-radius:8px;"></iframe>
+          <iframe key="{{ company.id }}" class="site-map" src="about:blank" data-map-url="{{ company.mapUrl }}" title="全球據點地圖" style="width:100%;height:420px;border:0;border-radius:8px;"></iframe>
         </article>
       </section>
 
@@ -1034,6 +1034,19 @@ class Component extends DCLogic {
 
   componentDidMount() {
     this.setState({ newsFilters: this.props.defaultNewsFilter === "overseas" ? ["overseas"] : [] });
+    this.syncMapFrame();
+  }
+
+  componentDidUpdate() {
+    this.syncMapFrame();
+  }
+
+  syncMapFrame() {
+    const frame = document.querySelector(".site-map[data-map-url]");
+    const mapUrl = frame?.dataset.mapUrl;
+    if (!frame || !mapUrl || frame.dataset.loadedMapUrl === mapUrl) return;
+    frame.dataset.loadedMapUrl = mapUrl;
+    frame.src = mapUrl;
   }
 
   toggleNewsFilter(id) {
@@ -1160,7 +1173,7 @@ const uniqueIndustryNews = INDUSTRY_NEWS
 
     const raw = COMPANIES.find((c) => c.id === this.state.companyId) || FOXCONN;
     const matchesFilter = () => true;
-    const NOW = new Date("2026-07-21");
+    const NOW = new Date("2026-10-19");
     const RANGE_DAYS = { "7d": 7, "30d": 30, "90d": 90 };
     const matchesTimeRange = (t) => {
       if (t.pinned || this.state.timeRange === "all") return true;
@@ -1197,10 +1210,11 @@ const uniqueIndustryNews = INDUSTRY_NEWS
         : "background:#ffffff;color:#6f6a5e;border-color:rgba(28,53,58,0.18);"
     }));
 
+    const mapUrl = this.buildMapUrl(raw.sites.items, []);
     const company = {
       ...raw,
       website: raw.website || COMPANY_WEBSITES[raw.id],
-      mapUrl: this.buildMapUrl(raw.sites.items, []),
+      mapUrl,
       newsCount: raw.timeline.length,
       overseasCount: raw.timeline.filter((t) => t.overseas).length,
       techTagCount: raw.technology.tags.length,
