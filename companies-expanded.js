@@ -33,6 +33,22 @@ const EXPANDED_RAW = [
   { id: "foxconntech", name: "鴻準精密工業股份有限公司", shortName: "鴻準", english: "Foxconn Technology Co., Ltd.", category: "systems", priority: "A", role: "金屬機構件、模具、散熱與精密製造；鴻海集團", profileTitle: "精密機構與熱管理製造商", profileBody: "鴻準提供精密模具、金屬機構件與熱管理相關製造能力，屬鴻海集團關鍵零組件體系。", technologies: ["Metal Chassis", "Tooling", "Thermal", "Precision Manufacturing"], relations: ["鴻海集團", "消費電子與伺服器客戶"], website: "https://www.foxconntech.com.tw/about/group-profile/", sites: [["台灣", "總部與研發據點", "https://www.foxconntech.com.tw/about/worldwide-overview/"], ["中國深圳／昆山／太原", "製造據點", "https://www.foxconntech.com.tw/about/worldwide-overview/"]] }
 ];
 
+const EXPANDED_TIMELINES = {
+  cht: [
+    { date: "2026-10-15", tag: "AI 布局／新創投資", overseas: false, source: "media", sourceCategory: "media", market: "domestic", title: "中華電培育逾80家新創，再設2家AI子公司", link: "https://www.cna.com.tw/news/afe/202610150293.aspx", linkLabel: "中央社" }
+  ],
+  tsmc: [
+    { date: "2026-10-15", tag: "美國設廠評估／德州", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "魏哲家證實台積電團隊赴德州評估擴產，與Terafab合作討論中", link: "https://www.cna.com.tw/news/afe/202610150172.aspx", linkLabel: "中央社" },
+    { date: "2026-10-15", tag: "財報／先進製程", overseas: false, source: "official", sourceCategory: "official", market: "global", title: "台積公司發布2026年第三季營運報告", link: "https://investor.cld.tsmc.com/chinese/quarterly-results/2026/q3", linkLabel: "台積公司" }
+  ],
+  gemtek: [
+    { date: "2026-10-15", tag: "美國製造／光通訊", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "正文與美國企業成立合資公司，布局800G／1.6T光收發器在地製造", link: "https://money.udn.com/money/story/5710/9817723", linkLabel: "經濟日報" }
+  ],
+  senao: [
+    { date: "2026-10-15", tag: "Edge AI／企業網路", overseas: false, source: "official", sourceCategory: "official", market: "domestic", title: "EnGenius攜手神腦國際展示Edge AI、AI Server與智慧監控整合方案", link: "https://www.senao.com.tw/en/blogs/about_news/engenius%E6%94%9C%E6%89%8B%E7%A5%9E%E8%85%A6%E5%9C%8B%E9%9A%9B%E5%89%8D%E9%80%B22026%E9%9B%BB%E4%BF%A1%E5%8D%9A%E8%A6%BD%E6%9C%83%E6%9A%A8edge-ai%E8%AB%96%E5%A3%87-%E6%89%93%E9%80%A0%E9%AB%98%E6%95%88%E4%BC%81%E6%A5%AD%E5%B7%A5%E5%AE%89%E9%98%B2%E7%B7%9A", linkLabel: "神腦國際" }
+  ]
+};
+
 window.EXPANDED_COMPANY_CONFIGS = EXPANDED_RAW.map((c) => ({
   id: c.id,
   name: c.name,
@@ -47,6 +63,7 @@ window.EXPANDED_COMPANY_CONFIGS = EXPANDED_RAW.map((c) => ({
   profile: { title: c.profileTitle, body: c.profileBody, tags: c.technologies.slice(0, 4) },
   technology: { title: c.technologies.join("、"), body: `核心技術與產品節點包括 ${c.technologies.join("、")}。後續將由官方網站、年報、法說會與已驗證新聞持續更新。`, tags: c.technologies },
   partners: { title: "集團與產業鏈關係", body: `目前優先建立 ${c.relations.join("、")} 等關係節點；具名合作案需以企業公告或可直接驗證來源補充。`, tags: c.relations },
+  timeline: EXPANDED_TIMELINES[c.id] || [],
   sites: c.sites.map(([location, role, source]) => ({ location, role, source })),
   sitesVerified: "2026-10-19",
   newSites: []
