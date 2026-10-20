@@ -35,7 +35,11 @@ const EXPANDED_RAW = [
 
 const EXPANDED_TIMELINES = {
   cht: [
+    { date: "2026-10-20", tag: "AI資料中心／動土", overseas: false, source: "media", sourceCategory: "media", market: "domestic", title: "是方虎尾 AI 資料中心動土：投資約33億元、全棟16MW，預計2028年下半年營運", link: "https://www.cna.com.tw/news/afe/202610200165.aspx", linkLabel: "中央社" },
     { date: "2026-10-15", tag: "AI 布局／新創投資", overseas: false, source: "media", sourceCategory: "media", market: "domestic", title: "中華電培育逾80家新創，再設2家AI子公司", link: "https://www.cna.com.tw/news/afe/202610150293.aspx", linkLabel: "中央社" }
+  ],
+  mitac: [
+    { date: "2026-10-19", tag: "伺服器製造／擴產", overseas: false, source: "media", sourceCategory: "media", market: "domestic", title: "神達旗下 MiTAC Computing 投資126.2億元：楊梅新廠、竹南與林口產線擴充", link: "https://focustaiwan.tw/business/202610190014", linkLabel: "Focus Taiwan／中央社" }
   ],
   tsmc: [
     { date: "2026-10-15", tag: "美國設廠評估／德州", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "魏哲家證實台積電團隊赴德州評估擴產，與Terafab合作討論中", link: "https://www.cna.com.tw/news/afe/202610150172.aspx", linkLabel: "中央社" },
