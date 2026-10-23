@@ -58,4 +58,4 @@
 | ICT產業新聞新增列 | 1 |
 | 網站新增筆數 | 1 |
 | 未驗證／排除候選 | 3 |
-| Gmail 摘要 | 待寄送 |
+| Gmail 摘要 | 已寄送（chou751029@gmail.com；message id `1a1668b5bf7dfd8d`） |
