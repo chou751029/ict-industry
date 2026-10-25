@@ -3,7 +3,7 @@
 - 蒐集日期：2026-10-25（Asia/Taipei）
 - 搜尋區間：2026-10-23 至 2026-10-25（近 48 小時）
 - 主名單：`ICT_company_watchlist.md` 正式 49 家；Garmin／台灣國際航電合併為一企業。
-- 寫入原則：直接開啟原文，核對標題、日期、發布機構與內容；再對 Google 試算表與網站 `INDUSTRY_NEWS` 做 URL 全域去重。
+- 寫入原則：直接開啟原文，核對標題、日期、發布機構與內容；再對 Google 試算表、網站 `INDUSTRY_NEWS` 與企業時間軸做 URL 去重。
 
 ## 本輪結論
 
@@ -49,3 +49,24 @@
 3. 正文／Starman 美國光收發器合資的州別、既有廠房認證與量產節點。
 4. KYEC 美國測試設施與欣興／矽品產能擴建的實際廠址、CAPEX 及許可。
 5. 鴻海美國多州研發／製造擴充的地方政府、建照與就業佐證。
+
+---
+
+## 2026-10-25 後續增量稽核（Asia/Taipei）
+
+- 搜尋區間：2026-10-23 至 2026-10-25；先比對既有 Google 試算表、`INDUSTRY_NEWS` 與企業時間軸 URL，未重複新增韓國政策案。
+- 新增資料：SHTP 開啟封裝測試實驗室的新聞已直接驗證標題、日期、作者、發布機構及內文，並寫入 `ICT產業新聞` 第 207 列與網站。
+
+### SHTP opens semiconductor packaging and testing lab [西貢高科技園區啟用半導體封裝與測試實驗室]
+
+- 發布日期／來源／語言：2026-10-23／SGGP English Edition／英文（越南）
+- 直接原文：[SGGP English Edition 報導](https://en.sggp.org.vn/shtp-opens-semiconductor-packaging-and-testing-lab-post130492.html)
+- 驗證結果：SHTP 啟用 ATP Lab，包含 ISO 8 無塵室、13 組工業設備模組、FCBGA 自動封裝線、Advantest T2000 測試系統、Delta Pyramid 6200 handler 與 ICOS 光學檢測；Intel Products Vietnam 捐贈產線。園區另規劃投入逾 VND16 兆擴建，目標 2027 年完成 200 公頃用地整備、2028 年備妥基礎設施。
+- 追蹤重點：200 公頃用地取得、道路／電力／用水時程、招商條件、ATP Lab 對企業之開放方式，以及 Intel／其他供應商的後續產線或訓練承諾。
+
+| 項目 | 本次增量 |
+| --- | ---: |
+| 新聞追蹤 | 0 |
+| ICT產業新聞 | 1 |
+| 網站 | 1 |
+| 未驗證／排除候選 | 2 |
