@@ -2,10 +2,20 @@
 
 - 蒐集日：2026-10-27（Asia/Taipei）
 - 搜尋窗：2026-10-25 至 2026-10-27（近 48 小時）
-- 結論：新增 1 筆已驗證的跨企業「報告法令」訊號；49 家企業未有符合時窗且未收錄的個別投資／設廠原文。
+- 結論：新增 2 筆已驗證的跨企業訊號（1 筆報告法令、1 筆半導體後段製造擴建）；49 家企業未有符合時窗且未收錄的個別投資／設廠原文。
 - 去重：以原文 URL 比對根目錄網站 `INDUSTRY_NEWS`、企業時間軸及 Google Sheet「新聞追蹤／ICT產業新聞」。美國財政部 Federal Register PDF 未重複；NVIDIA 10/21、SHTP 10/23 與韓國 10/24 已收錄，不重複入庫。
 
 ## 本輪新增：跨企業政策與投資合規
+
+### Nexperia：*Nexperia builds momentum with continued growth in Q3 2026* [Nexperia 2026年第三季持續成長]
+
+- 發布日期：2026-10-26；來源：Nexperia；語言／國家：英文／荷蘭、馬來西亞、菲律賓；來源類型：企業官網；地域：國外新聞。
+- 直接原文：[Nexperia 官方新聞稿](https://www.nexperia.com/about/news-events/press-releases/Nexperia-builds-momentum-with-continued-growth-in-Q3-2026)
+- 驗證：已直接開啟官方新聞稿，確認標題、日期、發布機構及正文的產能、設備安裝與新增生產空間描述。
+- 摘要：Nexperia 表示其馬來西亞與菲律賓後段製造據點擴建持續推進，截至 2026 年 10 月已裝設約 550 億件年產能；完成逾 600 項設備安裝、逾 6,200 項產品已釋出並出貨，馬來西亞另增加約 7,000 平方公尺生產空間。
+- 海外設廠／國際布局訊號：明確的跨國後段製造擴建與產能爬坡；公告未拆分個別據點的 CAPEX、接電／用水、就業與新廠時程。
+- TEEMA 意涵：功率管理、電動化及 AI 資料中心電源需求，正同步推升東協後段製造的設備安裝、廠房空間及供應鏈備援需求。園區招商應追問後段測試、設備維保、物料與人才配套，不能只將其視為單點封測產能。
+- 美國 SOP 對應：Step 2／3 的替代區域比較案例；馬來西亞與菲律賓可納入「後段產能、設備安裝速度、可用生產空間、人才與供應鏈韌性」欄位，惟不可推論為已公布新建廠投資。
 
 ### 美國財政部：*Outbound Investment Security Program Regulations* [境外投資安全計畫規則]
 
@@ -36,6 +46,7 @@
 | --- | --- | --- |
 | 台灣／中文 | `半導體 電子製造 設廠 擴廠 投資 2026年10月25日` | 0 合格；命中多為 10/21–24 已收錄或市場摘要。 |
 | 北美／英文 | `AI data center manufacturing facility expansion October 2026`；`outbound investment semiconductor advanced packaging rule` | 1 已驗證：Federal Register 10/26 擬議規則，已入庫。 |
+| 東協／英文 | `semiconductor back-end manufacturing expansion Malaysia Philippines October 2026` | 1 已驗證：Nexperia 10/26 官方後段產能擴建進度，已入庫。 |
 | 德國／德文 | `Elektronikfertigung Investition Standort Rechenzentrum Finanzierung Deutschland` | 0；無近窗可定位正文。 |
 | 法國／法文 | `industrie electronique investissement implantation centre de donnees raccordement electrique France` | 0；無近窗合格命中。 |
 | 日本／日文 | `半導体 工場 投資 データセンター 電力 2026年10月25日` | 0；命中為舊擴產資訊。 |
@@ -56,7 +67,7 @@
 ## 發布與後續行動
 
 - Google Sheet「新聞追蹤」：+0。
-- Google Sheet「ICT產業新聞」：+1（美國財政部擬議規則）。
-- 網站近期 ICT 產業新聞：+1；不適用個別企業時間軸。
+- Google Sheet「ICT產業新聞」：+2（美國財政部擬議規則、Nexperia 後段製造擴建）。
+- 網站近期 ICT 產業新聞：+2；不適用個別企業時間軸。
 - 未驗證／排除候選：5 項，均未寫入公開資料庫。
-- 下一輪優先：SHTP 200 公頃擴建的土地／接電；Intel Products Vietnam 量產與人才；KYEC 美國測試廠址；TSMC 德州評估；正文／Starman 合資的實體落地；以及此次美國規則的最終化進程。
+- 下一輪優先：Nexperia 馬來西亞／菲律賓個別廠區的 CAPEX、接電與就業；SHTP 200 公頃擴建的土地／接電；Intel Products Vietnam 量產與人才；KYEC 美國測試廠址；TSMC 德州評估；正文／Starman 合資的實體落地；以及此次美國規則的最終化進程。
