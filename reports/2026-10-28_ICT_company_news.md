@@ -55,3 +55,36 @@
 - 網站近期 ICT 產業新聞：+1；不適用 49 家企業時間軸。
 - 未驗證／排除候選：5 項，均未寫入公開資料庫。
 - 下一輪優先：SUSS 竹北移轉與 Karlsruhe 中心的實際 CAPEX／就業／設施；Infineon Villach 原始公告；Solidigm 美國計畫一手資料；以及 Nexperia、SHTP、KYEC、台積電德州與正文／Starman 的選址／許可／接電進度。
+
+---
+
+## 2026-10-28 補掃：新增 3 筆已驗證跨企業產業鏈訊號
+
+本次補掃時間窗仍為近 48 小時；以官方直接原文重新核實並對 Google Sheet、`INDUSTRY_NEWS` 及企業時間軸 URL 去重後，新增以下 3 筆。49 家正式企業無符合時窗且未收錄的個別新聞，故「新聞追蹤」不新增列。
+
+### Infineon Technologies：*Infineon to establish the world’s first high-volume manufacturing facility for gallium nitride power semiconductors on 300-millimeter wafers in Europe* [Infineon 將在歐洲建立首座 300mm GaN 功率半導體高量產設施]
+
+- 發布日期：2026-10-27；來源：Infineon Technologies AG；語言／國家：英文／德國、奧地利；來源類型：企業官網；地域：國外新聞。
+- 直接原文：[Infineon 官方公告](https://www.infineon.com/press-release/2026/infpr202610-021)。已直接核對標題、日期、發布機構及正文。
+- 摘要：公司預計至 2034 年在 Villach 既有無塵室投資約 11 億歐元，建置 300mm GaN 功率半導體高量產能力，預計 2027 年底量產；歐盟晶片法案相關國家補助上限為 3.19 億歐元。主要應用為 AI 資料中心、電網、電動車與機器人。
+- 園區意涵：既有晶圓廠擴產同時綁定公部門補助，仍需追蹤新增設備、面積、分年產能與公用設施需求。
+
+### Enphase Energy：*Enphase Energy Successfully Demonstrates IQ Solid-State Transformer Technology Converting 13.8 kV AC to 800 VDC* [Enphase 成功展示 IQ 固態變壓器 13.8kV AC 至 800VDC 轉換技術]
+
+- 發布日期：2026-10-27；來源：Enphase Energy, Inc.；語言／國家：英文／美國；來源類型：企業官網；地域：國外新聞。
+- 直接原文：[Enphase 官方公告](https://investor.enphase.com/news-releases/news-release-details/enphase-energy-successfully-demonstrates-iq-solid-state)。已直接核對標題、日期、發布機構及正文。
+- 摘要：Austin 研發實驗室完成 13.8kV AC 至 800VDC 展示，首批 5.5kW 模組已在 Arlington 製造設施生產；公司目標於 2026 年底前展示 MW 級系統，並在 2027 年進行客戶試點。
+- 美國 SOP 對應：Step 2／3 應將 800VDC、SST、互連規格、供應商量產能力、客戶試點及 utility 接電介面納入技術與選址盡調。
+
+### Zetwerk／Unimacts：*Zetwerk completes US power transformer installation amid rising grid demand* [Zetwerk 完成美國電力變壓器安裝，回應電網需求成長]
+
+- 發布日期：2026-10-27；來源：Zetwerk Manufacturing Businesses Ltd.；語言／國家：英文／美國、印度；來源類型：企業新聞稿；地域：國外新聞。
+- 直接原文：[Zetwerk 新聞稿](https://www.prnewswire.com/news-releases/zetwerk-completes-us-power-transformer-installation-amid-rising-grid-demand-302920944.html)。已直接核對標題、2026-10-27 日期、發布機構及正文。
+- 摘要：Zetwerk 與美國子公司 Unimacts 完成北卡變壓器安裝；公司稱跨國協調與垂直整合使美國交期可達 12–15 個月，Unimacts 在美擁有 7 座設施並供應變壓器、開關設備、線纜及資料中心基礎設施。
+- 園區意涵：屬既有供應網絡與交付能力案例，而非新廠；應追蹤具體廠區、產能、就業與客戶／電網專案清單。
+
+### 補掃結果與人工複核
+
+- Google Sheet「新聞追蹤」：+0；「ICT產業新聞」：+3；網站近期 ICT 產業新聞：+3；49 家企業時間軸：+0。
+- 已排除：台積電 SoIC 美國布局（僅產業傳聞）、Solidigm 美國晶圓廠（匿名來源）、GIS-KY 越南新廠（逾 48 小時）、Hitachi Energy 加拿大／美國廠案（逾窗）。
+- 後續優先：Infineon Villach 補助正式核發與設備／公用設施；Enphase Arlington 模組量產與客戶試點；Zetwerk／Unimacts 的美國工廠與北卡專案細節；SUSS 竹北移轉；台積電德州、KYEC 及正文／Starman 的場址與許可一手文件。
