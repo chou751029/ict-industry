@@ -53,3 +53,13 @@
 - Google Sheet「ICT產業新聞」：+1（第 214 列）。
 - 網站近期 ICT 產業新聞：+1；不適用 49 家企業時間軸。
 - 未驗證／排除候選：5 項，均未寫入試算表或公開網站。
+
+---
+
+## 2026-10-29 晚間增量（Asia/Taipei）
+
+- 搜尋窗：2026-10-27 至 2026-10-29。晚間新增 3 筆已驗證原文：49 家企業 1 筆（鴻海），開放式產業鏈案例 2 筆（SMT 泰國、nVent 美國）。
+- 鴻海／Foxconn：投審會 10/28 核准以 US$537m 強化 Houston Q-Edge 的 AI 伺服器相關產品製造，並以 US$370m 經新加坡子公司轉增資越南 Foxconn EV Energy & Component 作為新廠建置用。[直接原文](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=19706ed5-49e9-4ee5-80ce-cbf3d199afd3) 已逐頁核對。美國案對應 SOP Step 2（Texas 製造平台）／Step 3（Taiwan+1、TCO）；越南案待公司或當地政府揭露廠址、建照、接電、環評、產能與就業。
+- SMT：10/28 簽購泰國 Samut Prakan Asia Industrial Estate 約 17 rai 土地，一期增建約 10,000 平方公尺 PCBA／Box Build 新廠，目標 2027Q3 量產；一期初估總投資逾 THB 500m，但仍待董事會、許可與設備進度。[公司原文](https://starsmicro.com/newsroom/1793177342) 已逐頁核對。
+- nVent：租用 Arizona Goodyear 400,000 平方英尺空間製造資料中心／公用事業用預製 e-houses，預計 2027 年中投產並新增逾 200 個製造職缺。[公司 IR 原文](https://investors.nvent.com/press-releases/press-release-details/2026/nVent-Expands-Engineered-Buildings-Manufacturing-Capacity-with-New-U-S--Production-Facility/default.aspx) 已逐頁核對；CAPEX、客戶、誘因與接電尚未公開。
+- 本段新增同步：新聞追蹤 +1；ICT產業新聞 +2；網站 +3（鴻海會自動帶入企業時間軸）。全球 URL 去重後無重複。
