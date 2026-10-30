@@ -6,7 +6,14 @@
 
 ## 已驗證新增
 
-1. **NXP Semiconductors N.V.** — *Form 10-Q for the quarterly period ended September 27, 2026* [NXP 2026 年第三季 Form 10-Q]
+1. **鴻海精密工業股份有限公司／Foxconn** — *鴻海科技日展示NVIDIA DSX POD 實現更快速的AI部署* [Foxconn showcases NVIDIA DSX POD for faster AI deployment]
+   - 發布：2026-10-30；來源：鴻海科技集團官方新聞稿；語言／國家：中文／台灣。
+   - 直接原文：https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2136
+   - 驗證：已直接開啟，核對標題、發布日、發布機構與正文。鴻海展示 NVIDIA DSX POD 的模組化貨櫃式 AI 工廠設計，並說明合作夥伴可於出貨前完成機櫃纜線、配線、管路及功能驗證；到場後直接連接既有電力、散熱與網路基礎設施。
+   - 分類：企業官網／國內新聞；海外設廠訊號：無。這是預製整合與出貨前驗證能力，並非新廠、擴廠、量產地或已簽訂客戶部署案。
+   - 園區解讀：若 DSX POD 轉為常態交付，可能帶動模組化貨櫃、機櫃線束、液冷管路、電力配線、FAT／功能驗證及現場接電協作需求；應追蹤實際量產地、客戶、產能與交期。
+
+2. **NXP Semiconductors N.V.** — *Form 10-Q for the quarterly period ended September 27, 2026* [NXP 2026 年第三季 Form 10-Q]
    - 發布：2026-10-27；來源：NXP 向美國 SEC 提交並由公司 IR 公開的 Form 10-Q；語言／國家：英文／美國、馬來西亞。
    - 直接原文：https://investors.nxp.com/static-files/aa2ef14d-3e56-4344-b433-da6f7d2254c7
    - 驗證：已直接開啟 PDF，核對註冊人、報告期間、文件類型，以及第 21、33 頁的融資與用途。NXP B.V. 於 9/1 與 EIB 簽署 2.5 億美元無擔保優先融資額度，預定資助馬來西亞吉隆坡半導體封裝測試廠的設計與擴建；截至 9/27 尚未動撥。
@@ -29,6 +36,6 @@
 
 ## 同步結果
 
-- Google Sheet「新聞追蹤」：+0。
+- Google Sheet「新聞追蹤」：+1（鴻海；第 110 列）。
 - Google Sheet「ICT產業新聞」：+1（NXP；第 217 列）。
-- 網站：`INDUSTRY_NEWS` +1；非 49 家公司，未新增企業時間軸。
+- 網站：`INDUSTRY_NEWS` +2；鴻海新增 1 筆企業時間軸，NXP 為跨企業產業鏈訊號。
