@@ -38,3 +38,29 @@
 - Google Sheet「新聞追蹤」：+0（49 家主名單無新增）。
 - Google Sheet「ICT產業新聞」：+2（京元電 Fort Worth 場址、DOE Grid SCALED）。
 - 網站：`INDUSTRY_NEWS` +2；京元電非 49 家主名單，故不新增企業時間軸。
+
+---
+
+## 本輪後續追蹤（2026-10-31，Asia/Taipei）
+
+### 已驗證新增
+
+1. **鴻海精密工業／Foxconn** — *Foxconn working on a new tie-up with OpenAI, says there is no AI bubble* [鴻海正研議與 OpenAI 的新合作，稱 AI 並無泡沫]
+   - 發布：2026-10-30；來源：Reuters；語言／國家：英文／台灣、美國。
+   - 直接原文：https://www.reuters.com/world/china/foxconn-working-new-tie-up-openai-says-there-is-no-ai-bubble-2026-10-30/
+   - 驗證：已直接開啟原文，核對標題、2026-10-30 日期、作者與內文。劉揚偉表示 Houston 六棟廠房製造 NVIDIA AI 伺服器，且看見進一步擴產需求；FII 並已在德州設施內部部署逾 10 台人形機器人。
+   - 分類：主流媒體／國外新聞；海外設廠訊號：待判斷（為擴產需求表述，尚未公布新址、CAPEX、許可、用電或時程）。
+   - 園區解讀／美國 SOP：列入 Step 2 的 Houston 既有廠擴產評估，優先追蹤土地、接電、用水、機器人安全驗證、人才與地方優惠；不可視為已定案新廠。
+
+2. **Panasonic Industry** — *Panasonic Industry to Invest Approx. 92 Billion Yen in AI-related Business to Accelerate Growth* [Panasonic Industry 投資約 920 億日圓擴充 AI 關聯業務]
+   - 發布：2026-10-30；來源：Panasonic Industry 官方公告；語言／國家：英文／日本、中國、泰國、印尼。
+   - 直接原文：https://news.panasonic.com/global/press/en261030-4
+   - 驗證：已直接開啟官方原文，核對標題、發布機構、日期與正文。公司將以約 670 億日圓擴充蘇州與泰國大城的 MEGTRON 板材產能，約 170 億日圓擴增京都宇治與印尼巴淡 SP-Cap 產能，另投入約 80 億日圓建置四日市先進封裝材料研發設施；巴淡新五層製造大樓約 5 萬平方公尺，預計 2027 年 5 月動工、2029 年 4 月營運。
+   - 分類：企業官網／國外新聞；海外設廠訊號：明確（既有據點擴產與新建築時程）。
+   - 園區解讀：AI 伺服器材料需求正帶動 CCL、GPU 電源電容及封裝材料的跨國產能與自動化廠房投資；後續追蹤設備、潔淨室、能源效率、原物料與東協供應商在地化需求。
+
+### 本輪檢索、排除與人工複核
+
+- A 級企業與集團交叉詞、B/C 輪替詞、英文／中文／日文與東協母語政策詞均持續掃描；本輪可驗證新增為上列 2 筆。鴻海→建漢／鴻準、仁寶→智易、緯創→啟碁、佳世達→明泰→仲琦、聯發科→達發未發現可直接驗證的新共同原文。
+- 以 Google Sheet 兩個新聞分頁與網站 URL 比對，兩則原文皆未出現；Panasonic 寫入 `ICT產業新聞`，鴻海寫入 `新聞追蹤` 並同步企業時間軸，避免同一 URL 跨分頁重複入庫。
+- 待複核：鴻海 Houston 仍未公布新增廠址、投資額、土地／租賃、建照、電力、水資源、就業或投產時程；與 OpenAI 的新合作也尚無正式公告。
