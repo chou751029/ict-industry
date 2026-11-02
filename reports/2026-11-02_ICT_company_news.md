@@ -34,3 +34,26 @@
 - Google Sheet「ICT產業新聞」：+1（Ohio 半導體研發／原型測試擴充）。
 - 網站：`INDUSTRY_NEWS` +1；49 家企業時間軸 +0。
 - 網站網址：https://chou751029.github.io/ict-industry/
+
+## 11/02 晚間增補（本輪）
+
+### 已驗證新增
+
+1. **Hyundai Motor Group** — *Hyundai Motor Group Advances Plans for Saemangeum AI Data Center* [Hyundai 集團推進新萬金 AI 資料中心計畫]
+   - 發布：2026-10-30；來源：Hyundai Motor Group（企業官方）；語言／國家：英文／韓國。
+   - 直接原文：https://org1.hyundai.com/worldwide/en/newsroom/detail/0000001300
+   - 驗證：已直接開啟原文，核對標題、2026-10-30 發布日、發布機構與正文。集團在全羅北道新萬金設立現地辦公室，支援地方協作、許可與施工準備；約 KRW 9 兆計畫涵蓋 AI 資料中心、機器人製造聚落、綠氫與太陽能。第一階段已設立 200MW 太陽能 SPC，並規劃資料中心建設及 GPU 服務兩家 SPC；目標 2027 年 3 月開工、2030 年初提供服務。
+   - 分類：產業新聞／國外新聞；海外設廠訊號：明確場址執行、能源供給、許可及施工前期，但不是台灣企業既有據點。
+   - 園區解讀／美國 SOP：可作為 AI 資料中心與機器人聚落的國際對照案例。美國選址模型可對照 Step 2 的土地、200MW 級供電、詳細設計與許可節點；Step 3 可追蹤 EPC、GPU、散熱、配電、儲能、機器人及地方招商的協同需求。
+
+### 檢索與排除紀錄
+
+- A 級企業逐一檢索、集團交叉標註（鴻海→建漢／鴻準、仁寶→智易、緯創→啟碁、佳世達→明泰→仲琦、聯發科→達發），以及本輪 B／C 輪替均未發現可直接驗證且未入庫的 49 家企業 URL。
+- 代表查詢：`Foxconn/Hon Hai factory expansion`、`TSMC advanced packaging expansion`、`Quanta/Wistron AI server factory`、`AI data center manufacturing expansion`、`半導體 製造 擴廠`、`AI 데이터센터 건설`、`Halbleiter Fabrik Erweiterung`。候選 22 筆、直接開啟驗證 3 筆；新增 1 筆，1 筆為已入庫 URL，20 筆因公告日期不在窗口、僅摘要／集合頁，或未具可確認的設廠與製造需求而排除。
+
+### 本輪同步結果
+
+- Google Sheet「新聞追蹤」：+0。
+- Google Sheet「ICT產業新聞」：+1（Hyundai 新萬金 AI 資料中心與機器人製造聚落）。
+- 網站：`INDUSTRY_NEWS` +1；49 家企業時間軸 +0。
+- 待複核優先議題：Hyundai 兩家 SPC 的正式成立、用地與建照、200MW 太陽能／電網銜接、水資源、EPC 與供應商招商；以及既列的 Foxconn Houston、Panasonic 巴淡、KYEC Fort Worth、LG Virginia chiller、Ohio MITEC。
