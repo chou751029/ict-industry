@@ -468,6 +468,7 @@ const COMPANY_WEBSITES = {
 };
 
 const INDUSTRY_NEWS = [
+  { collected: "2026-11-03", date: "2026-11-02", region: "台灣／台中港", market: "domestic", category: "變壓器／重電／AI資料中心／智慧製造／擴產", title: "助攻重電產業搶AI商機！中市經發局訪華城重電　力挺35億元投資擴產 [Taichung backs Fortune Electric's NT$3.5bn smart-factory expansion]", source: "台中市政府經濟發展局", link: "https://www.taichung.gov.tw/8868/8872/9962/3404766", summary: "台中市政府公告，華城電機全資子公司華城重電規劃投資約新台幣 35 億元於台中港興建智慧工廠，導入 IoT 感測、MES、能源管理與 AI 智慧檢測；完工後台中產能可望倍增，預計新增 178 名本國就業。市府將協助追蹤建廠與行政障礙。", signal: "明確國內擴產與智慧製造訊號，非海外設廠；應追蹤土地、建照、接電、完工／量產時程及美國 AI 資料中心、電網升級帶動的出口訂單。", language: "中文／台灣", trackedCompanyIds: ["fortune"] },
   { collected: "2026-11-02", date: "2026-11-01", region: "美國／Ohio／Columbus", market: "foreign", category: "半導體研發／原型測試／人才／製造轉譯／中西部供應鏈", title: "Ohio State holds ribbon-cutting for $20M semiconductor research and prototyping expansion [Ohio State 啟用 2,000 萬美元半導體研發與原型測試擴充設施]", source: "Ohio State University College of Engineering", link: "https://engineering.osu.edu/news/2026/11/ohio-state-holds-ribbon-cutting-20m-semiconductor-research-and-prototyping-expansion", summary: "Ohio State 11/1 公告啟用逾 2,000 萬美元的半導體研發與原型測試基礎設施擴充；MITEC 整合製程、元件原型與測試設施，約 1,600 萬美元由 Midwest Microelectronics Consortium 支持，Ohio State 與 Ohio Department of Higher Education 再投入約 450 萬美元，服務國防與商業製造技術轉譯及人才培訓。", signal: "明確半導體製造轉譯與人才／測試基礎設施投資，非商業量產工廠；可追蹤 MMEC 企業合作、設備能力、先進封裝／功率半導體試產需求與 Ohio 補助銜接。", language: "英文／美國官方" },
   { collected: "2026-11-02", date: "2026-10-30", region: "韓國／全羅北道／新萬金（Saemangeum）／群山", market: "foreign", category: "AI 資料中心／再生能源／機器人製造聚落／場址執行／地方協作", title: "Hyundai Motor Group Advances Plans for Saemangeum AI Data Center [Hyundai 集團推進新萬金 AI 資料中心計畫]", source: "Hyundai Motor Group", link: "https://org1.hyundai.com/worldwide/en/newsroom/detail/0000001300", summary: "Hyundai Motor Group 10/30 公告在韓國新萬金設立現地執行辦公室，支援地方協作、許可與施工準備；約 KRW 9 兆投資計畫涵蓋 AI 資料中心、機器人製造聚落、綠氫與太陽能。第一階段已為資料中心設立 200MW 太陽能 SPC，另規劃資料中心建設與 GPU 服務兩家 SPC；詳細設計及許可後，目標 2027 年 3 月開工、2030 年初服務。", signal: "明確場址執行、再生能源供電與後續許可／施工節點；並非台灣企業海外據點。應追蹤 SPC 設立、土地／建照、電網與用水、EPC、供應商及機器人聚落招商。", language: "英文／韓國官方" },
   { collected: "2026-10-31", date: "2026-10-30", region: "中國／江蘇蘇州；泰國／大城；印尼／巴淡；日本／京都、三重", market: "foreign", category: "CCL／AI伺服器／電源電容／半導體封裝材料／海外擴產", title: "Panasonic Industry to Invest Approx. 92 Billion Yen in AI-related Business to Accelerate Growth [Panasonic Industry 投資約 920 億日圓擴充 AI 關聯業務]", source: "Panasonic Industry Co., Ltd.", link: "https://news.panasonic.com/global/press/en261030-4", summary: "Panasonic Industry 宣布投資約 920 億日圓擴充 AI 伺服器用 MEGTRON 板材、GPU 電源用 SP-Cap 電容及先進封裝材料研發；其中蘇州與泰國大城的 MEGTRON 二期新棟分別預計 2028 年 8 月、2029 年 4 月營運，印尼巴淡規劃新建五層、約 5 萬平方公尺 SP-Cap 製造大樓，預計 2027 年 5 月動工、2029 年 4 月營運。", signal: "明確跨國 AI 基礎設施材料擴產訊號；可追蹤設備、潔淨室、能源效率、原料供應與東協在地化採購需求。", language: "英文／日本、中國、泰國、印尼" },
@@ -991,9 +992,10 @@ const COMPANY_BACKLOG = [
     ],
     newSites: [{ location: "捷克", rationale: "縮短歐洲交期、降低物流與關稅成本，滿足歐洲在地製造與風險分散需求。", status: "觀察中" }] },
   { id: "fortune", name: "華城電機股份有限公司", english: "Fortune Electric", role: "變壓器、電力設備、電網工程；北美 AI 資料中心商機",
-    updated: "2026-10-13",
+    updated: "2026-11-03",
     monthlyAnalysis: "第一版聚焦北美 AI 資料中心、電網更新與大型變壓器訂單。後續需特別標記 AIDC、電網韌性、變壓器交期、北美與歐洲市場投資拓展。",
     timeline: [
+      { date: "2026-11-02", tag: "智慧工廠／擴產", overseas: false, source: "government", sourceCategory: "government", market: "domestic", title: "台中市政府：華城重電擬投資35億元於台中港興建智慧工廠", link: "https://www.taichung.gov.tw/8868/8872/9962/3404766", linkLabel: "台中市政府" },
       { date: "2026-10-12", tag: "重電擴產／外銷", overseas: true, source: "media", sourceCategory: "media", market: "domestic", title: "中央社報導華城台中重電廠預計 2027Q2 完工，外銷比重將超過 60%", link: "https://www.cna.com.tw/news/afe/202610120267.aspx", linkLabel: "中央社" },
       { date: "2026-09-14", tag: "海外訂單／AI電力", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "南亞攜華城 大咬美日 AI 電力訂單", link: "https://money.udn.com/money/story/5612/9752273", linkLabel: "經濟日報" }
     ],
