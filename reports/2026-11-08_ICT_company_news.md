@@ -21,3 +21,26 @@
 - Google Sheet「新聞追蹤」+0；「ICT產業新聞」+2（EPG、NTT DATA／Bloom）。
 - 網站 `INDUSTRY_NEWS` +2；企業時間軸 +0（兩案均非 49 家主名單企業）。
 - 網站資料模型已修正為 49 家：排除 `COMPANY_BACKLOG` 中重複的鴻海項目，保留正式 `FOXCONN` 主檔。
+
+## 12 小時複查（2026-11-08，Asia/Taipei）
+
+**結論：本次無新增新聞。** 重新檢索近 48 小時、逐頁確認候選來源，並以原文 URL 比對 `新聞追蹤`、`ICT產業新聞`、`index.html` 的 `INDUSTRY_NEWS` 與企業時間軸；未找到可新增的未重複直接原文。因此未變更試算表、網站資料或網站「最後蒐集日期」。
+
+### 49 家與集團交叉檢索
+
+- A 級逐一查核：鴻海、康舒、英業達、光寶、東元、美律、環鴻、台達、仁寶、研華、廣運、祥儀、和椿、友嘉、貿聯、群光、華城、台積電、聯發科、瑞昱、達發、九暘、Garmin／台灣國際航電、廣達、緯創、和碩、神達、佳世達、致伸、鴻準、智邦、啟碁、中磊、智易、正文、神準、明泰、建漢、仲琦、友訊、訊舟、盛達；B／C 輪替查核宏碁、華碩、宏達電、中華電信、台灣大、遠傳、華電聯網。
+- 代表查詢覆蓋中文／英文／品牌、產品＋事件詞及海外據點：`Foxconn/Hon Hai AI server factory investment`、`Lite-On Vietnam capacity expansion`、`Delta Electronics Penang manufacturing base`、`Wistron/WNC/Arcadyan/Alpha Networks factory`、`Chunghwa Telecom AIDC`、`台灣 ICT 海外設廠 擴廠`；並完成集團交叉 `鴻海→建漢、鴻準；仁寶→智易；緯創→啟碁；佳世達→明泰→仲琦；聯發科→達發`。
+- 近期命中均排除：超出 48 小時（如光寶越南、台達檳城、鴻海 10 月 AI 工廠訊息）、官方列表頁而非單篇原文、僅產品／活動資訊而無投資或據點事件，或為二手彙整且找不到一手可定位原文。遠傳 AIDC 評估僅見二手彙整，未以其作為入庫依據。
+
+### 全球與母語／政策雷達
+
+- 已執行代表查詢：日文 `半導体 補助金 データセンター 電力`、韓文 `전자 제조 투자 공장 데이터센터`、德文 `Elektronikfertigung Investition Rechenzentrum Deutschland`、法文 `industrie electronique investissement centre de donnees`，以及台灣、北美、歐盟／中東歐、印度、東協的 `electronics manufacturing/data center/grid/transformer + factory/investment/permitting` 組合。
+- 美國 DOE Grid SCALED 補助（2026-10-30）與 GlobalFoundries（2026-11-04）均已存在資料庫；EPG 柔佛廠（11/06）與 NTT DATA／Bloom（11/05）同樣已於本日稍早入庫。未發現後續已驗證新案。
+
+### 本輪待人工複核
+
+1. 光寶越南追加投資的公司或越南政府一手文件，以及新廠產能、接電與量產時間。
+2. 台達檳城製造基地的董事會／公司公告、場址、資本支出與公用設施條件。
+3. 鴻海美國 AI 製造擴張的州／地方許可、就業與資本支出（尤其 Texas、Wisconsin、Ohio、California）。
+4. EPG 柔佛廠的設備安裝、接電、在地供應商及客戶認證進度。
+5. NTT DATA 900MW 現地電力案的具體國別、場址、燃料／排放許可與併網條件。
