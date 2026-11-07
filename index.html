@@ -1113,7 +1113,8 @@ const ORIGINAL_CATEGORY = {
   chicony: "systems", fortune: "infrastructure"
 };
 const EXPANDED_COMPANIES = (window.EXPANDED_COMPANY_CONFIGS || []).map(buildTrackedCompany);
-const COMPANIES = [FOXCONN, ...COMPANY_BACKLOG.map(buildTrackedCompany), ...EXPANDED_COMPANIES].map((c) => ({
+// 鴻海由下方 FOXCONN 主檔承載；舊 backlog 如殘留同 ID，須排除以維持正式 49 家名單。
+const COMPANIES = [FOXCONN, ...COMPANY_BACKLOG.filter((c) => c.id !== "foxconn").map(buildTrackedCompany), ...EXPANDED_COMPANIES].map((c) => ({
   ...c,
   category: c.category || ORIGINAL_CATEGORY[c.id] || "systems",
   priority: c.priority || "A"
