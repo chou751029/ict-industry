@@ -44,3 +44,19 @@
 3. 鴻海美國 AI 製造擴張的州／地方許可、就業與資本支出（尤其 Texas、Wisconsin、Ohio、California）。
 4. EPG 柔佛廠的設備安裝、接電、在地供應商及客戶認證進度。
 5. NTT DATA 900MW 現地電力案的具體國別、場址、燃料／排放許可與併網條件。
+
+## 19:34 追加追蹤（2026-11-08，Asia/Taipei）
+
+**結論：本次無新增新聞。** 本次依 48 小時窗口再次完成 A 級逐家檢索，B／C 級輪替檢索，以及鴻海→建漢、鴻準；仁寶→智易；緯創→啟碁；佳世達→明泰→仲琦；聯發科→達發的交叉查核。Garmin／台灣國際航電仍視為單一企業。抽查跨系統製造／零組件、半導體／IC、網通／通訊、品牌／終端與需求／基礎設施群組；未找到符合「直接原文、窗口內、與海外設廠／擴產／供應鏈需求相關、且 URL 未重複」的候選。
+
+### 本輪代表查詢、命中與排除
+
+- 公司／產品／事件：`鴻海 Foxconn factory investment`、`Lite-On factory investment`、`Inventec factory investment`、`TSMC fab investment`、`Wistron factory expansion`、`Accton Edgecore factory`、`Arcadyan factory`、`Chunghwa Telecom data center expansion`、`ASUS server factory expansion`、`HTC VIVE investment facility`。
+- 集團交叉：`Foxconn CyberTAN Foxconn Technology facility investment`、`Compal Arcadyan factory investment`、`Wistron WNC facility investment`、`Qisda Alpha Networks Hitron factory investment`。
+- 開放式與母語／政策：`AI data center factory expansion site:gov`、`electronics manufacturing factory expansion site:gov`、`Rechenzentrum Finanzierung Baugenehmigung Deutschland`、`centre de donnees IA permis construire France`、`データセンター 建設許可 電力 日本`、`데이터센터 건축 허가 전력 한국`，以及越南、馬來西亞、印度、泰國政府投資公告組。
+- 候選共 10 筆；直接開啟 1 筆（鴻海 AI factory 官方頁），其發布日為 2026-10-26，超出窗口。其餘候選多為 11 月 2 日以前舊聞、產品上市／財務訊息、政府或企業列表頁，或未能取得可核對內文的直接原始頁，因此全數排除，未寫入試算表或網站。
+
+### 同步與複核狀態
+
+- 原文 URL 已再比對 `新聞追蹤`、`ICT產業新聞`、`index.html` 的 `INDUSTRY_NEWS` 與企業時間軸；本輪新增列數：`新聞追蹤` 0、`ICT產業新聞` 0、網站 0。無合格資料，因此未變動網站最後蒐集日期或推送網站檔案。
+- 優先人工複核：光寶越南擴產的一手公司／政府文件；台達檳城設施的資本支出與公用設施；鴻海美國 AI 製造的州／地方許可；EPG 柔佛廠接電與量產；NTT DATA／Bloom 900MW 案的個別場址與許可。
