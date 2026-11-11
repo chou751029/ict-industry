@@ -42,6 +42,7 @@ const EXPANDED_TIMELINES = {
     { date: "2026-10-19", tag: "伺服器製造／擴產", overseas: false, source: "media", sourceCategory: "media", market: "domestic", title: "神達旗下 MiTAC Computing 投資126.2億元：楊梅新廠、竹南與林口產線擴充", link: "https://focustaiwan.tw/business/202610190014", linkLabel: "Focus Taiwan／中央社" }
   ],
   tsmc: [
+    { date: "2026-11-10", tag: "資本支出／晶圓廠與先進封裝", overseas: false, source: "official", sourceCategory: "official", market: "global", title: "台積公司董事會核准約409.267億美元資本支出，涵蓋晶圓廠建設、先進製程與先進封裝", link: "https://pr.tsmc.com/chinese/news/3352", linkLabel: "台積公司" },
     { date: "2026-10-15", tag: "美國設廠評估／德州", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "魏哲家證實台積電團隊赴德州評估擴產，與Terafab合作討論中", link: "https://www.cna.com.tw/news/afe/202610150172.aspx", linkLabel: "中央社" },
     { date: "2026-10-15", tag: "財報／先進製程", overseas: false, source: "official", sourceCategory: "official", market: "global", title: "台積公司發布2026年第三季營運報告", link: "https://investor.cld.tsmc.com/chinese/quarterly-results/2026/q3", linkLabel: "台積公司" }
   ],

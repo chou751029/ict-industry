@@ -1,13 +1,24 @@
 # ICT 企業新聞與海外設廠每日追蹤｜2026-11-11
 
 **檢索區間：** 2026-11-09 至 2026-11-11（Asia/Taipei，近 48 小時）  
-**執行結論：** 新增 2 筆直接驗證、URL 未重複的開放式 ICT 產業鏈訊號；49 家正式名單本輪無合格新增。
+**執行結論：** 本日累計新增 3 筆已驗證、URL 未重複的訊號：49 家正式名單 1 筆（台積電），開放式 ICT 產業鏈 2 筆（藤倉、亞翔）。本輪另排除 EPG 柔佛的轉載頁，避免重複入庫。
 
 ## 已驗證新增
 
+### 台積電｜TSMC
+
+- **原標題：** TSMC Board of Directors Meeting Resolutions
+  **繁中譯名：** 台積公司董事會決議
+- **發布日期／機構／語言：** 2026-11-10／TSMC／中文（官方頁）
+- **直接原文：** https://pr.tsmc.com/chinese/news/3352
+- **內容與園區意涵：** 董事會核准約 **409.267 億美元**資本支出，範圍包括先進製程、先進封裝、成熟／特殊製程的產能與設備升級、晶圓廠建造與廠務系統，以及 2027 年研發、維持性資本支出與資本化租賃資產；另核准最多 5 億美元成立半導體相關生態系策略投資公司。公告未拆分單一廠址或國別，因此不把它寫成特定海外新廠事實；但這是對晶圓廠、廠務、設備材料、先進封裝與供應商承接需求的明確全球投資訊號。
+- **標籤：** 台積電；TSMC；資本支出；晶圓廠建設；先進製程；先進封裝；廠務系統；半導體生態系
+- **美國 SOP：** Step 1（CHIPS／供應鏈合規背景）、Step 2（各州場址與公用設施容量）、Step 3（供應商在地化、設備交期與 TCO）。
+- **來源驗證：** 已直接開啟官方原文，核對標題、2026-11-10 日期、發布機構及資本支出用途。
+
 ### 開放式產業雷達｜摩洛哥／歐洲、中東、非洲｜光纖光纜、AI 資料中心與電信網路
 
-- **原文標題：** Fiber Optic Cable Manufacturing Base in the Kingdom of Morocco Begins Full-Scale Operation  
+- **原文標題：** Fiber Optic Cable Manufacturing Base in the Kingdom of Morocco Begins Full-Scale Operation
   **繁中翻譯：** 藤倉摩洛哥光纖纜線製造基地全面運轉
 - **發布日期／機構／語言：** 2026-11-09／Fujikura Ltd.／英文（摩洛哥）
 - **直接原文：** https://www.fujikura.co.jp/en/news/pressrelease/20261109post_124.html
@@ -17,7 +28,7 @@
 
 ### 開放式產業雷達｜台灣／全球｜半導體廠務、AI 基礎設施與海外在地化工程
 
-- **原文標題：** Acter Reports Tri-Factor Margin Expansion in 3Q26; EPS for First Three Quarters Hits Record High of NT$36.59 Order Backlog Surges to All-Time High of NT$84 Billion; Robust Growth Momentum Continues as October Revenue Skyrockets 60% YoY to NT$5.11 Billion, Setting a New Record for the Month  
+- **原文標題：** Acter Reports Tri-Factor Margin Expansion in 3Q26; EPS for First Three Quarters Hits Record High of NT$36.59 Order Backlog Surges to All-Time High of NT$84 Billion; Robust Growth Momentum Continues as October Revenue Skyrockets 60% YoY to NT$5.11 Billion, Setting a New Record for the Month
   **繁中翻譯：** 亞翔公布 2026 年前三季財報：AI 與高科技設廠推動在手訂單創新高
 - **發布日期／機構／語言：** 2026-11-09／Acter Group Co., Ltd.／英文（台灣）
 - **直接原文：** https://www.acter.com.tw/en/news/R10
@@ -25,32 +36,31 @@
 - **摘要：** 亞翔表示 AI 應用擴張正推動半導體、高科技電子、雲端運算與高階製造的新建廠、擴建與產線升級，帶動其工程在手訂單升至新台幣 840 億元。公司指出正擴充海外在地專業團隊、供應鏈與策略夥伴，以承接跨區域大型整廠工程。
 - **分類／訊號：** 可驗證的廠務工程、在地化服務與供應鏈需求訊號，非個別客戶或場址投資案；後續追蹤訂單國別、客戶 CAPEX、潔淨室／機電工程及人力配置。
 
-## 名單、群組與查詢稽核
+## 名單、集團與查詢稽核
 
-- 正式主名單 49 家依 A/B/C 分級及集團交叉規則檢索；Garmin 與台灣國際航電合併計算。鴻海→建漢、鴻準；仁寶→智易；緯創→啟碁；佳世達→明泰→仲琦；聯發科→達發均納入交叉詞。
-- 代表查詢：`鴻海 AI伺服器 設廠`、`Foxconn AI server factory investment`、`TSMC advanced packaging fab expansion`、`MediaTek Airoha facility investment`、`Wistron WNC manufacturing site`、`Lite-On Vietnam capacity expansion`、`Delta Electronics Penang factory`、`Compal Arcadyan plant`、`Qisda Alpha Networks Hitron factory`、`Accton Edgecore data center switch manufacturing`。
-- 母語與政策雷達：日文 `半導体 工場 増設 データセンター 電力`、韓文 `전자 제조 투자 공장 데이터센터`、德文 `Elektronikfertigung Investition Rechenzentrum Deutschland`、法文 `industrie electronique investissement centre de donnees`，並搭配台灣、北美、歐盟／中東歐、印度、東協與北非的製造、AI 資料中心、先進封裝、電網及設廠／許可詞。
+- 正式 49 家主名單（A 級逐一）；B／C 級本輪輪替：宏碁、華碩、宏達電、中華電信、台灣大哥大、遠傳與華電聯網。
+- 集團交叉：鴻海→建漢／鴻準；仁寶→智易；緯創→啟碁；佳世達→明泰→仲琦；聯發科→達發；Garmin／台灣國際航電合併為單一企業。
+- 代表查詢包含中文／英文品牌、產品＋事件詞與據點國別詞：`TSMC fab construction advanced packaging capex`、`Foxconn AI server factory investment`、`MediaTek Airoha optical communications manufacturing`、`Wistron WNC facility investment`、`Accton Edgecore data-center switch manufacturing`、`Gemtek optical transceiver US manufacturing`、`Acer ASUS HTC facility investment`、`Chunghwa Telecom Taiwan Mobile Far EasTone data center expansion`。
+- 母語／政策雷達：日文 `半導体 補助金 データセンター 電力`、韓文 `전자 제조 투자 공장 데이터센터`、德文 `Elektronikfertigung Investition Rechenzentrum Deutschland`、法文 `industrie electronique investissement centre de donnees`；另涵蓋台灣、北美、歐盟／中東歐、印度與東協。
 
-## 候選、排除與去重
+## 候選、驗證與排除
 
 | 類別 | 候選數 | 直接開啟驗證 | 合格新增 | 排除原因 |
-|---|---:|---:|---:|---|
-| 49 家與集團交叉 | 7 | 2 | 0 | 可定位原文為窗口外 10 月舊聞、產品展示、列表頁或未能定位的二手內容。 |
-| 開放式 ICT 雷達 | 7 | 4 | 2 | Schaeffler 原文頁逾時無法重開；其餘為已入庫事件、窗口外舊聞或未揭露可驗證廠址／投資事實。 |
-| 政策與母語雷達 | 4 | 1 | 0 | 命中屬已入庫投資／政策或無單一可定位原文。 |
-
-所有候選先以原文 URL 比對 Google Sheet「新聞追蹤」、「ICT產業新聞」及網站 `INDUSTRY_NEWS`／企業時間軸；兩筆新增不屬 49 家企業，故不寫入「新聞追蹤」或企業時間軸。
+| --- | ---: | ---: | ---: | --- |
+| 49 家與集團交叉 | 11 | 2 | 1 | 多數為營收、產品或窗口外內容，未含可確認的新投資／場址事實。 |
+| 開放式 ICT 雷達 | 16 | 6 | 2 | EPG 柔佛工廠上梁的新聞稿已在 `ICT產業新聞` 與網站入庫；其餘為集合頁、窗口外或無可定位原文。 |
+| 政策與母語雷達 | 10 | 2 | 0 | 可讀公告多為先前已入庫政策，或未揭露可驗證的新個案。 |
 
 ## 同步結果
 
-- Google Sheet「新聞追蹤」：+0。
-- Google Sheet「ICT產業新聞」：+2。
-- 網站 `INDUSTRY_NEWS`：+2；無企業時間軸新增。
+- Google Sheet「新聞追蹤」：+1（台積電）。
+- Google Sheet「ICT產業新聞」：+2（藤倉、亞翔）；台積電同一原文僅入「新聞追蹤」，未重複建立跨企業列。
+- 網站：`INDUSTRY_NEWS` +3、台積電企業時間軸 +1；依發布日排序。
 
-## 優先人工複核
+## 待人工複核（優先）
 
-1. 藤倉丹吉爾廠的新增產能、在地供應商、出口客戶與 EMEA 資料中心專案關聯。
-2. 亞翔 840 億元在手工程的國別、客戶、潔淨室／機電分項及海外人力需求。
-3. 光寶越南擴產的一手公司或越南政府文件，以及接電、量產與供應商進度。
-4. 鴻海美國 AI 製造投資的州／地方許可、就業、土地與資本支出。
-5. EPG 柔佛新廠的設備安裝、接電、客戶認證與量產爬坡。
+1. 台積電本輪資本支出的廠別、國別分配、設備交期與電水需求。
+2. 台積電德州評估是否出現土地、誘因、許可或公用設施的官方落地文件。
+3. 光寶越南增資後的施工、接電與量產節點（以公司或越南政府文件覆核）。
+4. 東元檳城 MDC 新廠的用地、建照、投資額、供電及量產時程。
+5. 正文／Starman 美國光收發器合資的廠址、許可、設備與客戶認證進度。
