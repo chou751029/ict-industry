@@ -19,7 +19,7 @@
    **TEEMA 研判：** 屬海外 OSAT 建置與 AI 機櫃需求訊號；尚未有兩座封測廠的具體場址、CAPEX、許可、接電或投產日期，不得列為既有據點。
    **直接原文：** https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2153
 
-3. **台達電子／Delta Electronics｜美國 Texas（廠址未揭露）｜F2 廠與辦公大樓工程**
+3. **台達電子／Delta Electronics｜美國（廠址未揭露）｜F2 廠與辦公大樓工程**
    **原標題：** *台達電:補充公告本公司代子公司Delta Electronics (USA) Inc.公告決議興建F2廠及辦公大樓相關事宜*
    **發布日期／語言／來源：** 2026-11-11／中文／台達電重大訊息（鉅亨網可定位轉載）。
    **摘要：** Delta Electronics (USA) Inc. 自地委建 F2 廠及辦公大樓，暫估總工程約 2.05 億美元未稅；本輪補充機電、空調及消防工程由 Dachun Construction 承作，該部分約 4,800 萬美元含稅。
