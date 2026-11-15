@@ -53,3 +53,11 @@
 ## 對園區的意涵
 
 韓國案例顯示「先進封裝＋載板」投資對供應鏈的拉動，取決於許可程序、產業園區、電水與供應商同步進駐；GF Malta 則凸顯美國案除補貼外，仍須以前置基礎設施、人才與 EPC 能量做 10 年 TCO 決策。法國方案可作為新創／中小企業首座量產設施的融資工具比較案例。
+
+## 晚間增量稽核（2026-11-15 20:11 台北時間）
+
+- **結果：本次無新增新聞。** 已再比對 `ICT產業新聞`、`新聞追蹤` 及網站 `INDUSTRY_NEWS` 的原文 URL；近 48 小時檢索未找到可直接驗證、且尚未入庫的新事件，因此未變更試算表或網站，避免將本日稍早已入庫的 GF、Samsung／ADEKA、France 2030 等 URL 重複寫入。
+- **A 級／集團交叉檢索：** `TSMC / 台積電 fab investment`、`Foxconn / 鴻海 AI server factory`、`Wistron / 緯創 WNC expansion`、`Qisda / Alpha Networks / Hitron`、`MediaTek / Airoha`、`Accton / WNC / Sercomm / Arcadyan`；命中多為 11 月 13 日前既有新聞、投資人資料、首頁或無法對應的彙整頁，均排除。
+- **B/C 輪替檢索：** `Acer / ASUS / HTC manufacturing`、`Chunghwa Telecom / Taiwan Mobile / Far EasTone data center`；沒有符合海外設廠、產線或重大在地化需求的可驗證新增原文。
+- **母語與政策雷達代表查詢：** 日文 `半導体 工場 投資 2026年11月14日 発表`；韓文 `반도체 공장 투자 2026년 11월 14일 발표`；德文 `Elektronikfertigung Investition Fabrik November 2026 Pressemitteilung`；法文 `industrie électronique investissement usine novembre 2026 communiqué`；東協英文 `electronics manufacturing factory expansion November 2026 official`。結果為既有 URL、超出時窗或非直接原文，未入庫。
+- **待人工複核：** (1) Mitsui Kinzoku 馬來西亞銅箔新廠：官方已於 11/10 公告約 1,900 億日圓投資，惟已超過本輪 48 小時時窗，請下輪確認選址、環評與電力；(2) SoftBank／Grab／PETROS 馬來西亞 AI 基礎設施：11/9 直接原文的 5GW 長期目標仍須追蹤最終場址、接電、供水、許可及 hyperscaler 承諾；(3) GF Malta 的 EPC、水電與設備採購；(4) 韓國忠清圈 HBM／基板案的個別建照、接電與供應商投資；(5) ADEKA Korea 完州案的設備與客戶認證。
