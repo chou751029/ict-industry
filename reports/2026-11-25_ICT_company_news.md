@@ -1,47 +1,52 @@
-# 2026-11-25 ICT 企業新聞與海外設廠追蹤
+# 2026-11-25 ICT 企業新聞與海外設廠追蹤（續跑）
 
-檢索窗口：2026-11-23 至 2026-11-25（Asia/Taipei）。本輪以企業／監管機構直接原文優先，先用原文 URL 查核 Google 試算表「新聞追蹤」、「ICT產業新聞」及網站 `INDUSTRY_NEWS`／企業時間軸。
+檢索窗口：2026-11-23 至 2026-11-25（Asia/Taipei）。本輪承接同日 03:40 的既有入庫紀錄，先以原文 URL 比對 Google 試算表「新聞追蹤」、「ICT產業新聞」與網站 `INDUSTRY_NEWS`／企業時間軸；已存在的 Visteon Chennai 與 Nocera／BitRock 資料不重複寫入。
 
 ## 本輪已驗證新增
 
-1. **Visteon Expands Local Manufacturing in India with New Automotive Cellular Module Production Line [Visteon 在印度啟用車用蜂巢式通訊模組新產線]**
-   - 發布日期：2026-11-24；語言／國家：英文／印度；來源：Visteon [直接原文](https://www.visteon.com/investors/investor-news/news-details/2026/Visteon-Expands-Local-Manufacturing-in-India-with-New-Automotive-Cellular-Module-Production-Line/default.aspx)。
-   - Chennai 製造廠已啟用 Cellular NAD 新產線，供應印度及全球車用市場。公司明示投資將擴充印度在地製造並使其成為全球客戶的製造基地；產品路線連結衛星通訊、RedCap、V2V 與 UWB。
-   - 分類：車用電子／通訊模組／既有廠擴線／在地化生產。園區意涵：追蹤車規模組產線、自動化測試、客戶認證、衛星與車聯網供應鏈需求。
+1. **鴻海精密／Foxconn**｜2026-11-24｜公開資訊觀測站重大訊息｜中文／台灣
+   - 原文： [公告本公司第115年度海外第一次無擔保可轉換公司債完成定價](https://newjust.masterlink.com.tw/z/zf/zfz/zfz_99E76E58-530E-485D-9D9F-4800FB94410F.djhtm)（鴻海完成海外第一次無擔保可轉債定價）
+   - 內容：總額 12.5 億美元、預定 12/1 發行；公告明示資金用於支應海外購料，預期可降低利息支出。
+   - 判讀：為海外供應鏈備料／營運資金訊號，並非新廠、擴產或特定資本支出承諾；納入鴻海企業時間軸，持續追蹤是否連結 AI 伺服器、封裝測試與海外產能配置。
 
-2. **Nocera Signs Binding Letter of Intent to Invest $22 Million for an Approximately 44% Stake in BitRock [Nocera 簽署具約束力意向書，擬投資 BitRock 阿爾伯塔自備電力 AI 資料中心]**
-   - 發布日期：2026-11-23；語言／國家：英文／加拿大；來源：Nocera 以 [SEC 8-K 附件](https://www.sec.gov/Archives/edgar/data/1756180/000168316826009032/nocera_ex9901.htm) 發布。
-   - Nocera 擬投資約2,200萬美元，取得 BitRock 約44%股權，資金預定僅用於 Alberta Hanna 的 10MW 首期 AI 資料中心。基地規劃採四個約2.5MW 預製模組與自有天然氣發電；長期構想為200MW。
-   - **狀態：已驗證的條件性投資，非已完成設廠／交割。** 仍取決於盡職調查、正式協議與核准；關於許可、客戶與設計的部分陳述亦由 BitRock 提供，尚未由 Nocera 獨立驗證。
+2. **Domin, Inc.**｜2026-11-24｜North Carolina Office of the Governor｜英文／美國
+   - 原文： [British Advanced Manufacturer Selects Gastonia for its First U.S. Expansion](https://governor.nc.gov/news/press-releases/2026/11/24/british-advanced-manufacturer-selects-gastonia-its-first-us-expansion)（英國先進製造商 Domin 選址 Gastonia，設立首座美國製造據點）
+   - 內容：Domin 將投資逾 1,620 萬美元、創造 204 職缺，在 Gastonia 建置約 4 萬平方英尺生產、研發與供應據點，製造液壓控制閥與電液靜壓致動器；獲最高約 231.57 萬美元、12 年期績效型 JDIG。
+   - 判讀：工業自動化、數位控制與金屬增材製造的明確美國首座工廠。美國 SOP：Step 2 應查土地／建物、電力與人才；Step 3 應納入在地化供應商、職訓與 10 年 TCO。
 
-## 49 家主名單與集團交叉稽核
+## 49 家主名單稽核
 
-- A 級企業以中文名／英文名或品牌、核心產品＋投資／設廠詞、海外據點所在國母語詞檢索；B、C 級持續輪替，並交叉查詢鴻海→建漢／鴻準、仁寶→智易、緯創→啟碁、佳世達→明泰→仲琦、聯發科→達發。Garmin 與台灣國際航電仍合併計算。
-- 本窗口未找到新的、可直接驗證且屬49家主名單的設廠、擴產、土地、許可、設備資本支出或在地化產能事件；因此「新聞追蹤」及各企業時間軸新增 0 筆。
+本輪 A 級逐一以中文名／英文品牌、核心產品＋事件詞、海外據點國別語言交叉查詢；B、C 級完成輪替掃描，並交叉檢索鴻海→建漢／鴻準、仁寶→智易、緯創→啟碁、佳世達→明泰→仲琦、聯發科→達發。Garmin 與台灣國際航電視為同一企業。
 
-## 全球開放式 ICT 雷達與母語搜尋
+| 群組 | 公司 | 已驗證 | 代表查詢／語言 | 排除／待複核 |
+| --- | --- | ---: | --- | --- |
+| 半導體／IC | 台積電、聯發科、瑞昱、達發、九暘 | 0 | `TSMC fab investment`、`MediaTek Airoha facility`（中／英／日） | 出口管制、財報或窗口外內容；無可入庫新廠原文。 |
+| 系統製造／零組件 | Garmin、廣達、緯創、和碩、神達、佳世達、致伸、鴻準 | 0 | `Quanta/Wistron/Pegatron factory expansion`（中／英／越） | 緯創德州 D2 訊號為既有 9 月董事會公告；未重複入庫。 |
+| 網通／通訊 | 智邦、啟碁、中磊、智易、正文、神準、明泰、建漢、仲琦、友訊、訊舟、盛達 | 0 | `WNC/Arcadyan/Gemtek facility expansion`（中／英／越） | 未見 48 小時內可直接驗證的新投資或產能落地；仲琦舊越南自有廠未列既有據點。 |
+| 原 17 家基礎製造 | 鴻海、康舒、英業達、光寶、東元、美律、環鴻、台達、仁寶、研華、廣運、祥儀、和椿、友嘉、貿聯、群光、華城 | 1 | `Foxconn overseas procurement convertible bond`、`Delta/TECO factory`（中／英／德／法） | 僅鴻海可驗證新增；其他為既有建廠案、產品／展會或窗口外資訊。 |
+| 品牌／終端 | 宏碁、華碩、宏達電 | 0 | `Acer/ASUS/HTC facility investment`（中／英／日） | 新訊多為產品、通路或活動，非產能／據點事件。 |
+| 需求／基礎設施 | 中華電信、台灣大哥大、遠傳、華電聯網 | 0 | `IDC expansion`、`data center investment`（中／英） | 未找到可驗證的新 IDC 擴建、採購落地或投資原文。 |
 
-- 英文／印度：Visteon 新線屬已啟用的車用連網模組製造，符合在地化生產及全球供應鏈需求訊號，已入庫。
-- 英文／加拿大：Nocera／BitRock 的直接監管文件確認投資意向與首期規模，但交易與建造仍有條件，入庫時已清楚標示條件性。
-- 泰文／泰國：B.Grimm／NTT 400MW AI 資料中心 MOU 命中產業媒體及泰文報導，但尚未取得企業直接可讀原文與完整場址／條件，列為待複核，未寫入試算表或網站。
-- 韓文／韓國、法文／法國、日文／日本的新增命中，多為公告外的彙整頁、窗口外事件或未披露設址／投資的評論，未入庫。
+## 全球開放式 ICT 製造雷達與母語搜尋
 
-候選 8 筆；已驗證新增 2 筆；排除 4 筆（窗口外 1、彙整／搜尋頁 2、未達落地門檻 1）；待複核 2 筆。
+- 北美英文：`advanced manufacturing factory investment North Carolina`、`data center manufacturing investment`。Domin 美國首座製造據點通過官方原文驗證並入庫；GE Vernova 搜尋命中實為 2025 年公告，排除。
+- 歐盟（德／法）：`Rechenzentrum Fertigung Erweiterung`、`centre de données usine investissement`。命中以窗口外公告或列表頁為主。
+- 日本／韓國（日／韓）：`データセンター 建設 電力`、`AI 데이터센터 건설 전력`。無本輪可定位的新增直接原文。
+- 印度／東協（英／越）：`electronics manufacturing investment facility`、`công nghiệp điện tử đầu tư nhà máy`。未見新增合格原文；11/24 Visteon Chennai 已於同日早輪入庫，不重複新增。
+
+候選 11 筆；本輪新增已驗證 2 筆；排除 8 筆（窗口外 3、非產能／場址訊號 2、集合頁或二手轉載 2、已入庫 URL 1）；待複核 1 筆。
 
 ## 寫入與驗證紀錄
 
-- Google 試算表「新聞追蹤」：新增 **0** 列。
-- Google 試算表「ICT產業新聞」：新增 **2** 列。
-- 網站 `index.html`：新增 **2** 筆；兩筆均為49家以外的全球雷達，故未新增企業時間軸或既有據點。
-- 來源、日期、發布機構與內文已逐頁打開驗證；上述兩 URL 均已檢索兩個新聞分頁且原先不存在。
+- Google 試算表「新聞追蹤」：新增 **1** 列（鴻海）。
+- Google 試算表「ICT產業新聞」：新增 **1** 列（Domin）。
+- 網站：`index.html` 新增 **2** 筆；鴻海同步至企業時間軸 1 筆。Domin 不屬 49 家企業，不建立企業時間軸。
+- 來源均已直接開啟並核對標題、日期、發布機構與內文；網址全域去重後才寫入。
 
-## 人工複核優先議題
+## 人工複核與下一步
 
-1. **Nocera／BitRock（Alberta）**：正式投資協議是否簽署、資金是否到位，以及發電／土地／用電許可由政府或獨立文件佐證。
-2. **B.Grimm／NTT（泰國）**：400MW MOU 的正式公司公告、Amata City Chonburi 的確切土地、接電、投資條件與動工時程。
-3. **Visteon Chennai**：NAD 新線的產能、在地供應商、車廠導入與衛星／RedCap 規格認證。
-4. **49家美國與墨西哥案件**：持續取得緯創、台達、鴻海等之建照、接電、設備安裝、量產或地方誘因的一手落地證據。
-
-## 美國 SOP 對照
-
-- Nocera／BitRock 雖在加拿大，仍可作為北美 AI 基建的對照案例：Step 2 應把自備發電、燃氣／排放許可、用地與模組化施工納入選址矩陣；Step 3 應測試「等候電網」相對於自備電力的時程、燃料、環評與社區成本情境。該案尚未交割，不應視作已投產案例。
+1. **鴻海海外可轉債**：確認海外購料是否對應特定 AI 伺服器／封裝產能、區域與客戶，以及對存貨與營運資金的實際影響。
+2. **Domin Gastonia**：追蹤廠房取得／改造、設備進場、職訓、公用設施與實際投產日期；JDIG 為績效型而非已付補助。
+3. **B.Grimm／NTT 泰國 400MW MOU**：仍需企業或政府直接原文與場址、接電、許可條件，維持待複核不入庫。
+4. **緯創 Texas D2／墨西哥產能**：11/24 市場說法應以公司、地方政府或 MOPS 一手資料確認投產與擴產規模。
+5. **台達、光寶、東元既有海外案**：優先查建照、接電、施工、設備安裝與量產節點，不以媒體推測補入既有據點。
