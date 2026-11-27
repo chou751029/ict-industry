@@ -39,7 +39,14 @@ const EXPANDED_TIMELINES = {
     { date: "2026-10-15", tag: "AI 布局／新創投資", overseas: false, source: "media", sourceCategory: "media", market: "domestic", title: "中華電培育逾80家新創，再設2家AI子公司", link: "https://www.cna.com.tw/news/afe/202610150293.aspx", linkLabel: "中央社" }
   ],
   mitac: [
+    { date: "2026-11-27", tag: "全球擴產／美越建設", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "神達：台灣、越南與美國持續擴產；加州 Newark、San Jose、Fremont 新設施施工中", link: "https://www.taipeitimes.com/News/biz/archives/2026/11/27/2003868452", linkLabel: "Taipei Times" },
     { date: "2026-10-19", tag: "伺服器製造／擴產", overseas: false, source: "media", sourceCategory: "media", market: "domestic", title: "神達旗下 MiTAC Computing 投資126.2億元：楊梅新廠、竹南與林口產線擴充", link: "https://focustaiwan.tw/business/202610190014", linkLabel: "Focus Taiwan／中央社" }
+  ],
+  pegatron: [
+    { date: "2026-11-26", tag: "AI伺服器／北美與台灣擴產", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "和碩擴充北美與台灣伺服器產能，持續增加廠房、設備與液冷研發／生產投資", link: "https://5850web.moneydj.com/z/zf/zufzVIP_87054868-BDFD-42D3-B268-1BAF65EBFD76_E_.djhtm", linkLabel: "MoneyDJ" }
+  ],
+  accton: [
+    { date: "2026-11-25", tag: "越南製造／設備移轉", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "智邦移轉約3.17億元設備予全資越南子公司，供營運與集團資源整合", link: "https://www.cna.com.tw/news/afe/202611253004.aspx", linkLabel: "中央社" }
   ],
   tsmc: [
     { date: "2026-11-26", tag: "美國擴建／第五階段動土", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "AP：台積電 Arizona 第五階段新晶圓廠將於 12/4 動土", link: "https://apnews.com/article/tsmc-computer-chips-arizona-trump-cdc7faa84895ddeb19bd114061e9dd85", linkLabel: "Associated Press" },
