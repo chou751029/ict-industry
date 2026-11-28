@@ -46,9 +46,11 @@ const EXPANDED_TIMELINES = {
     { date: "2026-11-26", tag: "AI伺服器／北美與台灣擴產", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "和碩擴充北美與台灣伺服器產能，持續增加廠房、設備與液冷研發／生產投資", link: "https://5850web.moneydj.com/z/zf/zufzVIP_87054868-BDFD-42D3-B268-1BAF65EBFD76_E_.djhtm", linkLabel: "MoneyDJ" }
   ],
   accton: [
+    { date: "2026-11-27", tag: "AI網路／五國產能配置", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "智邦因應 AI 網路需求提前擴充製造與技術能力，產能分布台灣、越南、新加坡、馬來西亞與美國", link: "https://www.cna.com.tw/news/afe/202611270212.aspx", linkLabel: "中央社" },
     { date: "2026-11-25", tag: "越南製造／設備移轉", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "智邦移轉約3.17億元設備予全資越南子公司，供營運與集團資源整合", link: "https://www.cna.com.tw/news/afe/202611253004.aspx", linkLabel: "中央社" }
   ],
   tsmc: [
+    { date: "2026-11-27", tag: "德國設廠／投產準備與人才", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "ESMC Dresden 晶圓廠主體結構完成，預計2027年底投產；明年估500至800名台灣人才赴薩克森邦", link: "https://www.cna.com.tw/news/afe/202611270023.aspx", linkLabel: "中央社" },
     { date: "2026-11-26", tag: "美國擴建／第五階段動土", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "AP：台積電 Arizona 第五階段新晶圓廠將於 12/4 動土", link: "https://apnews.com/article/tsmc-computer-chips-arizona-trump-cdc7faa84895ddeb19bd114061e9dd85", linkLabel: "Associated Press" },
     { date: "2026-11-25", tag: "美國擴建／德州評估", overseas: true, source: "media", sourceCategory: "media", market: "foreign", title: "台積電亞利桑那廠將啟動南區用地；德州2奈米廠仍在評估", link: "https://www.cna.com.tw/news/afe/202611250153.aspx", linkLabel: "中央社" },
     { date: "2026-11-10", tag: "資本支出／晶圓廠與先進封裝", overseas: false, source: "official", sourceCategory: "official", market: "global", title: "台積公司董事會核准約409.267億美元資本支出，涵蓋晶圓廠建設、先進製程與先進封裝", link: "https://pr.tsmc.com/chinese/news/3352", linkLabel: "台積公司" },
